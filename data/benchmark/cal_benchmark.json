@@ -1,0 +1,505 @@
+{
+  "machine": {
+    "os": "Darwin 24.6.0 (15.7.2)",
+    "machine": "arm64",
+    "cpu": "Apple M2",
+    "model": "Mac14,2",
+    "logical_cpus": "8",
+    "ram_gb": 8.0,
+    "torch_threads": 4,
+    "python": "3.11.14"
+  },
+  "config": {
+    "checkpoint": "uma-s-1p2p1",
+    "task": "omat",
+    "inference_settings": "batch",
+    "device": "cpu",
+    "torch_version": "2.13.0",
+    "fairchem_core_version": "2.25.0",
+    "ase_version": "3.29.0"
+  },
+  "selection": {
+    "seed": 20241220,
+    "bins(natoms_lo,hi,count)": [
+      [
+        10,
+        11,
+        4
+      ],
+      [
+        12,
+        14,
+        4
+      ],
+      [
+        15,
+        16,
+        6
+      ],
+      [
+        17,
+        20,
+        3
+      ],
+      [
+        21,
+        24,
+        3
+      ]
+    ],
+    "note": "purposive spread over cell size, not a representative sample"
+  },
+  "timing": {
+    "model_load_seconds": 13.3,
+    "first_call_seconds": 1.084,
+    "all_20": {
+      "mean_s_per_structure": 0.387,
+      "s_per_atom": 0.025
+    },
+    "steady_state_19": {
+      "mean_s_per_structure": 0.35,
+      "median": 0.346,
+      "max": 0.578,
+      "s_per_atom": 0.0227
+    },
+    "linear_fit_seconds_vs_natoms": {
+      "intercept": 0.24,
+      "slope_per_atom": 0.00715,
+      "se_slope": 0.00524,
+      "r": 0.314,
+      "n": 19
+    },
+    "seconds_by_natoms": {
+      "10": 0.25,
+      "12": 0.331,
+      "13": 0.338,
+      "16": 0.505,
+      "18": 0.488,
+      "22": 0.243,
+      "24": 0.337
+    },
+    "EXTRAPOLATION_current_proposal": {
+      "label": "EXTRAPOLATION from 19 steady-state calls on one machine; not measured",
+      "n_structures": 5473,
+      "per_split": {
+        "cal": {
+          "n": 2000,
+          "mean_natoms": 13.42,
+          "fit_seconds_total": 672.0,
+          "meanrate_seconds_total": 700.5,
+          "per_atom_rate_seconds_total": 609.8
+        },
+        "A0": {
+          "n": 1000,
+          "mean_natoms": 13.47,
+          "fit_seconds_total": 336.3,
+          "meanrate_seconds_total": 350.3,
+          "per_atom_rate_seconds_total": 305.9
+        },
+        "A": {
+          "n": 473,
+          "mean_natoms": 13.85,
+          "fit_seconds_total": 160.4,
+          "meanrate_seconds_total": 165.7,
+          "per_atom_rate_seconds_total": 148.8
+        },
+        "B": {
+          "n": 1000,
+          "mean_natoms": 13.41,
+          "fit_seconds_total": 335.9,
+          "meanrate_seconds_total": 350.3,
+          "per_atom_rate_seconds_total": 304.6
+        },
+        "C": {
+          "n": 1000,
+          "mean_natoms": 14.38,
+          "fit_seconds_total": 342.9,
+          "meanrate_seconds_total": 350.3,
+          "per_atom_rate_seconds_total": 326.7
+        }
+      },
+      "total_seconds_by_method": {
+        "fit_seconds_total": 1847.5,
+        "meanrate_seconds_total": 1917.1,
+        "per_atom_rate_seconds_total": 1695.8
+      },
+      "total_hours_by_method": {
+        "fit_seconds_total": 0.51,
+        "meanrate_seconds_total": 0.53,
+        "per_atom_rate_seconds_total": 0.47
+      }
+    },
+    "EXTRAPOLATION_6000_structures": {
+      "label": "EXTRAPOLATION: 6,000 x mean steady-state seconds per structure (Cal-based mix of cell sizes)",
+      "hours_at_mean_rate": 0.58,
+      "hours_at_linear_fit_with_current_split_natoms": 0.56
+    }
+  },
+  "label_check": {
+    "note": "n=20 Cal structures only; descriptive. No test-split structure used.",
+    "vs_raw_dft": {
+      "n": 20,
+      "mean_signed_eV_per_atom": -0.015,
+      "MAE": 0.0174,
+      "median_abs": 0.0033,
+      "RMSE": 0.0606,
+      "max_abs": 0.2697
+    },
+    "vs_mp2020_corrected (structures with a correction)": {
+      "n": 20,
+      "mean_signed_eV_per_atom": 0.0798,
+      "MAE": 0.1089,
+      "median_abs": 0.0049,
+      "RMSE": 0.1846,
+      "max_abs": 0.4248
+    },
+    "vs_raw_dft (same subset)": {
+      "n": 20,
+      "mean_signed_eV_per_atom": -0.015,
+      "MAE": 0.0174,
+      "median_abs": 0.0033,
+      "RMSE": 0.0606,
+      "max_abs": 0.2697
+    },
+    "n_without_mp2020": 0,
+    "regression_of_(UMA-raw)_on_(mp2020_offset_per_atom)": {
+      "slope": -0.041,
+      "r": -0.105,
+      "p": 0.659,
+      "n": 20,
+      "reading": "slope ~0: UMA tracks the raw label; slope ~1: UMA tracks the MP2020-corrected label"
+    },
+    "n_with_nonzero_mp2020_offset": 7,
+    "spearman_abs_err_vs_natoms": -0.227,
+    "spearman_abs_err_vs_n_elements": -0.557,
+    "spearman_abs_err_vs_max_force": -0.317,
+    "by_composition_group": {
+      "family": {
+        "chalcogenide": {
+          "n": 2,
+          "MAE_raw": 0.0052
+        },
+        "halide": {
+          "n": 3,
+          "MAE_raw": 0.0096
+        },
+        "hydride": {
+          "n": 1,
+          "MAE_raw": 0.0011
+        },
+        "intermetallic": {
+          "n": 10,
+          "MAE_raw": 0.0296
+        },
+        "mixed-anion": {
+          "n": 1,
+          "MAE_raw": 0.0001
+        },
+        "oxide": {
+          "n": 1,
+          "MAE_raw": 0.0046
+        },
+        "pnictide": {
+          "n": 2,
+          "MAE_raw": 0.0039
+        }
+      },
+      "tm_class": {
+        "3d-only": {
+          "n": 5,
+          "MAE_raw": 0.0554
+        },
+        "4d-only": {
+          "n": 9,
+          "MAE_raw": 0.0048
+        },
+        "neither": {
+          "n": 6,
+          "MAE_raw": 0.0048
+        }
+      }
+    }
+  },
+  "per_structure": [
+    {
+      "sid": "agm004011841_ABC2_6951_spg8_1_0_rattled-1000-subsampled_3qu3qq",
+      "comp_key": "Al1In1Os2",
+      "elements": "Al In Os",
+      "natoms": 16,
+      "seconds": 1.08354,
+      "uma_epa": -5.06267,
+      "dft_raw_epa": -5.06103,
+      "dft_mp2020_epa": -5.06103,
+      "err_raw": -0.00164,
+      "err_mp2020": -0.00164,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 11.40661
+    },
+    {
+      "sid": "agm005491679_AB_61_spg194_0_0_rattled-1000-subsampled_mts39a",
+      "comp_key": "Al1Tc1",
+      "elements": "Al Tc",
+      "natoms": 16,
+      "seconds": 0.44322,
+      "uma_epa": -6.15268,
+      "dft_raw_epa": -6.16023,
+      "dft_mp2020_epa": -6.16023,
+      "err_raw": 0.00755,
+      "err_mp2020": 0.00755,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 13.10973
+    },
+    {
+      "sid": "agm003563840_AB3C5_252_spg12_4_0_rattled-1000-subsampled_5rf1wu",
+      "comp_key": "Ca1H3Pd5",
+      "elements": "Ca H Pd",
+      "natoms": 18,
+      "seconds": 0.57828,
+      "uma_epa": -3.13572,
+      "dft_raw_epa": -3.1346,
+      "dft_mp2020_epa": -3.1346,
+      "err_raw": -0.00111,
+      "err_mp2020": -0.00111,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 22.40423
+    },
+    {
+      "sid": "agm005633758_A2B3C8_237_spg12_3_0_rattled-1000-subsampled_xs98fy",
+      "comp_key": "Hg3Li8Tl2",
+      "elements": "Hg Li Tl",
+      "natoms": 13,
+      "seconds": 0.33762,
+      "uma_epa": -1.47022,
+      "dft_raw_epa": -1.46878,
+      "dft_mp2020_epa": -1.46878,
+      "err_raw": -0.00145,
+      "err_mp2020": -0.00145,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 1.51403
+    },
+    {
+      "sid": "agm002570019_ABC3_0_spg221_1_0_rattled-1000-subsampled_4745po",
+      "comp_key": "Ir1P3Te1",
+      "elements": "Ir P Te",
+      "natoms": 10,
+      "seconds": 0.27755,
+      "uma_epa": -4.97646,
+      "dft_raw_epa": -4.98459,
+      "dft_mp2020_epa": -5.06899,
+      "err_raw": 0.00813,
+      "err_mp2020": 0.09253,
+      "mp2020_offset_epa": -0.0844,
+      "max_force": 1.32489
+    },
+    {
+      "sid": "agm002672616_AB3_14_spg225_3_0_rattled-1000-subsampled_qcl515",
+      "comp_key": "F3Tc1",
+      "elements": "F Tc",
+      "natoms": 16,
+      "seconds": 0.48378,
+      "uma_epa": -4.21069,
+      "dft_raw_epa": -4.19134,
+      "dft_mp2020_epa": -4.53784,
+      "err_raw": -0.01935,
+      "err_mp2020": 0.32715,
+      "mp2020_offset_epa": -0.3465,
+      "max_force": 9.07344
+    },
+    {
+      "sid": "agm001771073_ABCD2_2_spg123_3_0_rattled-1000-subsampled_n2gcee",
+      "comp_key": "Cl1Hg1S2Zr1",
+      "elements": "Cl Hg S Zr",
+      "natoms": 10,
+      "seconds": 0.25103,
+      "uma_epa": -4.18273,
+      "dft_raw_epa": -4.18262,
+      "dft_mp2020_epa": -4.50662,
+      "err_raw": -0.00012,
+      "err_mp2020": 0.32388,
+      "mp2020_offset_epa": -0.324,
+      "max_force": 5.18525
+    },
+    {
+      "sid": "agm001523377_ABCD2_2_spg123_1_0_rattled-1000-subsampled_syu41n",
+      "comp_key": "Ca1Cu2Mg1Pt1",
+      "elements": "Ca Cu Mg Pt",
+      "natoms": 10,
+      "seconds": 0.24971,
+      "uma_epa": -2.54834,
+      "dft_raw_epa": -2.54531,
+      "dft_mp2020_epa": -2.54531,
+      "err_raw": -0.00303,
+      "err_mp2020": -0.00303,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 4.58731
+    },
+    {
+      "sid": "agm005480854_ABC4_12_spg216_1_0_rattled-1000-subsampled_nb0ak4",
+      "comp_key": "Li4Ru1Zr1",
+      "elements": "Li Ru Zr",
+      "natoms": 12,
+      "seconds": 0.38326,
+      "uma_epa": -3.30737,
+      "dft_raw_epa": -3.30424,
+      "dft_mp2020_epa": -3.30424,
+      "err_raw": -0.00312,
+      "err_mp2020": -0.00312,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 4.39102
+    },
+    {
+      "sid": "agm002055270_AB_615_spg44_0_0_rattled-1000-subsampled_662qmb",
+      "comp_key": "Cl1I1",
+      "elements": "Cl I",
+      "natoms": 16,
+      "seconds": 0.23861,
+      "uma_epa": -1.48904,
+      "dft_raw_epa": -1.48027,
+      "dft_mp2020_epa": -1.78727,
+      "err_raw": -0.00878,
+      "err_mp2020": 0.29822,
+      "mp2020_offset_epa": -0.307,
+      "max_force": 4.74688
+    },
+    {
+      "sid": "agm005570661_A2B2C7_712_spg15_4_0_rattled-1000-subsampled_4ydfae",
+      "comp_key": "Br7Cu2I2",
+      "elements": "Br Cu I",
+      "natoms": 22,
+      "seconds": 0.24304,
+      "uma_epa": -1.5376,
+      "dft_raw_epa": -1.53696,
+      "dft_mp2020_epa": -1.60587,
+      "err_raw": -0.00064,
+      "err_mp2020": 0.06827,
+      "mp2020_offset_epa": -0.06891,
+      "max_force": 12.68658
+    },
+    {
+      "sid": "agm005942790_AB2C5_1139_spg63_3_0_rattled-1000-subsampled_gdu70y",
+      "comp_key": "K1Nb2O5",
+      "elements": "K Nb O",
+      "natoms": 16,
+      "seconds": 0.42775,
+      "uma_epa": -6.21592,
+      "dft_raw_epa": -6.21132,
+      "dft_mp2020_epa": -6.6407,
+      "err_raw": -0.0046,
+      "err_mp2020": 0.42478,
+      "mp2020_offset_epa": -0.42938,
+      "max_force": 11.86423
+    },
+    {
+      "sid": "agm005773389_AB2C6_648_spg12_4_0_rattled-1000-subsampled_wzn04l",
+      "comp_key": "Cu2Hg1Li6",
+      "elements": "Cu Hg Li",
+      "natoms": 18,
+      "seconds": 0.48133,
+      "uma_epa": -1.62125,
+      "dft_raw_epa": -1.61783,
+      "dft_mp2020_epa": -1.61783,
+      "err_raw": -0.00342,
+      "err_mp2020": -0.00342,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 4.0307
+    },
+    {
+      "sid": "agm003835617_AB_81_spg166_2_0_rattled-1000-subsampled_fkq5s2",
+      "comp_key": "P1Rh1",
+      "elements": "P Rh",
+      "natoms": 16,
+      "seconds": 0.35246,
+      "uma_epa": -5.1123,
+      "dft_raw_epa": -5.10811,
+      "dft_mp2020_epa": -5.10811,
+      "err_raw": -0.00419,
+      "err_mp2020": -0.00419,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 9.91805
+    },
+    {
+      "sid": "agm003313938_A2B2C5_208_spg74_3_0_rattled-1000-subsampled_tz9ngh",
+      "comp_key": "Cu5Ga2Zn2",
+      "elements": "Cu Ga Zn",
+      "natoms": 18,
+      "seconds": 0.40342,
+      "uma_epa": -2.07557,
+      "dft_raw_epa": -2.07576,
+      "dft_mp2020_epa": -2.07576,
+      "err_raw": 0.00019,
+      "err_mp2020": 0.00019,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 12.69191
+    },
+    {
+      "sid": "agm005767974_ABC4_183_spg216_4_0_rattled-1000-subsampled_m7bmzi",
+      "comp_key": "Hg1K4Tl1",
+      "elements": "Hg K Tl",
+      "natoms": 24,
+      "seconds": 0.25742,
+      "uma_epa": -1.00335,
+      "dft_raw_epa": -1.00886,
+      "dft_mp2020_epa": -1.00886,
+      "err_raw": 0.00552,
+      "err_mp2020": 0.00552,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 1.48655
+    },
+    {
+      "sid": "agm002527709_ABC3_0_spg221_0_0_rattled-1000-subsampled_h86tfs",
+      "comp_key": "Co1Mn1Sr3",
+      "elements": "Co Mn Sr",
+      "natoms": 10,
+      "seconds": 0.22006,
+      "uma_epa": -2.96674,
+      "dft_raw_epa": -2.69704,
+      "dft_mp2020_epa": -2.69704,
+      "err_raw": -0.2697,
+      "err_mp2020": -0.2697,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 2.19649
+    },
+    {
+      "sid": "agm003755840_ABC4_1490_spg12_2_0_rattled-1000-subsampled_w2cqim",
+      "comp_key": "Nb1S4Te1",
+      "elements": "Nb S Te",
+      "natoms": 12,
+      "seconds": 0.26477,
+      "uma_epa": -4.46104,
+      "dft_raw_epa": -4.46332,
+      "dft_mp2020_epa": -4.79866,
+      "err_raw": 0.00228,
+      "err_mp2020": 0.33762,
+      "mp2020_offset_epa": -0.33533,
+      "max_force": 6.84295
+    },
+    {
+      "sid": "agm005481688_AB2_2010_spg12_4_0_rattled-1000-subsampled_cg24s6",
+      "comp_key": "Os1P2",
+      "elements": "Os P",
+      "natoms": 12,
+      "seconds": 0.34557,
+      "uma_epa": -6.2572,
+      "dft_raw_epa": -6.25365,
+      "dft_mp2020_epa": -6.25365,
+      "err_raw": -0.00354,
+      "err_mp2020": -0.00354,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 12.29861
+    },
+    {
+      "sid": "agm005913164_AB2C9_2_spg141_3_0_rattled-1000-subsampled_zfnsdt",
+      "comp_key": "Cd9Ga2Na1",
+      "elements": "Cd Ga Na",
+      "natoms": 24,
+      "seconds": 0.41625,
+      "uma_epa": -0.63161,
+      "dft_raw_epa": -0.63212,
+      "dft_mp2020_epa": -0.63212,
+      "err_raw": 0.0005,
+      "err_mp2020": 0.0005,
+      "mp2020_offset_epa": 0.0,
+      "max_force": 8.7142
+    }
+  ]
+}

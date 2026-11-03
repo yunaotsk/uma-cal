@@ -216,9 +216,8 @@ differences of ≳3 points but **cannot distinguish differences of ~1–2 points
 The finite-Cal spread, √(0.09/(2000+2)) = 0.0067, is a standard split-conformal result that I did not re-derive here. No SE analysis exists yet for interval *width* comparisons.
 
 ### CPU feasibility
-Proposed structures: 2,000 + 1,000 + 473 + 1,000 + 1,000 = 5,473 (about 6,000 with headroom), median 13–16 atoms (max 24). See `reports/cal_benchmark.md` for the Cal-only timing benchmark. Before that benchmark, the only timing available was the smoke test (0.225 s per call for a 4-atom cell, uma-s-1p2p1, `batch`, CPU).
-**I have no timing for 10–24-atom cells and have not run any; cost per structure on this machine is unmeasured.** A short timing benchmark on ~20 held-out-eligible structures (before the full run) is the first
-inference-stage task. Memory is not a concern at ≤24 atoms.
+Measured on 20 **Cal** structures (`reports/cal_benchmark.md`; Apple M2, 8 GB RAM, `batch`, CPU): model load 13.3 s with cached weights, 1.08 s for the first call, then **0.35 s per structure** in steady state (0.22–0.58 s), with no significant dependence on atom count over 10–24 atoms.
+Extrapolation (not measured): the current files (5,473 structures) take about 0.5–0.9 h and 6,000 structures about 0.6–1.0 h. Sizes are not decided; the report gives a costed proposal awaiting approval. Memory is not a concern at ≤24 atoms.
 
 ## 5. Decisions
 

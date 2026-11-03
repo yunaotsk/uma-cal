@@ -38,7 +38,9 @@ Defaults live in `src/inference.py` (`UMAPredictor`).
 - **Stage 2 (OMat24 audit and shift-split design): complete.** The validation `rattled-1000-subsampled` archive is in `data/raw/`
   (git-ignored); the audit is in `results/`; the proposed splits (`cal`, `A`, `B`, `C`) are in `data/splits/` **awaiting design review**.
   No UMA inference has been run on Cal or test structures.
-- **Stage 3 (inference on splits, calibration): not started.** Do not begin until the user approves the split design.
+- **Stage 3 prep: done on branch `stage3-prep`** (A0 control, similarity scores, `reports/analysis_plan.md`, resumable cache `src/pred_cache.py`, Cal-only benchmark `reports/cal_benchmark.md`).
+  Raw DFT energy confirmed as the label on 20 Cal structures. **Sizes are pending the user's approval; no test-split prediction exists.**
+- **Stage 3 (inference on splits, calibration): not started.** Do not begin until the user approves sizes. Order: Cal, then the A0 gate, then A, B, C.
 
 ### Justification for `inference_settings="batch"`
 Sources are the installed fairchem-core 2.25.0 files, under
