@@ -1,0 +1,1001 @@
+index,sid,parent_id,comp_key,elements,natoms,family,tm_class,prototype_label,n_held_out_elements
+34,agm005126814_ABC2_9_spg160_2_0_rattled-1000-subsampled_1uq0j7,agm005126814_ABC2_9_spg160,Pb1Tb2Tm1,Pb Tb Tm,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Pb-Tb-Tm,2
+70,agm005611065_A2B3C7_115_spg10_2_0_rattled-1000-subsampled_1uhaa5,agm005611065_A2B3C7_115_spg10,Er3Sm7Tb2,Er Sm Tb,12,intermetallic,neither,A3B7C2_aP12_1_3a_7a_2a:Er-Sm-Tb,3
+223,agm003325183_A2B2C7_1_spg12_4_0_rattled-1000-subsampled_xrjtfx,agm003325183_A2B2C7_1_spg12,Mo2N7Pu2,Mo N Pu,11,nitride,4d-only,A2B7C2_aP11_1_2a_7a_2a:Mo-N-Pu,1
+283,agm006014046_AB6C8_86_spg148_4_0_rattled-1000-subsampled_i6bij2,agm006014046_AB6C8_86_spg148,Ca1Pm6Y8,Ca Pm Y,15,intermetallic,4d-only,AB6C8_aP15_1_a_6a_8a:Ca-Pm-Y,1
+294,agm004100534_ABC_0_spg216_1_0_rattled-1000-subsampled_8ldj3t,agm004100534_ABC_0_spg216,Be1Fe1La1,Be Fe La,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Be-Fe-La,1
+320,agm005029836_ABCD3_53_spg12_3_0_rattled-1000-subsampled_qf39b2,agm005029836_ABCD3_53_spg12,K1O3Pm1Pt1,K O Pm Pt,12,oxide,neither,AB3CD_aP12_1_2a_6a_2a_2a:K-O-Pm-Pt,1
+330,agm005936399_AB2C9_0_spg166_0_0_rattled-1000-subsampled_cijf3s,agm005936399_AB2C9_0_spg166,La1Pt9Th2,La Pt Th,12,intermetallic,neither,AB9C2_aP12_1_a_9a_2a:La-Pt-Th,2
+378,agm004958391_ABC2D6_608_spg87_1_0_rattled-1000-subsampled_y8hagj,agm004958391_ABC2D6_608_spg87,Np1Rb2S6Sn1,Np Rb S Sn,10,chalcogenide,neither,AB2C6D_aP10_1_a_2a_6a_a:Np-Rb-S-Sn,1
+466,agm001206556_ABC2_1_spg123_2_0_rattled-1000-subsampled_i2nfy0,agm001206556_ABC2_1_spg123,Ga1Lu1Ru2,Ga Lu Ru,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:Ga-Lu-Ru,1
+473,agm004547688_AB2C2D2_139_spg166_2_0_rattled-1000-subsampled_lrtdu2,agm004547688_AB2C2D2_139_spg166,Er2In2Y1Zn2,Er In Y Zn,14,intermetallic,3d+4d,A2B2CD2_aP14_1_4a_4a_2a_4a:Er-In-Y-Zn,1
+534,agm004600717_AB2C3D6_28_spg12_0_0_rattled-1000-subsampled_abn7nl,agm004600717_AB2C3D6_28_spg12,Ce1Dy2S6Y3,Ce Dy S Y,12,chalcogenide,4d-only,AB2C6D3_aP12_1_a_2a_6a_3a:Ce-Dy-S-Y,2
+628,agm004117258_ABC2_6851_spg65_1_0_rattled-1000-subsampled_sogfm6,agm004117258_ABC2_6851_spg65,Co2La1Tc1,Co La Tc,16,intermetallic,3d+4d,A2BC_aP16_1_8a_4a_4a:Co-La-Tc,1
+661,agm004285439_AB_228_spg186_2_0_rattled-1000-subsampled_kzf96u,agm004285439_AB_228_spg186,Br1Tm1,Br Tm,16,halide,neither,AB_aP16_1_8a_8a:Br-Tm,1
+684,agm006042757_AB3C4_3_spg139_0_0_rattled-1000-subsampled_hhwyci,agm006042757_AB3C4_3_spg139,Sb4Sr1Th3,Sb Sr Th,16,intermetallic,neither,A4BC3_aP16_1_8a_2a_6a:Sb-Sr-Th,1
+723,agm003665787_AB4C7_86_spg12_4_0_rattled-1000-subsampled_t7nmlm,agm003665787_AB4C7_86_spg12,Cd4Er7Li1,Cd Er Li,12,intermetallic,4d-only,A4B7C_aP12_1_4a_7a_a:Cd-Er-Li,1
+724,agm004791064_ABC2D4_337_spg166_1_0_rattled-1000-subsampled_8f2kiv,agm004791064_ABC2D4_337_spg166,Fe1Ni2Pa1Si4,Fe Ni Pa Si,16,silicide,3d-only,AB2CD4_aP16_1_2a_4a_2a_8a:Fe-Ni-Pa-Si,1
+801,agm004608653_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_cv3ggw,agm004608653_AB2C3D6_175_spg12,Ho2Pr3Se6Tb1,Ho Pr Se Tb,12,chalcogenide,neither,A2B3C6D_aP12_1_2a_3a_6a_a:Ho-Pr-Se-Tb,3
+814,agm005658321_A2B5C5_54_spg47_0_0_rattled-1000-subsampled_ui0dtk,agm005658321_A2B5C5_54_spg47,Er2Ni5Zn5,Er Ni Zn,12,intermetallic,3d-only,A2B5C5_aP12_1_2a_5a_5a:Er-Ni-Zn,1
+846,agm004977596_ABC2D6_695_spg15_4_0_rattled-1000-subsampled_i6qhlh,agm004977596_ABC2D6_695_spg15,Ca1Pm6Tb1Y2,Ca Pm Tb Y,20,intermetallic,4d-only,AB6CD2_aP20_1_2a_12a_2a_4a:Ca-Pm-Tb-Y,2
+848,agm001849458_ABC_57_spg107_2_0_rattled-1000-subsampled_v9bqnp,agm001849458_ABC_57_spg107,N1Pd1U1,N Pd U,12,nitride,4d-only,ABC_aP12_1_4a_4a_4a:N-Pd-U,1
+959,agm004487179_A2B2C2D3_9_spg139_1_0_rattled-1000-subsampled_emk8ne,agm004487179_A2B2C2D3_9_spg139,Nd2Se3Tb2Te2,Nd Se Tb Te,18,chalcogenide,neither,A2B3C2D2_aP18_1_4a_6a_4a_4a:Nd-Se-Tb-Te,2
+974,agm003521526_AB2C8_22_spg97_1_0_rattled-1000-subsampled_xt7b4e,agm003521526_AB2C8_22_spg97,Cd2Cl8Pr1,Cd Cl Pr,11,halide,4d-only,A2B8C_aP11_1_2a_8a_a:Cd-Cl-Pr,1
+1051,agm003694228_AB6C12_0_spg204_1_0_rattled-1000-subsampled_neltn5,agm003694228_AB6C12_0_spg204,Al1Cu6Pr12,Al Cu Pr,19,intermetallic,3d-only,AB6C12_aP19_1_a_6a_12a:Al-Cu-Pr,1
+1074,agm002581086_ABC3_0_spg221_2_0_rattled-1000-subsampled_nb6npw,agm002581086_ABC3_0_spg221,Cl1La1S3,Cl La S,10,mixed-anion,neither,ABC3_aP10_1_2a_2a_6a:Cl-La-S,1
+1086,agm006003100_AB6C8_70_spg148_3_0_rattled-1000-subsampled_rq6ubr,agm006003100_AB6C8_70_spg148,Ho8La1Pr6,Ho La Pr,15,intermetallic,neither,A8BC6_aP15_1_8a_a_6a:Ho-La-Pr,3
+1230,agm003705488_ABC3_4826_spg62_4_0_rattled-1000-subsampled_mmm7il,agm003705488_ABC3_4826_spg62,Ac1Cd1Hg3,Ac Cd Hg,20,intermetallic,4d-only,ABC3_aP20_1_4a_4a_12a:Ac-Cd-Hg,1
+1253,agm005042107_ABCD3_370_spg63_0_0_rattled-1000-subsampled_5piv24,agm005042107_ABCD3_370_spg63,Ac1Ge1Pt3Si1,Ac Ge Pt Si,12,silicide,neither,ABC3D_aP12_1_2a_2a_6a_2a:Ac-Ge-Pt-Si,1
+1288,agm004514022_AB2C3D4_7_spg115_1_0_rattled-1000-subsampled_1todoj,agm004514022_AB2C3D4_7_spg115,Ac2Au3Ga4Ti1,Ac Au Ga Ti,10,intermetallic,3d-only,A2B3C4D_aP10_1_2a_3a_4a_a:Ac-Au-Ga-Ti,1
+1321,agm003512917_AB2C7_226_spg65_4_0_rattled-1000-subsampled_nxmyvq,agm003512917_AB2C7_226_spg65,Ce1Pd7Zn2,Ce Pd Zn,10,intermetallic,3d+4d,AB7C2_aP10_1_a_7a_2a:Ce-Pd-Zn,1
+1388,agm004508015_AB2C3D4_7_spg115_3_0_rattled-1000-subsampled_p3bs89,agm004508015_AB2C3D4_7_spg115,Ce2Dy1Ge3Pt4,Ce Dy Ge Pt,10,intermetallic,neither,A2BC3D4_aP10_1_2a_a_3a_4a:Ce-Dy-Ge-Pt,2
+1452,agm001262181_ABC_12_spg156_0_0_rattled-1000-subsampled_6cgl5d,agm001262181_ABC_12_spg156,F1Pa1Te1,F Pa Te,12,mixed-anion,neither,ABC_aP12_1_4a_4a_4a:F-Pa-Te,1
+1467,agm001172424_ABC4_12_spg216_3_0_rattled-1000-subsampled_dhdjfx,agm001172424_ABC4_12_spg216,Cd4Eu1Pr1,Cd Eu Pr,12,intermetallic,4d-only,A4BC_aP12_1_8a_2a_2a:Cd-Eu-Pr,2
+1515,agm005606573_A2B3C4_272_spg12_3_0_rattled-1000-subsampled_beov6t,agm005606573_A2B3C4_272_spg12,Cu4Pd2Th3,Cu Pd Th,18,intermetallic,3d+4d,A4B2C3_aP18_1_8a_4a_6a:Cu-Pd-Th,1
+1565,agm004823229_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_l2yn4z,agm004823229_ABC2D4_343_spg10,Na2Nd1Se4Tm1,Na Nd Se Tm,16,chalcogenide,neither,A2BC4D_aP16_1_4a_2a_8a_2a:Na-Nd-Se-Tm,2
+1604,agm005075272_ABCD6_10_spg163_1_0_rattled-1000-subsampled_nus6ki,agm005075272_ABCD6_10_spg163,Br6Pu1Ti1Tl1,Br Pu Ti Tl,18,halide,3d-only,A6BCD_aP18_1_12a_2a_2a_2a:Br-Pu-Ti-Tl,1
+1616,agm005495393_AB3_3_spg194_0_0_rattled-1000-subsampled_mghob1,agm005495393_AB3_3_spg194,La3Zr1,La Zr,16,intermetallic,4d-only,A3B_aP16_1_12a_4a:La-Zr,1
+1621,agm001134581_ABC2_10_spg123_0_0_rattled-1000-subsampled_e2fnds,agm001134581_ABC2_10_spg123,Ag2Eu1Pr1,Ag Eu Pr,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Ag-Eu-Pr,2
+1632,agm003643056_AB4C5_22_spg123_0_0_rattled-1000-subsampled_b84trp,agm003643056_AB4C5_22_spg123,Cu5Pm4Sr1,Cu Pm Sr,10,intermetallic,3d-only,A5B4C_aP10_1_5a_4a_a:Cu-Pm-Sr,1
+1744,agm001264936_ABC_68_spg156_3_0_rattled-1000-subsampled_v2t05z,agm001264936_ABC_68_spg156,Ac1Nd1Se1,Ac Nd Se,12,chalcogenide,neither,ABC_aP12_1_4a_4a_4a:Ac-Nd-Se,2
+1848,agm006098719_AB6C6_7_spg71_4_0_rattled-1000-subsampled_syh9x2,agm006098719_AB6C6_7_spg71,Er1Li6Mg6,Er Li Mg,13,intermetallic,neither,AB6C6_aP13_1_a_6a_6a:Er-Li-Mg,1
+1872,agm003611149_ABC_6_spg62_1_0_rattled-1000-subsampled_y55jtb,agm003611149_ABC_6_spg62,Ac1In1Ir1,Ac In Ir,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Ac-In-Ir,1
+1876,agm005054023_ABCD4_631_spg11_2_0_rattled-1000-subsampled_j1dp60,agm005054023_ABCD4_631_spg11,Pm1Rb1S4V1,Pm Rb S V,14,chalcogenide,3d-only,ABC4D_aP14_1_2a_2a_8a_2a:Pm-Rb-S-V,1
+1900,agm005071069_ABCD6_3_spg74_0_0_rattled-1000-subsampled_kd97vi,agm005071069_ABCD6_3_spg74,Cs1F6Pm1Sn1,Cs F Pm Sn,18,halide,neither,AB6CD_aP18_1_2a_12a_2a_2a:Cs-F-Pm-Sn,1
+1912,agm001272715_ABC_2_spg156_1_0_rattled-1000-subsampled_67v17y,agm001272715_ABC_2_spg156,Lu1Sb1Sm1,Lu Sb Sm,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Lu-Sb-Sm,2
+1968,agm005404923_AB6_105_spg229_4_0_rattled-1000-subsampled_nqofk9,agm005404923_AB6_105_spg229,Tb6Y1,Tb Y,14,intermetallic,4d-only,A6B_aP14_1_12a_2a:Tb-Y,1
+2040,agm001111555_ABC2_3_spg225_1_0_rattled-1000-subsampled_5blh6n,agm001111555_ABC2_3_spg225,Ac2P1Sn1,Ac P Sn,16,pnictide,neither,A2BC_aP16_1_8a_4a_4a:Ac-P-Sn,1
+2089,agm005788485_AB7C12_42_spg229_2_0_rattled-1000-subsampled_vsax87,agm005788485_AB7C12_42_spg229,Ho1Nd7Y12,Ho Nd Y,20,intermetallic,4d-only,AB7C12_aP20_1_a_7a_12a:Ho-Nd-Y,2
+2103,agm005161444_ABC2D5_217_spg36_3_0_rattled-1000-subsampled_4pxjut,agm005161444_ABC2D5_217_spg36,Au2La5N1Rh1,Au La N Rh,18,nitride,4d-only,A2B5CD_aP18_1_4a_10a_2a_2a:Au-La-N-Rh,1
+2150,agm003772856_ABC6_230_spg12_0_0_rattled-1000-subsampled_82xwbz,agm003772856_ABC6_230_spg12,O6Pa1S1,O Pa S,16,mixed-anion,neither,A6BC_aP16_1_12a_2a_2a:O-Pa-S,1
+2168,agm004529537_AB2C3D4_7_spg115_2_0_rattled-1000-subsampled_v3nh9g,agm004529537_AB2C3D4_7_spg115,Al4Cu3Pd1Pm2,Al Cu Pd Pm,10,intermetallic,3d+4d,A4B3CD2_aP10_1_4a_3a_a_2a:Al-Cu-Pd-Pm,1
+2190,agm005841649_AB2C2_1485_spg15_1_0_rattled-1000-subsampled_3u8z1s,agm005841649_AB2C2_1485_spg15,Ni1Pu2Rh2,Ni Pu Rh,10,intermetallic,3d+4d,AB2C2_aP10_1_2a_4a_4a:Ni-Pu-Rh,1
+2199,agm005873506_AB3C12_5_spg123_2_0_rattled-1000-subsampled_p08xc2,agm005873506_AB3C12_5_spg123,Pt12Sc1Tm3,Pt Sc Tm,16,intermetallic,3d-only,A12BC3_aP16_1_12a_a_3a:Pt-Sc-Tm,1
+2214,agm006013298_AB3C8_277_spg71_0_0_rattled-1000-subsampled_3kvc2h,agm006013298_AB3C8_277_spg71,Dy8La3Sm1,Dy La Sm,12,intermetallic,neither,A8B3C_aP12_1_8a_3a_a:Dy-La-Sm,3
+2230,agm003734807_ABC4_169_spg123_3_0_rattled-1000-subsampled_3bwigg,agm003734807_ABC4_169_spg123,Cd1Ho4Zn1,Cd Ho Zn,12,intermetallic,3d+4d,AB4C_aP12_1_2a_8a_2a:Cd-Ho-Zn,1
+2270,agm004960426_ABC2D6_266_spg146_0_0_rattled-1000-subsampled_savn77,agm004960426_ABC2D6_266_spg146,Ho1Pr1S6Tb2,Ho Pr S Tb,10,chalcogenide,neither,ABC6D2_aP10_1_a_a_6a_2a:Ho-Pr-S-Tb,3
+2315,agm001833910_ABC_4_spg107_4_0_rattled-1000-subsampled_2znjo8,agm001833910_ABC_4_spg107,Cu1In1U1,Cu In U,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Cu-In-U,1
+2328,agm002560376_ABC3_0_spg221_3_0_rattled-1000-subsampled_ikr89s,agm002560376_ABC3_0_spg221,La1O3P1,La O P,10,oxide,neither,AB3C_aP10_1_2a_6a_2a:La-O-P,1
+2334,agm005174037_ABC2D5_388_spg123_3_0_rattled-1000-subsampled_u8mjo3,agm005174037_ABC2D5_388_spg123,Ac2Ho1Sr1Te5,Ac Ho Sr Te,18,chalcogenide,neither,A2BCD5_aP18_1_4a_2a_2a_10a:Ac-Ho-Sr-Te,2
+2348,agm005012804_ABCD2_1158_spg25_1_0_rattled-1000-subsampled_h4cy7x,agm005012804_ABCD2_1158_spg25,C1Ga1Tc1Tm2,C Ga Tc Tm,10,carbide,4d-only,ABCD2_aP10_1_2a_2a_2a_4a:C-Ga-Tc-Tm,1
+2352,agm003693093_AB6C12_2_spg148_0_0_rattled-1000-subsampled_a7o9gg,agm003693093_AB6C12_2_spg148,In6Pb1Tm12,In Pb Tm,19,intermetallic,neither,A6BC12_aP19_1_6a_a_12a:In-Pb-Tm,1
+2392,agm003708905_ABC3_5370_spg62_0_0_rattled-1000-subsampled_sfjz5v,agm003708905_ABC3_5370_spg62,Ce1Ho3Tb1,Ce Ho Tb,20,intermetallic,neither,AB3C_aP20_1_4a_12a_4a:Ce-Ho-Tb,3
+2433,agm001144150_ABC2_10_spg123_1_0_rattled-1000-subsampled_chj875,agm001144150_ABC2_10_spg123,As1Ce1Dy2,As Ce Dy,16,pnictide,neither,ABC2_aP16_1_4a_4a_8a:As-Ce-Dy,2
+2435,agm001300834_ABCD_1_spg216_1_0_rattled-1000-subsampled_wbnzua,agm001300834_ABCD_1_spg216,Au1Hf1Ho1Pt1,Au Hf Ho Pt,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Au-Hf-Ho-Pt,1
+2458,agm003475583_AB2C5_188_spg71_3_0_rattled-1000-subsampled_dud3ih,agm003475583_AB2C5_188_spg71,Cd2Mg5Pm1,Cd Mg Pm,16,intermetallic,4d-only,A2B5C_aP16_1_4a_10a_2a:Cd-Mg-Pm,1
+2483,agm001987577_ABC2_38_spg166_0_0_rattled-1000-subsampled_7b57zz,agm001987577_ABC2_38_spg166,Nd1Pb1Zn2,Nd Pb Zn,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Nd-Pb-Zn,1
+2657,agm006096725_AB5C6_53_spg71_1_0_rattled-1000-subsampled_6mn2jk,agm006096725_AB5C6_53_spg71,Ag5La6Sb1,Ag La Sb,12,intermetallic,4d-only,A5B6C_aP12_1_5a_6a_a:Ag-La-Sb,1
+2701,agm001248175_ABC2_18_spg123_2_0_rattled-1000-subsampled_o72h49,agm001248175_ABC2_18_spg123,Ga2Tl1U1,Ga Tl U,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Ga-Tl-U,1
+2722,agm005984479_AB3C4_1146_spg123_0_0_rattled-1000-subsampled_2so5i8,agm005984479_AB3C4_1146_spg123,Dy4Hg3Ru1,Dy Hg Ru,16,intermetallic,4d-only,A4B3C_aP16_1_8a_6a_2a:Dy-Hg-Ru,1
+2776,agm001976823_ABC2_83_spg166_0_0_rattled-1000-subsampled_uvfyfk,agm001976823_ABC2_83_spg166,Gd2Hg1Tb1,Gd Hg Tb,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Gd-Hg-Tb,2
+2826,agm001203613_ABC2_1_spg123_1_0_rattled-1000-subsampled_mqoy2i,agm001203613_ABC2_1_spg123,Cu1Os1Pu2,Cu Os Pu,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Cu-Os-Pu,1
+2833,agm001100194_ABC2_3_spg225_0_0_rattled-1000-subsampled_2i38iz,agm001100194_ABC2_3_spg225,Np1Tc1V2,Np Tc V,16,intermetallic,3d+4d,ABC2_aP16_1_4a_4a_8a:Np-Tc-V,1
+2870,agm005951037_AB2C2_172_spg15_0_0_rattled-1000-subsampled_mn5r89,agm005951037_AB2C2_172_spg15,Cl1O2Pu2,Cl O Pu,10,mixed-anion,neither,AB2C2_aP10_1_2a_4a_4a:Cl-O-Pu,1
+2928,agm005899747_ABC3_115_spg15_3_0_rattled-1000-subsampled_g590lv,agm005899747_ABC3_115_spg15,Cr1N3Sm1,Cr N Sm,20,nitride,3d-only,AB3C_aP20_1_4a_12a_4a:Cr-N-Sm,1
+2982,agm001325507_ABCD_1_spg216_2_0_rattled-1000-subsampled_sdsdfm,agm001325507_ABCD_1_spg216,Cd1Ga1Ho1Sm1,Cd Ga Ho Sm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Ga-Ho-Sm,2
+2983,agm004774677_ABC2D4_368_spg23_3_0_rattled-1000-subsampled_nrai09,agm004774677_ABC2D4_368_spg23,N4Nd1Tc1Zn2,N Nd Tc Zn,16,nitride,3d+4d,A4BCD2_aP16_1_8a_2a_2a_4a:N-Nd-Tc-Zn,1
+3003,agm006039711_AB2C4_2544_spg12_3_0_rattled-1000-subsampled_28gn5n,agm006039711_AB2C4_2544_spg12,Ge1Rh4Th2,Ge Rh Th,14,intermetallic,4d-only,AB4C2_aP14_1_2a_8a_4a:Ge-Rh-Th,1
+3121,agm001329914_ABCD_1_spg216_1_0_rattled-1000-subsampled_errjtd,agm001329914_ABCD_1_spg216,Cd1Ce1Ho1Rh1,Cd Ce Ho Rh,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Ce-Ho-Rh,2
+3132,agm005021158_ABCD2_49_spg119_3_0_rattled-1000-subsampled_8oguyf,agm005021158_ABCD2_49_spg119,Au1Cu1Ga2Th1,Au Cu Ga Th,10,intermetallic,3d-only,ABC2D_aP10_1_2a_2a_4a_2a:Au-Cu-Ga-Th,1
+3202,agm001327513_ABCD_1_spg216_2_0_rattled-1000-subsampled_3g72hc,agm001327513_ABCD_1_spg216,Cd1Ir1Lu1Zr1,Cd Ir Lu Zr,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Ir-Lu-Zr,1
+3277,agm001034338_ABC_8118_spg46_1_0_rattled-1000-subsampled_cyy2dm,agm001034338_ABC_8118_spg46,Ce1H1Np1,Ce H Np,18,hydride,neither,ABC_aP18_1_6a_6a_6a:Ce-H-Np,2
+3344,agm005206563_ABCD_418_spg6_1_0_rattled-1000-subsampled_5mvg9q,agm005206563_ABCD_418_spg6,Pr1Ru1Sm1Zn1,Pr Ru Sm Zn,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Pr-Ru-Sm-Zn,2
+3375,agm005189966_ABCD_778_spg160_4_0_rattled-1000-subsampled_67nthv,agm005189966_ABCD_778_spg160,Ac1Ba1Ir1Zn1,Ac Ba Ir Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ac-Ba-Ir-Zn,1
+3462,agm003503914_AB2C6_458_spg136_0_0_rattled-1000-subsampled_7fkd6h,agm003503914_AB2C6_458_spg136,Dy2Te6U1,Dy Te U,18,chalcogenide,neither,A2B6C_aP18_1_4a_12a_2a:Dy-Te-U,2
+3475,agm001400138_ABCD_1_spg216_1_0_rattled-1000-subsampled_jk9y87,agm001400138_ABCD_1_spg216,Ca1La1Mg1Sr1,Ca La Mg Sr,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Ca-La-Mg-Sr,1
+3621,agm005566966_A2B2C5_59_spg64_0_0_rattled-1000-subsampled_mteo23,agm005566966_A2B2C5_59_spg64,Bi5Ce2Sm2,Bi Ce Sm,18,intermetallic,neither,A5B2C2_aP18_1_10a_4a_4a:Bi-Ce-Sm,2
+3700,agm003263977_ABC2D4_21_spg123_2_0_rattled-1000-subsampled_atrink,agm003263977_ABC2D4_21_spg123,Bi2Dy1I1O4,Bi Dy I O,16,mixed-anion,neither,A2BCD4_aP16_1_4a_2a_2a_8a:Bi-Dy-I-O,1
+3728,agm005057592_ABCD4_44_spg63_1_0_rattled-1000-subsampled_5t3ra0,agm005057592_ABCD4_44_spg63,C1Pb1Pm4Sn1,C Pb Pm Sn,14,carbide,neither,ABC4D_aP14_1_2a_2a_8a_2a:C-Pb-Pm-Sn,1
+3732,agm001339262_ABCD_1_spg216_3_0_rattled-1000-subsampled_1oxfcd,agm001339262_ABCD_1_spg216,Hg1Pa1Pu1Sn1,Hg Pa Pu Sn,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Hg-Pa-Pu-Sn,2
+3744,agm005656192_ABC_1869_spg62_1_0_rattled-1000-subsampled_055vqb,agm005656192_ABC_1869_spg62,Al1Ce1Th1,Al Ce Th,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Al-Ce-Th,2
+3807,agm005449332_ABC4_12_spg216_2_0_rattled-1000-subsampled_rtc7n7,agm005449332_ABC4_12_spg216,La4Ru1Y1,La Ru Y,12,intermetallic,4d-only,A4BC_aP12_1_8a_2a_2a:La-Ru-Y,1
+3920,agm006052731_AB2C4_2069_spg9_0_0_rattled-1000-subsampled_2f5uwj,agm006052731_AB2C4_2069_spg9,H4Pt2Pu1,H Pt Pu,14,hydride,neither,A4B2C_aP14_1_8a_4a_2a:H-Pt-Pu,1
+4061,agm003696748_AB6C8_64_spg148_3_0_rattled-1000-subsampled_xpb0ix,agm003696748_AB6C8_64_spg148,In6Sm8Y1,In Sm Y,15,intermetallic,4d-only,A6B8C_aP15_1_6a_8a_a:In-Sm-Y,1
+4168,agm005708577_AB2C6_2082_spg14_4_0_rattled-1000-subsampled_zfd7q7,agm005708577_AB2C6_2082_spg14,Br6Cu2Pu1,Br Cu Pu,18,halide,3d-only,A6B2C_aP18_1_12a_4a_2a:Br-Cu-Pu,1
+4190,agm005924642_AB3C4_1150_spg47_1_0_rattled-1000-subsampled_pk1g33,agm005924642_AB3C4_1150_spg47,Cu4Dy3Y1,Cu Dy Y,16,intermetallic,3d+4d,A4B3C_aP16_1_8a_6a_2a:Cu-Dy-Y,1
+4220,agm001277867_ABC_68_spg156_3_0_rattled-1000-subsampled_qz1l5l,agm001277867_ABC_68_spg156,C1Ti1U1,C Ti U,12,carbide,3d-only,ABC_aP12_1_4a_4a_4a:C-Ti-U,1
+4254,agm001333445_ABCD_1_spg216_4_0_rattled-1000-subsampled_ma0j54,agm001333445_ABCD_1_spg216,Ag1Hg1Ho1Sn1,Ag Hg Ho Sn,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Hg-Ho-Sn,1
+4314,agm004608807_AB2C3D6_28_spg12_3_0_rattled-1000-subsampled_u3blrn,agm004608807_AB2C3D6_28_spg12,Dy2Ho1Se6Tm3,Dy Ho Se Tm,12,chalcogenide,neither,A2BC6D3_aP12_1_2a_a_6a_3a:Dy-Ho-Se-Tm,3
+4342,agm002823450_ABC2_185_spg122_0_0_rattled-1000-subsampled_2rlekc,agm002823450_ABC2_185_spg122,Cu1La2Pd1,Cu La Pd,16,intermetallic,3d+4d,AB2C_aP16_1_4a_8a_4a:Cu-La-Pd,1
+4349,agm005192863_ABCD_162_spg47_2_0_rattled-1000-subsampled_uzfizc,agm005192863_ABCD_162_spg47,Er1Hg1Pb1Tl1,Er Hg Pb Tl,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Er-Hg-Pb-Tl,1
+4381,agm003560777_AB3C4_33_spg221_0_0_rattled-1000-subsampled_b8s0ab,agm003560777_AB3C4_33_spg221,Ho3Sb4Tm1,Ho Sb Tm,16,intermetallic,neither,A3B4C_aP16_1_6a_8a_2a:Ho-Sb-Tm,2
+4399,agm003485937_AB2C6_458_spg136_2_0_rattled-1000-subsampled_dpzbto,agm003485937_AB2C6_458_spg136,Ho1Se6Th2,Ho Se Th,18,chalcogenide,neither,AB6C2_aP18_1_2a_12a_4a:Ho-Se-Th,2
+4464,agm005758218_ABC2_2882_spg63_4_0_rattled-1000-subsampled_k2mmtq,agm005758218_ABC2_2882_spg63,Au1La2P1,Au La P,16,pnictide,neither,AB2C_aP16_1_4a_8a_4a:Au-La-P,1
+4486,agm006130555_AB5C6_52_spg12_2_0_rattled-1000-subsampled_i7wscy,agm006130555_AB5C6_52_spg12,Ac1Pm6Tm5,Ac Pm Tm,12,intermetallic,neither,AB6C5_aP12_1_a_6a_5a:Ac-Pm-Tm,3
+4535,agm003492612_AB2C6_1119_spg14_1_0_rattled-1000-subsampled_d075bg,agm003492612_AB2C6_1119_spg14,O6Re1Sm2,O Re Sm,18,oxide,neither,A6BC2_aP18_1_12a_2a_4a:O-Re-Sm,1
+4545,agm006067979_AB4C7_212_spg12_4_0_rattled-1000-subsampled_09jrkj,agm006067979_AB4C7_212_spg12,Br7Rb4Tm1,Br Rb Tm,12,halide,neither,A7B4C_aP12_1_7a_4a_a:Br-Rb-Tm,1
+4674,agm005672760_A2B4C5_112_spg55_1_0_rattled-1000-subsampled_cgsi38,agm005672760_A2B4C5_112_spg55,Mg4Ni2Tm5,Mg Ni Tm,22,intermetallic,3d-only,A4B2C5_aP22_1_8a_4a_10a:Mg-Ni-Tm,1
+4712,agm005025477_ABCD3_375_spg11_3_0_rattled-1000-subsampled_ogeuka,agm005025477_ABCD3_375_spg11,Li1Pa1Pd1Se3,Li Pa Pd Se,12,chalcogenide,4d-only,ABCD3_aP12_1_2a_2a_2a_6a:Li-Pa-Pd-Se,1
+4728,agm001908522_ABCD_1_spg216_1_0_rattled-1000-subsampled_wdm83d,agm001908522_ABCD_1_spg216,Mo1Pa1Ta1Ti1,Mo Pa Ta Ti,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Mo-Pa-Ta-Ti,1
+4740,agm005033940_ABCD3_451_spg11_2_0_rattled-1000-subsampled_ewy1j3,agm005033940_ABCD3_451_spg11,Li1Nd1Se3U1,Li Nd Se U,12,chalcogenide,neither,ABC3D_aP12_1_2a_2a_6a_2a:Li-Nd-Se-U,2
+4749,agm006067094_AB4C8_115_spg166_3_0_rattled-1000-subsampled_2bxm72,agm006067094_AB4C8_115_spg166,Ho8Tm4Zr1,Ho Tm Zr,13,intermetallic,4d-only,A8B4C_aP13_1_8a_4a_a:Ho-Tm-Zr,2
+4755,agm003505636_AB2C6_96_spg71_0_0_rattled-1000-subsampled_c5d7w7,agm003505636_AB2C6_96_spg71,B6Mn2Pm1,B Mn Pm,18,boride,3d-only,A6B2C_aP18_1_12a_4a_2a:B-Mn-Pm,1
+4832,agm001090045_ABC2_3_spg225_3_0_rattled-1000-subsampled_g0ghxn,agm001090045_ABC2_3_spg225,Ac1Dy2Th1,Ac Dy Th,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ac-Dy-Th,3
+4850,agm005014411_ABCD2_1655_spg11_4_0_rattled-1000-subsampled_5rukqs,agm005014411_ABCD2_1655_spg11,Ac1Ga1O2Se1,Ac Ga O Se,10,mixed-anion,neither,ABC2D_aP10_1_2a_2a_4a_2a:Ac-Ga-O-Se,1
+4878,agm005125450_ABC2_6569_spg8_0_0_rattled-1000-subsampled_rzgj1e,agm005125450_ABC2_6569_spg8,La1Rh1Sm2,La Rh Sm,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:La-Rh-Sm,2
+4919,agm001547760_ABCD2_2_spg123_0_0_rattled-1000-subsampled_hhi4zx,agm001547760_ABCD2_2_spg123,Cr1La1S2Se1,Cr La S Se,10,chalcogenide,3d-only,ABC2D_aP10_1_2a_2a_4a_2a:Cr-La-S-Se,1
+5037,agm001333822_ABCD_1_spg216_2_0_rattled-1000-subsampled_3ypx15,agm001333822_ABCD_1_spg216,Ni1Np1Sn1Tc1,Ni Np Sn Tc,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Ni-Np-Sn-Tc,1
+5045,agm002002503_ABC2_83_spg166_1_0_rattled-1000-subsampled_t0b90d,agm002002503_ABC2_83_spg166,La1S1Tm2,La S Tm,16,chalcogenide,neither,ABC2_aP16_1_4a_4a_8a:La-S-Tm,2
+5047,agm004057693_ABC2_10_spg123_4_0_rattled-1000-subsampled_f7c0fh,agm004057693_ABC2_10_spg123,Ag1La2Rh1,Ag La Rh,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ag-La-Rh,1
+5054,agm005551593_A2B2C3_28_spg12_4_0_rattled-1000-subsampled_tj4nnd,agm005551593_A2B2C3_28_spg12,C3Nb2Nd2,C Nb Nd,14,carbide,4d-only,A3B2C2_aP14_1_6a_4a_4a:C-Nb-Nd,1
+5061,agm003374712_A2B5C5_47_spg12_0_0_rattled-1000-subsampled_qc7bpy,agm003374712_A2B5C5_47_spg12,Ho5In5Nd2,Ho In Nd,12,intermetallic,neither,A5B5C2_aP12_1_5a_5a_2a:Ho-In-Nd,2
+5092,agm005773455_ABC3_6235_spg63_4_0_rattled-1000-subsampled_izvdnr,agm005773455_ABC3_6235_spg63,Hg1Nd1Pr3,Hg Nd Pr,10,intermetallic,neither,ABC3_aP10_1_2a_2a_6a:Hg-Nd-Pr,2
+5100,agm005214291_ABCD_162_spg47_2_0_rattled-1000-subsampled_tk8p99,agm005214291_ABCD_162_spg47,Cd1Er1Ga1In1,Cd Er Ga In,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Er-Ga-In,1
+5120,agm004845033_ABC2D4_343_spg10_0_0_rattled-1000-subsampled_eoi25u,agm004845033_ABC2D4_343_spg10,P4Pr2U1Zr1,P Pr U Zr,16,pnictide,4d-only,A4B2CD_aP16_1_8a_4a_2a_2a:P-Pr-U-Zr,2
+5238,agm001506419_ABCD2_2_spg123_2_0_rattled-1000-subsampled_qxfbzg,agm001506419_ABCD2_2_spg123,Ir1La2Mg1Tc1,Ir La Mg Tc,10,intermetallic,4d-only,AB2CD_aP10_1_2a_4a_2a_2a:Ir-La-Mg-Tc,1
+5272,agm002937967_AB2C2_5_spg139_1_0_rattled-1000-subsampled_3t6ipg,agm002937967_AB2C2_5_spg139,In1La2O2,In La O,10,oxide,neither,AB2C2_aP10_1_2a_4a_4a:In-La-O,1
+5278,agm004977577_ABC2D6_695_spg15_2_0_rattled-1000-subsampled_rmz04u,agm004977577_ABC2D6_695_spg15,Ca1Pm6Sm2Y1,Ca Pm Sm Y,20,intermetallic,4d-only,AB6C2D_aP20_1_2a_12a_4a_2a:Ca-Pm-Sm-Y,2
+5297,agm006125359_AB5C6_8_spg12_1_0_rattled-1000-subsampled_irth9h,agm006125359_AB5C6_8_spg12,Ce5Li1Te6,Ce Li Te,12,chalcogenide,neither,A5BC6_aP12_1_5a_a_6a:Ce-Li-Te,1
+5330,agm002716338_ABC2_3_spg225_0_0_rattled-1000-subsampled_63fk4x,agm002716338_ABC2_3_spg225,La1O2Tc1,La O Tc,16,oxide,4d-only,AB2C_aP16_1_4a_8a_4a:La-O-Tc,1
+5337,agm001213806_ABC2_18_spg123_4_0_rattled-1000-subsampled_vbhgr8,agm001213806_ABC2_18_spg123,Ce2Mg1Tm1,Ce Mg Tm,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Ce-Mg-Tm,2
+5362,agm005028753_ABCD3_387_spg15_0_0_rattled-1000-subsampled_tzk1u9,agm005028753_ABCD3_387_spg15,P1Se1Tb3Te1,P Se Tb Te,12,chalcogenide,neither,ABC3D_aP12_1_2a_2a_6a_2a:P-Se-Tb-Te,1
+5406,agm001950126_ABC2_84_spg166_3_0_rattled-1000-subsampled_w5jfi1,agm001950126_ABC2_84_spg166,Ag1Sb2Th1,Ag Sb Th,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ag-Sb-Th,1
+5423,agm001313147_ABCD_1_spg216_1_0_rattled-1000-subsampled_24fkis,agm001313147_ABCD_1_spg216,Ca1Pd1Ru1Sm1,Ca Pd Ru Sm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ca-Pd-Ru-Sm,1
+5448,agm005798935_ABC5_50_spg11_4_0_rattled-1000-subsampled_ewt6cd,agm005798935_ABC5_50_spg11,I5La1Y1,I La Y,14,halide,4d-only,A5BC_aP14_1_10a_2a_2a:I-La-Y,1
+5500,agm001331917_ABCD_1_spg216_4_0_rattled-1000-subsampled_sg52li,agm001331917_ABCD_1_spg216,Cd1Ce1Sm1Tm1,Cd Ce Sm Tm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Ce-Sm-Tm,3
+5520,agm005090082_ABCD6_10_spg163_4_0_rattled-1000-subsampled_i11tzl,agm005090082_ABCD6_10_spg163,Ho1I6Mg1Rb1,Ho I Mg Rb,18,halide,neither,AB6CD_aP18_1_2a_12a_2a_2a:Ho-I-Mg-Rb,1
+5523,agm005014769_ABCD2_1563_spg119_3_0_rattled-1000-subsampled_lonhr8,agm005014769_ABCD2_1563_spg119,O2Pu1Sb1Y1,O Pu Sb Y,10,oxide,4d-only,A2BCD_aP10_1_4a_2a_2a_2a:O-Pu-Sb-Y,1
+5553,agm004261281_ABC_7265_spg44_4_0_rattled-1000-subsampled_z1jzh0,agm004261281_ABC_7265_spg44,Cl1La1Mg1,Cl La Mg,12,halide,neither,ABC_aP12_1_4a_4a_4a:Cl-La-Mg,1
+5597,agm005897032_ABC3_4829_spg63_4_0_rattled-1000-subsampled_izk2ve,agm005897032_ABC3_4829_spg63,Ca1Hg3La1,Ca Hg La,10,intermetallic,neither,AB3C_aP10_1_2a_6a_2a:Ca-Hg-La,1
+5643,agm001098823_ABC2_3_spg225_0_0_rattled-1000-subsampled_kdyfpm,agm001098823_ABC2_3_spg225,Ac1Pm2Sn1,Ac Pm Sn,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ac-Pm-Sn,2
+5649,agm001159342_ABC2_10_spg123_1_0_rattled-1000-subsampled_85fjeq,agm001159342_ABC2_10_spg123,Al1Pu2Sm1,Al Pu Sm,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Al-Pu-Sm,2
+5662,agm001265336_ABC_10_spg187_2_0_rattled-1000-subsampled_q61v8v,agm001265336_ABC_10_spg187,Cu1Eu1P1,Cu Eu P,12,pnictide,3d-only,ABC_aP12_1_4a_4a_4a:Cu-Eu-P,1
+5669,agm001015618_ABC_25_spg12_2_0_rattled-1000-subsampled_4gvyv6,agm001015618_ABC_25_spg12,Ac1Ga1Ru1,Ac Ga Ru,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Ac-Ga-Ru,1
+5671,agm003420186_AB2C3_900_spg71_1_0_rattled-1000-subsampled_syvrh9,agm003420186_AB2C3_900_spg71,Ga3Nd2Tm1,Ga Nd Tm,12,intermetallic,neither,A3B2C_aP12_1_6a_4a_2a:Ga-Nd-Tm,2
+5680,agm004634700_AB2C3D6_178_spg12_0_0_rattled-1000-subsampled_t28iik,agm004634700_AB2C3D6_178_spg12,Ho3Pm2Tb6Y1,Ho Pm Tb Y,12,intermetallic,4d-only,A3B2C6D_aP12_1_3a_2a_6a_a:Ho-Pm-Tb-Y,3
+5722,agm004999825_ABCD2_1542_spg63_1_0_rattled-1000-subsampled_gaf879,agm004999825_ABCD2_1542_spg63,Pm1Sm1Th2Y1,Pm Sm Th Y,10,intermetallic,4d-only,ABC2D_aP10_1_2a_2a_4a_2a:Pm-Sm-Th-Y,3
+5726,agm002005438_ABC2_83_spg166_4_0_rattled-1000-subsampled_e3op5t,agm002005438_ABC2_83_spg166,Au1Eu1Sb2,Au Eu Sb,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Au-Eu-Sb,1
+5729,agm004496951_AB2C3D12_24_spg166_3_0_rattled-1000-subsampled_spr2qn,agm004496951_AB2C3D12_24_spg166,Cs2Cu3F12Sm1,Cs Cu F Sm,18,halide,3d-only,A2B3C12D_aP18_1_2a_3a_12a_a:Cs-Cu-F-Sm,1
+5775,agm005610168_AB2C3_208_spg26_1_0_rattled-1000-subsampled_5phwir,agm005610168_AB2C3_208_spg26,Cu2Ho1Sm3,Cu Ho Sm,12,intermetallic,3d-only,A2BC3_aP12_1_4a_2a_6a:Cu-Ho-Sm,2
+5807,agm001407091_ABCD_1_spg216_4_0_rattled-1000-subsampled_ixi6ex,agm001407091_ABCD_1_spg216,Ac1Ca1Lu1Pb1,Ac Ca Lu Pb,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Ac-Ca-Lu-Pb,2
+5843,agm001281163_AB3_11_spg139_2_0_rattled-1000-subsampled_uw9cuu,agm001281163_AB3_11_spg139,Ca3Lu1,Ca Lu,16,intermetallic,neither,A3B_aP16_1_12a_4a:Ca-Lu,1
+5854,agm004808557_ABC2D4_78_spg166_4_0_rattled-1000-subsampled_g9yz6u,agm004808557_ABC2D4_78_spg166,Hg4Mg1Nd1Tb2,Hg Mg Nd Tb,16,intermetallic,neither,A4BCD2_aP16_1_8a_2a_2a_4a:Hg-Mg-Nd-Tb,2
+5862,agm005764391_ABC6_19_spg123_2_0_rattled-1000-subsampled_3373z2,agm005764391_ABC6_19_spg123,Ag1Os1Pu6,Ag Os Pu,16,intermetallic,4d-only,ABC6_aP16_1_2a_2a_12a:Ag-Os-Pu,1
+5886,agm001333886_ABCD_1_spg216_4_0_rattled-1000-subsampled_0pks86,agm001333886_ABCD_1_spg216,Ni1Pm1Sn1Th1,Ni Pm Sn Th,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ni-Pm-Sn-Th,2
+5913,agm005040915_ABCD3_407_spg11_2_0_rattled-1000-subsampled_pasykt,agm005040915_ABCD3_407_spg11,Er1La1N3Zr1,Er La N Zr,12,nitride,4d-only,ABC3D_aP12_1_2a_2a_6a_2a:Er-La-N-Zr,2
+5915,agm001933819_ABC2_19_spg166_3_0_rattled-1000-subsampled_yl2wv7,agm001933819_ABC2_19_spg166,Cd1Lu2Ru1,Cd Lu Ru,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Cd-Lu-Ru,1
+5994,agm006092840_AB5C6_53_spg71_0_0_rattled-1000-subsampled_pf011p,agm006092840_AB5C6_53_spg71,Cu6Nd1Pm5,Cu Nd Pm,12,intermetallic,3d-only,A6BC5_aP12_1_6a_a_5a:Cu-Nd-Pm,2
+5998,agm005808908_AB7C12_6_spg148_0_0_rattled-1000-subsampled_cq2j9b,agm005808908_AB7C12_6_spg148,Co7La12Th1,Co La Th,20,intermetallic,3d-only,A7B12C_aP20_1_7a_12a_a:Co-La-Th,2
+6020,agm001259585_ABC_68_spg156_0_0_rattled-1000-subsampled_cnqdxj,agm001259585_ABC_68_spg156,C1Ce1Ti1,C Ce Ti,12,carbide,3d-only,ABC_aP12_1_4a_4a_4a:C-Ce-Ti,1
+6073,agm003009784_AB2C2_10_spg127_1_0_rattled-1000-subsampled_b3rgvp,agm003009784_AB2C2_10_spg127,Ag2La2Rb1,Ag La Rb,10,intermetallic,4d-only,A2B2C_aP10_1_4a_4a_2a:Ag-La-Rb,1
+6141,agm003358075_A2B3C8_139_spg166_2_0_rattled-1000-subsampled_4lnnb5,agm003358075_A2B3C8_139_spg166,Ce8Sn3Th2,Ce Sn Th,13,intermetallic,neither,A8B3C2_aP13_1_8a_3a_2a:Ce-Sn-Th,2
+6207,agm006091366_AB6C12_2_spg148_3_0_rattled-1000-subsampled_h88l79,agm006091366_AB6C12_2_spg148,Nd6O12Pu1,Nd O Pu,19,oxide,neither,A6B12C_aP19_1_6a_12a_a:Nd-O-Pu,2
+6236,agm005532772_A3B11_14_spg71_3_0_rattled-1000-subsampled_2fhvo5,agm005532772_A3B11_14_spg71,Er3Ga11,Er Ga,14,intermetallic,neither,A3B11_aP14_1_3a_11a:Er-Ga,1
+6265,agm005064733_ABCD5_189_spg15_1_0_rattled-1000-subsampled_z9kclx,agm005064733_ABCD5_189_spg15,Ac1Cu1O5Te1,Ac Cu O Te,16,mixed-anion,3d-only,ABC5D_aP16_1_2a_2a_10a_2a:Ac-Cu-O-Te,1
+6285,agm005418201_AB2C2_106_spg139_4_0_rattled-1000-subsampled_jh97kh,agm005418201_AB2C2_106_spg139,K2La1Se2,K La Se,10,chalcogenide,neither,A2BC2_aP10_1_4a_2a_4a:K-La-Se,1
+6294,agm005195730_ABCD_1540_spg25_4_0_rattled-1000-subsampled_8hj8k1,agm005195730_ABCD_1540_spg25,La1Mg1Sm1Th1,La Mg Sm Th,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:La-Mg-Sm-Th,3
+6297,agm001320190_ABCD_1_spg216_0_0_rattled-1000-subsampled_goo3au,agm001320190_ABCD_1_spg216,Eu1Sc1Sm1Y1,Eu Sc Sm Y,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Eu-Sc-Sm-Y,2
+6301,agm002995479_AB2C2_35_spg127_4_0_rattled-1000-subsampled_6itt2y,agm002995479_AB2C2_35_spg127,La2Mg1Rb2,La Mg Rb,10,intermetallic,neither,A2BC2_aP10_1_4a_2a_4a:La-Mg-Rb,1
+6345,agm005857255_AB2C9_10_spg123_4_0_rattled-1000-subsampled_lgkv6u,agm005857255_AB2C9_10_spg123,Mg1Pm2Sn9,Mg Pm Sn,12,intermetallic,neither,AB2C9_aP12_1_a_2a_9a:Mg-Pm-Sn,1
+6348,agm001244727_ABC2_1_spg123_3_0_rattled-1000-subsampled_m5dcql,agm001244727_ABC2_1_spg123,Re2U1W1,Re U W,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Re-U-W,1
+6396,agm004539908_AB2C2D2_132_spg139_2_0_rattled-1000-subsampled_osarrf,agm004539908_AB2C2D2_132_spg139,C1Ce2Ge2Ho2,C Ce Ge Ho,14,carbide,neither,AB2C2D2_aP14_1_2a_4a_4a_4a:C-Ce-Ge-Ho,2
+6444,agm003613321_ABC2_282_spg62_0_0_rattled-1000-subsampled_geykuj,agm003613321_ABC2_282_spg62,Ho2Nd1Tb1,Ho Nd Tb,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Ho-Nd-Tb,3
+6448,agm003445888_AB2C4_417_spg139_0_0_rattled-1000-subsampled_eisosg,agm003445888_AB2C4_417_spg139,Ge1Pr2S4,Ge Pr S,14,chalcogenide,neither,AB2C4_aP14_1_2a_4a_8a:Ge-Pr-S,1
+6476,agm001090083_ABC2_3_spg225_2_0_rattled-1000-subsampled_i3ja2e,agm001090083_ABC2_3_spg225,Dy2Tl1Tm1,Dy Tl Tm,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Dy-Tl-Tm,2
+6590,agm006011931_AB2C4_1633_spg166_4_0_rattled-1000-subsampled_o42fex,agm006011931_AB2C4_1633_spg166,Ga2La4Mg1,Ga La Mg,14,intermetallic,neither,A2B4C_aP14_1_4a_8a_2a:Ga-La-Mg,1
+6612,agm005611549_A2B3C5_171_spg36_0_0_rattled-1000-subsampled_ydyqr5,agm005611549_A2B3C5_171_spg36,Au5Dy2Ge3,Au Dy Ge,20,intermetallic,neither,A5B2C3_aP20_1_10a_4a_6a:Au-Dy-Ge,1
+6622,agm001134423_ABC2_10_spg123_4_0_rattled-1000-subsampled_cizukt,agm001134423_ABC2_10_spg123,Ag1Ce2Hg1,Ag Ce Hg,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ag-Ce-Hg,1
+6640,agm006026626_AB4C15_2_spg123_0_0_rattled-1000-subsampled_92anyp,agm006026626_AB4C15_2_spg123,Sm15Tb4Y1,Sm Tb Y,20,intermetallic,4d-only,A15B4C_aP20_1_15a_4a_a:Sm-Tb-Y,2
+6648,agm004233331_ABC2_3_spg225_4_0_rattled-1000-subsampled_wr59ia,agm004233331_ABC2_3_spg225,Ca1La1Se2,Ca La Se,16,chalcogenide,neither,ABC2_aP16_1_4a_4a_8a:Ca-La-Se,1
+6657,agm005161399_ABC2D5_220_spg36_1_0_rattled-1000-subsampled_rmp3cl,agm005161399_ABC2D5_220_spg36,La2N5U1Zn1,La N U Zn,18,nitride,3d-only,A2B5CD_aP18_1_4a_10a_2a_2a:La-N-U-Zn,2
+6658,agm001288649_ABCD_1_spg216_2_0_rattled-1000-subsampled_8d4jgz,agm001288649_ABCD_1_spg216,Er1Ge1Li1Pu1,Er Ge Li Pu,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Er-Ge-Li-Pu,2
+6670,agm005132743_AB2C2D5_6_spg127_4_0_rattled-1000-subsampled_1s816a,agm005132743_AB2C2D5_6_spg127,In1Ru5Si2Tb2,In Ru Si Tb,20,silicide,4d-only,AB5C2D2_aP20_1_2a_10a_4a_4a:In-Ru-Si-Tb,1
+6702,agm004850869_ABC2D4_343_spg10_0_0_rattled-1000-subsampled_kopntx,agm004850869_ABC2D4_343_spg10,Dy2Er1Se4Sr1,Dy Er Se Sr,16,chalcogenide,neither,A2BC4D_aP16_1_4a_2a_8a_2a:Dy-Er-Se-Sr,2
+6770,agm006061845_AB3C6_1125_spg11_2_0_rattled-1000-subsampled_4trvln,agm006061845_AB3C6_1125_spg11,Li3Pb6Pr1,Li Pb Pr,20,intermetallic,neither,A3B6C_aP20_1_6a_12a_2a:Li-Pb-Pr,1
+6784,agm005808378_AB7C12_23_spg148_1_0_rattled-1000-subsampled_xiu8sh,agm005808378_AB7C12_23_spg148,Ho12La7Mg1,Ho La Mg,20,intermetallic,neither,A12B7C_aP20_1_12a_7a_a:Ho-La-Mg,2
+6801,agm003390527_AB2C2_1402_spg12_4_0_rattled-1000-subsampled_q91qzq,agm003390527_AB2C2_1402_spg12,Bi2Nd2O1,Bi Nd O,10,oxide,neither,A2B2C_aP10_1_4a_4a_2a:Bi-Nd-O,1
+6950,agm001135649_ABC2_27_spg99_3_0_rattled-1000-subsampled_zq019z,agm001135649_ABC2_27_spg99,Bi1Lu2Ni1,Bi Lu Ni,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Bi-Lu-Ni,1
+6954,agm001409973_ABCD_1_spg216_0_0_rattled-1000-subsampled_jo4zr3,agm001409973_ABCD_1_spg216,Al1Ce1Ho1Tb1,Al Ce Ho Tb,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Al-Ce-Ho-Tb,3
+6976,agm004839323_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_4wozso,agm004839323_ABC2D4_343_spg10,As4Nd1Pr2Sm1,As Nd Pr Sm,16,pnictide,neither,A4BC2D_aP16_1_8a_2a_4a_2a:As-Nd-Pr-Sm,3
+6990,agm003618092_ABC2_7785_spg62_3_0_rattled-1000-subsampled_n5u1g0,agm003618092_ABC2_7785_spg62,Ac1Hg2Zn1,Ac Hg Zn,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Ac-Hg-Zn,1
+7061,agm003433409_AB2C3_194_spg69_1_0_rattled-1000-subsampled_gyfd50,agm003433409_AB2C3_194_spg69,Pr2Pt3Zn1,Pr Pt Zn,12,intermetallic,3d-only,A2B3C_aP12_1_4a_6a_2a:Pr-Pt-Zn,1
+7100,agm005205132_ABCD_24_spg38_4_0_rattled-1000-subsampled_6edlwn,agm005205132_ABCD_24_spg38,Dy1Ge1Rh1Sm1,Dy Ge Rh Sm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Dy-Ge-Rh-Sm,2
+7137,agm001092824_ABC2_3_spg225_0_0_rattled-1000-subsampled_67ko8r,agm001092824_ABC2_3_spg225,Ag1Li1Tb2,Ag Li Tb,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:Ag-Li-Tb,1
+7147,agm001976629_ABC2_19_spg166_0_0_rattled-1000-subsampled_2nhtws,agm001976629_ABC2_19_spg166,Hg2Nd1Th1,Hg Nd Th,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Hg-Nd-Th,2
+7195,agm004619551_AB2C3D6_28_spg12_1_0_rattled-1000-subsampled_m1tk3i,agm004619551_AB2C3D6_28_spg12,As6Sm3Tb2Th1,As Sm Tb Th,12,pnictide,neither,A6B3C2D_aP12_1_6a_3a_2a_a:As-Sm-Tb-Th,3
+7280,agm004655182_AB2C3D6_178_spg12_1_0_rattled-1000-subsampled_bmnxl7,agm004655182_AB2C3D6_178_spg12,Al1La2Nd3Sm6,Al La Nd Sm,12,intermetallic,neither,AB2C3D6_aP12_1_a_2a_3a_6a:Al-La-Nd-Sm,3
+7329,agm004848273_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_zdff4u,agm004848273_ABC2D4_343_spg10,Ho1N4Pa2Sm1,Ho N Pa Sm,16,nitride,neither,AB4C2D_aP16_1_2a_8a_4a_2a:Ho-N-Pa-Sm,3
+7376,agm001210417_ABC2_18_spg123_3_0_rattled-1000-subsampled_ry8sis,agm001210417_ABC2_18_spg123,Er1La2Tb1,Er La Tb,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Er-La-Tb,3
+7384,agm005678989_A2B5C12_0_spg166_4_0_rattled-1000-subsampled_dvavx7,agm005678989_A2B5C12_0_spg166,Ga5La2Zn12,Ga La Zn,19,intermetallic,3d-only,A5B2C12_aP19_1_5a_2a_12a:Ga-La-Zn,1
+7408,agm002961555_AB2C2_3_spg127_0_0_rattled-1000-subsampled_fzzjns,agm002961555_AB2C2_3_spg127,Be2La1Ru2,Be La Ru,10,intermetallic,4d-only,A2BC2_aP10_1_4a_2a_4a:Be-La-Ru,1
+7465,agm001210012_ABC2_18_spg123_4_0_rattled-1000-subsampled_wyf3nw,agm001210012_ABC2_18_spg123,In2Np1Sn1,In Np Sn,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:In-Np-Sn,1
+7486,agm005027443_ABCD3_468_spg12_2_0_rattled-1000-subsampled_gfmqon,agm005027443_ABCD3_468_spg12,Er1La1Sm3Tb1,Er La Sm Tb,12,intermetallic,neither,ABC3D_aP12_1_2a_2a_6a_2a:Er-La-Sm-Tb,4
+7490,agm001138147_ABC2_27_spg99_2_0_rattled-1000-subsampled_tw49h4,agm001138147_ABC2_27_spg99,Dy1Ga1Tb2,Dy Ga Tb,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Dy-Ga-Tb,2
+7506,agm003728418_ABC3_42_spg194_4_0_rattled-1000-subsampled_6ua7ot,agm003728418_ABC3_42_spg194,Al3Fe1Nd1,Al Fe Nd,20,intermetallic,3d-only,A3BC_aP20_1_12a_4a_4a:Al-Fe-Nd,1
+7522,agm001330812_ABCD_1_spg216_3_0_rattled-1000-subsampled_iuti89,agm001330812_ABCD_1_spg216,Cd1Dy1La1Pb1,Cd Dy La Pb,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Dy-La-Pb,2
+7644,agm001784869_ABCD2_2_spg123_1_0_rattled-1000-subsampled_p9ohjk,agm001784869_ABCD2_2_spg123,La1Na1Sb2Te1,La Na Sb Te,10,chalcogenide,neither,ABC2D_aP10_1_2a_2a_4a_2a:La-Na-Sb-Te,1
+7708,agm003685512_AB6C12_10_spg166_3_0_rattled-1000-subsampled_s2fbjz,agm003685512_AB6C12_10_spg166,Au12Ga6Np1,Au Ga Np,19,intermetallic,neither,A12B6C_aP19_1_12a_6a_a:Au-Ga-Np,1
+7742,agm005115224_ABC2_36_spg160_1_0_rattled-1000-subsampled_txstkg,agm005115224_ABC2_36_spg160,Er2Sb1Te1,Er Sb Te,16,chalcogenide,neither,A2BC_aP16_1_8a_4a_4a:Er-Sb-Te,1
+7744,agm001100451_ABC2_3_spg225_1_0_rattled-1000-subsampled_wkm6fk,agm001100451_ABC2_3_spg225,Er1Rh2V1,Er Rh V,16,intermetallic,3d+4d,AB2C_aP16_1_4a_8a_4a:Er-Rh-V,1
+7787,agm004533616_AB2C3D4_7_spg115_1_0_rattled-1000-subsampled_p1smno,agm004533616_AB2C3D4_7_spg115,Co1Ga3Ir4Sm2,Co Ga Ir Sm,10,intermetallic,3d-only,AB3C4D2_aP10_1_a_3a_4a_2a:Co-Ga-Ir-Sm,1
+7939,agm003933615_ABC2_19_spg166_3_0_rattled-1000-subsampled_2mwqf3,agm003933615_ABC2_19_spg166,Al2La1Zr1,Al La Zr,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Al-La-Zr,1
+7965,agm004990877_ABCD2_1885_spg129_4_0_rattled-1000-subsampled_1zekd6,agm004990877_ABCD2_1885_spg129,Ga1N1Sn2Th1,Ga N Sn Th,10,nitride,neither,ABC2D_aP10_1_2a_2a_4a_2a:Ga-N-Sn-Th,1
+7972,agm004570987_AB2C2D6_26_spg166_1_0_rattled-1000-subsampled_91ibc8,agm004570987_AB2C2D6_26_spg166,H2O6Pu1Sr2,H O Pu Sr,11,oxide,neither,A2B6CD2_aP11_1_2a_6a_a_2a:H-O-Pu-Sr,1
+8078,agm003552835_AB3C4_77_spg25_1_0_rattled-1000-subsampled_fc27z6,agm003552835_AB3C4_77_spg25,Ge1Pa4Si3,Ge Pa Si,16,silicide,neither,AB4C3_aP16_1_2a_8a_6a:Ge-Pa-Si,1
+8086,agm003415660_AB2C3_873_spg71_0_0_rattled-1000-subsampled_h4krfp,agm003415660_AB2C3_873_spg71,Dy1Sm2Sn3,Dy Sm Sn,12,intermetallic,neither,AB2C3_aP12_1_2a_4a_6a:Dy-Sm-Sn,2
+8118,agm003430071_AB2C3_873_spg71_4_0_rattled-1000-subsampled_uyxg6u,agm003430071_AB2C3_873_spg71,Bi3Dy2Pu1,Bi Dy Pu,12,intermetallic,neither,A3B2C_aP12_1_6a_4a_2a:Bi-Dy-Pu,2
+8135,agm001265716_ABC_10_spg187_3_0_rattled-1000-subsampled_0cifcz,agm001265716_ABC_10_spg187,H1Nd1Tl1,H Nd Tl,12,hydride,neither,ABC_aP12_1_4a_4a_4a:H-Nd-Tl,1
+8200,agm006134092_AB5C6_53_spg71_0_0_rattled-1000-subsampled_a3pqas,agm006134092_AB5C6_53_spg71,Pr6Pu1Tl5,Pr Pu Tl,12,intermetallic,neither,A6BC5_aP12_1_6a_a_5a:Pr-Pu-Tl,2
+8224,agm003769682_ABC6_19_spg123_3_0_rattled-1000-subsampled_qytg8z,agm003769682_ABC6_19_spg123,Al1Dy1Tb6,Al Dy Tb,16,intermetallic,neither,ABC6_aP16_1_2a_2a_12a:Al-Dy-Tb,2
+8253,agm003569870_AB3C6_279_spg36_1_0_rattled-1000-subsampled_e7q6jj,agm003569870_AB3C6_279_spg36,Dy1Pm6Tm3,Dy Pm Tm,20,intermetallic,neither,AB6C3_aP20_1_2a_12a_6a:Dy-Pm-Tm,3
+8261,agm005669833_A2B5C12_282_spg12_4_0_rattled-1000-subsampled_xg8bqx,agm005669833_A2B5C12_282_spg12,Ac2Br12Cs5,Ac Br Cs,19,halide,neither,A2B12C5_aP19_1_2a_12a_5a:Ac-Br-Cs,1
+8279,agm006074018_AB4C5_148_spg123_0_0_rattled-1000-subsampled_fzyl4j,agm006074018_AB4C5_148_spg123,Ca1Sm4Tb5,Ca Sm Tb,10,intermetallic,neither,AB4C5_aP10_1_a_4a_5a:Ca-Sm-Tb,2
+8289,agm001107629_ABC3_0_spg221_3_0_rattled-1000-subsampled_74npkg,agm001107629_ABC3_0_spg221,Dy3N1Sc1,Dy N Sc,10,nitride,3d-only,A3BC_aP10_1_6a_2a_2a:Dy-N-Sc,1
+8292,agm005127285_ABC2_900_spg160_4_0_rattled-1000-subsampled_we27ax,agm005127285_ABC2_900_spg160,Ca1Dy2Zr1,Ca Dy Zr,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ca-Dy-Zr,1
+8315,agm001349758_ABCD_1_spg216_0_0_rattled-1000-subsampled_yqbo3q,agm001349758_ABCD_1_spg216,Ag1Au1Pb1Pu1,Ag Au Pb Pu,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Au-Pb-Pu,1
+8323,agm004640765_AB2C3D6_175_spg12_2_0_rattled-1000-subsampled_q22rzo,agm004640765_AB2C3D6_175_spg12,Ce2Nd1Rb3S6,Ce Nd Rb S,12,chalcogenide,neither,A2BC3D6_aP12_1_2a_a_3a_6a:Ce-Nd-Rb-S,2
+8439,agm001059615_ABC_9550_spg64_1_0_rattled-1000-subsampled_lq8dz3,agm001059615_ABC_9550_spg64,Er1Hf1Mn1,Er Hf Mn,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Er-Hf-Mn,1
+8457,agm003316885_A2B2C5_153_spg123_2_0_rattled-1000-subsampled_4dxgsr,agm003316885_A2B2C5_153_spg123,C2Pm5Sn2,C Pm Sn,18,carbide,neither,A2B5C2_aP18_1_4a_10a_4a:C-Pm-Sn,1
+8483,agm002929204_AB2C2_5_spg139_3_0_rattled-1000-subsampled_dns4cw,agm002929204_AB2C2_5_spg139,As2La1Li2,As La Li,10,pnictide,neither,A2BC2_aP10_1_4a_2a_4a:As-La-Li,1
+8524,agm001404973_ABCD_1_spg216_3_0_rattled-1000-subsampled_v93uz9,agm001404973_ABCD_1_spg216,Hg1In1Pm1Tb1,Hg In Pm Tb,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Hg-In-Pm-Tb,2
+8556,agm006021893_AB3C4_33_spg221_1_0_rattled-1000-subsampled_vjq8hg,agm006021893_AB3C4_33_spg221,As4Dy3Sc1,As Dy Sc,16,pnictide,3d-only,A4B3C_aP16_1_8a_6a_2a:As-Dy-Sc,1
+8608,agm004787265_ABC2D4_368_spg23_2_0_rattled-1000-subsampled_gld6zm,agm004787265_ABC2D4_368_spg23,Ag2O4Sm1Sr1,Ag O Sm Sr,16,oxide,4d-only,A2B4CD_aP16_1_4a_8a_2a_2a:Ag-O-Sm-Sr,1
+8609,agm004579305_AB2C2D6_644_spg12_0_0_rattled-1000-subsampled_asdb3b,agm004579305_AB2C2D6_644_spg12,Cl6K2Li2Pr1,Cl K Li Pr,11,halide,neither,A6B2C2D_aP11_1_6a_2a_2a_a:Cl-K-Li-Pr,1
+8613,agm005185793_ABCD_165_spg99_1_0_rattled-1000-subsampled_vcv0iz,agm005185793_ABCD_165_spg99,Ga1In1La1Pr1,Ga In La Pr,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Ga-In-La-Pr,2
+8629,agm004828649_ABC2D4_343_spg10_3_0_rattled-1000-subsampled_3ocv7q,agm004828649_ABC2D4_343_spg10,Na2Np1S4Sm1,Na Np S Sm,16,chalcogenide,neither,A2BC4D_aP16_1_4a_2a_8a_2a:Na-Np-S-Sm,2
+8698,agm006009891_AB3C6_1220_spg5_4_0_rattled-1000-subsampled_7hb89b,agm006009891_AB3C6_1220_spg5,Pu1Sm3Y6,Pu Sm Y,10,intermetallic,4d-only,AB3C6_aP10_1_a_3a_6a:Pu-Sm-Y,2
+8752,agm004409074_ABC_0_spg216_0_0_rattled-1000-subsampled_mu1ar3,agm004409074_ABC_0_spg216,La1Tc1Zr1,La Tc Zr,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:La-Tc-Zr,1
+8765,agm005981117_AB2C5_20_spg55_3_0_rattled-1000-subsampled_xcfo6z,agm005981117_AB2C5_20_spg55,Pt5Rh1Tm2,Pt Rh Tm,16,intermetallic,4d-only,A5BC2_aP16_1_10a_2a_4a:Pt-Rh-Tm,1
+8792,agm003535240_AB2C8_295_spg12_0_0_rattled-1000-subsampled_m5pqz7,agm003535240_AB2C8_295_spg12,Cd1Pm8Rh2,Cd Pm Rh,11,intermetallic,4d-only,AB8C2_aP11_1_a_8a_2a:Cd-Pm-Rh,1
+8907,agm001328760_ABCD_1_spg216_2_0_rattled-1000-subsampled_6z8fow,agm001328760_ABCD_1_spg216,Ac1Cd1Tb1Tl1,Ac Cd Tb Tl,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ac-Cd-Tb-Tl,2
+8930,agm003490727_AB2C6_7_spg14_3_0_rattled-1000-subsampled_con6qg,agm003490727_AB2C6_7_spg14,Hg2Ir1Sm6,Hg Ir Sm,18,intermetallic,neither,A2BC6_aP18_1_4a_2a_12a:Hg-Ir-Sm,1
+8936,agm003317010_A2B2C5_234_spg12_4_0_rattled-1000-subsampled_u5fu1o,agm003317010_A2B2C5_234_spg12,Ga2H2Pr5,Ga H Pr,18,hydride,neither,A2B2C5_aP18_1_4a_4a_10a:Ga-H-Pr,1
+8964,agm004503189_AB2C3D12_99_spg166_0_0_rattled-1000-subsampled_bk46sh,agm004503189_AB2C3D12_99_spg166,Ba2In12Ir3Tb1,Ba In Ir Tb,18,intermetallic,neither,A2B12C3D_aP18_1_2a_12a_3a_a:Ba-In-Ir-Tb,1
+9007,agm006001085_AB6C8_70_spg148_4_0_rattled-1000-subsampled_qknyr2,agm006001085_AB6C8_70_spg148,Ce1Pm8Y6,Ce Pm Y,15,intermetallic,4d-only,AB8C6_aP15_1_a_8a_6a:Ce-Pm-Y,2
+9029,agm005066819_ABCD5_28_spg15_3_0_rattled-1000-subsampled_muss9g,agm005066819_ABCD5_28_spg15,Br5Cu1Tb1Tl1,Br Cu Tb Tl,16,halide,3d-only,A5BCD_aP16_1_10a_2a_2a_2a:Br-Cu-Tb-Tl,1
+9059,agm004561750_AB2C2D4_212_spg12_1_0_rattled-1000-subsampled_4f9van,agm004561750_AB2C2D4_212_spg12,Er2Nd1Pm4Tb2,Er Nd Pm Tb,18,intermetallic,neither,A2BC4D2_aP18_1_4a_2a_8a_4a:Er-Nd-Pm-Tb,4
+9147,agm002005511_ABC2_71_spg166_1_0_rattled-1000-subsampled_da9y2d,agm002005511_ABC2_71_spg166,Au1N2U1,Au N U,16,nitride,neither,AB2C_aP16_1_4a_8a_4a:Au-N-U,1
+9172,agm006095218_AB6C12_2_spg148_4_0_rattled-1000-subsampled_x4dp8e,agm006095218_AB6C12_2_spg148,S12Sm6U1,S Sm U,19,chalcogenide,neither,A12B6C_aP19_1_12a_6a_a:S-Sm-U,2
+9198,agm004982844_ABC2D6_695_spg15_2_0_rattled-1000-subsampled_gkg9oj,agm004982844_ABC2D6_695_spg15,Pm1Pr1Sm6Tm2,Pm Pr Sm Tm,20,intermetallic,neither,ABC6D2_aP20_1_2a_2a_12a_4a:Pm-Pr-Sm-Tm,4
+9221,agm001838988_ABC_4_spg107_0_0_rattled-1000-subsampled_agboan,agm001838988_ABC_4_spg107,As1Er1Pu1,As Er Pu,12,pnictide,neither,ABC_aP12_1_4a_4a_4a:As-Er-Pu,2
+9223,agm004391641_ABC2_5069_spg47_3_0_rattled-1000-subsampled_bu4h1p,agm004391641_ABC2_5069_spg47,Be2Br1La1,Be Br La,16,halide,neither,A2BC_aP16_1_8a_4a_4a:Be-Br-La,1
+9240,agm003557367_AB3C4_8_spg65_1_0_rattled-1000-subsampled_2hhmeb,agm003557367_AB3C4_8_spg65,Li1Pm3Te4,Li Pm Te,16,chalcogenide,neither,AB3C4_aP16_1_2a_6a_8a:Li-Pm-Te,1
+9297,agm005168596_ABC2D5_234_spg123_2_0_rattled-1000-subsampled_8k4fqy,agm005168596_ABC2D5_234_spg123,Ac1Ge2La1Pd5,Ac Ge La Pd,18,intermetallic,4d-only,AB2CD5_aP18_1_2a_4a_2a_10a:Ac-Ge-La-Pd,2
+9329,agm005083189_ABCD6_14_spg149_3_0_rattled-1000-subsampled_lw8rwr,agm005083189_ABCD6_14_spg149,Ac1O6Sr1Tc1,Ac O Sr Tc,18,oxide,4d-only,AB6CD_aP18_1_2a_12a_2a_2a:Ac-O-Sr-Tc,1
+9465,agm003220314_ABC2D4_128_spg63_1_0_rattled-1000-subsampled_cw6nls,agm003220314_ABC2D4_128_spg63,Cu1Er2K1Se4,Cu Er K Se,16,chalcogenide,3d-only,AB2CD4_aP16_1_2a_4a_2a_8a:Cu-Er-K-Se,1
+9618,agm004618537_AB2C3D6_196_spg12_1_0_rattled-1000-subsampled_ttta78,agm004618537_AB2C3D6_196_spg12,Cl3Co2Ir1La6,Cl Co Ir La,12,halide,3d-only,A3B2CD6_aP12_1_3a_2a_a_6a:Cl-Co-Ir-La,1
+9684,agm004847704_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_f51f1l,agm004847704_ABC2D4_343_spg10,Er1N4Pa2Zr1,Er N Pa Zr,16,nitride,4d-only,AB4C2D_aP16_1_2a_8a_4a_2a:Er-N-Pa-Zr,2
+9735,agm005104488_ABC2_36_spg160_0_0_rattled-1000-subsampled_pzjzpv,agm005104488_ABC2_36_spg160,Nd1O2Sr1,Nd O Sr,16,oxide,neither,AB2C_aP16_1_4a_8a_4a:Nd-O-Sr,1
+9740,agm001939248_ABC2_83_spg166_0_0_rattled-1000-subsampled_dbwpir,agm001939248_ABC2_83_spg166,Ac2Cd1Lu1,Ac Cd Lu,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Ac-Cd-Lu,2
+9750,agm003599277_ABC_25_spg12_4_0_rattled-1000-subsampled_vsemqg,agm003599277_ABC_25_spg12,Cd1Pd1Sm1,Cd Pd Sm,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Cd-Pd-Sm,1
+9818,agm005956392_AB3C5_13_spg10_4_0_rattled-1000-subsampled_t2qysb,agm005956392_AB3C5_13_spg10,Ac5Ca1Co3,Ac Ca Co,18,intermetallic,3d-only,A5BC3_aP18_1_10a_2a_6a:Ac-Ca-Co,1
+9880,agm005109606_ABC2_36_spg160_4_0_rattled-1000-subsampled_e5kspj,agm005109606_ABC2_36_spg160,Ac2Cd1Co1,Ac Cd Co,16,intermetallic,3d+4d,A2BC_aP16_1_8a_4a_4a:Ac-Cd-Co,1
+9887,agm005776768_ABC6_19_spg123_0_0_rattled-1000-subsampled_hc62kk,agm005776768_ABC6_19_spg123,Ba1Pb6Pr1,Ba Pb Pr,16,intermetallic,neither,AB6C_aP16_1_2a_12a_2a:Ba-Pb-Pr,1
+9896,agm001142739_ABC2_10_spg123_1_0_rattled-1000-subsampled_tdd8gl,agm001142739_ABC2_10_spg123,Li2Lu1Pr1,Li Lu Pr,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Li-Lu-Pr,2
+9961,agm005760375_ABC4_1592_spg12_2_0_rattled-1000-subsampled_n3t4li,agm005760375_ABC4_1592_spg12,Hg4Ho1Y1,Hg Ho Y,12,intermetallic,4d-only,A4BC_aP12_1_8a_2a_2a:Hg-Ho-Y,1
+10049,agm005038025_ABCD3_414_spg11_4_0_rattled-1000-subsampled_g0a6l5,agm005038025_ABCD3_414_spg11,Ge1K1O3Tm1,Ge K O Tm,12,oxide,neither,ABC3D_aP12_1_2a_2a_6a_2a:Ge-K-O-Tm,1
+10214,agm004591633_AB2C2D7_153_spg12_2_0_rattled-1000-subsampled_rope76,agm004591633_AB2C2D7_153_spg12,Au2P2Pr1Pt7,Au P Pr Pt,12,pnictide,neither,A2B2CD7_aP12_1_2a_2a_a_7a:Au-P-Pr-Pt,1
+10240,agm006135737_AB5C6_55_spg71_3_0_rattled-1000-subsampled_c0uv9m,agm006135737_AB5C6_55_spg71,Cu6Er1Pr5,Cu Er Pr,12,intermetallic,3d-only,A6BC5_aP12_1_6a_a_5a:Cu-Er-Pr,2
+10256,agm005035519_ABCD3_451_spg11_4_0_rattled-1000-subsampled_9rxh4a,agm005035519_ABCD3_451_spg11,Cl1Co1S1Sm3,Cl Co S Sm,12,mixed-anion,3d-only,ABCD3_aP12_1_2a_2a_2a_6a:Cl-Co-S-Sm,1
+10368,agm004558588_AB2C2D4_214_spg12_3_0_rattled-1000-subsampled_3glsqc,agm004558588_AB2C2D4_214_spg12,Er1Pr2Tm4Y2,Er Pr Tm Y,18,intermetallic,4d-only,AB2C4D2_aP18_1_2a_4a_8a_4a:Er-Pr-Tm-Y,3
+10454,agm001013005_ABC_8718_spg51_4_0_rattled-1000-subsampled_xa96dt,agm001013005_ABC_8718_spg51,Mg1Si1Tm1,Mg Si Tm,18,silicide,neither,ABC_aP18_1_6a_6a_6a:Mg-Si-Tm,1
+10466,agm005074817_ABCD6_13_spg102_4_0_rattled-1000-subsampled_1krjs8,agm005074817_ABCD6_13_spg102,O6Pm1Ru1Ti1,O Pm Ru Ti,18,oxide,3d+4d,A6BCD_aP18_1_12a_2a_2a_2a:O-Pm-Ru-Ti,1
+10485,agm005541581_AB2_150_spg139_4_0_rattled-1000-subsampled_by9exb,agm005541581_AB2_150_spg139,As2Tm1,As Tm,12,pnictide,neither,A2B_aP12_1_8a_4a:As-Tm,1
+10528,agm001096404_ABC2_3_spg225_2_0_rattled-1000-subsampled_mgebut,agm001096404_ABC2_3_spg225,Dy1Er2Pr1,Dy Er Pr,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Dy-Er-Pr,3
+10547,agm001132653_ABC2_10_spg123_3_0_rattled-1000-subsampled_0f9pjd,agm001132653_ABC2_10_spg123,Tb1Te2Zr1,Tb Te Zr,16,chalcogenide,4d-only,AB2C_aP16_1_4a_8a_4a:Tb-Te-Zr,1
+10596,agm003504295_AB2C6_636_spg71_2_0_rattled-1000-subsampled_2lo988,agm003504295_AB2C6_636_spg71,Ac2Ga6Pm1,Ac Ga Pm,18,intermetallic,neither,A2B6C_aP18_1_4a_12a_2a:Ac-Ga-Pm,2
+10624,agm005625602_AB2C6_302_spg191_2_0_rattled-1000-subsampled_kunfs8,agm005625602_AB2C6_302_spg191,Al6Pm1Th2,Al Pm Th,18,intermetallic,neither,A6BC2_aP18_1_12a_2a_4a:Al-Pm-Th,2
+10769,agm003320588_A2B2C7_304_spg44_2_0_rattled-1000-subsampled_tcelc3,agm003320588_A2B2C7_304_spg44,S7Sm2Zr2,S Sm Zr,11,chalcogenide,4d-only,A7B2C2_aP11_1_7a_2a_2a:S-Sm-Zr,1
+10790,agm006024445_AB3C6_17_spg148_0_0_rattled-1000-subsampled_a8gf7c,agm006024445_AB3C6_17_spg148,O6Pm3Tm1,O Pm Tm,20,oxide,neither,A6B3C_aP20_1_12a_6a_2a:O-Pm-Tm,2
+10809,agm005121572_ABC2_36_spg160_0_0_rattled-1000-subsampled_swqond,agm005121572_ABC2_36_spg160,Bi2Na1Th1,Bi Na Th,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Bi-Na-Th,1
+10843,agm001938949_ABC2_3_spg225_0_0_rattled-1000-subsampled_ektyee,agm001938949_ABC2_3_spg225,Al2Cd1Eu1,Al Cd Eu,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Al-Cd-Eu,1
+10852,agm003743295_ABC4_1257_spg10_3_0_rattled-1000-subsampled_j9cdxo,agm003743295_ABC4_1257_spg10,In1Np1Rh4,In Np Rh,12,intermetallic,4d-only,ABC4_aP12_1_2a_2a_8a:In-Np-Rh,1
+10858,agm006111704_AB5C8_166_spg5_0_0_rattled-1000-subsampled_zcql1a,agm006111704_AB5C8_166_spg5,Dy5La8Pu1,Dy La Pu,14,intermetallic,neither,A5B8C_aP14_1_5a_8a_a:Dy-La-Pu,3
+10873,agm005125483_ABC2_19_spg166_2_0_rattled-1000-subsampled_w82290,agm005125483_ABC2_19_spg166,Hg1Pu2Rh1,Hg Pu Rh,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Hg-Pu-Rh,1
+10874,agm004524068_AB2C3D4_7_spg115_4_0_rattled-1000-subsampled_ezpf06,agm004524068_AB2C3D4_7_spg115,Ag4Cd1Ga3La2,Ag Cd Ga La,10,intermetallic,4d-only,A4BC3D2_aP10_1_4a_a_3a_2a:Ag-Cd-Ga-La,1
+10933,agm001273310_ABC_68_spg156_1_0_rattled-1000-subsampled_cl15ge,agm001273310_ABC_68_spg156,La1P1Pr1,La P Pr,12,pnictide,neither,ABC_aP12_1_4a_4a_4a:La-P-Pr,2
+10963,agm005234896_AB_2977_spg65_2_0_rattled-1000-subsampled_szj85q,agm005234896_AB_2977_spg65,Ce1Mg1,Ce Mg,12,intermetallic,neither,AB_aP12_1_6a_6a:Ce-Mg,1
+10993,agm001121426_ABC2_10_spg123_0_0_rattled-1000-subsampled_80zlrg,agm001121426_ABC2_10_spg123,Nd1Ru2Sc1,Nd Ru Sc,16,intermetallic,3d+4d,AB2C_aP16_1_4a_8a_4a:Nd-Ru-Sc,1
+10998,agm003769612_ABC6_206_spg148_1_0_rattled-1000-subsampled_univsp,agm003769612_ABC6_206_spg148,Hg1N1Sm6,Hg N Sm,16,nitride,neither,ABC6_aP16_1_2a_2a_12a:Hg-N-Sm,1
+11056,agm004494430_AB2C3D12_24_spg166_0_0_rattled-1000-subsampled_2obm7k,agm004494430_AB2C3D12_24_spg166,Cs2K1O12Pu3,Cs K O Pu,18,oxide,neither,A2BC12D3_aP18_1_2a_a_12a_3a:Cs-K-O-Pu,1
+11068,agm003654121_AB4C5_221_spg12_1_0_rattled-1000-subsampled_bg3cqv,agm003654121_AB4C5_221_spg12,H1Tb4Te5,H Tb Te,10,chalcogenide,neither,AB4C5_aP10_1_a_4a_5a:H-Tb-Te,1
+11075,agm001392940_ABCD_1_spg216_1_0_rattled-1000-subsampled_d328r8,agm001392940_ABCD_1_spg216,In1Pm1Pr1Tl1,In Pm Pr Tl,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:In-Pm-Pr-Tl,2
+11143,agm005172774_ABC2D5_202_spg123_3_0_rattled-1000-subsampled_h2ilh6,agm005172774_ABC2D5_202_spg123,Ac1Al2Nd1Pd5,Ac Al Nd Pd,18,intermetallic,4d-only,AB2CD5_aP18_1_2a_4a_2a_10a:Ac-Al-Nd-Pd,2
+11178,agm006091137_AB4C7_357_spg12_0_0_rattled-1000-subsampled_mj3j25,agm006091137_AB4C7_357_spg12,La7Mg1Tb4,La Mg Tb,12,intermetallic,neither,A7BC4_aP12_1_7a_a_4a:La-Mg-Tb,2
+11222,agm001338571_ABCD_1_spg216_1_0_rattled-1000-subsampled_if8u71,agm001338571_ABCD_1_spg216,Gd1Pb1Pr1Sn1,Gd Pb Pr Sn,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Gd-Pb-Pr-Sn,2
+11230,agm004954102_ABC2D6_266_spg146_4_0_rattled-1000-subsampled_ugnttv,agm004954102_ABC2D6_266_spg146,Ca1Hf1O6Pr2,Ca Hf O Pr,10,oxide,neither,ABC6D2_aP10_1_a_a_6a_2a:Ca-Hf-O-Pr,1
+11267,agm004526397_AB2C3D4_7_spg115_0_0_rattled-1000-subsampled_zkojzb,agm004526397_AB2C3D4_7_spg115,Au3Ga4Pm2Sn1,Au Ga Pm Sn,10,intermetallic,neither,A3B4C2D_aP10_1_3a_4a_2a_a:Au-Ga-Pm-Sn,1
+11285,agm001964245_ABC2_3_spg225_4_0_rattled-1000-subsampled_f0udki,agm001964245_ABC2_3_spg225,Pa1Tb1Tl2,Pa Tb Tl,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Pa-Tb-Tl,2
+11301,agm005193455_ABCD_157_spg99_2_0_rattled-1000-subsampled_b2dehb,agm005193455_ABCD_157_spg99,Ce1Er1In1Ru1,Ce Er In Ru,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ce-Er-In-Ru,2
+11367,agm001342691_ABCD_1_spg216_2_0_rattled-1000-subsampled_19p621,agm001342691_ABCD_1_spg216,Au1Cu1Tb1Tm1,Au Cu Tb Tm,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Au-Cu-Tb-Tm,2
+11479,agm004789139_ABC2D4_337_spg166_2_0_rattled-1000-subsampled_xjvskf,agm004789139_ABC2D4_337_spg166,Dy1Ga1Ge2Ni4,Dy Ga Ge Ni,16,intermetallic,3d-only,ABC2D4_aP16_1_2a_2a_4a_8a:Dy-Ga-Ge-Ni,1
+11495,agm003372755_A2B5C12_28_spg12_2_0_rattled-1000-subsampled_i7dodc,agm003372755_A2B5C12_28_spg12,Ce2Ho12Tm5,Ce Ho Tm,19,intermetallic,neither,A2B12C5_aP19_1_2a_12a_5a:Ce-Ho-Tm,3
+11514,agm003460901_AB2C4_152_spg166_0_0_rattled-1000-subsampled_xnxxvf,agm003460901_AB2C4_152_spg166,Al1Ce4Ga2,Al Ce Ga,14,intermetallic,neither,AB4C2_aP14_1_2a_8a_4a:Al-Ce-Ga,1
+11637,agm004546431_AB2C2D2_144_spg166_2_0_rattled-1000-subsampled_797vxa,agm004546431_AB2C2D2_144_spg166,Ge2Pm2Tm1Zn2,Ge Pm Tm Zn,14,intermetallic,3d-only,A2B2CD2_aP14_1_4a_4a_2a_4a:Ge-Pm-Tm-Zn,2
+11660,agm001314643_ABCD_1_spg216_1_0_rattled-1000-subsampled_fauv0q,agm001314643_ABCD_1_spg216,Ho1Np1Os1Ru1,Ho Np Os Ru,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ho-Np-Os-Ru,2
+11664,agm004583608_AB2C2D6_952_spg65_0_0_rattled-1000-subsampled_mi56p0,agm004583608_AB2C2D6_952_spg65,Er1Pm2Tb2Y6,Er Pm Tb Y,11,intermetallic,4d-only,AB2C2D6_aP11_1_a_2a_2a_6a:Er-Pm-Tb-Y,3
+11670,agm004821955_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_zlfw2k,agm004821955_ABC2D4_343_spg10,Au1Os1Se2Th4,Au Os Se Th,16,chalcogenide,neither,ABC2D4_aP16_1_2a_2a_4a_8a:Au-Os-Se-Th,1
+11909,agm005823723_AB2C3_570_spg65_2_0_rattled-1000-subsampled_iy4zpg,agm005823723_AB2C3_570_spg65,Li1Pt2Pu3,Li Pt Pu,12,intermetallic,neither,AB2C3_aP12_1_2a_4a_6a:Li-Pt-Pu,1
+11922,agm005569597_A2B2C7_242_spg12_3_0_rattled-1000-subsampled_nedafd,agm005569597_A2B2C7_242_spg12,Nd2Sm7Th2,Nd Sm Th,11,intermetallic,neither,A2B7C2_aP11_1_2a_7a_2a:Nd-Sm-Th,3
+11933,agm001240838_ABC_0_spg216_4_0_rattled-1000-subsampled_zh7aan,agm001240838_ABC_0_spg216,Er1Rh1Sm1,Er Rh Sm,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Er-Rh-Sm,2
+11969,agm006035827_AB4C5_22_spg123_2_0_rattled-1000-subsampled_tnq084,agm006035827_AB4C5_22_spg123,Al4La1Y5,Al La Y,10,intermetallic,4d-only,A4BC5_aP10_1_4a_a_5a:Al-La-Y,1
+11970,agm005241540_AB4_270_spg227_0_0_rattled-1000-subsampled_purplz,agm005241540_AB4_270_spg227,Al1Yb4,Al Yb,10,intermetallic,neither,AB4_aP10_1_2a_8a:Al-Yb,1
+12008,agm005019740_ABCD2_1563_spg119_1_0_rattled-1000-subsampled_ony4wl,agm005019740_ABCD2_1563_spg119,Pr1Re1Si2Tc1,Pr Re Si Tc,10,silicide,4d-only,ABC2D_aP10_1_2a_2a_4a_2a:Pr-Re-Si-Tc,1
+12033,agm005910457_AB3C3_29_spg176_1_0_rattled-1000-subsampled_96xy3a,agm005910457_AB3C3_29_spg176,Br1Ni3Pr3,Br Ni Pr,14,halide,3d-only,AB3C3_aP14_1_2a_6a_6a:Br-Ni-Pr,1
+12036,agm002668265_ABC2_3_spg225_1_0_rattled-1000-subsampled_pss8oc,agm002668265_ABC2_3_spg225,Cd1Cu1La2,Cd Cu La,16,intermetallic,3d+4d,ABC2_aP16_1_4a_4a_8a:Cd-Cu-La,1
+12040,agm001977172_ABC2_19_spg166_4_0_rattled-1000-subsampled_ytym1b,agm001977172_ABC2_19_spg166,Er1Lu2Nd1,Er Lu Nd,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Er-Lu-Nd,3
+12053,agm005963271_AB2C2_30_spg72_1_0_rattled-1000-subsampled_nk2fl9,agm005963271_AB2C2_30_spg72,Ba2Er1Sb2,Ba Er Sb,10,intermetallic,neither,A2BC2_aP10_1_4a_2a_4a:Ba-Er-Sb,1
+12076,agm005065141_ABCD5_188_spg15_1_0_rattled-1000-subsampled_598r16,agm005065141_ABCD5_188_spg15,Ac1La1O5Te1,Ac La O Te,16,mixed-anion,neither,ABC5D_aP16_1_2a_2a_10a_2a:Ac-La-O-Te,2
+12102,agm004591851_AB2C2D7_14_spg139_3_0_rattled-1000-subsampled_djq64o,agm004591851_AB2C2D7_14_spg139,Au7Pr1Si2Sn2,Au Pr Si Sn,12,silicide,neither,A7BC2D2_aP12_1_7a_a_2a_2a:Au-Pr-Si-Sn,1
+12184,agm003470176_AB2C5_723_spg8_4_0_rattled-1000-subsampled_iu9k8l,agm003470176_AB2C5_723_spg8,Ac2Se5Te1,Ac Se Te,16,chalcogenide,neither,A2B5C_aP16_1_4a_10a_2a:Ac-Se-Te,1
+12209,agm004649284_AB2C3D6_178_spg12_0_0_rattled-1000-subsampled_wh11x9,agm004649284_AB2C3D6_178_spg12,Ho3La2Sc1Tb6,Ho La Sc Tb,12,intermetallic,3d-only,A3B2CD6_aP12_1_3a_2a_a_6a:Ho-La-Sc-Tb,3
+12225,agm004511930_AB2C3D4_7_spg115_4_0_rattled-1000-subsampled_ilf6jz,agm004511930_AB2C3D4_7_spg115,Ge4In1La2Li3,Ge In La Li,10,intermetallic,neither,A4BC2D3_aP10_1_4a_a_2a_3a:Ge-In-La-Li,1
+12286,agm005442437_AB2_1_spg227_3_0_rattled-1000-subsampled_j2k800,agm005442437_AB2_1_spg227,K2La1,K La,12,intermetallic,neither,A2B_aP12_1_8a_4a:K-La,1
+12290,agm003495289_AB2C6_1_spg189_3_0_rattled-1000-subsampled_dgdo19,agm003495289_AB2C6_1_spg189,Hg1La6Tl2,Hg La Tl,18,intermetallic,neither,AB6C2_aP18_1_2a_12a_4a:Hg-La-Tl,1
+12299,agm005713637_A3B5C8_3_spg166_1_0_rattled-1000-subsampled_fgjw6i,agm005713637_A3B5C8_3_spg166,Ho5Pu3Se8,Ho Pu Se,16,chalcogenide,neither,A5B3C8_aP16_1_5a_3a_8a:Ho-Pu-Se,2
+12349,agm001184597_ABC4_12_spg216_0_0_rattled-1000-subsampled_fnd6yn,agm001184597_ABC4_12_spg216,Dy1Sc1Tc4,Dy Sc Tc,12,intermetallic,3d+4d,ABC4_aP12_1_2a_2a_8a:Dy-Sc-Tc,1
+12350,agm004840264_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_w0g5ld,agm004840264_ABC2D4_343_spg10,As4Ce1Pa1U2,As Ce Pa U,16,pnictide,neither,A4BCD2_aP16_1_8a_2a_2a_4a:As-Ce-Pa-U,3
+12368,agm001093148_ABC2_3_spg225_3_0_rattled-1000-subsampled_yt9r5t,agm001093148_ABC2_3_spg225,Bi1Li1Pr2,Bi Li Pr,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Bi-Li-Pr,1
+12413,agm005552886_A2B2C3_194_spg12_2_0_rattled-1000-subsampled_fi7q3v,agm005552886_A2B2C3_194_spg12,Er3Ni2Pr2,Er Ni Pr,14,intermetallic,3d-only,A3B2C2_aP14_1_6a_4a_4a:Er-Ni-Pr,2
+12549,agm001123892_ABC2_27_spg99_1_0_rattled-1000-subsampled_jufiqe,agm001123892_ABC2_27_spg99,Ho2Mn1Y1,Ho Mn Y,16,intermetallic,3d+4d,A2BC_aP16_1_8a_4a_4a:Ho-Mn-Y,1
+12607,agm005576945_A2B3C3_5_spg193_1_0_rattled-1000-subsampled_zjo1uz,agm005576945_A2B3C3_5_spg193,Au3Li2Tm3,Au Li Tm,16,intermetallic,neither,A3B2C3_aP16_1_6a_4a_6a:Au-Li-Tm,1
+12674,agm006082531_AB5C12_70_spg71_4_0_rattled-1000-subsampled_9qvy22,agm006082531_AB5C12_70_spg71,Ni5Pb1Pr12,Ni Pb Pr,18,intermetallic,3d-only,A5BC12_aP18_1_5a_a_12a:Ni-Pb-Pr,1
+12714,agm005730496_A4B9C11_1_spg65_0_0_rattled-1000-subsampled_em5aq5,agm005730496_A4B9C11_1_spg65,La11Ni4Zn9,La Ni Zn,24,intermetallic,3d-only,A11B4C9_aP24_1_11a_4a_9a:La-Ni-Zn,1
+12721,agm004776427_ABC2D4_342_spg63_3_0_rattled-1000-subsampled_wpq6ok,agm004776427_ABC2D4_342_spg63,Er2N4Pr1Ru1,Er N Pr Ru,16,nitride,4d-only,A2B4CD_aP16_1_4a_8a_2a_2a:Er-N-Pr-Ru,2
+12744,agm003386315_AB2C10_0_spg69_3_0_rattled-1000-subsampled_h1pryj,agm003386315_AB2C10_0_spg69,La1Mg10Zn2,La Mg Zn,13,intermetallic,3d-only,AB10C2_aP13_1_a_10a_2a:La-Mg-Zn,1
+12752,agm001105121_ABC3_0_spg221_0_0_rattled-1000-subsampled_4tewq7,agm001105121_ABC3_0_spg221,Ba1H3Pm1,Ba H Pm,10,hydride,neither,AB3C_aP10_1_2a_6a_2a:Ba-H-Pm,1
+12776,agm001844872_ABC_4_spg107_3_0_rattled-1000-subsampled_urtjwf,agm001844872_ABC_4_spg107,Ac1Er1Nd1,Ac Er Nd,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Ac-Er-Nd,3
+12835,agm004615617_AB2C3D6_214_spg12_0_0_rattled-1000-subsampled_2qowql,agm004615617_AB2C3D6_214_spg12,Dy2K1Nd3Te6,Dy K Nd Te,12,chalcogenide,neither,A2BC3D6_aP12_1_2a_a_3a_6a:Dy-K-Nd-Te,2
+12851,agm005202067_ABCD_1467_spg129_3_0_rattled-1000-subsampled_cx83a1,agm005202067_ABCD_1467_spg129,Ce1Ge1In1O1,Ce Ge In O,16,oxide,neither,ABCD_aP16_1_4a_4a_4a_4a:Ce-Ge-In-O,1
+12876,agm001086457_ABC2_3_spg225_2_0_rattled-1000-subsampled_vzbyfq,agm001086457_ABC2_3_spg225,Ag2Lu1Th1,Ag Lu Th,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Ag-Lu-Th,2
+12891,agm004621254_AB2C3D6_28_spg12_2_0_rattled-1000-subsampled_j9bnbb,agm004621254_AB2C3D6_28_spg12,Ce1P6Th2Tm3,Ce P Th Tm,12,pnictide,neither,AB6C2D3_aP12_1_a_6a_2a_3a:Ce-P-Th-Tm,3
+12894,agm005026734_ABCD3_429_spg11_4_0_rattled-1000-subsampled_bb1373,agm005026734_ABCD3_429_spg11,K1Mg1Tb1Te3,K Mg Tb Te,12,chalcogenide,neither,ABCD3_aP12_1_2a_2a_2a_6a:K-Mg-Tb-Te,1
+12912,agm005658818_AB2C3_4_spg71_2_0_rattled-1000-subsampled_iag9n4,agm005658818_AB2C3_4_spg71,Dy1P3Tb2,Dy P Tb,12,pnictide,neither,AB3C2_aP12_1_2a_6a_4a:Dy-P-Tb,2
+12941,agm003673575_AB5C5_61_spg12_2_0_rattled-1000-subsampled_hktgjt,agm003673575_AB5C5_61_spg12,Ac1Te5Tl5,Ac Te Tl,11,chalcogenide,neither,AB5C5_aP11_1_a_5a_5a:Ac-Te-Tl,1
+12959,agm001803246_ABCD2_23_spg123_3_0_rattled-1000-subsampled_ibkvqj,agm001803246_ABCD2_23_spg123,La1N1Re1Te2,La N Re Te,10,mixed-anion,neither,ABCD2_aP10_1_2a_2a_2a_4a:La-N-Re-Te,1
+13110,agm005986873_AB2C4_112_spg166_1_0_rattled-1000-subsampled_ten8ev,agm005986873_AB2C4_112_spg166,Ce2Er1Hg4,Ce Er Hg,14,intermetallic,neither,A2BC4_aP14_1_4a_2a_8a:Ce-Er-Hg,2
+13141,agm004796849_ABC2D4_78_spg166_2_0_rattled-1000-subsampled_gbgy85,agm004796849_ABC2D4_78_spg166,Mg1Ni4Sm1Sn2,Mg Ni Sm Sn,16,intermetallic,3d-only,AB4CD2_aP16_1_2a_8a_2a_4a:Mg-Ni-Sm-Sn,1
+13265,agm006092736_AB5C8_5_spg82_2_0_rattled-1000-subsampled_eq0cbx,agm006092736_AB5C8_5_spg82,I8In5Pm1,I In Pm,14,halide,neither,A8B5C_aP14_1_8a_5a_a:I-In-Pm,1
+13386,agm005901333_AB2C2_3_spg127_4_0_rattled-1000-subsampled_6k9w0q,agm005901333_AB2C2_3_spg127,Nd1Pr2Si2,Nd Pr Si,10,silicide,neither,AB2C2_aP10_1_2a_4a_4a:Nd-Pr-Si,2
+13441,agm005670686_A2B7C12_1_spg174_1_0_rattled-1000-subsampled_57u7n8,agm005670686_A2B7C12_1_spg174,Ac2P7Tc12,Ac P Tc,21,pnictide,4d-only,A2B7C12_aP21_1_2a_7a_12a:Ac-P-Tc,1
+13486,agm003317071_A2B2C5_276_spg12_0_0_rattled-1000-subsampled_1hegdy,agm003317071_A2B2C5_276_spg12,Bi2Ce5H2,Bi Ce H,18,hydride,neither,A2B5C2_aP18_1_4a_10a_4a:Bi-Ce-H,1
+13514,agm001918321_ABCD_1_spg216_0_0_rattled-1000-subsampled_9f5wx2,agm001918321_ABCD_1_spg216,Au1Eu1La1Zn1,Au Eu La Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Au-Eu-La-Zn,2
+13610,agm004776213_ABC2D4_342_spg63_4_0_rattled-1000-subsampled_0ticmk,agm004776213_ABC2D4_342_spg63,N4Ru1Sm1Y2,N Ru Sm Y,16,nitride,4d-only,A4BCD2_aP16_1_8a_2a_2a_4a:N-Ru-Sm-Y,1
+13681,agm003574028_AB3C6_298_spg36_2_0_rattled-1000-subsampled_a097sg,agm003574028_AB3C6_298_spg36,Pa3Pt1Se6,Pa Pt Se,20,chalcogenide,neither,A3BC6_aP20_1_6a_2a_12a:Pa-Pt-Se,1
+13768,agm003194539_AB2C2_7_spg164_3_0_rattled-1000-subsampled_zqh12f,agm003194539_AB2C2_7_spg164,O2S1Tb2,O S Tb,10,mixed-anion,neither,A2BC2_aP10_1_4a_2a_4a:O-S-Tb,1
+13796,agm003587570_AB3C8_29_spg160_2_0_rattled-1000-subsampled_z5a2fb,agm003587570_AB3C8_29_spg160,Al8Ce3Sm1,Al Ce Sm,12,intermetallic,neither,A8B3C_aP12_1_8a_3a_a:Al-Ce-Sm,2
+13848,agm001611972_ABCD2_2_spg123_1_0_rattled-1000-subsampled_aek6do,agm001611972_ABCD2_2_spg123,Ca1Ir1La2Na1,Ca Ir La Na,10,intermetallic,neither,ABC2D_aP10_1_2a_2a_4a_2a:Ca-Ir-La-Na,1
+13859,agm005880353_ABC3_5294_spg11_4_0_rattled-1000-subsampled_z9yylg,agm005880353_ABC3_5294_spg11,Ce1Co1Cu3,Ce Co Cu,10,intermetallic,3d-only,ABC3_aP10_1_2a_2a_6a:Ce-Co-Cu,1
+13869,agm003506089_AB2C6_962_spg12_0_0_rattled-1000-subsampled_v4htf3,agm003506089_AB2C6_962_spg12,Br2Cl6Pa1,Br Cl Pa,18,halide,neither,A2B6C_aP18_1_4a_12a_2a:Br-Cl-Pa,1
+13919,agm005682765_AB2C3_9_spg194_4_0_rattled-1000-subsampled_srcjrq,agm005682765_AB2C3_9_spg194,Ce2Cu1Ni3,Ce Cu Ni,12,intermetallic,3d-only,A2BC3_aP12_1_4a_2a_6a:Ce-Cu-Ni,1
+13951,agm001631140_AB2_1_spg227_1_0_rattled-1000-subsampled_kux25k,agm001631140_AB2_1_spg227,Pd2Pm1,Pd Pm,12,intermetallic,4d-only,A2B_aP12_1_8a_4a:Pd-Pm,1
+13965,agm001910904_ABCD_1_spg216_1_0_rattled-1000-subsampled_32n9gr,agm001910904_ABCD_1_spg216,Au1Pu1Si1Tm1,Au Pu Si Tm,16,silicide,neither,ABCD_aP16_1_4a_4a_4a_4a:Au-Pu-Si-Tm,2
+13979,agm005044841_ABCD3_367_spg63_0_0_rattled-1000-subsampled_po8ekw,agm005044841_ABCD3_367_spg63,Au1Cu1Ga3Tm1,Au Cu Ga Tm,12,intermetallic,3d-only,ABC3D_aP12_1_2a_2a_6a_2a:Au-Cu-Ga-Tm,1
+14037,agm001965421_ABC2_83_spg166_2_0_rattled-1000-subsampled_ead0i8,agm001965421_ABC2_83_spg166,Be1Dy1Tm2,Be Dy Tm,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Be-Dy-Tm,2
+14054,agm004998463_ABCD2_43_spg51_0_0_rattled-1000-subsampled_84z883,agm004998463_ABCD2_43_spg51,Ce1Dy1Ho1Tb2,Ce Dy Ho Tb,10,intermetallic,neither,ABCD2_aP10_1_2a_2a_2a_4a:Ce-Dy-Ho-Tb,4
+14113,agm006005276_AB3C4_472_spg115_0_0_rattled-1000-subsampled_r3qnic,agm006005276_AB3C4_472_spg115,Hg1Pb3Pu4,Hg Pb Pu,16,intermetallic,neither,AB3C4_aP16_1_2a_6a_8a:Hg-Pb-Pu,1
+14147,agm005852879_AB2C2_223_spg11_2_0_rattled-1000-subsampled_geosts,agm005852879_AB2C2_223_spg11,Ce1In2Pd2,Ce In Pd,10,intermetallic,4d-only,AB2C2_aP10_1_2a_4a_4a:Ce-In-Pd,1
+14191,agm005204125_ABCD_1554_spg129_3_0_rattled-1000-subsampled_dazpja,agm005204125_ABCD_1554_spg129,N1Ni1P1Pa1,N Ni P Pa,16,nitride,3d-only,ABCD_aP16_1_4a_4a_4a_4a:N-Ni-P-Pa,1
+14196,agm003745933_ABC4_169_spg123_3_0_rattled-1000-subsampled_wf00m5,agm003745933_ABC4_169_spg123,Au1Pb1Pm4,Au Pb Pm,12,intermetallic,neither,ABC4_aP12_1_2a_2a_8a:Au-Pb-Pm,1
+14231,agm001844960_ABC_4_spg107_1_0_rattled-1000-subsampled_vcr7jf,agm001844960_ABC_4_spg107,Lu1Pr1Sm1,Lu Pr Sm,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Lu-Pr-Sm,3
+14285,agm005731104_A4B9C11_1_spg65_0_0_rattled-1000-subsampled_wjqthq,agm005731104_A4B9C11_1_spg65,In9Ni4Th11,In Ni Th,24,intermetallic,3d-only,A9B4C11_aP24_1_9a_4a_11a:In-Ni-Th,1
+14296,agm004806184_ABC2D4_337_spg166_1_0_rattled-1000-subsampled_a8rr17,agm004806184_ABC2D4_337_spg166,Dy2Na1Nd1Tl4,Dy Na Nd Tl,16,intermetallic,neither,A2BCD4_aP16_1_4a_2a_2a_8a:Dy-Na-Nd-Tl,2
+14317,agm001351950_ABCD_1_spg216_2_0_rattled-1000-subsampled_hsibl7,agm001351950_ABCD_1_spg216,Ag1Pa1Tb1Tl1,Ag Pa Tb Tl,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Pa-Tb-Tl,2
+14354,agm005841946_ABC3_4907_spg62_1_0_rattled-1000-subsampled_n2y7ha,agm005841946_ABC3_4907_spg62,Br3Cs1La1,Br Cs La,20,halide,neither,A3BC_aP20_1_12a_4a_4a:Br-Cs-La,1
+14389,agm002439070_ABC3_0_spg221_3_0_rattled-1000-subsampled_l37626,agm002439070_ABC3_0_spg221,Ca3La1Ti1,Ca La Ti,10,intermetallic,3d-only,A3BC_aP10_1_6a_2a_2a:Ca-La-Ti,1
+14474,agm004957625_ABC2D6_406_spg14_0_0_rattled-1000-subsampled_wqq1dw,agm004957625_ABC2D6_406_spg14,Ac2Ho1Se6Y1,Ac Ho Se Y,20,chalcogenide,4d-only,A2BC6D_aP20_1_4a_2a_12a_2a:Ac-Ho-Se-Y,2
+14507,agm001127017_ABC2_27_spg99_2_0_rattled-1000-subsampled_ht14jz,agm001127017_ABC2_27_spg99,Cu1Sn1Th2,Cu Sn Th,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Cu-Sn-Th,1
+14549,agm001134221_ABC2_27_spg99_0_0_rattled-1000-subsampled_7n1f7c,agm001134221_ABC2_27_spg99,Ac1Ag2Al1,Ac Ag Al,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ac-Ag-Al,1
+14566,agm001123732_ABC2_27_spg99_0_0_rattled-1000-subsampled_7exg8d,agm001123732_ABC2_27_spg99,Be1Er1Y2,Be Er Y,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:Be-Er-Y,1
+14597,agm001269415_ABC_2_spg156_4_0_rattled-1000-subsampled_b931rx,agm001269415_ABC_2_spg156,Au1Sc1Sm1,Au Sc Sm,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Au-Sc-Sm,1
+14605,agm004986678_ABC2D6_1095_spg99_4_0_rattled-1000-subsampled_jxymxb,agm004986678_ABC2D6_1095_spg99,Ac2K1O6Re1,Ac K O Re,10,oxide,neither,A2BC6D_aP10_1_2a_a_6a_a:Ac-K-O-Re,1
+14616,agm005715556_A3B5C8_3_spg166_2_0_rattled-1000-subsampled_s8o4ev,agm005715556_A3B5C8_3_spg166,Pa3Rb5Te8,Pa Rb Te,16,chalcogenide,neither,A3B5C8_aP16_1_3a_5a_8a:Pa-Rb-Te,1
+14650,agm003189111_ABC2_3_spg225_3_0_rattled-1000-subsampled_1yxlgz,agm003189111_ABC2_3_spg225,Cu1Pm2Sn1,Cu Pm Sn,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Cu-Pm-Sn,1
+14675,agm003550285_AB3C4_353_spg71_4_0_rattled-1000-subsampled_qxuk86,agm003550285_AB3C4_353_spg71,Au4Cd1Pr3,Au Cd Pr,16,intermetallic,4d-only,A4BC3_aP16_1_8a_2a_6a:Au-Cd-Pr,1
+14800,agm003489547_AB2C6_672_spg65_1_0_rattled-1000-subsampled_vpe5tz,agm003489547_AB2C6_672_spg65,Ag1Dy2Er6,Ag Dy Er,18,intermetallic,4d-only,AB2C6_aP18_1_2a_4a_12a:Ag-Dy-Er,2
+14855,agm003531067_AB2C8_259_spg8_0_0_rattled-1000-subsampled_w41k7i,agm003531067_AB2C8_259_spg8,Al2Ga1Tm8,Al Ga Tm,11,intermetallic,neither,A2BC8_aP11_1_2a_a_8a:Al-Ga-Tm,1
+14898,agm001157576_ABC2_10_spg123_0_0_rattled-1000-subsampled_lgt2sc,agm001157576_ABC2_10_spg123,Ac2Bi1Cl1,Ac Bi Cl,16,halide,neither,A2BC_aP16_1_8a_4a_4a:Ac-Bi-Cl,1
+14907,agm005937759_AB2C4_3368_spg15_2_0_rattled-1000-subsampled_yjsp9p,agm005937759_AB2C4_3368_spg15,Re1Tc2U4,Re Tc U,14,intermetallic,4d-only,AB2C4_aP14_1_2a_4a_8a:Re-Tc-U,1
+14926,agm005177611_ABC2D5_205_spg140_3_0_rattled-1000-subsampled_o90z2e,agm005177611_ABC2D5_205_spg140,Ac1Dy2Pr1Tb5,Ac Dy Pr Tb,18,intermetallic,neither,AB2CD5_aP18_1_2a_4a_2a_10a:Ac-Dy-Pr-Tb,4
+14938,agm006015373_AB2C4_118_spg166_2_0_rattled-1000-subsampled_pwxydf,agm006015373_AB2C4_118_spg166,Li2Os1Pr4,Li Os Pr,14,intermetallic,neither,A2BC4_aP14_1_4a_2a_8a:Li-Os-Pr,1
+14952,agm006092693_AB6C10_23_spg162_4_0_rattled-1000-subsampled_bdsok2,agm006092693_AB6C10_23_spg162,Sc1Sm6Sn10,Sc Sm Sn,17,intermetallic,3d-only,AB6C10_aP17_1_a_6a_10a:Sc-Sm-Sn,1
+15108,agm001286576_ABCD_1_spg216_4_0_rattled-1000-subsampled_h373km,agm001286576_ABCD_1_spg216,Ag1Ca1Eu1Ge1,Ag Ca Eu Ge,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Ca-Eu-Ge,1
+15345,agm005204949_ABCD_418_spg6_3_0_rattled-1000-subsampled_2r3e3d,agm005204949_ABCD_418_spg6,Ge1Tb1Tm1Zn1,Ge Tb Tm Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ge-Tb-Tm-Zn,2
+15407,agm005668201_A2B3C4_138_spg12_4_0_rattled-1000-subsampled_kfbnl0,agm005668201_A2B3C4_138_spg12,Hg4In3Sm2,Hg In Sm,18,intermetallic,neither,A4B3C2_aP18_1_8a_6a_4a:Hg-In-Sm,1
+15444,agm001319491_ABCD_1_spg216_3_0_rattled-1000-subsampled_2mmikl,agm001319491_ABCD_1_spg216,Li1Pa1Tc1Y1,Li Pa Tc Y,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Li-Pa-Tc-Y,1
+15458,agm004770795_ABC2D4_47_spg10_2_0_rattled-1000-subsampled_7p52fg,agm004770795_ABC2D4_47_spg10,Cs2K1Np1O4,Cs K Np O,16,oxide,neither,A2BCD4_aP16_1_4a_2a_2a_8a:Cs-K-Np-O,1
+15484,agm005236632_ABC2D5_70_spg127_0_0_rattled-1000-subsampled_sb8058,agm005236632_ABC2D5_70_spg127,Ba1Gd2O5Pd1,Ba Gd O Pd,18,oxide,4d-only,AB2C5D_aP18_1_2a_4a_10a_2a:Ba-Gd-O-Pd,1
+15498,agm001195505_ABC2_1_spg123_3_0_rattled-1000-subsampled_a9qw4n,agm001195505_ABC2_1_spg123,Ag1Eu2Pb1,Ag Eu Pb,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ag-Eu-Pb,1
+15505,agm005882361_AB2C2_11_spg12_1_0_rattled-1000-subsampled_8736vu,agm005882361_AB2C2_11_spg12,B2Dy1Ni2,B Dy Ni,10,boride,3d-only,A2BC2_aP10_1_4a_2a_4a:B-Dy-Ni,1
+15536,agm006055631_AB4C7_181_spg2_3_0_rattled-1000-subsampled_geezgg,agm006055631_AB4C7_181_spg2,Ho4Pr7Y1,Ho Pr Y,12,intermetallic,4d-only,A4B7C_aP12_1_4a_7a_a:Ho-Pr-Y,2
+15575,agm006102244_AB6C12_30_spg148_4_0_rattled-1000-subsampled_ptbdgu,agm006102244_AB6C12_30_spg148,Er12La1Sm6,Er La Sm,19,intermetallic,neither,A12BC6_aP19_1_12a_a_6a:Er-La-Sm,3
+15643,agm001262574_ABC_2_spg156_0_0_rattled-1000-subsampled_j2pq7p,agm001262574_ABC_2_spg156,Nd1Tl1Y1,Nd Tl Y,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Nd-Tl-Y,1
+15749,agm003354993_A2B3C8_9_spg12_0_0_rattled-1000-subsampled_1n2pin,agm003354993_A2B3C8_9_spg12,Ac2Se8U3,Ac Se U,13,chalcogenide,neither,A2B8C3_aP13_1_2a_8a_3a:Ac-Se-U,2
+15762,agm003319162_A2B2C7_236_spg12_0_0_rattled-1000-subsampled_9p0bn2,agm003319162_A2B2C7_236_spg12,Sc7Th2Tm2,Sc Th Tm,11,intermetallic,3d-only,A7B2C2_aP11_1_7a_2a_2a:Sc-Th-Tm,2
+15776,agm001278320_ABC_68_spg156_3_0_rattled-1000-subsampled_slhk6i,agm001278320_ABC_68_spg156,S1Sm1Y1,S Sm Y,12,chalcogenide,4d-only,ABC_aP12_1_4a_4a_4a:S-Sm-Y,1
+15836,agm006112257_AB5C6_53_spg71_0_0_rattled-1000-subsampled_9kf7pp,agm006112257_AB5C6_53_spg71,Pu1Sm5Tl6,Pu Sm Tl,12,intermetallic,neither,AB5C6_aP12_1_a_5a_6a:Pu-Sm-Tl,2
+15845,agm005788243_ABC4_1257_spg10_1_0_rattled-1000-subsampled_r5ztgx,agm005788243_ABC4_1257_spg10,Hf1Np1Rh4,Hf Np Rh,12,intermetallic,4d-only,ABC4_aP12_1_2a_2a_8a:Hf-Np-Rh,1
+15896,agm004517076_AB2C3D4_7_spg115_3_0_rattled-1000-subsampled_yahueh,agm004517076_AB2C3D4_7_spg115,Ga3Ni4Pt1Sm2,Ga Ni Pt Sm,10,intermetallic,3d-only,A3B4CD2_aP10_1_3a_4a_a_2a:Ga-Ni-Pt-Sm,1
+15937,agm001839933_ABC_150_spg44_3_0_rattled-1000-subsampled_3wahb6,agm001839933_ABC_150_spg44,Ca1Er1Tl1,Ca Er Tl,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Ca-Er-Tl,1
+15990,agm003204873_AB2C3D4_7_spg115_1_0_rattled-1000-subsampled_9u5h6s,agm003204873_AB2C3D4_7_spg115,Ge3La2Ni4P1,Ge La Ni P,10,pnictide,3d-only,A3B2C4D_aP10_1_3a_2a_4a_a:Ge-La-Ni-P,1
+16021,agm001846042_ABC_4_spg107_3_0_rattled-1000-subsampled_6yaupd,agm001846042_ABC_4_spg107,Si1Ti1U1,Si Ti U,12,silicide,3d-only,ABC_aP12_1_4a_4a_4a:Si-Ti-U,1
+16036,agm001611058_ABCD2_23_spg123_3_0_rattled-1000-subsampled_t3gq60,agm001611058_ABCD2_23_spg123,Au1C1Cu1La2,Au C Cu La,10,carbide,3d-only,ABCD2_aP10_1_2a_2a_2a_4a:Au-C-Cu-La,1
+16070,agm004777909_ABC2D4_407_spg63_3_0_rattled-1000-subsampled_lou2o2,agm004777909_ABC2D4_407_spg63,K1Se4Tb2Zn1,K Se Tb Zn,16,chalcogenide,3d-only,AB4C2D_aP16_1_2a_8a_4a_2a:K-Se-Tb-Zn,1
+16081,agm003420810_AB2C3_992_spg11_1_0_rattled-1000-subsampled_xewjie,agm003420810_AB2C3_992_spg11,C2Hg1Th3,C Hg Th,12,carbide,neither,A2BC3_aP12_1_4a_2a_6a:C-Hg-Th,1
+16107,agm004499462_AB2C3D12_24_spg166_0_0_rattled-1000-subsampled_jpefqf,agm004499462_AB2C3D12_24_spg166,B1H3Ni12Pa2,B H Ni Pa,18,mixed-light-element,3d-only,AB3C12D2_aP18_1_a_3a_12a_2a:B-H-Ni-Pa,1
+16138,agm004555413_AB2C2D2_139_spg166_3_0_rattled-1000-subsampled_90d9f7,agm004555413_AB2C2D2_139_spg166,Cd2Li2Mg2Nd1,Cd Li Mg Nd,14,intermetallic,4d-only,A2B2C2D_aP14_1_4a_4a_4a_2a:Cd-Li-Mg-Nd,1
+16159,agm001156498_ABC2_10_spg123_2_0_rattled-1000-subsampled_m3fri1,agm001156498_ABC2_10_spg123,Hg1Lu2V1,Hg Lu V,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Hg-Lu-V,1
+16214,agm005863919_AB2C7_243_spg156_4_0_rattled-1000-subsampled_vbu6ys,agm005863919_AB2C7_243_spg156,Ac1Na2Tl7,Ac Na Tl,10,intermetallic,neither,AB2C7_aP10_1_a_2a_7a:Ac-Na-Tl,1
+16273,agm005775038_ABC3_1382_spg12_2_0_rattled-1000-subsampled_0d86ru,agm005775038_ABC3_1382_spg12,Cd1Pm3Sc1,Cd Pm Sc,10,intermetallic,3d+4d,AB3C_aP10_1_2a_6a_2a:Cd-Pm-Sc,1
+16295,agm005967132_AB3C4_767_spg123_3_0_rattled-1000-subsampled_quci99,agm005967132_AB3C4_767_spg123,Dy3Ho1Pd4,Dy Ho Pd,16,intermetallic,4d-only,A3BC4_aP16_1_6a_2a_8a:Dy-Ho-Pd,2
+16401,agm003549317_AB3C3_297_spg148_1_0_rattled-1000-subsampled_z4t7x5,agm003549317_AB3C3_297_spg148,Pd3Th1Zn3,Pd Th Zn,14,intermetallic,3d+4d,A3BC3_aP14_1_6a_2a_6a:Pd-Th-Zn,1
+16430,agm001314448_ABCD_1_spg216_3_0_rattled-1000-subsampled_q8h0o8,agm001314448_ABCD_1_spg216,Ac1Er1In1Ru1,Ac Er In Ru,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ac-Er-In-Ru,2
+16447,agm001185138_ABC4_12_spg216_0_0_rattled-1000-subsampled_1a0mjd,agm001185138_ABC4_12_spg216,Sm1Sn4Tl1,Sm Sn Tl,12,intermetallic,neither,AB4C_aP12_1_2a_8a_2a:Sm-Sn-Tl,1
+16450,agm004983220_ABC2D6_695_spg15_3_0_rattled-1000-subsampled_v15ddu,agm004983220_ABC2D6_695_spg15,Dy1Er2Ho1Sm6,Dy Er Ho Sm,20,intermetallic,neither,AB2CD6_aP20_1_2a_4a_2a_12a:Dy-Er-Ho-Sm,4
+16558,agm001410985_ABCD_1_spg216_4_0_rattled-1000-subsampled_kcd4n8,agm001410985_ABCD_1_spg216,Hg1Ho1Pr1Sm1,Hg Ho Pr Sm,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Hg-Ho-Pr-Sm,3
+16583,agm004845791_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_fpg6wy,agm004845791_ABC2D4_343_spg10,Ce1P4Pr2Sm1,Ce P Pr Sm,16,pnictide,neither,AB4C2D_aP16_1_2a_8a_4a_2a:Ce-P-Pr-Sm,3
+16601,agm001963289_ABC2_8532_spg166_2_0_rattled-1000-subsampled_sumt4c,agm001963289_ABC2_8532_spg166,P1Pm2Tl1,P Pm Tl,16,pnictide,neither,AB2C_aP16_1_4a_8a_4a:P-Pm-Tl,1
+16640,agm004574413_AB2C2D6_26_spg166_0_0_rattled-1000-subsampled_tpa072,agm004574413_AB2C2D6_26_spg166,Ba2N6Os2Tb1,Ba N Os Tb,11,nitride,neither,A2B6C2D_aP11_1_2a_6a_2a_a:Ba-N-Os-Tb,1
+16695,agm003411449_AB2C3_951_spg25_1_0_rattled-1000-subsampled_a225ww,agm003411449_AB2C3_951_spg25,Ge1La2Si3,Ge La Si,12,silicide,neither,AB2C3_aP12_1_2a_4a_6a:Ge-La-Si,1
+16765,agm005021038_ABCD2_1563_spg119_3_0_rattled-1000-subsampled_1evuh5,agm005021038_ABCD2_1563_spg119,B2Er1Fe1Mn1,B Er Fe Mn,10,boride,3d-only,A2BCD_aP10_1_4a_2a_2a_2a:B-Er-Fe-Mn,1
+16802,agm003639295_AB4C5_155_spg123_1_0_rattled-1000-subsampled_ftq7nm,agm003639295_AB4C5_155_spg123,Ru5Tb1Y4,Ru Tb Y,10,intermetallic,4d-only,A5BC4_aP10_1_5a_a_4a:Ru-Tb-Y,1
+16822,agm001203679_ABC2_1_spg123_4_0_rattled-1000-subsampled_fglu8o,agm001203679_ABC2_1_spg123,Bi1Cu1Pr2,Bi Cu Pr,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Bi-Cu-Pr,1
+16932,agm005624443_ABC_3_spg194_1_0_rattled-1000-subsampled_2htky4,agm005624443_ABC_3_spg194,Er1La1Tl1,Er La Tl,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Er-La-Tl,2
+16935,agm001210671_ABC2_18_spg123_1_0_rattled-1000-subsampled_6pa9fi,agm001210671_ABC2_18_spg123,La1Pb1Th2,La Pb Th,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:La-Pb-Th,2
+16936,agm004546805_AB2C2D2_141_spg166_1_0_rattled-1000-subsampled_pn9wm4,agm004546805_AB2C2D2_141_spg166,Al2Ga2Pt2Pu1,Al Ga Pt Pu,14,intermetallic,neither,A2B2C2D_aP14_1_4a_4a_4a_2a:Al-Ga-Pt-Pu,1
+16945,agm002913851_AB2C2_5_spg139_1_0_rattled-1000-subsampled_v82w7f,agm002913851_AB2C2_5_spg139,C2La1Tc2,C La Tc,10,carbide,4d-only,A2BC2_aP10_1_4a_2a_4a:C-La-Tc,1
+16957,agm006030423_AB4C5_22_spg123_0_0_rattled-1000-subsampled_i395wu,agm006030423_AB4C5_22_spg123,Ac4Nd5Pm1,Ac Nd Pm,10,intermetallic,neither,A4B5C_aP10_1_4a_5a_a:Ac-Nd-Pm,3
+17025,agm001170426_ABC4_12_spg216_4_0_rattled-1000-subsampled_vm2pn9,agm001170426_ABC4_12_spg216,Al4Np1Sr1,Al Np Sr,12,intermetallic,neither,A4BC_aP12_1_8a_2a_2a:Al-Np-Sr,1
+17129,agm001836449_ABC_4_spg107_0_0_rattled-1000-subsampled_2utzdh,agm001836449_ABC_4_spg107,Ga1Lu1Rh1,Ga Lu Rh,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Ga-Lu-Rh,1
+17184,agm005587227_ABC10_0_spg47_1_0_rattled-1000-subsampled_ecyjzm,agm005587227_ABC10_0_spg47,Dy1Pt10Sm1,Dy Pt Sm,12,intermetallic,neither,AB10C_aP12_1_a_10a_a:Dy-Pt-Sm,2
+17191,agm001094284_ABC2_3_spg225_2_0_rattled-1000-subsampled_bj6j1u,agm001094284_ABC2_3_spg225,Mn2Pt1U1,Mn Pt U,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Mn-Pt-U,1
+17226,agm005030555_ABCD3_608_spg12_3_0_rattled-1000-subsampled_nkj8n4,agm005030555_ABCD3_608_spg12,N3Na1Sm1Tc1,N Na Sm Tc,12,nitride,4d-only,A3BCD_aP12_1_6a_2a_2a_2a:N-Na-Sm-Tc,1
+17272,agm001289950_ABCD_1_spg216_1_0_rattled-1000-subsampled_9ibvvb,agm001289950_ABCD_1_spg216,Ge1Rh1Tb1Tm1,Ge Rh Tb Tm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ge-Rh-Tb-Tm,2
+17415,agm006138116_AB5C6_95_spg12_4_0_rattled-1000-subsampled_2erqic,agm006138116_AB5C6_95_spg12,Au6Dy5Na1,Au Dy Na,12,intermetallic,neither,A6B5C_aP12_1_6a_5a_a:Au-Dy-Na,1
+17437,agm004656050_AB2C3D6_178_spg12_0_0_rattled-1000-subsampled_pv32mu,agm004656050_AB2C3D6_178_spg12,Er3La2Pm1Pr6,Er La Pm Pr,12,intermetallic,neither,A3B2CD6_aP12_1_3a_2a_a_6a:Er-La-Pm-Pr,4
+17583,agm004312790_ABC_0_spg216_3_0_rattled-1000-subsampled_9hqc86,agm004312790_ABC_0_spg216,La1Mo1Y1,La Mo Y,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:La-Mo-Y,1
+17644,agm001034896_ABC_86_spg129_3_0_rattled-1000-subsampled_kt58be,agm001034896_ABC_86_spg129,Dy1Mo1S1,Dy Mo S,12,chalcogenide,4d-only,ABC_aP12_1_4a_4a_4a:Dy-Mo-S,1
+17656,agm002007578_ABC2_542_spg166_4_0_rattled-1000-subsampled_ldcqhg,agm002007578_ABC2_542_spg166,La2Ta1Tm1,La Ta Tm,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:La-Ta-Tm,2
+17682,agm001339692_ABCD_1_spg216_2_0_rattled-1000-subsampled_ewrsta,agm001339692_ABCD_1_spg216,Ce1Ho1Pu1Sn1,Ce Ho Pu Sn,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Ce-Ho-Pu-Sn,3
+17736,agm003429295_AB2C3_935_spg12_4_0_rattled-1000-subsampled_57q1fw,agm003429295_AB2C3_935_spg12,Ir1Nd3Se2,Ir Nd Se,12,chalcogenide,neither,AB3C2_aP12_1_2a_6a_4a:Ir-Nd-Se,1
+17787,agm001338030_ABCD_1_spg216_3_0_rattled-1000-subsampled_4bcu21,agm001338030_ABCD_1_spg216,Ho1Pu1Rh1Sn1,Ho Pu Rh Sn,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ho-Pu-Rh-Sn,2
+17816,agm001157559_ABC2_27_spg99_1_0_rattled-1000-subsampled_ki0gnj,agm001157559_ABC2_27_spg99,Ce2Cl1N1,Ce Cl N,16,mixed-anion,neither,A2BC_aP16_1_8a_4a_4a:Ce-Cl-N,1
+17904,agm004147870_ABC2_28_spg38_1_0_rattled-1000-subsampled_wxkmud,agm004147870_ABC2_28_spg38,La2Pt1W1,La Pt W,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:La-Pt-W,1
+17929,agm005994606_AB4C10_7_spg87_4_0_rattled-1000-subsampled_iv2lkh,agm005994606_AB4C10_7_spg87,Ce4O10Ta1,Ce O Ta,15,oxide,neither,A4B10C_aP15_1_4a_10a_a:Ce-O-Ta,1
+17933,agm003554908_AB3C4_77_spg25_4_0_rattled-1000-subsampled_a41ghe,agm003554908_AB3C4_77_spg25,In1Pb3Pm4,In Pb Pm,16,intermetallic,neither,AB3C4_aP16_1_2a_6a_8a:In-Pb-Pm,1
+17970,agm003639323_AB4C5_22_spg123_3_0_rattled-1000-subsampled_cgx5gm,agm003639323_AB4C5_22_spg123,Cu4Ru1Sm5,Cu Ru Sm,10,intermetallic,3d+4d,A4BC5_aP10_1_4a_a_5a:Cu-Ru-Sm,1
+17994,agm003619209_ABC2_63_spg63_1_0_rattled-1000-subsampled_v7ckb0,agm003619209_ABC2_63_spg63,Er1Ni1Tm2,Er Ni Tm,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Er-Ni-Tm,2
+18033,agm003230851_ABC3D7_1_spg173_0_0_rattled-1000-subsampled_4e3683,agm003230851_ABC3D7_1_spg173,Be1La3S7Sb1,Be La S Sb,24,chalcogenide,neither,AB3C7D_aP24_1_2a_6a_14a_2a:Be-La-S-Sb,1
+18044,agm004822258_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_4l4go9,agm004822258_ABC2D4_343_spg10,La1Li2Pm1Se4,La Li Pm Se,16,chalcogenide,neither,AB2CD4_aP16_1_2a_4a_2a_8a:La-Li-Pm-Se,2
+18054,agm001368371_ABCD_1_spg216_4_0_rattled-1000-subsampled_z68te0,agm001368371_ABCD_1_spg216,Mg1Sc1Tm1Zn1,Mg Sc Tm Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Mg-Sc-Tm-Zn,1
+18059,agm001295693_ABCD_1_spg216_0_0_rattled-1000-subsampled_0fldij,agm001295693_ABCD_1_spg216,Pa1Pt1Ru1Sn1,Pa Pt Ru Sn,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Pa-Pt-Ru-Sn,1
+18077,agm001324267_ABCD_1_spg216_0_0_rattled-1000-subsampled_4zcxlm,agm001324267_ABCD_1_spg216,Ag1Cd1Er1Na1,Ag Cd Er Na,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Cd-Er-Na,1
+18084,agm006002281_AB3C4_1150_spg47_1_0_rattled-1000-subsampled_3f4pc4,agm006002281_AB3C4_1150_spg47,Ce1Mg4Pm3,Ce Mg Pm,16,intermetallic,neither,AB4C3_aP16_1_2a_8a_6a:Ce-Mg-Pm,2
+18090,agm001301626_ABCD_1_spg216_1_0_rattled-1000-subsampled_m7al2b,agm001301626_ABCD_1_spg216,Er1Li1Pt1Tb1,Er Li Pt Tb,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Er-Li-Pt-Tb,2
+18117,agm005177554_ABC2D5_205_spg140_2_0_rattled-1000-subsampled_3xu5z9,agm005177554_ABC2D5_205_spg140,Ac1Ho5Sm2Tb1,Ac Ho Sm Tb,18,intermetallic,neither,AB5C2D_aP18_1_2a_10a_4a_2a:Ac-Ho-Sm-Tb,4
+18127,agm004842721_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_1akxah,agm004842721_ABC2D4_343_spg10,Ca1Dy1Er2Sb4,Ca Dy Er Sb,16,intermetallic,neither,ABC2D4_aP16_1_2a_2a_4a_8a:Ca-Dy-Er-Sb,2
+18145,agm003452972_AB2C4_20_spg63_2_0_rattled-1000-subsampled_k47j0m,agm003452972_AB2C4_20_spg63,Np1Se4Y2,Np Se Y,14,chalcogenide,4d-only,AB4C2_aP14_1_2a_8a_4a:Np-Se-Y,1
+18152,agm001231917_ABC2_1_spg123_2_0_rattled-1000-subsampled_7awdkz,agm001231917_ABC2_1_spg123,Ce1La1Zn2,Ce La Zn,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Ce-La-Zn,2
+18157,agm002960766_AB2C2_3_spg127_0_0_rattled-1000-subsampled_giyj99,agm002960766_AB2C2_3_spg127,Be2Ge1La2,Be Ge La,10,intermetallic,neither,A2BC2_aP10_1_4a_2a_4a:Be-Ge-La,1
+18260,agm005659910_A2B5C5_18_spg12_0_0_rattled-1000-subsampled_ra9dag,agm005659910_A2B5C5_18_spg12,Ge5Ir2Pu5,Ge Ir Pu,12,intermetallic,neither,A5B2C5_aP12_1_5a_2a_5a:Ge-Ir-Pu,1
+18364,agm004987881_ABC2D6_717_spg12_2_0_rattled-1000-subsampled_nc8b60,agm004987881_ABC2D6_717_spg12,Ce1Dy1Nd6Tb2,Ce Dy Nd Tb,10,intermetallic,neither,ABC6D2_aP10_1_a_a_6a_2a:Ce-Dy-Nd-Tb,4
+18408,agm004598114_AB2C3D6_175_spg12_1_0_rattled-1000-subsampled_1l8qe2,agm004598114_AB2C3D6_175_spg12,Ac6Ir2Pt1Te3,Ac Ir Pt Te,12,chalcogenide,neither,A6B2CD3_aP12_1_6a_2a_a_3a:Ac-Ir-Pt-Te,1
+18444,agm005902889_AB2C9_10_spg123_1_0_rattled-1000-subsampled_ta2qft,agm005902889_AB2C9_10_spg123,Nd1Pr2Tm9,Nd Pr Tm,12,intermetallic,neither,AB2C9_aP12_1_a_2a_9a:Nd-Pr-Tm,3
+18472,agm001996709_ABC2_83_spg166_4_0_rattled-1000-subsampled_uflckn,agm001996709_ABC2_83_spg166,K1O1Pr2,K O Pr,16,oxide,neither,ABC2_aP16_1_4a_4a_8a:K-O-Pr,1
+18550,agm005001412_ABCD2_1729_spg11_1_0_rattled-1000-subsampled_j69ybz,agm005001412_ABCD2_1729_spg11,Cd1Cu1Fe1Th2,Cd Cu Fe Th,10,intermetallic,3d+4d,ABCD2_aP10_1_2a_2a_2a_4a:Cd-Cu-Fe-Th,1
+18551,agm001521049_ABCD2_45_spg123_4_0_rattled-1000-subsampled_l40psh,agm001521049_ABCD2_45_spg123,Ag2F1La1N1,Ag F La N,10,mixed-anion,4d-only,A2BCD_aP10_1_4a_2a_2a_2a:Ag-F-La-N,1
+18624,agm002936960_AB2C2_5_spg139_0_0_rattled-1000-subsampled_8mvic3,agm002936960_AB2C2_5_spg139,Ge2La1Ni2,Ge La Ni,10,intermetallic,3d-only,A2BC2_aP10_1_4a_2a_4a:Ge-La-Ni,1
+18637,agm005202192_ABCD_1554_spg129_1_0_rattled-1000-subsampled_qmajq9,agm005202192_ABCD_1554_spg129,Ge1H1Nd1Zn1,Ge H Nd Zn,16,hydride,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ge-H-Nd-Zn,1
+18812,agm002000845_ABC2_83_spg166_2_0_rattled-1000-subsampled_lmoupc,agm002000845_ABC2_83_spg166,Lu2Se1Tc1,Lu Se Tc,16,chalcogenide,4d-only,A2BC_aP16_1_8a_4a_4a:Lu-Se-Tc,1
+18835,agm004655726_AB2C3D6_178_spg12_2_0_rattled-1000-subsampled_9jn5ql,agm004655726_AB2C3D6_178_spg12,Ac6La3Pm1Sm2,Ac La Pm Sm,12,intermetallic,neither,A6B3CD2_aP12_1_6a_3a_a_2a:Ac-La-Pm-Sm,4
+18839,agm004996850_ABCD2_1611_spg49_2_0_rattled-1000-subsampled_gjmips,agm004996850_ABCD2_1611_spg49,Be1Ca1Ho1N2,Be Ca Ho N,10,nitride,neither,ABCD2_aP10_1_2a_2a_2a_4a:Be-Ca-Ho-N,1
+19054,agm002010734_ABC2_83_spg166_4_0_rattled-1000-subsampled_3zdis9,agm002010734_ABC2_83_spg166,Cl2In1Sm1,Cl In Sm,16,halide,neither,A2BC_aP16_1_8a_4a_4a:Cl-In-Sm,1
+19074,agm001385124_ABCD_1_spg216_2_0_rattled-1000-subsampled_2japsr,agm001385124_ABCD_1_spg216,Ho1Ir1Rh1Zr1,Ho Ir Rh Zr,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ho-Ir-Rh-Zr,1
+19202,agm001244219_ABC2_18_spg123_2_0_rattled-1000-subsampled_b160qm,agm001244219_ABC2_18_spg123,Li1Mn2Pu1,Li Mn Pu,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Li-Mn-Pu,1
+19211,agm003321093_A2B2C7_243_spg65_2_0_rattled-1000-subsampled_g63l0d,agm003321093_A2B2C7_243_spg65,Au2Dy7In2,Au Dy In,11,intermetallic,neither,A2B7C2_aP11_1_2a_7a_2a:Au-Dy-In,1
+19222,agm005140265_AB2C2D5_50_spg127_2_0_rattled-1000-subsampled_arfsa2,agm005140265_AB2C2D5_50_spg127,Mg1Ni5Th2Zn2,Mg Ni Th Zn,20,intermetallic,3d-only,AB5C2D2_aP20_1_2a_10a_4a_4a:Mg-Ni-Th-Zn,1
+19298,agm001395107_ABCD_1_spg216_4_0_rattled-1000-subsampled_zwz5k9,agm001395107_ABCD_1_spg216,Pd1Pu1Sb1Tb1,Pd Pu Sb Tb,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Pd-Pu-Sb-Tb,2
+19338,agm001946027_ABC2_8532_spg166_0_0_rattled-1000-subsampled_hnuuna,agm001946027_ABC2_8532_spg166,Eu1H2Sb1,Eu H Sb,16,hydride,neither,AB2C_aP16_1_4a_8a_4a:Eu-H-Sb,1
+19347,agm001941873_ABC2_19_spg166_2_0_rattled-1000-subsampled_8arwrh,agm001941873_ABC2_19_spg166,Ac1Lu1Sn2,Ac Lu Sn,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Ac-Lu-Sn,2
+19375,agm004523059_AB2C3D4_52_spg115_4_0_rattled-1000-subsampled_b1hsv8,agm004523059_AB2C3D4_52_spg115,As4La2Ni3Ru1,As La Ni Ru,10,pnictide,3d+4d,A4B2C3D_aP10_1_4a_2a_3a_a:As-La-Ni-Ru,1
+19394,agm004635995_AB2C3D6_221_spg12_1_0_rattled-1000-subsampled_8iby0k,agm004635995_AB2C3D6_221_spg12,Ni2Pa1Se6Tl3,Ni Pa Se Tl,12,chalcogenide,3d-only,A2BC6D3_aP12_1_2a_a_6a_3a:Ni-Pa-Se-Tl,1
+19440,agm005909247_AB2C5_62_spg140_3_0_rattled-1000-subsampled_wqi33b,agm005909247_AB2C5_62_spg140,Ce5Pt1Ru2,Ce Pt Ru,16,intermetallic,4d-only,A5BC2_aP16_1_10a_2a_4a:Ce-Pt-Ru,1
+19442,agm005137902_AB2C2D5_48_spg127_4_0_rattled-1000-subsampled_5hc3ji,agm005137902_AB2C2D5_48_spg127,B2Co5Er2Ga1,B Co Er Ga,20,boride,3d-only,A2B5C2D_aP20_1_4a_10a_4a_2a:B-Co-Er-Ga,1
+19465,agm001568140_ABCD2_2_spg123_1_0_rattled-1000-subsampled_pfj7h4,agm001568140_ABCD2_2_spg123,Ag2Hg1La1Nb1,Ag Hg La Nb,10,intermetallic,4d-only,A2BCD_aP10_1_4a_2a_2a_2a:Ag-Hg-La-Nb,1
+19513,agm003512537_AB2C7_17_spg65_2_0_rattled-1000-subsampled_7y8n7s,agm003512537_AB2C7_17_spg65,B2Rh7Sm1,B Rh Sm,10,boride,4d-only,A2B7C_aP10_1_2a_7a_a:B-Rh-Sm,1
+19520,agm001189750_ABC4_12_spg216_3_0_rattled-1000-subsampled_wx5tsi,agm001189750_ABC4_12_spg216,Np1Pd1Rh4,Np Pd Rh,12,intermetallic,4d-only,ABC4_aP12_1_2a_2a_8a:Np-Pd-Rh,1
+19557,agm005228458_ABCDE6_0_spg216_0_0_rattled-1000-subsampled_9ek4p5,agm005228458_ABCDE6_0_spg216,Ca1Eu1O6Sb1Zn1,Ca Eu O Sb Zn,10,oxide,3d-only,ABC6DE_aP10_1_a_a_6a_a_a:Ca-Eu-O-Sb-Zn,1
+19588,agm001218634_ABC2_18_spg123_2_0_rattled-1000-subsampled_5422vm,agm001218634_ABC2_18_spg123,Pa1Pb2Th1,Pa Pb Th,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Pa-Pb-Th,2
+19659,agm004616912_AB2C3D6_28_spg12_1_0_rattled-1000-subsampled_kcatfz,agm004616912_AB2C3D6_28_spg12,Ho1Pu2Sm3Te6,Ho Pu Sm Te,12,chalcogenide,neither,AB2C3D6_aP12_1_a_2a_3a_6a:Ho-Pu-Sm-Te,3
+19699,agm005209501_ABCD_7_spg129_1_0_rattled-1000-subsampled_ovs98u,agm005209501_ABCD_7_spg129,B1Ni1P1Pu1,B Ni P Pu,16,mixed-light-element,3d-only,ABCD_aP16_1_4a_4a_4a_4a:B-Ni-P-Pu,1
+19794,agm005081426_ABCD6_10_spg163_2_0_rattled-1000-subsampled_s244tk,agm005081426_ABCD6_10_spg163,In1O6Pa1Pd1,In O Pa Pd,18,oxide,4d-only,AB6CD_aP18_1_2a_12a_2a_2a:In-O-Pa-Pd,1
+19807,agm004057437_ABC2_31_spg10_2_0_rattled-1000-subsampled_hf2p1h,agm004057437_ABC2_31_spg10,Br2La1Sr1,Br La Sr,16,halide,neither,A2BC_aP16_1_8a_4a_4a:Br-La-Sr,1
+19815,agm006076909_AB4C5_282_spg12_0_0_rattled-1000-subsampled_cloc3s,agm006076909_AB4C5_282_spg12,Dy5Pm4Pu1,Dy Pm Pu,10,intermetallic,neither,A5B4C_aP10_1_5a_4a_a:Dy-Pm-Pu,3
+19829,agm003732261_ABC3_6378_spg74_1_0_rattled-1000-subsampled_guqx9m,agm003732261_ABC3_6378_spg74,Ir1Pu1Rh3,Ir Pu Rh,10,intermetallic,4d-only,ABC3_aP10_1_2a_2a_6a:Ir-Pu-Rh,1
+20079,agm005623834_A2B3C6_6_spg229_1_0_rattled-1000-subsampled_apzy4v,agm005623834_A2B3C6_6_spg229,Ni6Tb3Zn2,Ni Tb Zn,22,intermetallic,3d-only,A6B3C2_aP22_1_12a_6a_4a:Ni-Tb-Zn,1
+20100,agm004560412_AB2C2D4_211_spg12_0_0_rattled-1000-subsampled_f2ewi1,agm004560412_AB2C2D4_211_spg12,Hg2K2Pm1Te4,Hg K Pm Te,18,chalcogenide,neither,A2B2CD4_aP18_1_4a_4a_2a_8a:Hg-K-Pm-Te,1
+20120,agm005983637_AB2C4_114_spg123_2_0_rattled-1000-subsampled_5ld9ht,agm005983637_AB2C4_114_spg123,Au4Ho2Pr1,Au Ho Pr,14,intermetallic,neither,A4B2C_aP14_1_8a_4a_2a:Au-Ho-Pr,2
+20216,agm001107413_ABC3_0_spg221_0_0_rattled-1000-subsampled_9wtsf0,agm001107413_ABC3_0_spg221,Hf3Ho1N1,Hf Ho N,10,nitride,neither,A3BC_aP10_1_6a_2a_2a:Hf-Ho-N,1
+20218,agm004838720_ABC2D4_343_spg10_0_0_rattled-1000-subsampled_xnveqf,agm004838720_ABC2D4_343_spg10,As4Ca1Np2Pa1,As Ca Np Pa,16,pnictide,neither,A4BC2D_aP16_1_8a_2a_4a_2a:As-Ca-Np-Pa,2
+20340,agm003409514_AB2C3_1290_spg63_3_0_rattled-1000-subsampled_9dimyn,agm003409514_AB2C3_1290_spg63,Er1Ni2Si3,Er Ni Si,12,silicide,3d-only,AB2C3_aP12_1_2a_4a_6a:Er-Ni-Si,1
+20414,agm005023373_ABCD3_432_spg11_1_0_rattled-1000-subsampled_2zh545,agm005023373_ABCD3_432_spg11,Cd1Cs1O3Tb1,Cd Cs O Tb,12,oxide,4d-only,ABC3D_aP12_1_2a_2a_6a_2a:Cd-Cs-O-Tb,1
+20417,agm006131133_AB5C6_53_spg71_2_0_rattled-1000-subsampled_trigke,agm006131133_AB5C6_53_spg71,Li5Pd6Pm1,Li Pd Pm,12,intermetallic,4d-only,A5B6C_aP12_1_5a_6a_a:Li-Pd-Pm,1
+20443,agm005193821_ABCD_157_spg99_0_0_rattled-1000-subsampled_kdzxug,agm005193821_ABCD_157_spg99,Er1Th1Y1Zn1,Er Th Y Zn,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Er-Th-Y-Zn,2
+20467,agm004581635_AB2C2D6_25_spg12_4_0_rattled-1000-subsampled_bk5qms,agm004581635_AB2C2D6_25_spg12,Bi1O6Rb2Tm2,Bi O Rb Tm,11,oxide,neither,AB6C2D2_aP11_1_a_6a_2a_2a:Bi-O-Rb-Tm,1
+20482,agm001340815_ABCD_1_spg216_1_0_rattled-1000-subsampled_3wds4a,agm001340815_ABCD_1_spg216,Cu1Mg1Ni1Pm1,Cu Mg Ni Pm,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Cu-Mg-Ni-Pm,1
+20499,agm003423984_AB2C3_12_spg72_0_0_rattled-1000-subsampled_paw8ph,agm003423984_AB2C3_12_spg72,Ac3Hg2Pr1,Ac Hg Pr,12,intermetallic,neither,A3B2C_aP12_1_6a_4a_2a:Ac-Hg-Pr,2
+20511,agm005573825_A2B3C3_18_spg47_3_0_rattled-1000-subsampled_dltl4d,agm005573825_A2B3C3_18_spg47,Pd3Pm2Pt3,Pd Pm Pt,16,intermetallic,4d-only,A3B2C3_aP16_1_6a_4a_6a:Pd-Pm-Pt,1
+20566,agm004827264_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_tg5cbx,agm004827264_ABC2D4_343_spg10,Np1Rb2S4Sc1,Np Rb S Sc,16,chalcogenide,3d-only,AB2C4D_aP16_1_2a_4a_8a_2a:Np-Rb-S-Sc,1
+20601,agm006076267_AB5C6_53_spg71_3_0_rattled-1000-subsampled_7kryjp,agm006076267_AB5C6_53_spg71,Hg5Ru1Tb6,Hg Ru Tb,12,intermetallic,4d-only,A5BC6_aP12_1_5a_a_6a:Hg-Ru-Tb,1
+20623,agm001812278_ABC2_27_spg99_0_0_rattled-1000-subsampled_4w2yof,agm001812278_ABC2_27_spg99,Cs1Nd1Te2,Cs Nd Te,16,chalcogenide,neither,ABC2_aP16_1_4a_4a_8a:Cs-Nd-Te,1
+20647,agm005829379_AB2C3_484_spg191_1_0_rattled-1000-subsampled_go3x8e,agm005829379_AB2C3_484_spg191,Co2Ge3Pu1,Co Ge Pu,12,intermetallic,3d-only,A2B3C_aP12_1_4a_6a_2a:Co-Ge-Pu,1
+20778,agm001392014_ABCD_1_spg216_3_0_rattled-1000-subsampled_0dq8jl,agm001392014_ABCD_1_spg216,Pd1Sm1Tl1Tm1,Pd Sm Tl Tm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Pd-Sm-Tl-Tm,2
+20855,agm005865184_AB2C2_1340_spg65_2_0_rattled-1000-subsampled_6m8i9h,agm005865184_AB2C2_1340_spg65,Ac1Mg2Pr2,Ac Mg Pr,10,intermetallic,neither,AB2C2_aP10_1_2a_4a_4a:Ac-Mg-Pr,2
+20868,agm004560056_AB2C2D4_211_spg12_2_0_rattled-1000-subsampled_csd4gk,agm004560056_AB2C2D4_211_spg12,Ac1Hg2S4Tl2,Ac Hg S Tl,18,chalcogenide,neither,AB2C4D2_aP18_1_2a_4a_8a_4a:Ac-Hg-S-Tl,1
+20993,agm004788321_ABC2D4_368_spg23_3_0_rattled-1000-subsampled_8ppr55,agm004788321_ABC2D4_368_spg23,Ag2Na1Pa1S4,Ag Na Pa S,16,chalcogenide,4d-only,A2BCD4_aP16_1_4a_2a_2a_8a:Ag-Na-Pa-S,1
+21052,agm003616070_ABC2_5_spg166_1_0_rattled-1000-subsampled_o2zvce,agm003616070_ABC2_5_spg166,Pm1S2Sr1,Pm S Sr,16,chalcogenide,neither,AB2C_aP16_1_4a_8a_4a:Pm-S-Sr,1
+21054,agm005475519_ABC4_12_spg216_0_0_rattled-1000-subsampled_lve8xf,agm005475519_ABC4_12_spg216,La1Mn1Sb4,La Mn Sb,12,intermetallic,3d-only,ABC4_aP12_1_2a_2a_8a:La-Mn-Sb,1
+21161,agm004618631_AB2C3D6_28_spg12_0_0_rattled-1000-subsampled_62j6w1,agm004618631_AB2C3D6_28_spg12,As2I1Pm6Sb3,As I Pm Sb,12,halide,neither,A2BC6D3_aP12_1_2a_a_6a_3a:As-I-Pm-Sb,1
+21169,agm003898490_ABC2_6904_spg12_1_0_rattled-1000-subsampled_hl56xo,agm003898490_ABC2_6904_spg12,La1Mn2Re1,La Mn Re,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:La-Mn-Re,1
+21222,agm001326132_ABCD_1_spg216_4_0_rattled-1000-subsampled_dvzb4s,agm001326132_ABCD_1_spg216,Cd1Er1Nd1Zn1,Cd Er Nd Zn,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Cd-Er-Nd-Zn,2
+21268,agm005896251_ABC3_4829_spg63_2_0_rattled-1000-subsampled_pqkxqc,agm005896251_ABC3_4829_spg63,Au3La1Nd1,Au La Nd,10,intermetallic,neither,A3BC_aP10_1_6a_2a_2a:Au-La-Nd,2
+21272,agm005841412_AB2C9_10_spg123_1_0_rattled-1000-subsampled_m86q3l,agm005841412_AB2C9_10_spg123,Pt9Tl1Tm2,Pt Tl Tm,12,intermetallic,neither,A9BC2_aP12_1_9a_a_2a:Pt-Tl-Tm,1
+21285,agm001213111_ABC2_1_spg123_2_0_rattled-1000-subsampled_22is3s,agm001213111_ABC2_1_spg123,Ce1Ho1Mg2,Ce Ho Mg,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Ce-Ho-Mg,2
+21424,agm005171190_ABC2D5_234_spg123_3_0_rattled-1000-subsampled_ltbegz,agm005171190_ABC2D5_234_spg123,Dy1Ga2In1Ni5,Dy Ga In Ni,18,intermetallic,3d-only,AB2CD5_aP18_1_2a_4a_2a_10a:Dy-Ga-In-Ni,1
+21532,agm001334676_ABCD_1_spg216_1_0_rattled-1000-subsampled_w7tzij,agm001334676_ABCD_1_spg216,Ba1La1Sn1Zn1,Ba La Sn Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ba-La-Sn-Zn,1
+21558,agm001090431_ABC2_3_spg225_1_0_rattled-1000-subsampled_5kexe2,agm001090431_ABC2_3_spg225,Bi2Eu1Tl1,Bi Eu Tl,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Bi-Eu-Tl,1
+21610,agm004488178_A2B2C3D4_38_spg164_2_0_rattled-1000-subsampled_0jqbvh,agm004488178_A2B2C3D4_38_spg164,Cd2Ce2Hg4Pb3,Cd Ce Hg Pb,11,intermetallic,4d-only,A2B2C4D3_aP11_1_2a_2a_4a_3a:Cd-Ce-Hg-Pb,1
+21669,agm005771920_ABC6_19_spg123_1_0_rattled-1000-subsampled_aqywg4,agm005771920_ABC6_19_spg123,Nd1Pb1Pd6,Nd Pb Pd,16,intermetallic,4d-only,ABC6_aP16_1_2a_2a_12a:Nd-Pb-Pd,1
+21698,agm001974192_ABC2_83_spg166_0_0_rattled-1000-subsampled_p4kgvk,agm001974192_ABC2_83_spg166,Er1Hf1Ho2,Er Hf Ho,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Er-Hf-Ho,2
+21704,agm004553862_AB2C2D2_139_spg166_1_0_rattled-1000-subsampled_kg2n0t,agm004553862_AB2C2D2_139_spg166,Ce1Pd2Pu2Sb2,Ce Pd Pu Sb,14,intermetallic,4d-only,AB2C2D2_aP14_1_2a_4a_4a_4a:Ce-Pd-Pu-Sb,2
+21739,agm005846468_ABC3_5559_spg74_1_0_rattled-1000-subsampled_q33smt,agm005846468_ABC3_5559_spg74,F3Pa1S1,F Pa S,10,mixed-anion,neither,A3BC_aP10_1_6a_2a_2a:F-Pa-S,1
+21749,agm001160306_ABC2_27_spg99_0_0_rattled-1000-subsampled_j2b1d0,agm001160306_ABC2_27_spg99,Ho1La2Nd1,Ho La Nd,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ho-La-Nd,3
+21760,agm001392960_ABCD_1_spg216_0_0_rattled-1000-subsampled_3xwyyc,agm001392960_ABCD_1_spg216,Er1In1Tl1Tm1,Er In Tl Tm,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Er-In-Tl-Tm,2
+21784,agm004567003_AB2C2D4_166_spg139_4_0_rattled-1000-subsampled_xt2tge,agm004567003_AB2C2D4_166_spg139,Pd2Pm2Pt4Si1,Pd Pm Pt Si,18,silicide,4d-only,A2B2C4D_aP18_1_4a_4a_8a_2a:Pd-Pm-Pt-Si,1
+21790,agm003456395_AB2C4_119_spg136_2_0_rattled-1000-subsampled_nt1fjj,agm003456395_AB2C4_119_spg136,As1F4Pu2,As F Pu,14,halide,neither,AB4C2_aP14_1_2a_8a_4a:As-F-Pu,1
+21794,agm005613094_AB2C3_125_spg123_4_0_rattled-1000-subsampled_ygic9t,agm005613094_AB2C3_125_spg123,Dy1Pr3Zn2,Dy Pr Zn,12,intermetallic,3d-only,AB3C2_aP12_1_2a_6a_4a:Dy-Pr-Zn,2
+21816,agm005045688_ABCD3_384_spg63_4_0_rattled-1000-subsampled_3x5792,agm005045688_ABCD3_384_spg63,Al3Co1Ni1Tb1,Al Co Ni Tb,12,intermetallic,3d-only,A3BCD_aP12_1_6a_2a_2a_2a:Al-Co-Ni-Tb,1
+21863,agm001656961_ABCD2_2_spg123_4_0_rattled-1000-subsampled_rhfimv,agm001656961_ABCD2_2_spg123,Ga2La1Ni1Sn1,Ga La Ni Sn,10,intermetallic,3d-only,A2BCD_aP10_1_4a_2a_2a_2a:Ga-La-Ni-Sn,1
+21886,agm002607779_ABC3_0_spg221_3_0_rattled-1000-subsampled_4us70k,agm002607779_ABC3_0_spg221,La1Sr1Ta3,La Sr Ta,10,intermetallic,neither,ABC3_aP10_1_2a_2a_6a:La-Sr-Ta,1
+21916,agm001802263_ABCD2_23_spg123_4_0_rattled-1000-subsampled_v5lfzu,agm001802263_ABCD2_23_spg123,Cl1La1N1Te2,Cl La N Te,10,mixed-anion,neither,ABCD2_aP10_1_2a_2a_2a_4a:Cl-La-N-Te,1
+22024,agm004519687_AB2C3D4_7_spg115_2_0_rattled-1000-subsampled_ojy4g9,agm004519687_AB2C3D4_7_spg115,Mg1Nd2Pt4Sb3,Mg Nd Pt Sb,10,intermetallic,neither,AB2C4D3_aP10_1_a_2a_4a_3a:Mg-Nd-Pt-Sb,1
+22038,agm003766158_ABC6_258_spg12_1_0_rattled-1000-subsampled_igqu72,agm003766158_ABC6_258_spg12,Cr1Pa1S6,Cr Pa S,16,chalcogenide,3d-only,ABC6_aP16_1_2a_2a_12a:Cr-Pa-S,1
+22045,agm001095041_ABC2_3_spg225_2_0_rattled-1000-subsampled_0yq5d3,agm001095041_ABC2_3_spg225,Dy1Nd1Tb2,Dy Nd Tb,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Dy-Nd-Tb,3
+22046,agm005916927_AB3C12_5_spg123_0_0_rattled-1000-subsampled_5cwemj,agm005916927_AB3C12_5_spg123,Bi3Pd12Sm1,Bi Pd Sm,16,intermetallic,4d-only,A3B12C_aP16_1_3a_12a_a:Bi-Pd-Sm,1
+22086,agm001118129_ABC2_27_spg99_4_0_rattled-1000-subsampled_twi75g,agm001118129_ABC2_27_spg99,Ag1Br1Pm2,Ag Br Pm,16,halide,4d-only,ABC2_aP16_1_4a_4a_8a:Ag-Br-Pm,1
+22096,agm004586029_AB2C2D6_25_spg12_2_0_rattled-1000-subsampled_gcoj6q,agm004586029_AB2C2D6_25_spg12,Ho2Rb2S6U1,Ho Rb S U,11,chalcogenide,neither,A2B2C6D_aP11_1_2a_2a_6a_a:Ho-Rb-S-U,2
+22255,agm001283077_AB3_1_spg44_3_0_rattled-1000-subsampled_1xttka,agm001283077_AB3_1_spg44,Nb3Pa1,Nb Pa,12,intermetallic,4d-only,A3B_aP12_1_9a_3a:Nb-Pa,1
+22313,agm001238414_ABC_0_spg216_2_0_rattled-1000-subsampled_nk80gh,agm001238414_ABC_0_spg216,Ce1Ni1Pm1,Ce Ni Pm,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Ce-Ni-Pm,2
+22347,agm001940554_ABC2_19_spg166_4_0_rattled-1000-subsampled_igk05b,agm001940554_ABC2_19_spg166,Eu1Sc1Sn2,Eu Sc Sn,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Eu-Sc-Sn,1
+22358,agm001282142_AB3_1_spg44_4_0_rattled-1000-subsampled_pl4kbo,agm001282142_AB3_1_spg44,Nd3Sn1,Nd Sn,16,intermetallic,neither,A3B_aP16_1_12a_4a:Nd-Sn,1
+22370,agm005101093_ABCD6_14_spg149_4_0_rattled-1000-subsampled_ha9du9,agm005101093_ABCD6_14_spg149,Hf1K1O6Pa1,Hf K O Pa,18,oxide,neither,ABC6D_aP18_1_2a_2a_12a_2a:Hf-K-O-Pa,1
+22406,agm004622702_AB2C3D6_28_spg12_1_0_rattled-1000-subsampled_9o5oa4,agm004622702_AB2C3D6_28_spg12,Bi6Er1Ho2Pm3,Bi Er Ho Pm,12,intermetallic,neither,A6BC2D3_aP12_1_6a_a_2a_3a:Bi-Er-Ho-Pm,3
+22412,agm002011596_ABC2_542_spg166_0_0_rattled-1000-subsampled_rwhpsi,agm002011596_ABC2_542_spg166,Ac1Tm2V1,Ac Tm V,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Ac-Tm-V,2
+22428,agm004835357_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_ufo4hw,agm004835357_ABC2D4_343_spg10,Ba1K2Te4Th1,Ba K Te Th,16,chalcogenide,neither,AB2C4D_aP16_1_2a_4a_8a_2a:Ba-K-Te-Th,1
+22488,agm005934631_AB2C2_2_spg71_2_0_rattled-1000-subsampled_azquob,agm005934631_AB2C2_2_spg71,Ce1Er2Os2,Ce Er Os,10,intermetallic,neither,AB2C2_aP10_1_2a_4a_4a:Ce-Er-Os,2
+22489,agm004785185_ABC2D4_47_spg10_4_0_rattled-1000-subsampled_r7o4ue,agm004785185_ABC2D4_47_spg10,Ac2Ce1N4Pr1,Ac Ce N Pr,16,nitride,neither,A2BC4D_aP16_1_4a_2a_8a_2a:Ac-Ce-N-Pr,3
+22585,agm005585389_A3B4C10_3_spg139_3_0_rattled-1000-subsampled_0abmub,agm005585389_A3B4C10_3_spg139,Ac10N3Sn4,Ac N Sn,17,nitride,neither,A10B3C4_aP17_1_10a_3a_4a:Ac-N-Sn,1
+22611,agm004512014_AB2C3D4_7_spg115_2_0_rattled-1000-subsampled_oqpvec,agm004512014_AB2C3D4_7_spg115,Ge4Ir3Sm2Ta1,Ge Ir Sm Ta,10,intermetallic,neither,A4B3C2D_aP10_1_4a_3a_2a_a:Ge-Ir-Sm-Ta,1
+22655,agm001067825_ABC_30_spg11_0_0_rattled-1000-subsampled_nxh4qn,agm001067825_ABC_30_spg11,Al1Bi1Er1,Al Bi Er,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Al-Bi-Er,1
+22708,agm003330404_A2B3C3_127_spg63_4_0_rattled-1000-subsampled_eqd1hh,agm003330404_A2B3C3_127_spg63,Ho3Rh2Si3,Ho Rh Si,16,silicide,4d-only,A3B2C3_aP16_1_6a_4a_6a:Ho-Rh-Si,1
+22756,agm004595291_AB2C3D6_28_spg12_0_0_rattled-1000-subsampled_vevf7j,agm004595291_AB2C3D6_28_spg12,Er6Ge2Te3Tl1,Er Ge Te Tl,12,chalcogenide,neither,A6B2C3D_aP12_1_6a_2a_3a_a:Er-Ge-Te-Tl,1
+22809,agm003654918_AB4C5_185_spg12_2_0_rattled-1000-subsampled_ck4kb5,agm003654918_AB4C5_185_spg12,Bi4Pr5Sm1,Bi Pr Sm,10,intermetallic,neither,A4B5C_aP10_1_4a_5a_a:Bi-Pr-Sm,2
+22833,agm005658529_AB2C3_103_spg139_3_0_rattled-1000-subsampled_jwg88b,agm005658529_AB2C3_103_spg139,P3Pm2Pu1,P Pm Pu,12,pnictide,neither,A3B2C_aP12_1_6a_4a_2a:P-Pm-Pu,2
+22880,agm001348074_ABCD_1_spg216_4_0_rattled-1000-subsampled_36y7ii,agm001348074_ABCD_1_spg216,Ag1Ca1Dy1Ni1,Ag Ca Dy Ni,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Ag-Ca-Dy-Ni,1
+22900,agm001838049_ABC_150_spg44_1_0_rattled-1000-subsampled_ddja34,agm001838049_ABC_150_spg44,Au1Ce1Nd1,Au Ce Nd,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Au-Ce-Nd,2
+22994,agm005086729_ABCD6_10_spg163_1_0_rattled-1000-subsampled_hhsoh9,agm005086729_ABCD6_10_spg163,Cu1F6K1Nd1,Cu F K Nd,18,halide,3d-only,AB6CD_aP18_1_2a_12a_2a_2a:Cu-F-K-Nd,1
+22995,agm003761628_ABC5_372_spg44_1_0_rattled-1000-subsampled_wb1kgp,agm003761628_ABC5_372_spg44,Ho5Nd1Tl1,Ho Nd Tl,14,intermetallic,neither,A5BC_aP14_1_10a_2a_2a:Ho-Nd-Tl,2
+22998,agm004618247_AB2C3D6_214_spg12_0_0_rattled-1000-subsampled_0kq1oe,agm004618247_AB2C3D6_214_spg12,Li1N6Pa2Sc3,Li N Pa Sc,12,nitride,3d-only,AB6C2D3_aP12_1_a_6a_2a_3a:Li-N-Pa-Sc,1
+23017,agm003582212_AB3C7_9_spg12_1_0_rattled-1000-subsampled_che8a2,agm003582212_AB3C7_9_spg12,Ce7Hg1Sn3,Ce Hg Sn,11,intermetallic,neither,A7BC3_aP11_1_7a_a_3a:Ce-Hg-Sn,1
+23046,agm005650972_AB2C3_35_spg14_3_0_rattled-1000-subsampled_eziy45,agm005650972_AB2C3_35_spg14,Pm3Te2Tl1,Pm Te Tl,24,chalcogenide,neither,A3B2C_aP24_1_12a_8a_4a:Pm-Te-Tl,1
+23142,agm001749742_ABCD2_2_spg123_4_0_rattled-1000-subsampled_tvmzhj,agm001749742_ABCD2_2_spg123,I1La1N1O2,I La N O,10,mixed-anion,neither,ABCD2_aP10_1_2a_2a_2a_4a:I-La-N-O,1
+23174,agm003453765_AB2C4_731_spg63_3_0_rattled-1000-subsampled_6nqu5m,agm003453765_AB2C4_731_spg63,Ce1Pd2S4,Ce Pd S,14,chalcogenide,4d-only,AB2C4_aP14_1_2a_4a_8a:Ce-Pd-S,1
+23202,agm003231414_AB2C3_285_spg194_4_0_rattled-1000-subsampled_gywgkm,agm003231414_AB2C3_285_spg194,Rh1Si3Tb2,Rh Si Tb,24,silicide,4d-only,AB3C2_aP24_1_4a_12a_8a:Rh-Si-Tb,1
+23238,agm003611181_ABC_23_spg62_2_0_rattled-1000-subsampled_7nrxsp,agm003611181_ABC_23_spg62,Mg1Nd1Ni1,Mg Nd Ni,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Mg-Nd-Ni,1
+23251,agm001207366_ABC2_18_spg123_3_0_rattled-1000-subsampled_01yw9r,agm001207366_ABC2_18_spg123,Ce1Ge2Ho1,Ce Ge Ho,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ce-Ge-Ho,2
+23264,agm003392067_AB2C2_33_spg12_3_0_rattled-1000-subsampled_mun4gq,agm003392067_AB2C2_33_spg12,Al2Tb2Zn1,Al Tb Zn,10,intermetallic,3d-only,A2B2C_aP10_1_4a_4a_2a:Al-Tb-Zn,1
+23329,agm001163712_ABC3_0_spg221_3_0_rattled-1000-subsampled_wlrlyi,agm001163712_ABC3_0_spg221,Ag1P1Pm3,Ag P Pm,10,pnictide,4d-only,ABC3_aP10_1_2a_2a_6a:Ag-P-Pm,1
+23378,agm004489258_A2B2C3D4_0_spg139_1_0_rattled-1000-subsampled_3ij46r,agm004489258_A2B2C3D4_0_spg139,La2O2Sn3Y4,La O Sn Y,11,oxide,4d-only,A2B2C3D4_aP11_1_2a_2a_3a_4a:La-O-Sn-Y,1
+23428,agm001967840_ABC2_19_spg166_0_0_rattled-1000-subsampled_p2tq9z,agm001967840_ABC2_19_spg166,Ce1Mg2Nd1,Ce Mg Nd,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ce-Mg-Nd,2
+23465,agm005702879_ABC_2595_spg63_3_0_rattled-1000-subsampled_lw5cmj,agm005702879_ABC_2595_spg63,Pu1Th1Tl1,Pu Th Tl,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Pu-Th-Tl,2
+23485,agm001215864_ABC2_1_spg123_1_0_rattled-1000-subsampled_idnogv,agm001215864_ABC2_1_spg123,Eu1Na2Sr1,Eu Na Sr,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Eu-Na-Sr,1
+23568,agm001833644_ABC_4_spg107_1_0_rattled-1000-subsampled_704aps,agm001833644_ABC_4_spg107,Pa1Se1U1,Pa Se U,12,chalcogenide,neither,ABC_aP12_1_4a_4a_4a:Pa-Se-U,2
+23641,agm005204890_ABCD_24_spg38_2_0_rattled-1000-subsampled_24qgdx,agm005204890_ABCD_24_spg38,Ga1Ge1Pm1Tm1,Ga Ge Pm Tm,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Ga-Ge-Pm-Tm,2
+23686,agm001404952_ABCD_1_spg216_4_0_rattled-1000-subsampled_kjw1eh,agm001404952_ABCD_1_spg216,Hg1In1Lu1Pm1,Hg In Lu Pm,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Hg-In-Lu-Pm,2
+23801,agm005847685_AB2C2_2299_spg166_4_0_rattled-1000-subsampled_3cwuen,agm005847685_AB2C2_2299_spg166,As2K2Pa1,As K Pa,10,pnictide,neither,A2B2C_aP10_1_4a_4a_2a:As-K-Pa,1
+23900,agm005701595_A3B4C7_8_spg12_0_0_rattled-1000-subsampled_yfebtf,agm005701595_A3B4C7_8_spg12,Ir4Pr3Zn7,Ir Pr Zn,14,intermetallic,3d-only,A4B3C7_aP14_1_4a_3a_7a:Ir-Pr-Zn,1
+23907,agm003469936_AB2C5_62_spg140_4_0_rattled-1000-subsampled_l8fy4v,agm003469936_AB2C5_62_spg140,Er5Sn1Tl2,Er Sn Tl,16,intermetallic,neither,A5BC2_aP16_1_10a_2a_4a:Er-Sn-Tl,1
+23972,agm003602073_ABC_5_spg129_1_0_rattled-1000-subsampled_ullcrv,agm003602073_ABC_5_spg129,Ac1Pb1Tm1,Ac Pb Tm,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Ac-Pb-Tm,2
+24056,agm003538299_AB2C9_0_spg166_1_0_rattled-1000-subsampled_tdy62o,agm003538299_AB2C9_0_spg166,Cu9In1Tb2,Cu In Tb,12,intermetallic,3d-only,A9BC2_aP12_1_9a_a_2a:Cu-In-Tb,1
+24120,agm004587095_AB2C2D6_25_spg12_2_0_rattled-1000-subsampled_rhlkeq,agm004587095_AB2C2D6_25_spg12,Cs2La2S6U1,Cs La S U,11,chalcogenide,neither,A2B2C6D_aP11_1_2a_2a_6a_a:Cs-La-S-U,2
+24121,agm001926324_ABC2_1078_spg166_0_0_rattled-1000-subsampled_kv4rky,agm001926324_ABC2_1078_spg166,Ca1Eu2Ge1,Ca Eu Ge,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ca-Eu-Ge,1
+24208,agm004971258_ABC2D6_601_spg99_4_0_rattled-1000-subsampled_qdc32c,agm004971258_ABC2D6_601_spg99,N6Ta1Th2W1,N Ta Th W,10,nitride,neither,A6BC2D_aP10_1_6a_a_2a_a:N-Ta-Th-W,1
+24245,agm003325172_A2B2C7_244_spg65_2_0_rattled-1000-subsampled_96z9u9,agm003325172_A2B2C7_244_spg65,Dy7Hg2Sb2,Dy Hg Sb,11,intermetallic,neither,A7B2C2_aP11_1_7a_2a_2a:Dy-Hg-Sb,1
+24267,agm006102106_AB6C12_23_spg166_4_0_rattled-1000-subsampled_sipm5n,agm006102106_AB6C12_23_spg166,Ca1Dy6Ho12,Ca Dy Ho,19,intermetallic,neither,AB6C12_aP19_1_a_6a_12a:Ca-Dy-Ho,2
+24277,agm006068905_AB2C4_928_spg11_1_0_rattled-1000-subsampled_gpbzwx,agm006068905_AB2C4_928_spg11,La4Pr1Pt2,La Pr Pt,14,intermetallic,neither,A4BC2_aP14_1_8a_2a_4a:La-Pr-Pt,2
+24293,agm003623079_ABC2_63_spg63_3_0_rattled-1000-subsampled_7vy38l,agm003623079_ABC2_63_spg63,Pd1Pm1Tb2,Pd Pm Tb,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:Pd-Pm-Tb,2
+24323,agm001335728_ABCD_1_spg216_1_0_rattled-1000-subsampled_enc073,agm001335728_ABCD_1_spg216,Li1Nd1Sn1Sr1,Li Nd Sn Sr,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Li-Nd-Sn-Sr,1
+24346,agm002743930_ABC2_3_spg225_4_0_rattled-1000-subsampled_c2xvff,agm002743930_ABC2_3_spg225,I1La2Te1,I La Te,16,mixed-anion,neither,AB2C_aP16_1_4a_8a_4a:I-La-Te,1
+24429,agm003622200_ABC2_30_spg63_0_0_rattled-1000-subsampled_dchk2p,agm003622200_ABC2_30_spg63,Ag1Er2Ho1,Ag Er Ho,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ag-Er-Ho,2
+24504,agm001369943_ABCD_1_spg216_4_0_rattled-1000-subsampled_v4x5s5,agm001369943_ABCD_1_spg216,Mg1Nd1Pb1Zn1,Mg Nd Pb Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Mg-Nd-Pb-Zn,1
+24528,agm005798654_ABC5_50_spg11_3_0_rattled-1000-subsampled_ml22ma,agm005798654_ABC5_50_spg11,Br5Ce1Sm1,Br Ce Sm,14,halide,neither,A5BC_aP14_1_10a_2a_2a:Br-Ce-Sm,2
+24562,agm001260227_ABC_2_spg156_0_0_rattled-1000-subsampled_09lbxo,agm001260227_ABC_2_spg156,Br1Te1U1,Br Te U,12,mixed-anion,neither,ABC_aP12_1_4a_4a_4a:Br-Te-U,1
+24593,agm001196164_ABC2_18_spg123_1_0_rattled-1000-subsampled_by67es,agm001196164_ABC2_18_spg123,Al2Cu1Lu1,Al Cu Lu,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Al-Cu-Lu,1
+24605,agm005022449_ABCD2_1563_spg119_0_0_rattled-1000-subsampled_l3lmzh,agm005022449_ABCD2_1563_spg119,Al1Be1Ir2Pr1,Al Be Ir Pr,10,intermetallic,neither,ABC2D_aP10_1_2a_2a_4a_2a:Al-Be-Ir-Pr,1
+24633,agm003390148_AB2C2_7_spg164_0_0_rattled-1000-subsampled_9f6ewc,agm003390148_AB2C2_7_spg164,Al2Nd1Zn2,Al Nd Zn,10,intermetallic,3d-only,A2BC2_aP10_1_4a_2a_4a:Al-Nd-Zn,1
+24701,agm001173243_ABC4_12_spg216_0_0_rattled-1000-subsampled_nfd7o4,agm001173243_ABC4_12_spg216,Co4Pm1U1,Co Pm U,12,intermetallic,3d-only,A4BC_aP12_1_8a_2a_2a:Co-Pm-U,2
+24703,agm003537690_AB2C9_0_spg166_2_0_rattled-1000-subsampled_3w711t,agm003537690_AB2C9_0_spg166,La2Rh9Y1,La Rh Y,12,intermetallic,4d-only,A2B9C_aP12_1_2a_9a_a:La-Rh-Y,1
+24816,agm004945486_ABC2D6_1864_spg15_3_0_rattled-1000-subsampled_vmwyji,agm004945486_ABC2D6_1864_spg15,O6P2Pr1Tl1,O P Pr Tl,20,oxide,neither,A6B2CD_aP20_1_12a_4a_2a_2a:O-P-Pr-Tl,1
+24817,agm001234199_ABC2_1_spg123_4_0_rattled-1000-subsampled_3e29mq,agm001234199_ABC2_1_spg123,Bi2Tm1Zr1,Bi Tm Zr,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Bi-Tm-Zr,1
+24869,agm005895361_AB2C3_14_spg194_1_0_rattled-1000-subsampled_33vmqw,agm005895361_AB2C3_14_spg194,Ce2H3Se1,Ce H Se,12,chalcogenide,neither,A2B3C_aP12_1_4a_6a_2a:Ce-H-Se,1
+24892,agm001235466_ABC_0_spg216_0_0_rattled-1000-subsampled_tj9r1h,agm001235466_ABC_0_spg216,Br1Pm1Se1,Br Pm Se,12,mixed-anion,neither,ABC_aP12_1_4a_4a_4a:Br-Pm-Se,1
+24902,agm001314686_ABCD_1_spg216_4_0_rattled-1000-subsampled_7z4846,agm001314686_ABCD_1_spg216,Co1Pm1Ru1Zr1,Co Pm Ru Zr,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Co-Pm-Ru-Zr,1
+24912,agm003335547_A2B3C4_75_spg64_0_0_rattled-1000-subsampled_kvfukz,agm003335547_A2B3C4_75_spg64,Au4Ho2Zn3,Au Ho Zn,18,intermetallic,3d-only,A4B2C3_aP18_1_8a_4a_6a:Au-Ho-Zn,1
+25027,agm001440618_ABCD2_2_spg123_3_0_rattled-1000-subsampled_9sb93i,agm001440618_ABCD2_2_spg123,As1Fe2Hg1La1,As Fe Hg La,10,pnictide,3d-only,AB2CD_aP10_1_2a_4a_2a_2a:As-Fe-Hg-La,1
+25055,agm003538684_AB2C9_0_spg166_1_0_rattled-1000-subsampled_ebouah,agm003538684_AB2C9_0_spg166,Ac2Au1Ni9,Ac Au Ni,12,intermetallic,3d-only,A2BC9_aP12_1_2a_a_9a:Ac-Au-Ni,1
+25069,agm001305086_ABCD_1_spg216_0_0_rattled-1000-subsampled_k9tfoy,agm001305086_ABCD_1_spg216,La1Mg1Si1Y1,La Mg Si Y,16,silicide,4d-only,ABCD_aP16_1_4a_4a_4a_4a:La-Mg-Si-Y,1
+25076,agm003572053_AB3C6_7_spg12_3_0_rattled-1000-subsampled_88xns7,agm003572053_AB3C6_7_spg12,Ac3Ce1Se6,Ac Ce Se,10,chalcogenide,neither,A3BC6_aP10_1_3a_a_6a:Ac-Ce-Se,2
+25151,agm003506645_AB2C6_687_spg164_0_0_rattled-1000-subsampled_m80cvj,agm003506645_AB2C6_687_spg164,Ni6Pr2Zn1,Ni Pr Zn,18,intermetallic,3d-only,A6B2C_aP18_1_12a_4a_2a:Ni-Pr-Zn,1
+25152,agm003419618_AB2C3_425_spg71_0_0_rattled-1000-subsampled_yvbew1,agm003419618_AB2C3_425_spg71,P3Pa1Sm2,P Pa Sm,12,pnictide,neither,A3BC2_aP12_1_6a_2a_4a:P-Pa-Sm,2
+25158,agm005576207_A2B3C3_130_spg63_3_0_rattled-1000-subsampled_q2cvkd,agm005576207_A2B3C3_130_spg63,Ac3Rh2Zn3,Ac Rh Zn,16,intermetallic,3d+4d,A3B2C3_aP16_1_6a_4a_6a:Ac-Rh-Zn,1
+25176,agm005878073_AB3C12_5_spg123_1_0_rattled-1000-subsampled_1dxn8x,agm005878073_AB3C12_5_spg123,Cd1Dy3Y12,Cd Dy Y,16,intermetallic,4d-only,AB3C12_aP16_1_a_3a_12a:Cd-Dy-Y,1
+25312,agm004649503_AB2C3D6_178_spg12_2_0_rattled-1000-subsampled_x8h9vi,agm004649503_AB2C3D6_178_spg12,Pr1Sc2Sm3Tb6,Pr Sc Sm Tb,12,intermetallic,3d-only,AB2C3D6_aP12_1_a_2a_3a_6a:Pr-Sc-Sm-Tb,3
+25331,agm005083834_ABCD6_10_spg163_3_0_rattled-1000-subsampled_s6vooi,agm005083834_ABCD6_10_spg163,Bi1O6Pu1Tb1,Bi O Pu Tb,18,oxide,neither,AB6CD_aP18_1_2a_12a_2a_2a:Bi-O-Pu-Tb,2
+25344,agm005091159_ABCD6_10_spg163_4_0_rattled-1000-subsampled_lqarfr,agm005091159_ABCD6_10_spg163,Cl6Hg1Na1Nd1,Cl Hg Na Nd,18,halide,neither,A6BCD_aP18_1_12a_2a_2a_2a:Cl-Hg-Na-Nd,1
+25398,agm005573324_A2B3C3_131_spg63_2_0_rattled-1000-subsampled_4m9ewa,agm005573324_A2B3C3_131_spg63,La2Nd3Pm3,La Nd Pm,16,intermetallic,neither,A2B3C3_aP16_1_4a_6a_6a:La-Nd-Pm,3
+25531,agm004832921_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_fkaqfs,agm004832921_ABC2D4_343_spg10,As1Bi1Ho4Te2,As Bi Ho Te,16,chalcogenide,neither,ABC4D2_aP16_1_2a_2a_8a_4a:As-Bi-Ho-Te,1
+25581,agm001109976_ABC3_0_spg221_4_0_rattled-1000-subsampled_5ms2wp,agm001109976_ABC3_0_spg221,Ca1Pm3S1,Ca Pm S,10,chalcogenide,neither,AB3C_aP10_1_2a_6a_2a:Ca-Pm-S,1
+25591,agm001552182_ABCD2_2_spg123_0_0_rattled-1000-subsampled_yxeb54,agm001552182_ABCD2_2_spg123,C1Ge2La1Y1,C Ge La Y,10,carbide,4d-only,AB2CD_aP10_1_2a_4a_2a_2a:C-Ge-La-Y,1
+25606,agm005738559_AB2C10_0_spg69_0_0_rattled-1000-subsampled_whtgtd,agm005738559_AB2C10_0_spg69,Au10Ce1Ni2,Au Ce Ni,13,intermetallic,3d-only,A10BC2_aP13_1_10a_a_2a:Au-Ce-Ni,1
+25616,agm005552744_A2B2C3_194_spg12_1_0_rattled-1000-subsampled_ckis58,agm005552744_A2B2C3_194_spg12,Ho3La2Ru2,Ho La Ru,14,intermetallic,4d-only,A3B2C2_aP14_1_6a_4a_4a:Ho-La-Ru,2
+25642,agm001279681_ABC_19_spg156_1_0_rattled-1000-subsampled_lqlw8p,agm001279681_ABC_19_spg156,Cd1Pu1Zr1,Cd Pu Zr,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Cd-Pu-Zr,1
+25691,agm003751350_ABC4_169_spg123_1_0_rattled-1000-subsampled_fereex,agm003751350_ABC4_169_spg123,H4Li1Tm1,H Li Tm,12,hydride,neither,A4BC_aP12_1_8a_2a_2a:H-Li-Tm,1
+25833,agm001321427_ABCD_1_spg216_1_0_rattled-1000-subsampled_piyfj9,agm001321427_ABCD_1_spg216,Ca1In1Pm1Y1,Ca In Pm Y,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ca-In-Pm-Y,1
+25840,agm001245115_ABC2_1_spg123_0_0_rattled-1000-subsampled_y4yr3c,agm001245115_ABC2_1_spg123,Eu1Pr1Sb2,Eu Pr Sb,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Eu-Pr-Sb,2
+25842,agm005205984_ABCD_24_spg38_0_0_rattled-1000-subsampled_r7bytm,agm005205984_ABCD_24_spg38,Ce1Co1Pt1Th1,Ce Co Pt Th,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ce-Co-Pt-Th,2
+25940,agm005972413_AB3C8_273_spg5_2_0_rattled-1000-subsampled_cp8mj7,agm005972413_AB3C8_273_spg5,C8Th3Tm1,C Th Tm,12,carbide,neither,A8B3C_aP12_1_8a_3a_a:C-Th-Tm,2
+25951,agm001126014_ABC2_10_spg123_3_0_rattled-1000-subsampled_3bvd8y,agm001126014_ABC2_10_spg123,Cd2In1Th1,Cd In Th,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Cd-In-Th,1
+25976,agm005960866_AB3C6_308_spg14_3_0_rattled-1000-subsampled_hgi59k,agm005960866_AB3C6_308_spg14,Br6Er1Ga3,Br Er Ga,20,halide,neither,A6BC3_aP20_1_12a_2a_6a:Br-Er-Ga,1
+25978,agm001994554_ABC2_38_spg166_0_0_rattled-1000-subsampled_f9nefw,agm001994554_ABC2_38_spg166,Fe1Os1Pa2,Fe Os Pa,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Fe-Os-Pa,1
+26026,agm003641909_AB4C5_22_spg123_3_0_rattled-1000-subsampled_vyva68,agm003641909_AB4C5_22_spg123,Ba1Cd5Pm4,Ba Cd Pm,10,intermetallic,4d-only,AB5C4_aP10_1_a_5a_4a:Ba-Cd-Pm,1
+26117,agm001277707_ABC_10_spg187_0_0_rattled-1000-subsampled_e8pq4x,agm001277707_ABC_10_spg187,Ce1N1Tc1,Ce N Tc,12,nitride,4d-only,ABC_aP12_1_4a_4a_4a:Ce-N-Tc,1
+26147,agm005016267_ABCD2_3_spg107_0_0_rattled-1000-subsampled_aqwx5k,agm005016267_ABCD2_3_spg107,Cu1Ge2Nd1Rh1,Cu Ge Nd Rh,10,intermetallic,3d+4d,AB2CD_aP10_1_2a_4a_2a_2a:Cu-Ge-Nd-Rh,1
+26174,agm004625251_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_z8ymq3,agm004625251_AB2C3D6_175_spg12,Na3O6Pu1Sc2,Na O Pu Sc,12,oxide,3d-only,A3B6CD2_aP12_1_3a_6a_a_2a:Na-O-Pu-Sc,1
+26221,agm001432556_ABCD2_2_spg123_4_0_rattled-1000-subsampled_rcdoxa,agm001432556_ABCD2_2_spg123,Ca1In2La1O1,Ca In La O,10,oxide,neither,AB2CD_aP10_1_2a_4a_2a_2a:Ca-In-La-O,1
+26281,agm004977760_ABC2D6_695_spg15_1_0_rattled-1000-subsampled_il0zrd,agm004977760_ABC2D6_695_spg15,La6Pr1Th2Y1,La Pr Th Y,20,intermetallic,4d-only,A6BC2D_aP20_1_12a_2a_4a_2a:La-Pr-Th-Y,3
+26412,agm004949444_ABC2D6_1001_spg14_1_0_rattled-1000-subsampled_3zjj2x,agm004949444_ABC2D6_1001_spg14,As1H2O6U1,As H O U,20,oxide,neither,AB2C6D_aP20_1_2a_4a_12a_2a:As-H-O-U,1
+26441,agm003642196_AB4C5_22_spg123_1_0_rattled-1000-subsampled_g3699m,agm003642196_AB4C5_22_spg123,Cd4Ho5Tm1,Cd Ho Tm,10,intermetallic,4d-only,A4B5C_aP10_1_4a_5a_a:Cd-Ho-Tm,2
+26448,agm004838081_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_ohduud,agm004838081_ABC2D4_343_spg10,As4Hf1Np1Sr2,As Hf Np Sr,16,pnictide,neither,A4BCD2_aP16_1_8a_2a_2a_4a:As-Hf-Np-Sr,1
+26464,agm006067968_AB2C4_942_spg121_2_0_rattled-1000-subsampled_vwvy26,agm006067968_AB2C4_942_spg121,Ca2Pd4Pu1,Ca Pd Pu,14,intermetallic,4d-only,A2B4C_aP14_1_4a_8a_2a:Ca-Pd-Pu,1
+26507,agm001669747_ABCD2_2_spg123_3_0_rattled-1000-subsampled_762stv,agm001669747_ABCD2_2_spg123,Be1La1Ni2Rh1,Be La Ni Rh,10,intermetallic,3d+4d,ABC2D_aP10_1_2a_2a_4a_2a:Be-La-Ni-Rh,1
+26537,agm001078800_AB2C4_18_spg139_1_0_rattled-1000-subsampled_yfdqyp,agm001078800_AB2C4_18_spg139,Ac2N1Y4,Ac N Y,14,nitride,4d-only,A2BC4_aP14_1_4a_2a_8a:Ac-N-Y,1
+26565,agm004962822_ABC2D6_266_spg146_2_0_rattled-1000-subsampled_9euouk,agm004962822_ABC2D6_266_spg146,Cs1I6Na2Nd1,Cs I Na Nd,10,halide,neither,AB6C2D_aP10_1_a_6a_2a_a:Cs-I-Na-Nd,1
+26699,agm005856442_ABC3_590_spg62_3_0_rattled-1000-subsampled_vplfx0,agm005856442_ABC3_590_spg62,S3Sr1Th1,S Sr Th,20,chalcogenide,neither,A3BC_aP20_1_12a_4a_4a:S-Sr-Th,1
+26773,agm001809230_ABC2_197_spg123_4_0_rattled-1000-subsampled_1cuklf,agm001809230_ABC2_197_spg123,Ge1Pu2W1,Ge Pu W,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ge-Pu-W,1
+26783,agm004319974_ABC_0_spg216_1_0_rattled-1000-subsampled_hjw3i6,agm004319974_ABC_0_spg216,Al1In1La1,Al In La,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Al-In-La,1
+26880,agm004489618_A2B2C3D4_0_spg139_2_0_rattled-1000-subsampled_wyflqd,agm004489618_A2B2C3D4_0_spg139,La4Nd2O2Sb3,La Nd O Sb,11,oxide,neither,A4B2C2D3_aP11_1_4a_2a_2a_3a:La-Nd-O-Sb,2
+26885,agm001846567_ABC_4_spg107_2_0_rattled-1000-subsampled_civ2ka,agm001846567_ABC_4_spg107,Nd1Pb1Pt1,Nd Pb Pt,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Nd-Pb-Pt,1
+26896,agm001178700_ABC4_12_spg216_3_0_rattled-1000-subsampled_umhdv9,agm001178700_ABC4_12_spg216,Li1Mg4Sm1,Li Mg Sm,12,intermetallic,neither,AB4C_aP12_1_2a_8a_2a:Li-Mg-Sm,1
+26924,agm004519723_AB2C3D4_52_spg115_2_0_rattled-1000-subsampled_x6ekpg,agm004519723_AB2C3D4_52_spg115,Ac2Pt1Rh3Sb4,Ac Pt Rh Sb,10,intermetallic,4d-only,A2BC3D4_aP10_1_2a_a_3a_4a:Ac-Pt-Rh-Sb,1
+27086,agm004774772_ABC2D4_41_spg42_3_0_rattled-1000-subsampled_b3h35q,agm004774772_ABC2D4_41_spg42,Li2N4Nd1V1,Li N Nd V,16,nitride,3d-only,A2B4CD_aP16_1_4a_8a_2a_2a:Li-N-Nd-V,1
+27115,agm005084881_ABCD6_10_spg163_4_0_rattled-1000-subsampled_s1uryd,agm005084881_ABCD6_10_spg163,Br6Mn1Rb1Sm1,Br Mn Rb Sm,18,halide,3d-only,A6BCD_aP18_1_12a_2a_2a_2a:Br-Mn-Rb-Sm,1
+27178,agm005736576_A4B9C11_23_spg65_1_0_rattled-1000-subsampled_dpakfp,agm005736576_A4B9C11_23_spg65,Ir4Pb9Tb11,Ir Pb Tb,24,intermetallic,neither,A4B9C11_aP24_1_4a_9a_11a:Ir-Pb-Tb,1
+27186,agm001222705_ABC2_18_spg123_2_0_rattled-1000-subsampled_qlt4kb,agm001222705_ABC2_18_spg123,Sb1Tb1Th2,Sb Tb Th,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Sb-Tb-Th,2
+27192,agm005538421_A5B7_28_spg12_1_0_rattled-1000-subsampled_4uq56e,agm005538421_A5B7_28_spg12,Ac7Ir5,Ac Ir,12,intermetallic,neither,A7B5_aP12_1_7a_5a:Ac-Ir,1
+27234,agm001953241_ABC2_9_spg160_4_0_rattled-1000-subsampled_n5rd3n,agm001953241_ABC2_9_spg160,Ga2Pa1V1,Ga Pa V,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Ga-Pa-V,1
+27249,agm001228882_ABC2_18_spg123_3_0_rattled-1000-subsampled_fm0vx6,agm001228882_ABC2_18_spg123,Er1In2Ti1,Er In Ti,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Er-In-Ti,1
+27259,agm002822029_ABC2_159_spg122_2_0_rattled-1000-subsampled_sy9jui,agm002822029_ABC2_159_spg122,Cs1La1Pt2,Cs La Pt,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Cs-La-Pt,1
+27319,agm005713318_AB2C3_391_spg164_0_0_rattled-1000-subsampled_45kzo9,agm005713318_AB2C3_391_spg164,Cu2Tb3Zn1,Cu Tb Zn,12,intermetallic,3d-only,A2B3C_aP12_1_4a_6a_2a:Cu-Tb-Zn,1
+27323,agm002890147_ABC2_262_spg122_3_0_rattled-1000-subsampled_dilcf0,agm002890147_ABC2_262_spg122,Cl1La1Si2,Cl La Si,16,halide,neither,ABC2_aP16_1_4a_4a_8a:Cl-La-Si,1
+27326,agm001217343_ABC2_1_spg123_3_0_rattled-1000-subsampled_8j7fyb,agm001217343_ABC2_1_spg123,Au2Dy1Nd1,Au Dy Nd,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Au-Dy-Nd,2
+27354,agm005684870_A2B3C4_99_spg14_2_0_rattled-1000-subsampled_07zops,agm005684870_A2B3C4_99_spg14,Co4Er2Pa3,Co Er Pa,18,intermetallic,3d-only,A4B2C3_aP18_1_8a_4a_6a:Co-Er-Pa,2
+27389,agm006113355_AB4C5_276_spg123_0_0_rattled-1000-subsampled_twr475,agm006113355_AB4C5_276_spg123,Pr1Ru5Zr4,Pr Ru Zr,10,intermetallic,4d-only,AB5C4_aP10_1_a_5a_4a:Pr-Ru-Zr,1
+27430,agm005633042_A2B3C8_150_spg65_2_0_rattled-1000-subsampled_yhqhsy,agm005633042_A2B3C8_150_spg65,Ac2Ho8Tb3,Ac Ho Tb,13,intermetallic,neither,A2B8C3_aP13_1_2a_8a_3a:Ac-Ho-Tb,3
+27532,agm005736936_ABC5_522_spg71_4_0_rattled-1000-subsampled_hiwdyi,agm005736936_ABC5_522_spg71,Hf1O5Pa1,Hf O Pa,14,oxide,neither,AB5C_aP14_1_2a_10a_2a:Hf-O-Pa,1
+27557,agm005991934_AB2C5_146_spg63_4_0_rattled-1000-subsampled_qpv0b4,agm005991934_AB2C5_146_spg63,Cu5Pd1Pr2,Cu Pd Pr,16,intermetallic,3d+4d,A5BC2_aP16_1_10a_2a_4a:Cu-Pd-Pr,1
+27587,agm004518810_AB2C3D4_52_spg115_0_0_rattled-1000-subsampled_w6mslr,agm004518810_AB2C3D4_52_spg115,Li1P4Pm2Pt3,Li P Pm Pt,10,pnictide,neither,AB4C2D3_aP10_1_a_4a_2a_3a:Li-P-Pm-Pt,1
+27632,agm003359560_A2B4C5_172_spg12_3_0_rattled-1000-subsampled_1b1hcv,agm003359560_A2B4C5_172_spg12,Br5Si2Tm4,Br Si Tm,11,halide,neither,A5B2C4_aP11_1_5a_2a_4a:Br-Si-Tm,1
+27661,agm005153483_ABC2D5_205_spg140_3_0_rattled-1000-subsampled_xn0ybg,agm005153483_ABC2D5_205_spg140,Dy1Nd1Pr2Y5,Dy Nd Pr Y,18,intermetallic,4d-only,ABC2D5_aP18_1_2a_2a_4a_10a:Dy-Nd-Pr-Y,3
+27687,agm004787267_ABC2D4_368_spg23_4_0_rattled-1000-subsampled_v0s1fl,agm004787267_ABC2D4_368_spg23,Ag2O4Sr1Tm1,Ag O Sr Tm,16,oxide,4d-only,A2B4CD_aP16_1_4a_8a_2a_2a:Ag-O-Sr-Tm,1
+27720,agm004513003_AB2C3D4_7_spg115_2_0_rattled-1000-subsampled_sqhulu,agm004513003_AB2C3D4_7_spg115,Ge4In1La2Pd3,Ge In La Pd,10,intermetallic,4d-only,A4BC2D3_aP10_1_4a_a_2a_3a:Ge-In-La-Pd,1
+27730,agm006085897_AB5C6_51_spg65_3_0_rattled-1000-subsampled_eoar82,agm006085897_AB5C6_51_spg65,Cd6Er1Mg5,Cd Er Mg,12,intermetallic,4d-only,A6BC5_aP12_1_6a_a_5a:Cd-Er-Mg,1
+27755,agm002758369_ABC2_83_spg166_1_0_rattled-1000-subsampled_e1hyw4,agm002758369_ABC2_83_spg166,Br2C1La1,Br C La,16,halide,neither,A2BC_aP16_1_8a_4a_4a:Br-C-La,1
+27756,agm006122640_AB4C5_22_spg123_1_0_rattled-1000-subsampled_88rtae,agm006122640_AB4C5_22_spg123,Ac1Pb5Sr4,Ac Pb Sr,10,intermetallic,neither,AB5C4_aP10_1_a_5a_4a:Ac-Pb-Sr,1
+27806,agm005165372_ABC2D5_205_spg140_3_0_rattled-1000-subsampled_j4ps81,agm005165372_ABC2D5_205_spg140,Ac1Nd5Pr2Sm1,Ac Nd Pr Sm,18,intermetallic,neither,AB5C2D_aP18_1_2a_10a_4a_2a:Ac-Nd-Pr-Sm,4
+27814,agm001385690_ABCD_1_spg216_1_0_rattled-1000-subsampled_6qzv6h,agm001385690_ABCD_1_spg216,Co1Ir1Nd1Tb1,Co Ir Nd Tb,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Co-Ir-Nd-Tb,2
+27816,agm005070735_ABCD6_128_spg74_3_0_rattled-1000-subsampled_7n4te7,agm005070735_ABCD6_128_spg74,Be1Ni6Si1Tb1,Be Ni Si Tb,18,silicide,3d-only,AB6CD_aP18_1_2a_12a_2a_2a:Be-Ni-Si-Tb,1
+27827,agm005135799_AB2C2D5_50_spg127_3_0_rattled-1000-subsampled_r20r4j,agm005135799_AB2C2D5_50_spg127,Dy2Mg5Pm2Y1,Dy Mg Pm Y,20,intermetallic,4d-only,A2B5C2D_aP20_1_4a_10a_4a_2a:Dy-Mg-Pm-Y,2
+27887,agm001392581_ABCD_1_spg216_4_0_rattled-1000-subsampled_q4dios,agm001392581_ABCD_1_spg216,Ca1La1Rh1Tl1,Ca La Rh Tl,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ca-La-Rh-Tl,1
+27900,agm001402322_ABCD_1_spg216_3_0_rattled-1000-subsampled_0x9vyx,agm001402322_ABCD_1_spg216,Os1Pa1Rh1Sm1,Os Pa Rh Sm,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Os-Pa-Rh-Sm,2
+27946,agm005183015_ABCD_165_spg99_1_0_rattled-1000-subsampled_ubthph,agm005183015_ABCD_165_spg99,Al1Ho1In1Y1,Al Ho In Y,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Al-Ho-In-Y,1
+27955,agm005202441_ABCD_1525_spg129_3_0_rattled-1000-subsampled_fziwb1,agm005202441_ABCD_1525_spg129,Ag1O1Sn1Th1,Ag O Sn Th,16,oxide,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-O-Sn-Th,1
+27961,agm005141196_AB2C2D5_48_spg127_1_0_rattled-1000-subsampled_aj75rj,agm005141196_AB2C2D5_48_spg127,Ga2In1Pm2Rh5,Ga In Pm Rh,20,intermetallic,4d-only,A2BC2D5_aP20_1_4a_2a_4a_10a:Ga-In-Pm-Rh,1
+27992,agm003656144_AB4C5_166_spg12_0_0_rattled-1000-subsampled_gs2t5s,agm003656144_AB4C5_166_spg12,Pr5Sn4Y1,Pr Sn Y,10,intermetallic,4d-only,A5B4C_aP10_1_5a_4a_a:Pr-Sn-Y,1
+27993,agm003336350_A2B3C4_315_spg64_3_0_rattled-1000-subsampled_yyp54l,agm003336350_A2B3C4_315_spg64,In4La2Pr3,In La Pr,18,intermetallic,neither,A4B2C3_aP18_1_8a_4a_6a:In-La-Pr,2
+27996,agm001059456_ABC_7626_spg14_4_0_rattled-1000-subsampled_dhhcdo,agm001059456_ABC_7626_spg14,Er1Ho1Rh1,Er Ho Rh,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Er-Ho-Rh,2
+28165,agm004769171_ABC2D4_370_spg70_4_0_rattled-1000-subsampled_fvhj21,agm004769171_ABC2D4_370_spg70,B1Cs2Se4Sm1,B Cs Se Sm,16,chalcogenide,neither,AB2C4D_aP16_1_2a_4a_8a_2a:B-Cs-Se-Sm,1
+28192,agm005122474_ABC2_8501_spg160_0_0_rattled-1000-subsampled_y0p1r6,agm005122474_ABC2_8501_spg160,Dy1Pa2Sc1,Dy Pa Sc,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Dy-Pa-Sc,2
+28207,agm004838696_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_aqjhmx,agm004838696_ABC2D4_343_spg10,As4Ca2Pa1Pu1,As Ca Pa Pu,16,pnictide,neither,A4B2CD_aP16_1_8a_4a_2a_2a:As-Ca-Pa-Pu,2
+28245,agm003697230_AB6C8_64_spg148_1_0_rattled-1000-subsampled_zu0813,agm003697230_AB6C8_64_spg148,Cd6Ho8Sm1,Cd Ho Sm,15,intermetallic,4d-only,A6B8C_aP15_1_6a_8a_a:Cd-Ho-Sm,2
+28272,agm004366821_ABC2_1_spg123_0_0_rattled-1000-subsampled_yk0pmb,agm004366821_ABC2_1_spg123,Au2La1Sc1,Au La Sc,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Au-La-Sc,1
+28276,agm003662287_AB4C6_23_spg121_2_0_rattled-1000-subsampled_75cj2c,agm003662287_AB4C6_23_spg121,Ce6Ir4La1,Ce Ir La,11,intermetallic,neither,A6B4C_aP11_1_6a_4a_a:Ce-Ir-La,2
+28337,agm003719019_ABC3_1645_spg31_4_0_rattled-1000-subsampled_zgobyz,agm003719019_ABC3_1645_spg31,La1Pd1Si3,La Pd Si,10,silicide,4d-only,ABC3_aP10_1_2a_2a_6a:La-Pd-Si,1
+28358,agm001142719_ABC2_10_spg123_4_0_rattled-1000-subsampled_uebxfw,agm001142719_ABC2_10_spg123,Ho1Li2Sm1,Ho Li Sm,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ho-Li-Sm,2
+28382,agm004508140_AB2C3D4_52_spg115_3_0_rattled-1000-subsampled_jo5i0u,agm004508140_AB2C3D4_52_spg115,Ge1Ni4Np2Si3,Ge Ni Np Si,10,silicide,3d-only,AB4C2D3_aP10_1_a_4a_2a_3a:Ge-Ni-Np-Si,1
+28392,agm005715305_A3B5C8_3_spg166_0_0_rattled-1000-subsampled_qkwqfo,agm005715305_A3B5C8_3_spg166,Ho5Pm3S8,Ho Pm S,16,chalcogenide,neither,A5B3C8_aP16_1_5a_3a_8a:Ho-Pm-S,2
+28412,agm005546632_AB5_49_spg191_2_0_rattled-1000-subsampled_mn2ppk,agm005546632_AB5_49_spg191,Au5Pa1,Au Pa,12,intermetallic,neither,A5B_aP12_1_10a_2a:Au-Pa,1
+28455,agm004839150_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_0zbklf,agm004839150_ABC2D4_343_spg10,Ac2As4Ce1La1,Ac As Ce La,16,pnictide,neither,A2B4CD_aP16_1_4a_8a_2a_2a:Ac-As-Ce-La,3
+28495,agm004150799_ABC2_27_spg99_0_0_rattled-1000-subsampled_f3ewai,agm004150799_ABC2_27_spg99,Be1La1Mg2,Be La Mg,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Be-La-Mg,1
+28579,agm001102238_ABC3_0_spg221_4_0_rattled-1000-subsampled_fmdt7n,agm001102238_ABC3_0_spg221,Ba1Dy3Pt1,Ba Dy Pt,10,intermetallic,neither,AB3C_aP10_1_2a_6a_2a:Ba-Dy-Pt,1
+28612,agm005176578_ABC2D5_41_spg140_2_0_rattled-1000-subsampled_g7bffe,agm005176578_ABC2D5_41_spg140,Ce2Hg1Rb1S5,Ce Hg Rb S,18,chalcogenide,neither,A2BCD5_aP18_1_4a_2a_2a_10a:Ce-Hg-Rb-S,1
+28703,agm004336705_ABC2_6859_spg47_3_0_rattled-1000-subsampled_ftr1t8,agm004336705_ABC2_6859_spg47,La1Mg2Pb1,La Mg Pb,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:La-Mg-Pb,1
+28725,agm001350618_ABCD_1_spg216_4_0_rattled-1000-subsampled_epqos3,agm001350618_ABCD_1_spg216,Ag1Ce1In1Ir1,Ag Ce In Ir,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Ce-In-Ir,1
+28750,agm002008120_ABC2_83_spg166_1_0_rattled-1000-subsampled_eniqpy,agm002008120_ABC2_83_spg166,I2Pa1Pd1,I Pa Pd,16,halide,4d-only,A2BC_aP16_1_8a_4a_4a:I-Pa-Pd,1
+28755,agm001134782_ABC2_27_spg99_1_0_rattled-1000-subsampled_z6599r,agm001134782_ABC2_27_spg99,Ag1Eu1Pm2,Ag Eu Pm,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:Ag-Eu-Pm,2
+28840,agm001048702_ABC_75_spg12_2_0_rattled-1000-subsampled_vyht6c,agm001048702_ABC_75_spg12,Au1Hf1Np1,Au Hf Np,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Au-Hf-Np,1
+28895,agm005875674_ABC4_1155_spg12_1_0_rattled-1000-subsampled_t7nhot,agm005875674_ABC4_1155_spg12,Er1Mg1Pd4,Er Mg Pd,12,intermetallic,4d-only,ABC4_aP12_1_2a_2a_8a:Er-Mg-Pd,1
+28910,agm005893138_AB2C9_10_spg123_3_0_rattled-1000-subsampled_y58j11,agm005893138_AB2C9_10_spg123,Rh9Th1Zr2,Rh Th Zr,12,intermetallic,4d-only,A9BC2_aP12_1_9a_a_2a:Rh-Th-Zr,1
+28924,agm001236801_ABC_0_spg216_2_0_rattled-1000-subsampled_zzjaq6,agm001236801_ABC_0_spg216,Ag1Cd1Ho1,Ag Cd Ho,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Ag-Cd-Ho,1
+28932,agm001302525_ABCD_1_spg216_4_0_rattled-1000-subsampled_xwmt1p,agm001302525_ABCD_1_spg216,Lu1Nd1Pt1Tl1,Lu Nd Pt Tl,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Lu-Nd-Pt-Tl,2
+28990,agm001009866_ABC_8653_spg38_0_0_rattled-1000-subsampled_se8ihj,agm001009866_ABC_8653_spg38,Br1Dy1Mg1,Br Dy Mg,12,halide,neither,ABC_aP12_1_4a_4a_4a:Br-Dy-Mg,1
+29040,agm005172696_ABC2D5_234_spg123_1_0_rattled-1000-subsampled_qjt6rw,agm005172696_ABC2D5_234_spg123,Ac1Pd5Pr1Sb2,Ac Pd Pr Sb,18,intermetallic,4d-only,AB5CD2_aP18_1_2a_10a_2a_4a:Ac-Pd-Pr-Sb,2
+29078,agm005918659_AB3C4_88_spg166_0_0_rattled-1000-subsampled_ty7hwa,agm005918659_AB3C4_88_spg166,Ag1Dy4Pt3,Ag Dy Pt,16,intermetallic,4d-only,AB4C3_aP16_1_2a_8a_6a:Ag-Dy-Pt,1
+29183,agm003652757_AB4C5_28_spg139_2_0_rattled-1000-subsampled_8opppa,agm003652757_AB4C5_28_spg139,Ag1Pm5Te4,Ag Pm Te,10,chalcogenide,4d-only,AB5C4_aP10_1_a_5a_4a:Ag-Pm-Te,1
+29217,agm004651744_AB2C3D6_178_spg12_4_0_rattled-1000-subsampled_umlp4m,agm004651744_AB2C3D6_178_spg12,Dy6Mg1Nd3Tb2,Dy Mg Nd Tb,12,intermetallic,neither,A6BC3D2_aP12_1_6a_a_3a_2a:Dy-Mg-Nd-Tb,3
+29220,agm005611737_ABC2_6843_spg6_1_0_rattled-1000-subsampled_298tw8,agm005611737_ABC2_6843_spg6,Au2Ce1Tb1,Au Ce Tb,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Au-Ce-Tb,2
+29258,agm004827646_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_xhfoqv,agm004827646_ABC2D4_343_spg10,Li1S4Sm1Sr2,Li S Sm Sr,16,chalcogenide,neither,AB4CD2_aP16_1_2a_8a_2a_4a:Li-S-Sm-Sr,1
+29268,agm001247800_ABC2_18_spg123_2_0_rattled-1000-subsampled_ouss3m,agm001247800_ABC2_18_spg123,Ac1As1Cu2,Ac As Cu,16,pnictide,3d-only,ABC2_aP16_1_4a_4a_8a:Ac-As-Cu,1
+29276,agm001016519_ABC_9510_spg71_3_0_rattled-1000-subsampled_urj9p3,agm001016519_ABC_9510_spg71,Ac1F1Sn1,Ac F Sn,12,halide,neither,ABC_aP12_1_4a_4a_4a:Ac-F-Sn,1
+29307,agm002003806_ABC2_83_spg166_4_0_rattled-1000-subsampled_64hgo7,agm002003806_ABC2_83_spg166,Ni1Np1Th2,Ni Np Th,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Ni-Np-Th,2
+29365,agm001920201_ABCD_1_spg216_3_0_rattled-1000-subsampled_sz5c2n,agm001920201_ABCD_1_spg216,Co1Ho1Ir1Pu1,Co Ho Ir Pu,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Co-Ho-Ir-Pu,2
+29376,agm001297341_ABCD_1_spg216_0_0_rattled-1000-subsampled_3w8k49,agm001297341_ABCD_1_spg216,Pt1Sn1U1Zn1,Pt Sn U Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Pt-Sn-U-Zn,1
+29383,agm001106493_ABC3_0_spg221_1_0_rattled-1000-subsampled_t9z8tr,agm001106493_ABC3_0_spg221,Ho1I3Tl1,Ho I Tl,10,halide,neither,AB3C_aP10_1_2a_6a_2a:Ho-I-Tl,1
+29395,agm001206927_ABC2_18_spg123_3_0_rattled-1000-subsampled_5lj2cm,agm001206927_ABC2_18_spg123,Er2Ga1Zr1,Er Ga Zr,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Er-Ga-Zr,1
+29413,agm004791084_ABC2D4_337_spg166_3_0_rattled-1000-subsampled_njlbdj,agm004791084_ABC2D4_337_spg166,Ce1Ga2Rh4Si1,Ce Ga Rh Si,16,silicide,4d-only,AB2C4D_aP16_1_2a_4a_8a_2a:Ce-Ga-Rh-Si,1
+29417,agm001136633_ABC2_10_spg123_4_0_rattled-1000-subsampled_n2ocot,agm001136633_ABC2_10_spg123,Ac1Ga2Tl1,Ac Ga Tl,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ac-Ga-Tl,1
+29424,agm005625973_AB2C6_735_spg191_1_0_rattled-1000-subsampled_t6lb9u,agm005625973_AB2C6_735_spg191,Er1Hg6La2,Er Hg La,18,intermetallic,neither,AB6C2_aP18_1_2a_12a_4a:Er-Hg-La,2
+29517,agm001955031_ABC2_83_spg166_3_0_rattled-1000-subsampled_phjkbi,agm001955031_ABC2_83_spg166,C1Lu2Pr1,C Lu Pr,16,carbide,neither,AB2C_aP16_1_4a_8a_4a:C-Lu-Pr,2
+29548,agm001129989_ABC2_10_spg123_1_0_rattled-1000-subsampled_nz7mdl,agm001129989_ABC2_10_spg123,Cu1Li1Th2,Cu Li Th,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Cu-Li-Th,1
+29554,agm005857863_AB2C2_1340_spg65_1_0_rattled-1000-subsampled_la6usw,agm005857863_AB2C2_1340_spg65,Ac2Cd2Sm1,Ac Cd Sm,10,intermetallic,4d-only,A2B2C_aP10_1_4a_4a_2a:Ac-Cd-Sm,2
+29577,agm005811207_AB2C3_2369_spg62_3_0_rattled-1000-subsampled_1kqo7t,agm005811207_AB2C3_2369_spg62,La2Pd1Se3,La Pd Se,24,chalcogenide,4d-only,A2BC3_aP24_1_8a_4a_12a:La-Pd-Se,1
+29602,agm002011470_ABC2_83_spg166_4_0_rattled-1000-subsampled_sk4kdp,agm002011470_ABC2_83_spg166,Bi2Pm1V1,Bi Pm V,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Bi-Pm-V,1
+29606,agm001995932_ABC2_83_spg166_0_0_rattled-1000-subsampled_tp7k20,agm001995932_ABC2_83_spg166,In1Pm2Ti1,In Pm Ti,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:In-Pm-Ti,1
+29608,agm001350292_ABCD_1_spg216_3_0_rattled-1000-subsampled_oao3vv,agm001350292_ABCD_1_spg216,Ag1In1Li1Lu1,Ag In Li Lu,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-In-Li-Lu,1
+29615,agm001217222_ABC2_18_spg123_3_0_rattled-1000-subsampled_pnpvd8,agm001217222_ABC2_18_spg123,Ac1Ho1Nd2,Ac Ho Nd,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Ac-Ho-Nd,3
+29655,agm005787232_ABC3_5788_spg59_2_0_rattled-1000-subsampled_izh6kd,agm005787232_ABC3_5788_spg59,Ni1Pa1Pt3,Ni Pa Pt,10,intermetallic,3d-only,ABC3_aP10_1_2a_2a_6a:Ni-Pa-Pt,1
+29669,agm005922494_AB2C5_62_spg140_1_0_rattled-1000-subsampled_3gi8f6,agm005922494_AB2C5_62_spg140,Ga2Nd5Te1,Ga Nd Te,16,chalcogenide,neither,A2B5C_aP16_1_4a_10a_2a:Ga-Nd-Te,1
+29680,agm005559011_A2B2C3_92_spg199_2_0_rattled-1000-subsampled_8jjczw,agm005559011_A2B2C3_92_spg199,Pd2Pu3Rh2,Pd Pu Rh,14,intermetallic,4d-only,A2B3C2_aP14_1_4a_6a_4a:Pd-Pu-Rh,1
+29695,agm006050512_AB6C8_4_spg225_1_0_rattled-1000-subsampled_ugi4xq,agm006050512_AB6C8_4_spg225,Er6Np1Se8,Er Np Se,15,chalcogenide,neither,A6BC8_aP15_1_6a_a_8a:Er-Np-Se,2
+29719,agm004604257_AB2C3D6_28_spg12_3_0_rattled-1000-subsampled_t9rllb,agm004604257_AB2C3D6_28_spg12,Pb2Se1Tb6Te3,Pb Se Tb Te,12,chalcogenide,neither,A2BC6D3_aP12_1_2a_a_6a_3a:Pb-Se-Tb-Te,1
+29741,agm004528328_AB2C3D4_7_spg115_0_0_rattled-1000-subsampled_uczr7n,agm004528328_AB2C3D4_7_spg115,Cu4Ga3Ni1Pr2,Cu Ga Ni Pr,10,intermetallic,3d-only,A4B3CD2_aP10_1_4a_3a_a_2a:Cu-Ga-Ni-Pr,1
+29767,agm006073882_AB2C4_2589_spg11_2_0_rattled-1000-subsampled_hzeeqs,agm006073882_AB2C4_2589_spg11,Ho4Tc2Tm1,Ho Tc Tm,14,intermetallic,4d-only,A4B2C_aP14_1_8a_4a_2a:Ho-Tc-Tm,2
+29906,agm003216073_AB2C4_64_spg88_4_0_rattled-1000-subsampled_uwn4x1,agm003216073_AB2C4_64_spg88,La1O4Pd2,La O Pd,14,oxide,4d-only,AB4C2_aP14_1_2a_8a_4a:La-O-Pd,1
+29997,agm003363229_A2B4C5_4_spg71_2_0_rattled-1000-subsampled_9fv7ho,agm003363229_A2B4C5_4_spg71,Pm5Sb4Sc2,Pm Sb Sc,11,intermetallic,3d-only,A5B4C2_aP11_1_5a_4a_2a:Pm-Sb-Sc,1
+29998,agm003595437_AB4C4_204_spg137_4_0_rattled-1000-subsampled_gdzw05,agm003595437_AB4C4_204_spg137,P4Ru4Tm1,P Ru Tm,18,pnictide,4d-only,A4B4C_aP18_1_8a_8a_2a:P-Ru-Tm,1
+30100,agm001354970_ABCD_1_spg216_1_0_rattled-1000-subsampled_vesqu6,agm001354970_ABCD_1_spg216,Ag1Dy1Fe1Th1,Ag Dy Fe Th,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Ag-Dy-Fe-Th,2
+30124,agm001225588_ABC2_18_spg123_2_0_rattled-1000-subsampled_qzydfl,agm001225588_ABC2_18_spg123,Sm1Tl1Tm2,Sm Tl Tm,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Sm-Tl-Tm,2
+30198,agm003623110_ABC2_747_spg63_2_0_rattled-1000-subsampled_lz8l4u,agm003623110_ABC2_747_spg63,Er2Nd1Sb1,Er Nd Sb,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Er-Nd-Sb,2
+30283,agm001156781_ABC2_27_spg99_1_0_rattled-1000-subsampled_ljifow,agm001156781_ABC2_27_spg99,Pr2Sr1Tm1,Pr Sr Tm,16,intermetallic,neither,A2BC_aP16_1_8a_4a_4a:Pr-Sr-Tm,2
+30376,agm003961972_AB3_7_spg221_1_0_rattled-1000-subsampled_faohp4,agm003961972_AB3_7_spg221,Se1Tb3,Se Tb,16,chalcogenide,neither,AB3_aP16_1_4a_12a:Se-Tb,1
+30577,agm005000531_ABCD2_1539_spg11_2_0_rattled-1000-subsampled_75mu7o,agm005000531_ABCD2_1539_spg11,Al1Ge1Ho2Si1,Al Ge Ho Si,10,silicide,neither,ABC2D_aP10_1_2a_2a_4a_2a:Al-Ge-Ho-Si,1
+30621,agm005903226_AB3C12_5_spg123_4_0_rattled-1000-subsampled_m9rr7a,agm005903226_AB3C12_5_spg123,La12Li1Nd3,La Li Nd,16,intermetallic,neither,A12BC3_aP16_1_12a_a_3a:La-Li-Nd,2
+30626,agm001321915_ABCD_1_spg216_4_0_rattled-1000-subsampled_9dqcxh,agm001321915_ABCD_1_spg216,Lu1Sm1Y1Zr1,Lu Sm Y Zr,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Lu-Sm-Y-Zr,2
+30645,agm003500896_AB2C6_681_spg38_4_0_rattled-1000-subsampled_d123jz,agm003500896_AB2C6_681_spg38,Bi2Ce6Ge1,Bi Ce Ge,18,intermetallic,neither,A2B6C_aP18_1_4a_12a_2a:Bi-Ce-Ge,1
+30770,agm004775066_ABC2D4_403_spg63_3_0_rattled-1000-subsampled_c61sct,agm004775066_ABC2D4_403_spg63,C4Pa1Tc1Ti2,C Pa Tc Ti,16,carbide,3d+4d,A4BCD2_aP16_1_8a_2a_2a_4a:C-Pa-Tc-Ti,1
+30791,agm003531688_AB2C8_277_spg12_4_0_rattled-1000-subsampled_88f3ck,agm003531688_AB2C8_277_spg12,Au1Nd8Pd2,Au Nd Pd,11,intermetallic,4d-only,AB8C2_aP11_1_a_8a_2a:Au-Nd-Pd,1
+30804,agm004560359_AB2C2D4_0_spg12_0_0_rattled-1000-subsampled_laphz7,agm004560359_AB2C2D4_0_spg12,K2Np1Pd2Te4,K Np Pd Te,18,chalcogenide,4d-only,A2BC2D4_aP18_1_4a_2a_4a_8a:K-Np-Pd-Te,1
+30816,agm003324072_A2B2C7_244_spg65_4_0_rattled-1000-subsampled_acjbrg,agm003324072_A2B2C7_244_spg65,Dy7Ni2Rh2,Dy Ni Rh,11,intermetallic,3d+4d,A7B2C2_aP11_1_7a_2a_2a:Dy-Ni-Rh,1
+30859,agm004516907_AB2C3D4_7_spg115_2_0_rattled-1000-subsampled_dqkfsg,agm004516907_AB2C3D4_7_spg115,Al4Cu1Pt3Tm2,Al Cu Pt Tm,10,intermetallic,3d-only,A4BC3D2_aP10_1_4a_a_3a_2a:Al-Cu-Pt-Tm,1
+30871,agm001208818_ABC2_18_spg123_1_0_rattled-1000-subsampled_h6jrrj,agm001208818_ABC2_18_spg123,Au1Hg2Ho1,Au Hg Ho,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Au-Hg-Ho,1
+30962,agm005891924_AB2C3_129_spg115_2_0_rattled-1000-subsampled_kr4y1b,agm005891924_AB2C3_129_spg115,Bi2Pm3Sm1,Bi Pm Sm,12,intermetallic,neither,A2B3C_aP12_1_4a_6a_2a:Bi-Pm-Sm,2
+31009,agm005587259_AB2C6_24_spg136_3_0_rattled-1000-subsampled_pu12o7,agm005587259_AB2C6_24_spg136,F6K2Np1,F K Np,18,halide,neither,A6B2C_aP18_1_12a_4a_2a:F-K-Np,1
+31146,agm003289889_A3B4_16_spg71_2_0_rattled-1000-subsampled_dwtsvg,agm003289889_A3B4_16_spg71,Tb4Tm3,Tb Tm,14,intermetallic,neither,A4B3_aP14_1_8a_6a:Tb-Tm,2
+31186,agm001394263_ABCD_1_spg216_2_0_rattled-1000-subsampled_dr5vic,agm001394263_ABCD_1_spg216,Er1Hg1Pa1Tl1,Er Hg Pa Tl,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Er-Hg-Pa-Tl,2
+31215,agm001946319_ABC2_71_spg166_0_0_rattled-1000-subsampled_r1fq96,agm001946319_ABC2_71_spg166,H2Os1Pa1,H Os Pa,16,hydride,neither,A2BC_aP16_1_8a_4a_4a:H-Os-Pa,1
+31232,agm003812342_ABC2_7257_spg99_0_0_rattled-1000-subsampled_1pc46g,agm003812342_ABC2_7257_spg99,As1Ba1La2,As Ba La,16,pnictide,neither,ABC2_aP16_1_4a_4a_8a:As-Ba-La,1
+31235,agm004492383_AB2C3D12_103_spg166_2_0_rattled-1000-subsampled_ft8bba,agm004492383_AB2C3D12_103_spg166,Cu3Ni12Tb2Ti1,Cu Ni Tb Ti,18,intermetallic,3d-only,A3B12C2D_aP18_1_3a_12a_2a_a:Cu-Ni-Tb-Ti,1
+31361,agm004642240_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_lnr3rc,agm004642240_AB2C3D6_175_spg12,S6Sb2Sm1Tl3,S Sb Sm Tl,12,chalcogenide,neither,A6B2CD3_aP12_1_6a_2a_a_3a:S-Sb-Sm-Tl,1
+31363,agm005169251_ABC2D5_209_spg123_2_0_rattled-1000-subsampled_gt4o7q,agm005169251_ABC2D5_209_spg123,B2Ce1Pd1Pt5,B Ce Pd Pt,18,boride,4d-only,A2BCD5_aP18_1_4a_2a_2a_10a:B-Ce-Pd-Pt,1
+31368,agm003611941_ABC2_6670_spg7_0_0_rattled-1000-subsampled_on6x8r,agm003611941_ABC2_6670_spg7,Ho1Sm1Tb2,Ho Sm Tb,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Ho-Sm-Tb,3
+31385,agm005406732_AB6_105_spg229_2_0_rattled-1000-subsampled_yibmba,agm005406732_AB6_105_spg229,Er1Pm6,Er Pm,14,intermetallic,neither,AB6_aP14_1_2a_12a:Er-Pm,2
+31457,agm003650739_AB4C5_22_spg123_1_0_rattled-1000-subsampled_o49tjg,agm003650739_AB4C5_22_spg123,Pb5Pu4Tm1,Pb Pu Tm,10,intermetallic,neither,A5B4C_aP10_1_5a_4a_a:Pb-Pu-Tm,2
+31459,agm006074834_AB4C7_346_spg8_0_0_rattled-1000-subsampled_liae6u,agm006074834_AB4C7_346_spg8,Ac7Ir4Ni1,Ac Ir Ni,12,intermetallic,3d-only,A7B4C_aP12_1_7a_4a_a:Ac-Ir-Ni,1
+31466,agm001044981_ABC_8219_spg12_4_0_rattled-1000-subsampled_173edf,agm001044981_ABC_8219_spg12,As1La1Zn1,As La Zn,12,pnictide,3d-only,ABC_aP12_1_4a_4a_4a:As-La-Zn,1
+31505,agm001054153_ABC_361_spg63_3_0_rattled-1000-subsampled_4v4oxt,agm001054153_ABC_361_spg63,Be1Dy1I1,Be Dy I,12,halide,neither,ABC_aP12_1_4a_4a_4a:Be-Dy-I,1
+31511,agm005536415_A3B8_26_spg166_4_0_rattled-1000-subsampled_rt8nyx,agm005536415_A3B8_26_spg166,Hg8Sm3,Hg Sm,11,intermetallic,neither,A8B3_aP11_1_8a_3a:Hg-Sm,1
+31523,agm003416835_AB2C3_873_spg71_3_0_rattled-1000-subsampled_7b5cz7,agm003416835_AB2C3_873_spg71,Ac3Ge1Se2,Ac Ge Se,12,chalcogenide,neither,A3BC2_aP12_1_6a_2a_4a:Ac-Ge-Se,1
+31543,agm001208322_ABC2_18_spg123_2_0_rattled-1000-subsampled_ertg7y,agm001208322_ABC2_18_spg123,Ge1Pu2Tl1,Ge Pu Tl,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Ge-Pu-Tl,1
+31547,agm003361463_A2B4C5_294_spg166_3_0_rattled-1000-subsampled_79y70u,agm003361463_A2B4C5_294_spg166,Nd4Pr5Sn2,Nd Pr Sn,11,intermetallic,neither,A4B5C2_aP11_1_4a_5a_2a:Nd-Pr-Sn,2
+31566,agm003533329_AB2C8_259_spg8_3_0_rattled-1000-subsampled_gfe5qn,agm003533329_AB2C8_259_spg8,Al1Er8Mg2,Al Er Mg,11,intermetallic,neither,AB8C2_aP11_1_a_8a_2a:Al-Er-Mg,1
+31633,agm001198046_ABC2_18_spg123_0_0_rattled-1000-subsampled_akro3r,agm001198046_ABC2_18_spg123,Al1Gd2Zr1,Al Gd Zr,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Al-Gd-Zr,1
+31720,agm004843676_ABC2D4_343_spg10_0_0_rattled-1000-subsampled_cjlw9v,agm004843676_ABC2D4_343_spg10,Ac2Ce1Er1Sb4,Ac Ce Er Sb,16,intermetallic,neither,A2BCD4_aP16_1_4a_2a_2a_8a:Ac-Ce-Er-Sb,3
+31759,agm001967098_ABC2_19_spg166_4_0_rattled-1000-subsampled_4jn4m2,agm001967098_ABC2_19_spg166,Cl1I1Nd2,Cl I Nd,16,halide,neither,ABC2_aP16_1_4a_4a_8a:Cl-I-Nd,1
+31781,agm001346576_ABCD_1_spg216_2_0_rattled-1000-subsampled_1lvli3,agm001346576_ABCD_1_spg216,Ca1Cu1La1Pb1,Ca Cu La Pb,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Ca-Cu-La-Pb,1
+31850,agm005094893_ABCD6_14_spg149_2_0_rattled-1000-subsampled_ccjupb,agm005094893_ABCD6_14_spg149,O6Pm1Sr1Tc1,O Pm Sr Tc,18,oxide,4d-only,A6BCD_aP18_1_12a_2a_2a_2a:O-Pm-Sr-Tc,1
+31870,agm003479629_AB2C5_14_spg139_3_0_rattled-1000-subsampled_84gbts,agm003479629_AB2C5_14_spg139,Ag5Ho1Pr2,Ag Ho Pr,16,intermetallic,4d-only,A5BC2_aP16_1_10a_2a_4a:Ag-Ho-Pr,2
+31942,agm005700304_A3B4C8_84_spg12_1_0_rattled-1000-subsampled_w8brst,agm005700304_A3B4C8_84_spg12,Pa3Se8Sm4,Pa Se Sm,15,chalcogenide,neither,A3B8C4_aP15_1_3a_8a_4a:Pa-Se-Sm,2
+31943,agm004651916_AB2C3D6_178_spg12_2_0_rattled-1000-subsampled_vwpvpd,agm004651916_AB2C3D6_178_spg12,Dy2Mg1Pr6Tb3,Dy Mg Pr Tb,12,intermetallic,neither,A2BC6D3_aP12_1_2a_a_6a_3a:Dy-Mg-Pr-Tb,3
+31944,agm004983470_ABC2D6_695_spg15_3_0_rattled-1000-subsampled_pr8bcn,agm004983470_ABC2D6_695_spg15,Er1Ho1Pm2Pr6,Er Ho Pm Pr,20,intermetallic,neither,ABC2D6_aP20_1_2a_2a_4a_12a:Er-Ho-Pm-Pr,4
+31991,agm005173704_ABC2D5_388_spg123_3_0_rattled-1000-subsampled_z260dz,agm005173704_ABC2D5_388_spg123,Ho1Se5Sm2Tb1,Ho Se Sm Tb,18,chalcogenide,neither,AB5C2D_aP18_1_2a_10a_4a_2a:Ho-Se-Sm-Tb,3
+32027,agm006062445_AB5C5_95_spg12_3_0_rattled-1000-subsampled_7zl6ib,agm006062445_AB5C5_95_spg12,N5Pa1Pr5,N Pa Pr,11,nitride,neither,A5BC5_aP11_1_5a_a_5a:N-Pa-Pr,2
+32050,agm003441177_AB2C4_970_spg194_3_0_rattled-1000-subsampled_ml0e38,agm003441177_AB2C4_970_spg194,Sc4Th2Zr1,Sc Th Zr,14,intermetallic,3d+4d,A4B2C_aP14_1_8a_4a_2a:Sc-Th-Zr,1
+32127,agm005089622_ABCD6_10_spg163_3_0_rattled-1000-subsampled_tlhps3,agm005089622_ABCD6_10_spg163,Ag1Cl6Ho1Mg1,Ag Cl Ho Mg,18,halide,4d-only,AB6CD_aP18_1_2a_12a_2a_2a:Ag-Cl-Ho-Mg,1
+32128,agm005154568_ABC2D5_275_spg140_2_0_rattled-1000-subsampled_5dkyfj,agm005154568_ABC2D5_275_spg140,Dy2Pm1Tb1Y5,Dy Pm Tb Y,18,intermetallic,4d-only,A2BCD5_aP18_1_4a_2a_2a_10a:Dy-Pm-Tb-Y,3
+32151,agm004621241_AB2C3D6_28_spg12_2_0_rattled-1000-subsampled_bzhy6c,agm004621241_AB2C3D6_28_spg12,P6Pm1Pr2Tb3,P Pm Pr Tb,12,pnictide,neither,A6BC2D3_aP12_1_6a_a_2a_3a:P-Pm-Pr-Tb,3
+32158,agm004644397_AB2C3D6_221_spg12_2_0_rattled-1000-subsampled_g5oiq5,agm004644397_AB2C3D6_221_spg12,Mn2Pa1Rb3Te6,Mn Pa Rb Te,12,chalcogenide,3d-only,A2BC3D6_aP12_1_2a_a_3a_6a:Mn-Pa-Rb-Te,1
+32204,agm003508762_AB2C7_237_spg65_3_0_rattled-1000-subsampled_rbcwnx,agm003508762_AB2C7_237_spg65,Nd2Sc1Sm7,Nd Sc Sm,10,intermetallic,3d-only,A2BC7_aP10_1_2a_a_7a:Nd-Sc-Sm,2
+32293,agm004540386_AB2C2D2_132_spg139_3_0_rattled-1000-subsampled_36o00h,agm004540386_AB2C2D2_132_spg139,Ce1O2S2Sr2,Ce O S Sr,14,mixed-anion,neither,AB2C2D2_aP14_1_2a_4a_4a_4a:Ce-O-S-Sr,1
+32371,agm001176201_ABC4_12_spg216_2_0_rattled-1000-subsampled_ukkdri,agm001176201_ABC4_12_spg216,Gd1Lu1Pt4,Gd Lu Pt,12,intermetallic,neither,ABC4_aP12_1_2a_2a_8a:Gd-Lu-Pt,2
+32399,agm001190908_AB3_7_spg221_2_0_rattled-1000-subsampled_zquy9b,agm001190908_AB3_7_spg221,Ca1Nd3,Ca Nd,16,intermetallic,neither,AB3_aP16_1_4a_12a:Ca-Nd,1
+32539,agm004772702_ABC2D4_341_spg123_1_0_rattled-1000-subsampled_4mchpn,agm004772702_ABC2D4_341_spg123,C2Co4Np1Sn1,C Co Np Sn,16,carbide,3d-only,A2B4CD_aP16_1_4a_8a_2a_2a:C-Co-Np-Sn,1
+32589,agm005979397_AB2C2_5_spg139_2_0_rattled-1000-subsampled_ss2ar7,agm005979397_AB2C2_5_spg139,In2Pa1Rh2,In Pa Rh,10,intermetallic,4d-only,A2BC2_aP10_1_4a_2a_4a:In-Pa-Rh,1
+32639,agm001321927_ABCD_1_spg216_0_0_rattled-1000-subsampled_9i5dtx,agm001321927_ABCD_1_spg216,Pm1Pr1Y1Zr1,Pm Pr Y Zr,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Pm-Pr-Y-Zr,2
+32691,agm004785075_ABC2D4_128_spg63_4_0_rattled-1000-subsampled_2h3ftu,agm004785075_ABC2D4_128_spg63,Er2Fe1N4Pm1,Er Fe N Pm,16,nitride,3d-only,A2BC4D_aP16_1_4a_2a_8a_2a:Er-Fe-N-Pm,2
+32795,agm003623747_ABC2_6611_spg6_4_0_rattled-1000-subsampled_bvq9vb,agm003623747_ABC2_6611_spg6,Cu1Er2Pt1,Cu Er Pt,16,intermetallic,3d-only,AB2C_aP16_1_4a_8a_4a:Cu-Er-Pt,1
+32809,agm005198800_ABCD_15_spg160_3_0_rattled-1000-subsampled_690b9t,agm005198800_ABCD_15_spg160,As1Ce1Pr1Se1,As Ce Pr Se,16,chalcogenide,neither,ABCD_aP16_1_4a_4a_4a_4a:As-Ce-Pr-Se,2
+32845,agm001368570_ABCD_1_spg216_2_0_rattled-1000-subsampled_10kc37,agm001368570_ABCD_1_spg216,Cr1Er1Sc1Zn1,Cr Er Sc Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Cr-Er-Sc-Zn,1
+32852,agm001990594_ABC2_83_spg166_0_0_rattled-1000-subsampled_jr37t5,agm001990594_ABC2_83_spg166,Pa1Ru1Zn2,Pa Ru Zn,16,intermetallic,3d+4d,ABC2_aP16_1_4a_4a_8a:Pa-Ru-Zn,1
+32860,agm003611218_ABC_17_spg129_3_0_rattled-1000-subsampled_gdstud,agm003611218_ABC_17_spg129,Ru1Sb1Th1,Ru Sb Th,12,intermetallic,4d-only,ABC_aP12_1_4a_4a_4a:Ru-Sb-Th,1
+32936,agm001130828_ABC2_27_spg99_2_0_rattled-1000-subsampled_e3tulc,agm001130828_ABC2_27_spg99,Cu1Gd1Hg2,Cu Gd Hg,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Cu-Gd-Hg,1
+33021,agm005020514_ABCD2_3_spg107_4_0_rattled-1000-subsampled_ftoduk,agm005020514_ABCD2_3_spg107,Ac1Ag1Cd1Sn2,Ac Ag Cd Sn,10,intermetallic,4d-only,ABCD2_aP10_1_2a_2a_2a_4a:Ac-Ag-Cd-Sn,1
+33065,agm005833985_AB2C2_4_spg65_0_0_rattled-1000-subsampled_3aqi4y,agm005833985_AB2C2_4_spg65,Cd1Ni2Pm2,Cd Ni Pm,10,intermetallic,3d+4d,AB2C2_aP10_1_2a_4a_4a:Cd-Ni-Pm,1
+33119,agm005552410_A2B2C3_157_spg12_4_0_rattled-1000-subsampled_j2bltc,agm005552410_A2B2C3_157_spg12,C3Os2Tb2,C Os Tb,14,carbide,neither,A3B2C2_aP14_1_6a_4a_4a:C-Os-Tb,1
+33140,agm004845816_ABC2D4_343_spg10_1_0_rattled-1000-subsampled_jef1et,agm004845816_ABC2D4_343_spg10,P4Pr2Sm1Tb1,P Pr Sm Tb,16,pnictide,neither,A4B2CD_aP16_1_8a_4a_2a_2a:P-Pr-Sm-Tb,3
+33187,agm001970223_ABC2_1078_spg166_3_0_rattled-1000-subsampled_gko3qh,agm001970223_ABC2_1078_spg166,Ce2In1V1,Ce In V,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Ce-In-V,1
+33233,agm005922935_AB3C4_88_spg166_4_0_rattled-1000-subsampled_r9121c,agm005922935_AB3C4_88_spg166,Er3Nd1Ru4,Er Nd Ru,16,intermetallic,4d-only,A3BC4_aP16_1_6a_2a_8a:Er-Nd-Ru,2
+33284,agm005961960_AB3C4_1146_spg123_2_0_rattled-1000-subsampled_es09nr,agm005961960_AB3C4_1146_spg123,Mg1Pm3Tl4,Mg Pm Tl,16,intermetallic,neither,AB3C4_aP16_1_2a_6a_8a:Mg-Pm-Tl,1
+33293,agm005078664_ABCD6_211_spg163_0_0_rattled-1000-subsampled_kibgt8,agm005078664_ABCD6_211_spg163,Ac1Np1O6Te1,Ac Np O Te,18,mixed-anion,neither,ABC6D_aP18_1_2a_2a_12a_2a:Ac-Np-O-Te,2
+33314,agm005105346_ABC2_36_spg160_3_0_rattled-1000-subsampled_2d5odo,agm005105346_ABC2_36_spg160,Ac1Pt2Y1,Ac Pt Y,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Ac-Pt-Y,1
+33331,agm001814708_ABC2_27_spg99_0_0_rattled-1000-subsampled_9uzok8,agm001814708_ABC2_27_spg99,Hf1La1Tl2,Hf La Tl,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Hf-La-Tl,1
+33382,agm001239608_ABC_0_spg216_0_0_rattled-1000-subsampled_q5e901,agm001239608_ABC_0_spg216,Er1Ir1Mg1,Er Ir Mg,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Er-Ir-Mg,1
+33446,agm004790003_ABC2D4_337_spg166_1_0_rattled-1000-subsampled_bhf3xb,agm004790003_ABC2D4_337_spg166,Ag1Pd2Pt1Tm4,Ag Pd Pt Tm,16,intermetallic,4d-only,AB2CD4_aP16_1_2a_4a_2a_8a:Ag-Pd-Pt-Tm,1
+33456,agm003633502_ABC2_51_spg63_0_0_rattled-1000-subsampled_4htp26,agm003633502_ABC2_51_spg63,Cd1Mg2Th1,Cd Mg Th,16,intermetallic,4d-only,AB2C_aP16_1_4a_8a_4a:Cd-Mg-Th,1
+33534,agm004536831_AB2C3D4_52_spg115_1_0_rattled-1000-subsampled_z7ur7n,agm004536831_AB2C3D4_52_spg115,As4Co1Ir3La2,As Co Ir La,10,pnictide,3d-only,A4BC3D2_aP10_1_4a_a_3a_2a:As-Co-Ir-La,1
+33618,agm005139409_AB2C2D5_48_spg127_4_0_rattled-1000-subsampled_cr1qra,agm005139409_AB2C2D5_48_spg127,Ce2Cu2Pu1Rh5,Ce Cu Pu Rh,20,intermetallic,3d+4d,A2B2CD5_aP20_1_4a_4a_2a_10a:Ce-Cu-Pu-Rh,2
+33710,agm001268065_ABC_2_spg156_4_0_rattled-1000-subsampled_rl86xr,agm001268065_ABC_2_spg156,Dy1Ga1Hf1,Dy Ga Hf,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Dy-Ga-Hf,1
+33874,agm006070499_AB4C7_346_spg8_0_0_rattled-1000-subsampled_sploef,agm006070499_AB4C7_346_spg8,Pr4Se7Y1,Pr Se Y,12,chalcogenide,4d-only,A4B7C_aP12_1_4a_7a_a:Pr-Se-Y,1
+33884,agm004997174_ABCD2_1542_spg63_2_0_rattled-1000-subsampled_7alley,agm004997174_ABCD2_1542_spg63,Dy2Ho1La1Nd1,Dy Ho La Nd,10,intermetallic,neither,A2BCD_aP10_1_4a_2a_2a_2a:Dy-Ho-La-Nd,4
+33928,agm004808644_ABC2D4_78_spg166_4_0_rattled-1000-subsampled_jsyoee,agm004808644_ABC2D4_78_spg166,Dy1Er2Hg4Mg1,Dy Er Hg Mg,16,intermetallic,neither,AB2C4D_aP16_1_2a_4a_8a_2a:Dy-Er-Hg-Mg,2
+33941,agm001188490_ABC4_12_spg216_0_0_rattled-1000-subsampled_ivs7em,agm001188490_ABC4_12_spg216,Bi1Ge4Tb1,Bi Ge Tb,12,intermetallic,neither,AB4C_aP12_1_2a_8a_2a:Bi-Ge-Tb,1
+33944,agm001391945_ABCD_1_spg216_1_0_rattled-1000-subsampled_1287ib,agm001391945_ABCD_1_spg216,Ca1Pd1Tb1Tl1,Ca Pd Tb Tl,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ca-Pd-Tb-Tl,1
+33966,agm001169801_ABC4_12_spg216_0_0_rattled-1000-subsampled_ho6qyt,agm001169801_ABC4_12_spg216,Ag4Pr1Sb1,Ag Pr Sb,12,intermetallic,4d-only,A4BC_aP12_1_8a_2a_2a:Ag-Pr-Sb,1
+34025,agm003523253_AB2C8_227_spg12_3_0_rattled-1000-subsampled_3c6ir5,agm003523253_AB2C8_227_spg12,Br8Dy1Sm2,Br Dy Sm,11,halide,neither,A8BC2_aP11_1_8a_a_2a:Br-Dy-Sm,2
+34068,agm004547660_AB2C2D2_139_spg166_2_0_rattled-1000-subsampled_wuekmv,agm004547660_AB2C2D2_139_spg166,Pr1Tl2Y2Zn2,Pr Tl Y Zn,14,intermetallic,3d+4d,AB2C2D2_aP14_1_2a_4a_4a_4a:Pr-Tl-Y-Zn,1
+34069,agm001364705_ABCD_1_spg216_3_0_rattled-1000-subsampled_ytlf51,agm001364705_ABCD_1_spg216,Er1Ga1Os1Pu1,Er Ga Os Pu,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Er-Ga-Os-Pu,2
+34114,agm001350228_ABCD_1_spg216_4_0_rattled-1000-subsampled_jb5uir,agm001350228_ABCD_1_spg216,Ag1Li1Mg1Nd1,Ag Li Mg Nd,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Ag-Li-Mg-Nd,1
+34124,agm003565535_AB3C5_128_spg193_1_0_rattled-1000-subsampled_2y4arl,agm003565535_AB3C5_128_spg193,Ag1Ce3Sn5,Ag Ce Sn,18,intermetallic,4d-only,AB3C5_aP18_1_2a_6a_10a:Ag-Ce-Sn,1
+34152,agm001349171_ABCD_1_spg216_1_0_rattled-1000-subsampled_1dpcfg,agm001349171_ABCD_1_spg216,Ac1Ag1Pb1Zn1,Ac Ag Pb Zn,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Ac-Ag-Pb-Zn,1
+34220,agm004376543_ABC2_21_spg71_1_0_rattled-1000-subsampled_sgok58,agm004376543_ABC2_21_spg71,La1Pb1Tc2,La Pb Tc,16,intermetallic,4d-only,ABC2_aP16_1_4a_4a_8a:La-Pb-Tc,1
+34227,agm003545277_AB3C3_288_spg12_1_0_rattled-1000-subsampled_zmgxj5,agm003545277_AB3C3_288_spg12,Au3La3Pr1,Au La Pr,14,intermetallic,neither,A3B3C_aP14_1_6a_6a_2a:Au-La-Pr,2
+34246,agm001369440_ABCD_1_spg216_3_0_rattled-1000-subsampled_wqyiaf,agm001369440_ABCD_1_spg216,Dy1Lu1Pd1Zn1,Dy Lu Pd Zn,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Dy-Lu-Pd-Zn,2
+34265,agm003455521_AB2C4_1161_spg166_1_0_rattled-1000-subsampled_o3xtfy,agm003455521_AB2C4_1161_spg166,Pr4Sm2Th1,Pr Sm Th,14,intermetallic,neither,A4B2C_aP14_1_8a_4a_2a:Pr-Sm-Th,3
+34287,agm004962681_ABC2D6_266_spg146_4_0_rattled-1000-subsampled_6axcat,agm004962681_ABC2D6_266_spg146,I6Na2Tl1Tm1,I Na Tl Tm,10,halide,neither,A6B2CD_aP10_1_6a_2a_a_a:I-Na-Tl-Tm,1
+34328,agm004561360_AB2C2D4_212_spg12_2_0_rattled-1000-subsampled_2y2l2n,agm004561360_AB2C2D4_212_spg12,Dy2La4Pm2Tm1,Dy La Pm Tm,18,intermetallic,neither,A2B4C2D_aP18_1_4a_8a_4a_2a:Dy-La-Pm-Tm,4
+34366,agm005211298_ABCD_157_spg99_2_0_rattled-1000-subsampled_eufngn,agm005211298_ABCD_157_spg99,Al1Er1Ho1Tl1,Al Er Ho Tl,16,intermetallic,neither,ABCD_aP16_1_4a_4a_4a_4a:Al-Er-Ho-Tl,2
+34418,agm002474753_ABC3_0_spg221_1_0_rattled-1000-subsampled_tm94qc,agm002474753_ABC3_0_spg221,Co1Fe3La1,Co Fe La,10,intermetallic,3d-only,AB3C_aP10_1_2a_6a_2a:Co-Fe-La,1
+34526,agm005722842_AB2C6_645_spg15_2_0_rattled-1000-subsampled_tc3yvh,agm005722842_AB2C6_645_spg15,Ag2Au6Pa1,Ag Au Pa,18,intermetallic,4d-only,A2B6C_aP18_1_4a_12a_2a:Ag-Au-Pa,1
+34557,agm005162004_ABC2D5_205_spg140_1_0_rattled-1000-subsampled_b5ug52,agm005162004_ABC2D5_205_spg140,Dy1Nd2Pr5Sc1,Dy Nd Pr Sc,18,intermetallic,3d-only,AB2C5D_aP18_1_2a_4a_10a_2a:Dy-Nd-Pr-Sc,3
+34603,agm005125508_ABC2_6569_spg8_0_0_rattled-1000-subsampled_7u9nq4,agm005125508_ABC2_6569_spg8,Nd2Rh1Tb1,Nd Rh Tb,16,intermetallic,4d-only,A2BC_aP16_1_8a_4a_4a:Nd-Rh-Tb,2
+34621,agm004779667_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_kkmv4y,agm004779667_ABC2D4_343_spg10,Pr1S4Sm2Tb1,Pr S Sm Tb,16,chalcogenide,neither,AB4C2D_aP16_1_2a_8a_4a_2a:Pr-S-Sm-Tb,3
+34625,agm001177647_ABC4_12_spg216_3_0_rattled-1000-subsampled_qjhthp,agm001177647_ABC4_12_spg216,La1Pu4Th1,La Pu Th,12,intermetallic,neither,AB4C_aP12_1_2a_8a_2a:La-Pu-Th,3
+34760,agm001041702_ABC_1808_spg2_4_0_rattled-1000-subsampled_lxjjua,agm001041702_ABC_1808_spg2,C1I1Np1,C I Np,12,halide,neither,ABC_aP12_1_4a_4a_4a:C-I-Np,1
+34829,agm004951232_ABC2D6_1499_spg148_2_0_rattled-1000-subsampled_jylkcy,agm004951232_ABC2D6_1499_spg148,Ca1Li2Np1O6,Ca Li Np O,10,oxide,neither,AB2CD6_aP10_1_a_2a_a_6a:Ca-Li-Np-O,1
+34912,agm003379588_A3B4C4_3_spg71_1_0_rattled-1000-subsampled_hblaps,agm003379588_A3B4C4_3_spg71,Nd3Pm4Rh4,Nd Pm Rh,11,intermetallic,4d-only,A3B4C4_aP11_1_3a_4a_4a:Nd-Pm-Rh,2
+34933,agm003717624_ABC3_4854_spg15_1_0_rattled-1000-subsampled_7qxrfq,agm003717624_ABC3_4854_spg15,Ag1Er3Tl1,Ag Er Tl,20,intermetallic,4d-only,AB3C_aP20_1_4a_12a_4a:Ag-Er-Tl,1
+34950,agm003671919_AB4C8_2_spg139_4_0_rattled-1000-subsampled_sd3bn8,agm003671919_AB4C8_2_spg139,Ac1Cd8In4,Ac Cd In,13,intermetallic,4d-only,AB8C4_aP13_1_a_8a_4a:Ac-Cd-In,1
+34955,agm003534651_AB2C8_15_spg123_2_0_rattled-1000-subsampled_h8q11e,agm003534651_AB2C8_15_spg123,Al8Fe1Tb2,Al Fe Tb,11,intermetallic,3d-only,A8BC2_aP11_1_8a_a_2a:Al-Fe-Tb,1
+34972,agm003384305_A3B4C8_5_spg12_4_0_rattled-1000-subsampled_jom9dm,agm003384305_A3B4C8_5_spg12,Se8Sr3Tb4,Se Sr Tb,15,chalcogenide,neither,A8B3C4_aP15_1_8a_3a_4a:Se-Sr-Tb,1
+34975,agm004972421_ABC2D6_78_spg1_1_0_rattled-1000-subsampled_eupx43,agm004972421_ABC2D6_78_spg1,Ag2Cl6Cs1Np1,Ag Cl Cs Np,10,halide,4d-only,A2B6CD_aP10_1_2a_6a_a_a:Ag-Cl-Cs-Np,1
+34995,agm005566754_A2B2C5_59_spg64_1_0_rattled-1000-subsampled_snmnc3,agm005566754_A2B2C5_59_spg64,As2Ce5Te2,As Ce Te,18,chalcogenide,neither,A2B5C2_aP18_1_4a_10a_4a:As-Ce-Te,1
+35063,agm004608053_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_0ko07t,agm004608053_AB2C3D6_175_spg12,Er1Nd3Pm2Se6,Er Nd Pm Se,12,chalcogenide,neither,AB3C2D6_aP12_1_a_3a_2a_6a:Er-Nd-Pm-Se,3
+35162,agm005942872_AB3C4_767_spg123_1_0_rattled-1000-subsampled_bukejq,agm005942872_AB3C4_767_spg123,Ag4Er1Mg3,Ag Er Mg,16,intermetallic,4d-only,A4BC3_aP16_1_8a_2a_6a:Ag-Er-Mg,1
+35222,agm003762328_ABC6_1_spg225_0_0_rattled-1000-subsampled_27rua7,agm003762328_ABC6_1_spg225,S6Ti1U1,S Ti U,16,chalcogenide,3d-only,A6BC_aP16_1_12a_2a_2a:S-Ti-U,1
+35263,agm003591580_AB4C4_218_spg86_0_0_rattled-1000-subsampled_zohuci,agm003591580_AB4C4_218_spg86,Cu4La1Pt4,Cu La Pt,18,intermetallic,3d-only,A4BC4_aP18_1_8a_2a_8a:Cu-La-Pt,1
+35353,agm003697025_AB6C8_70_spg148_3_0_rattled-1000-subsampled_z2yhpt,agm003697025_AB6C8_70_spg148,Dy1Ho6Y8,Dy Ho Y,15,intermetallic,4d-only,AB6C8_aP15_1_a_6a_8a:Dy-Ho-Y,2
+35360,agm004515244_AB2C3D4_7_spg115_0_0_rattled-1000-subsampled_jyqif2,agm004515244_AB2C3D4_7_spg115,Ce2Os1Pt3Si4,Ce Os Pt Si,10,silicide,neither,A2BC3D4_aP10_1_2a_a_3a_4a:Ce-Os-Pt-Si,1
+35367,agm005152311_ABC2D5_216_spg36_1_0_rattled-1000-subsampled_xfihxk,agm005152311_ABC2D5_216_spg36,Ba2Dy1Se5Y1,Ba Dy Se Y,18,chalcogenide,4d-only,A2BC5D_aP18_1_4a_2a_10a_2a:Ba-Dy-Se-Y,1
+35405,agm001085405_AB2C4_18_spg139_2_0_rattled-1000-subsampled_eh47pb,agm001085405_AB2C4_18_spg139,C1Np4Sb2,C Np Sb,14,carbide,neither,AB4C2_aP14_1_2a_8a_4a:C-Np-Sb,1
+35412,agm003583135_AB3C7_115_spg156_2_0_rattled-1000-subsampled_154kx2,agm003583135_AB3C7_115_spg156,Dy3La7Nd1,Dy La Nd,11,intermetallic,neither,A3B7C_aP11_1_3a_7a_a:Dy-La-Nd,3
+35413,agm004648323_AB2C3D6_175_spg12_0_0_rattled-1000-subsampled_z3jrdp,agm004648323_AB2C3D6_175_spg12,As6Ca3Er1Th2,As Ca Er Th,12,pnictide,neither,A6B3CD2_aP12_1_6a_3a_a_2a:As-Ca-Er-Th,2
+35415,agm005533963_A3B4_107_spg221_1_0_rattled-1000-subsampled_bu43tw,agm005533963_A3B4_107_spg221,Dy4N3,Dy N,14,nitride,neither,A4B3_aP14_1_8a_6a:Dy-N,1
+35442,agm003497368_AB2C6_177_spg227_4_0_rattled-1000-subsampled_gftswj,agm003497368_AB2C6_177_spg227,Ac1Cd6Mg2,Ac Cd Mg,18,intermetallic,4d-only,AB6C2_aP18_1_2a_12a_4a:Ac-Cd-Mg,1
+35500,agm005030926_ABCD3_608_spg12_2_0_rattled-1000-subsampled_wxt11r,agm005030926_ABCD3_608_spg12,Ba1Cr1N3Pr1,Ba Cr N Pr,12,nitride,3d-only,ABC3D_aP12_1_2a_2a_6a_2a:Ba-Cr-N-Pr,1
+35513,agm003407596_AB2C2_3_spg127_4_0_rattled-1000-subsampled_o4rnk4,agm003407596_AB2C2_3_spg127,Al2Th2Y1,Al Th Y,10,intermetallic,4d-only,A2B2C_aP10_1_4a_4a_2a:Al-Th-Y,1
+35532,agm003540918_AB2C9_9_spg191_0_0_rattled-1000-subsampled_d9ikee,agm003540918_AB2C9_9_spg191,Ac1Cd9Li2,Ac Cd Li,12,intermetallic,4d-only,AB9C2_aP12_1_a_9a_2a:Ac-Cd-Li,1
+35583,agm003632865_ABC2_213_spg44_4_0_rattled-1000-subsampled_ulzyow,agm003632865_ABC2_213_spg44,P2Pu1V1,P Pu V,16,pnictide,3d-only,A2BC_aP16_1_8a_4a_4a:P-Pu-V,1
+35653,agm005018278_ABCD2_1563_spg119_1_0_rattled-1000-subsampled_va3jcf,agm005018278_ABCD2_1563_spg119,Ce1Nb1Ru1Si2,Ce Nb Ru Si,10,silicide,4d-only,ABCD2_aP10_1_2a_2a_2a_4a:Ce-Nb-Ru-Si,1
+35661,agm004518665_AB2C3D4_52_spg115_0_0_rattled-1000-subsampled_up3qyb,agm004518665_AB2C3D4_52_spg115,Ac2Au3Pt1Sb4,Ac Au Pt Sb,10,intermetallic,neither,A2B3CD4_aP10_1_2a_3a_a_4a:Ac-Au-Pt-Sb,1
+35672,agm003475126_AB2C5_53_spg71_3_0_rattled-1000-subsampled_fju6hg,agm003475126_AB2C5_53_spg71,Br5Ce2I1,Br Ce I,16,halide,neither,A5B2C_aP16_1_10a_4a_2a:Br-Ce-I,1
+35681,agm005760968_AB2C3_935_spg12_2_0_rattled-1000-subsampled_r276kh,agm005760968_AB2C3_935_spg12,Ho2N3Pr1,Ho N Pr,12,nitride,neither,A2B3C_aP12_1_4a_6a_2a:Ho-N-Pr,2
+35687,agm003476787_AB2C5_188_spg71_2_0_rattled-1000-subsampled_1cnw7t,agm003476787_AB2C5_188_spg71,Ho5Mg2Pm1,Ho Mg Pm,16,intermetallic,neither,A5B2C_aP16_1_10a_4a_2a:Ho-Mg-Pm,2
+35694,agm005969146_AB2C8_278_spg12_1_0_rattled-1000-subsampled_kk88yg,agm005969146_AB2C8_278_spg12,Cu2Pd8Pu1,Cu Pd Pu,11,intermetallic,3d+4d,A2B8C_aP11_1_2a_8a_a:Cu-Pd-Pu,1
+35696,agm004996953_ABCD2_1555_spg11_0_0_rattled-1000-subsampled_7gb8qi,agm004996953_ABCD2_1555_spg11,Mg1Pm2Sm1Tb1,Mg Pm Sm Tb,10,intermetallic,neither,AB2CD_aP10_1_2a_4a_2a_2a:Mg-Pm-Sm-Tb,3
+35721,agm004596270_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_zn8o9o,agm004596270_AB2C3D6_175_spg12,Br3Pm6S1Si2,Br Pm S Si,12,mixed-anion,neither,A3B6CD2_aP12_1_3a_6a_a_2a:Br-Pm-S-Si,1
+35726,agm004844987_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_szb0xs,agm004844987_ABC2D4_343_spg10,Nd2P4U1Zr1,Nd P U Zr,16,pnictide,4d-only,A2B4CD_aP16_1_4a_8a_2a_2a:Nd-P-U-Zr,2
+35765,agm003611785_ABC2_213_spg44_4_0_rattled-1000-subsampled_f4otcc,agm003611785_ABC2_213_spg44,H1Pa1Se2,H Pa Se,16,chalcogenide,neither,ABC2_aP16_1_4a_4a_8a:H-Pa-Se,1
+35881,agm003739201_ABC4_14_spg65_2_0_rattled-1000-subsampled_0aii89,agm003739201_ABC4_14_spg65,Ac1S4U1,Ac S U,12,chalcogenide,neither,AB4C_aP12_1_2a_8a_2a:Ac-S-U,2
+35999,agm005896240_AB2C8_434_spg12_4_0_rattled-1000-subsampled_4pc6wx,agm005896240_AB2C8_434_spg12,Br8La2Sn1,Br La Sn,11,halide,neither,A8B2C_aP11_1_8a_2a_a:Br-La-Sn,1
+36019,agm001246017_ABC2_1_spg123_2_0_rattled-1000-subsampled_k50ukf,agm001246017_ABC2_1_spg123,Fe1Hg1Tb2,Fe Hg Tb,16,intermetallic,3d-only,ABC2_aP16_1_4a_4a_8a:Fe-Hg-Tb,1
+36030,agm005802862_AB2C3_39_spg63_1_0_rattled-1000-subsampled_lcm2tz,agm005802862_AB2C3_39_spg63,C2F1Sm3,C F Sm,12,halide,neither,A2BC3_aP12_1_4a_2a_6a:C-F-Sm,1
+36031,agm004815985_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_6o2osc,agm004815985_ABC2D4_343_spg10,Pr1Se4Th1Y2,Pr Se Th Y,16,chalcogenide,4d-only,AB4CD2_aP16_1_2a_8a_2a_4a:Pr-Se-Th-Y,2
+36038,agm004824518_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_3dzlgs,agm004824518_ABC2D4_343_spg10,Ce1Cs2La1Se4,Ce Cs La Se,16,chalcogenide,neither,AB2CD4_aP16_1_2a_4a_2a_8a:Ce-Cs-La-Se,2
+36089,agm001129651_ABC2_10_spg123_4_0_rattled-1000-subsampled_0iih5x,agm001129651_ABC2_10_spg123,Ac2Cu1Te1,Ac Cu Te,16,chalcogenide,3d-only,A2BC_aP16_1_8a_4a_4a:Ac-Cu-Te,1
+36147,agm005763755_ABC4_479_spg119_4_0_rattled-1000-subsampled_y7ypqt,agm005763755_ABC4_479_spg119,Ca1Ce1Zn4,Ca Ce Zn,12,intermetallic,3d-only,ABC4_aP12_1_2a_2a_8a:Ca-Ce-Zn,1
+36182,agm004991829_ABCD2_1593_spg129_2_0_rattled-1000-subsampled_lbqwaa,agm004991829_ABCD2_1593_spg129,Er1N1Np1Te2,Er N Np Te,10,mixed-anion,neither,ABCD2_aP10_1_2a_2a_2a_4a:Er-N-Np-Te,2
+36203,agm004633797_AB2C3D6_178_spg12_3_0_rattled-1000-subsampled_ob9s40,agm004633797_AB2C3D6_178_spg12,Ho1Pr6Tb3Y2,Ho Pr Tb Y,12,intermetallic,4d-only,AB6C3D2_aP12_1_a_6a_3a_2a:Ho-Pr-Tb-Y,3
+36214,agm003359022_A2B3C9_132_spg71_2_0_rattled-1000-subsampled_qezz16,agm003359022_A2B3C9_132_spg71,B9Fe2Tb3,B Fe Tb,14,boride,3d-only,A9B2C3_aP14_1_9a_2a_3a:B-Fe-Tb,1
+36244,agm005038155_ABCD3_375_spg11_0_0_rattled-1000-subsampled_kb12gr,agm005038155_ABCD3_375_spg11,N3Sm1Ti1Y1,N Sm Ti Y,12,nitride,3d+4d,A3BCD_aP12_1_6a_2a_2a_2a:N-Sm-Ti-Y,1
+36304,agm003721303_ABC3_5748_spg31_0_0_rattled-1000-subsampled_az29u9,agm003721303_ABC3_5748_spg31,Ge3Ho1Os1,Ge Ho Os,10,intermetallic,neither,A3BC_aP10_1_6a_2a_2a:Ge-Ho-Os,1
+36312,agm003553595_AB3C4_77_spg25_4_0_rattled-1000-subsampled_otrmmg,agm003553595_AB3C4_77_spg25,Cd3In1Pm4,Cd In Pm,16,intermetallic,4d-only,A3BC4_aP16_1_6a_2a_8a:Cd-In-Pm,1
+36325,agm003601680_ABC_185_spg129_2_0_rattled-1000-subsampled_1y0don,agm003601680_ABC_185_spg129,Li1Pm1Zn1,Li Pm Zn,12,intermetallic,3d-only,ABC_aP12_1_4a_4a_4a:Li-Pm-Zn,1
+36328,agm003340346_A2B3C4_311_spg12_2_0_rattled-1000-subsampled_ocdrg3,agm003340346_A2B3C4_311_spg12,La3Pb4Pm2,La Pb Pm,18,intermetallic,neither,A3B4C2_aP18_1_6a_8a_4a:La-Pb-Pm,2
+36336,agm001219572_ABC2_1_spg123_0_0_rattled-1000-subsampled_txfpiy,agm001219572_ABC2_1_spg123,Np1Pd1Te2,Np Pd Te,16,chalcogenide,4d-only,ABC2_aP16_1_4a_4a_8a:Np-Pd-Te,1
+36502,agm003650470_AB4C5_149_spg79_0_0_rattled-1000-subsampled_mhcd04,agm003650470_AB4C5_149_spg79,Dy4In1Tb5,Dy In Tb,10,intermetallic,neither,A4BC5_aP10_1_4a_a_5a:Dy-In-Tb,2
+36515,agm001318151_ABCD_1_spg216_1_0_rattled-1000-subsampled_5nbz3e,agm001318151_ABCD_1_spg216,Be1Ga1Lu1Y1,Be Ga Lu Y,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Be-Ga-Lu-Y,1
+36553,agm003386360_AB2C10_0_spg69_4_0_rattled-1000-subsampled_hjqul9,agm003386360_AB2C10_0_spg69,Au10Be2Pr1,Au Be Pr,13,intermetallic,neither,A10B2C_aP13_1_10a_2a_a:Au-Be-Pr,1
+36555,agm006104016_AB4C6_191_spg121_4_0_rattled-1000-subsampled_agfso7,agm006104016_AB4C6_191_spg121,Ca1Dy6Tb4,Ca Dy Tb,11,intermetallic,neither,AB6C4_aP11_1_a_6a_4a:Ca-Dy-Tb,2
+36599,agm001279181_ABC_68_spg156_0_0_rattled-1000-subsampled_k35e91,agm001279181_ABC_68_spg156,P1Sc1Tm1,P Sc Tm,12,pnictide,3d-only,ABC_aP12_1_4a_4a_4a:P-Sc-Tm,1
+36771,agm003389293_AB2C2_384_spg72_3_0_rattled-1000-subsampled_1vm90m,agm003389293_AB2C2_384_spg72,Pm1Sb2Sm2,Pm Sb Sm,10,intermetallic,neither,AB2C2_aP10_1_2a_4a_4a:Pm-Sb-Sm,2
+36795,agm005085735_ABCD6_10_spg163_3_0_rattled-1000-subsampled_dnaepq,agm005085735_ABCD6_10_spg163,Ba1Br6Dy1In1,Ba Br Dy In,18,halide,neither,AB6CD_aP18_1_2a_12a_2a_2a:Ba-Br-Dy-In,1
+36824,agm005076191_ABCD6_10_spg163_1_0_rattled-1000-subsampled_0milnl,agm005076191_ABCD6_10_spg163,Ag1O6Pu1Ru1,Ag O Pu Ru,18,oxide,4d-only,AB6CD_aP18_1_2a_12a_2a_2a:Ag-O-Pu-Ru,1
+36832,agm004561874_AB2C2D4_214_spg12_3_0_rattled-1000-subsampled_tlg3z5,agm004561874_AB2C2D4_214_spg12,Dy1Pm4Pr2Sm2,Dy Pm Pr Sm,18,intermetallic,neither,AB4C2D2_aP18_1_2a_8a_4a_4a:Dy-Pm-Pr-Sm,4
+36884,agm005916787_AB3C12_5_spg123_3_0_rattled-1000-subsampled_vozqqh,agm005916787_AB3C12_5_spg123,Al1Np3Pd12,Al Np Pd,16,intermetallic,4d-only,AB3C12_aP16_1_a_3a_12a:Al-Np-Pd,1
+36958,agm001296928_ABCD_1_spg216_2_0_rattled-1000-subsampled_kzrph5,agm001296928_ABCD_1_spg216,Cd1Pm1Pt1Sb1,Cd Pm Pt Sb,16,intermetallic,4d-only,ABCD_aP16_1_4a_4a_4a_4a:Cd-Pm-Pt-Sb,1
+37024,agm004640231_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_r31wb9,agm004640231_AB2C3D6_175_spg12,Ho2Na3S6Te1,Ho Na S Te,12,chalcogenide,neither,A2B3C6D_aP12_1_2a_3a_6a_a:Ho-Na-S-Te,1
+37046,agm001247902_ABC2_1_spg123_2_0_rattled-1000-subsampled_jjoas0,agm001247902_ABC2_1_spg123,Pu1Te2Tl1,Pu Te Tl,16,chalcogenide,neither,AB2C_aP16_1_4a_8a_4a:Pu-Te-Tl,1
+37093,agm005140568_AB2C2D5_48_spg127_0_0_rattled-1000-subsampled_nwk5l1,agm005140568_AB2C2D5_48_spg127,Al1Fe2Ni5Th2,Al Fe Ni Th,20,intermetallic,3d-only,AB2C5D2_aP20_1_2a_4a_10a_4a:Al-Fe-Ni-Th,1
+37255,agm004940087_ABC2D6_519_spg59_0_0_rattled-1000-subsampled_waiynp,agm004940087_ABC2D6_519_spg59,As1P1Rh6Tm2,As P Rh Tm,20,pnictide,4d-only,ABC6D2_aP20_1_2a_2a_12a_4a:As-P-Rh-Tm,1
+37424,agm005045539_ABCD3_384_spg63_1_0_rattled-1000-subsampled_1zsydj,agm005045539_ABCD3_384_spg63,Ga3Ni1Os1Tm1,Ga Ni Os Tm,12,intermetallic,3d-only,A3BCD_aP12_1_6a_2a_2a_2a:Ga-Ni-Os-Tm,1
+37499,agm005156571_ABC2D5_211_spg36_3_0_rattled-1000-subsampled_uoumi6,agm005156571_ABC2D5_211_spg36,Ba2Pm1Se5Zn1,Ba Pm Se Zn,18,chalcogenide,3d-only,A2BC5D_aP18_1_4a_2a_10a_2a:Ba-Pm-Se-Zn,1
+37542,agm004831393_ABC2D4_343_spg10_3_0_rattled-1000-subsampled_gygoqh,agm004831393_ABC2D4_343_spg10,Ce1Ho1Pm2S4,Ce Ho Pm S,16,chalcogenide,neither,ABC2D4_aP16_1_2a_2a_4a_8a:Ce-Ho-Pm-S,3
+37604,agm001843901_ABC_4_spg107_1_0_rattled-1000-subsampled_hsgyqa,agm001843901_ABC_4_spg107,Ca1Er1Th1,Ca Er Th,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Ca-Er-Th,2
+37615,agm003615229_ABC2_63_spg63_1_0_rattled-1000-subsampled_11z88h,agm003615229_ABC2_63_spg63,Cl2Dy1I1,Cl Dy I,16,halide,neither,A2BC_aP16_1_8a_4a_4a:Cl-Dy-I,1
+37616,agm005840981_AB2C5_414_spg107_1_0_rattled-1000-subsampled_1eh9f1,agm005840981_AB2C5_414_spg107,Cd1Er2La5,Cd Er La,16,intermetallic,4d-only,AB2C5_aP16_1_2a_4a_10a:Cd-Er-La,2
+37638,agm001062210_ABC_260_spg129_1_0_rattled-1000-subsampled_7rhr9e,agm001062210_ABC_260_spg129,Er1Hf1In1,Er Hf In,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Er-Hf-In,1
+37644,agm004833276_ABC2D4_343_spg10_4_0_rattled-1000-subsampled_kol550,agm004833276_ABC2D4_343_spg10,Ce1La2Na1Te4,Ce La Na Te,16,chalcogenide,neither,AB2CD4_aP16_1_2a_4a_2a_8a:Ce-La-Na-Te,2
+37674,agm005096630_ABCD6_88_spg174_1_0_rattled-1000-subsampled_2m0pjs,agm005096630_ABCD6_88_spg174,Co1H6La1Ru1,Co H La Ru,18,hydride,3d+4d,AB6CD_aP18_1_2a_12a_2a_2a:Co-H-La-Ru,1
+37709,agm001929979_ABC2_5_spg166_1_0_rattled-1000-subsampled_z8ftzh,agm001929979_ABC2_5_spg166,Br1Eu2Sn1,Br Eu Sn,16,halide,neither,AB2C_aP16_1_4a_8a_4a:Br-Eu-Sn,1
+37739,agm004557333_AB2C2D2_316_spg12_1_0_rattled-1000-subsampled_4tfwsy,agm004557333_AB2C2D2_316_spg12,Dy2Nd1Tb2Th2,Dy Nd Tb Th,14,intermetallic,neither,A2BC2D2_aP14_1_4a_2a_4a_4a:Dy-Nd-Tb-Th,4
+37755,agm001130426_ABC2_27_spg99_3_0_rattled-1000-subsampled_xbdo62,agm001130426_ABC2_27_spg99,Cu2In1Pu1,Cu In Pu,16,intermetallic,3d-only,A2BC_aP16_1_8a_4a_4a:Cu-In-Pu,1
+37796,agm001210257_ABC2_18_spg123_2_0_rattled-1000-subsampled_u4yw88,agm001210257_ABC2_18_spg123,Bi1La2Pu1,Bi La Pu,16,intermetallic,neither,AB2C_aP16_1_4a_8a_4a:Bi-La-Pu,2
+37806,agm001276477_ABC_2_spg156_1_0_rattled-1000-subsampled_386c4k,agm001276477_ABC_2_spg156,Er1Gd1Pu1,Er Gd Pu,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Er-Gd-Pu,3
+37849,agm004518106_AB2C3D4_7_spg115_3_0_rattled-1000-subsampled_7ghkg0,agm004518106_AB2C3D4_7_spg115,Ga3La2Pt4Th1,Ga La Pt Th,10,intermetallic,neither,A3B2C4D_aP10_1_3a_2a_4a_a:Ga-La-Pt-Th,2
+37934,agm006114149_AB4C5_275_spg12_3_0_rattled-1000-subsampled_gd1akj,agm006114149_AB4C5_275_spg12,Ac5Pm1Y4,Ac Pm Y,10,intermetallic,4d-only,A5BC4_aP10_1_5a_a_4a:Ac-Pm-Y,2
+37980,agm003319398_A2B2C7_304_spg44_1_0_rattled-1000-subsampled_q596mn,agm003319398_A2B2C7_304_spg44,In2Pr7Tb2,In Pr Tb,11,intermetallic,neither,A2B7C2_aP11_1_2a_7a_2a:In-Pr-Tb,2
+37988,agm003553039_AB3C4_77_spg25_0_0_rattled-1000-subsampled_c0ofqe,agm003553039_AB3C4_77_spg25,Co1Dy4Ge3,Co Dy Ge,16,intermetallic,3d-only,AB4C3_aP16_1_2a_8a_6a:Co-Dy-Ge,1
+38004,agm003417775_AB2C3_125_spg123_1_0_rattled-1000-subsampled_6vyprm,agm003417775_AB2C3_125_spg123,Cd1In2Tm3,Cd In Tm,12,intermetallic,4d-only,AB2C3_aP12_1_2a_4a_6a:Cd-In-Tm,1
+38022,agm003482461_AB2C6_953_spg15_1_0_rattled-1000-subsampled_y81fgm,agm003482461_AB2C6_953_spg15,Er6Nd2Sm1,Er Nd Sm,18,intermetallic,neither,A6B2C_aP18_1_12a_4a_2a:Er-Nd-Sm,3
+38024,agm001534460_ABCD2_2_spg123_1_0_rattled-1000-subsampled_fid2it,agm001534460_ABCD2_2_spg123,Au1La2Ta1Te1,Au La Ta Te,10,chalcogenide,neither,AB2CD_aP10_1_2a_4a_2a_2a:Au-La-Ta-Te,1
+38032,agm001344567_ABCD_1_spg216_2_0_rattled-1000-subsampled_ftrsie,agm001344567_ABCD_1_spg216,Ba1Cu1Eu1Pd1,Ba Cu Eu Pd,16,intermetallic,3d+4d,ABCD_aP16_1_4a_4a_4a_4a:Ba-Cu-Eu-Pd,1
+38110,agm003674461_AB5C5_44_spg187_2_0_rattled-1000-subsampled_06d4if,agm003674461_AB5C5_44_spg187,La5Pm1Pr5,La Pm Pr,11,intermetallic,neither,A5BC5_aP11_1_5a_a_5a:La-Pm-Pr,3
+38124,agm002948564_AB2C2_5_spg139_0_0_rattled-1000-subsampled_yjnfki,agm002948564_AB2C2_5_spg139,La1Os2Ti2,La Os Ti,10,intermetallic,3d-only,AB2C2_aP10_1_2a_4a_4a:La-Os-Ti,1
+38150,agm001987625_ABC2_438_spg166_1_0_rattled-1000-subsampled_gwrmpm,agm001987625_ABC2_438_spg166,As2Au1Er1,As Au Er,16,pnictide,neither,A2BC_aP16_1_8a_4a_4a:As-Au-Er,1
+38167,agm001058869_ABC_10290_spg1_0_0_rattled-1000-subsampled_egs5bi,agm001058869_ABC_10290_spg1,Ac1Bi1P1,Ac Bi P,12,pnictide,neither,ABC_aP12_1_4a_4a_4a:Ac-Bi-P,1
+38198,agm003337643_A2B3C4_373_spg12_3_0_rattled-1000-subsampled_ikoa4n,agm003337643_A2B3C4_373_spg12,Ge4Pr3Zn2,Ge Pr Zn,18,intermetallic,3d-only,A4B3C2_aP18_1_8a_6a_4a:Ge-Pr-Zn,1
+38310,agm005617125_AB2C3_208_spg26_4_0_rattled-1000-subsampled_5z5bqx,agm005617125_AB2C3_208_spg26,Nd3Sm1Tl2,Nd Sm Tl,12,intermetallic,neither,A3BC2_aP12_1_6a_2a_4a:Nd-Sm-Tl,2
+38331,agm005662039_A2B5C12_418_spg2_2_0_rattled-1000-subsampled_zwsmab,agm005662039_A2B5C12_418_spg2,Ac2Sm5Tb12,Ac Sm Tb,19,intermetallic,neither,A2B5C12_aP19_1_2a_5a_12a:Ac-Sm-Tb,3
+38339,agm003375153_A3B3C5_64_spg189_3_0_rattled-1000-subsampled_nl5apt,agm003375153_A3B3C5_64_spg189,Dy3Pm3Y5,Dy Pm Y,11,intermetallic,4d-only,A3B3C5_aP11_1_3a_3a_5a:Dy-Pm-Y,2
+38420,agm004613475_AB2C3D6_267_spg12_1_0_rattled-1000-subsampled_jn3htk,agm004613475_AB2C3D6_267_spg12,Na1Pd2Te6U3,Na Pd Te U,12,chalcogenide,4d-only,AB2C6D3_aP12_1_a_2a_6a_3a:Na-Pd-Te-U,1
+38422,agm004837373_ABC2D4_343_spg10_2_0_rattled-1000-subsampled_nvvsg6,agm004837373_ABC2D4_343_spg10,Ho2Li1N4Pu1,Ho Li N Pu,16,nitride,neither,A2BC4D_aP16_1_4a_2a_8a_2a:Ho-Li-N-Pu,2
+38430,agm003427824_AB2C3_194_spg69_4_0_rattled-1000-subsampled_m3m13s,agm003427824_AB2C3_194_spg69,Cu3Pt1Th2,Cu Pt Th,12,intermetallic,3d-only,A3BC2_aP12_1_6a_2a_4a:Cu-Pt-Th,1
+38565,agm004516158_AB2C3D4_7_spg115_4_0_rattled-1000-subsampled_ubi4rr,agm004516158_AB2C3D4_7_spg115,Ga4Pt3Sm2Sn1,Ga Pt Sm Sn,10,intermetallic,neither,A4B3C2D_aP10_1_4a_3a_2a_a:Ga-Pt-Sm-Sn,1
+38589,agm004837491_ABC2D4_343_spg10_3_0_rattled-1000-subsampled_1ni6ze,agm004837491_ABC2D4_343_spg10,As4Hf1Na2Pa1,As Hf Na Pa,16,pnictide,neither,A4BC2D_aP16_1_8a_2a_4a_2a:As-Hf-Na-Pa,1
+38604,agm001848896_ABC_2745_spg107_3_0_rattled-1000-subsampled_83vjj3,agm001848896_ABC_2745_spg107,Ir1Li1Pa1,Ir Li Pa,12,intermetallic,neither,ABC_aP12_1_4a_4a_4a:Ir-Li-Pa,1
+38649,agm006100613_AB4C5_28_spg139_3_0_rattled-1000-subsampled_jw2wg5,agm006100613_AB4C5_28_spg139,Nd5Pd1Te4,Nd Pd Te,10,chalcogenide,4d-only,A5BC4_aP10_1_5a_a_4a:Nd-Pd-Te,1
+38680,agm003586915_AB3C8_29_spg160_1_0_rattled-1000-subsampled_puf61v,agm003586915_AB3C8_29_spg160,Er3Ir8Sm1,Er Ir Sm,12,intermetallic,neither,A3B8C_aP12_1_3a_8a_a:Er-Ir-Sm,2
+38704,agm005625708_A2B3C8_560_spg2_1_0_rattled-1000-subsampled_vjork6,agm005625708_A2B3C8_560_spg2,Cl2O8Pa3,Cl O Pa,13,mixed-anion,neither,A2B8C3_aP13_1_2a_8a_3a:Cl-O-Pa,1
+38748,agm005078564_ABCD6_10_spg163_2_0_rattled-1000-subsampled_ogkwsd,agm005078564_ABCD6_10_spg163,Al1O6Pm1Te1,Al O Pm Te,18,mixed-anion,neither,AB6CD_aP18_1_2a_12a_2a_2a:Al-O-Pm-Te,1
+38786,agm005542186_AB2_13_spg166_1_0_rattled-1000-subsampled_f4la04,agm005542186_AB2_13_spg166,Ce1Sm2,Ce Sm,12,intermetallic,neither,AB2_aP12_1_4a_8a:Ce-Sm,2
+38900,agm005198337_ABCD_800_spg8_1_0_rattled-1000-subsampled_y37u52,agm005198337_ABCD_800_spg8,Dy1Na1S1Se1,Dy Na S Se,16,chalcogenide,neither,ABCD_aP16_1_4a_4a_4a_4a:Dy-Na-S-Se,1
+38998,agm004957476_ABC2D6_266_spg146_4_0_rattled-1000-subsampled_mgt9z5,agm004957476_ABC2D6_266_spg146,La1Sc1Se6Y2,La Sc Se Y,10,chalcogenide,3d+4d,ABC6D2_aP10_1_a_a_6a_2a:La-Sc-Se-Y,1
+39015,agm005677208_A2B3C4_763_spg14_3_0_rattled-1000-subsampled_u2ld4u,agm005677208_A2B3C4_763_spg14,Ge4Pm2Sm3,Ge Pm Sm,18,intermetallic,neither,A4B2C3_aP18_1_8a_4a_6a:Ge-Pm-Sm,2
+39053,agm004834585_ABC2D4_343_spg10_3_0_rattled-1000-subsampled_fx9gj9,agm004834585_ABC2D4_343_spg10,In2Np1Tb1Te4,In Np Tb Te,16,chalcogenide,neither,A2BCD4_aP16_1_4a_2a_2a_8a:In-Np-Tb-Te,2
+39109,agm003695969_AB6C6_7_spg71_1_0_rattled-1000-subsampled_71663s,agm003695969_AB6C6_7_spg71,Ni6Pa6Tc1,Ni Pa Tc,13,intermetallic,3d+4d,A6B6C_aP13_1_6a_6a_a:Ni-Pa-Tc,1
+39124,agm001157662_ABC2_10_spg123_4_0_rattled-1000-subsampled_mc40wm,agm001157662_ABC2_10_spg123,N2Nd1Pu1,N Nd Pu,16,nitride,neither,A2BC_aP16_1_8a_4a_4a:N-Nd-Pu,2
+39154,agm001371275_ABCD_1_spg216_2_0_rattled-1000-subsampled_kukzxx,agm001371275_ABCD_1_spg216,Al1Co1Pa1Zn1,Al Co Pa Zn,16,intermetallic,3d-only,ABCD_aP16_1_4a_4a_4a_4a:Al-Co-Pa-Zn,1
+39198,agm001190573_AB3_7_spg221_2_0_rattled-1000-subsampled_tbs6a6,agm001190573_AB3_7_spg221,Ac3Zn1,Ac Zn,16,intermetallic,3d-only,A3B_aP16_1_12a_4a:Ac-Zn,1
+39266,agm006039052_AB4C15_2_spg123_3_0_rattled-1000-subsampled_jhtnwp,agm006039052_AB4C15_2_spg123,Pr15Tl1Tm4,Pr Tl Tm,20,intermetallic,neither,A15BC4_aP20_1_15a_a_4a:Pr-Tl-Tm,2
+39272,agm005963922_AB3C3_76_spg44_2_0_rattled-1000-subsampled_zconah,agm005963922_AB3C3_76_spg44,Nd3Si3Zn1,Nd Si Zn,14,silicide,3d-only,A3B3C_aP14_1_6a_6a_2a:Nd-Si-Zn,1
+39295,agm006067534_AB4C5_327_spg12_2_0_rattled-1000-subsampled_9u0y0r,agm006067534_AB4C5_327_spg12,Cl5Pd1Pm4,Cl Pd Pm,10,halide,4d-only,A5BC4_aP10_1_5a_a_4a:Cl-Pd-Pm,1
+39301,agm005627680_AB2C3_5_spg15_3_0_rattled-1000-subsampled_kd92bu,agm005627680_AB2C3_5_spg15,As1Se2Th3,As Se Th,12,chalcogenide,neither,AB2C3_aP12_1_2a_4a_6a:As-Se-Th,1
+39309,agm005285529_ABC14_15_spg38_2_0_rattled-1000-subsampled_r5qpos,agm005285529_ABC14_15_spg38,La1Mg14Y1,La Mg Y,16,intermetallic,4d-only,AB14C_aP16_1_a_14a_a:La-Mg-Y,1
+39359,agm005821430_ABC6_255_spg139_0_0_rattled-1000-subsampled_demloi,agm005821430_ABC6_255_spg139,In1Pm6Ru1,In Pm Ru,16,intermetallic,4d-only,AB6C_aP16_1_2a_12a_2a:In-Pm-Ru,1
+39414,agm001142150_ABC2_10_spg123_0_0_rattled-1000-subsampled_yaor8e,agm001142150_ABC2_10_spg123,Li1Mg1Pm2,Li Mg Pm,16,intermetallic,neither,ABC2_aP16_1_4a_4a_8a:Li-Mg-Pm,1
+39463,agm003702601_AB7C12_22_spg148_0_0_rattled-1000-subsampled_15ckk0,agm003702601_AB7C12_22_spg148,Pm12Sm1Sn7,Pm Sm Sn,20,intermetallic,neither,A12BC7_aP20_1_12a_a_7a:Pm-Sm-Sn,2
+39528,agm001102511_ABC3_0_spg221_0_0_rattled-1000-subsampled_zdjgqg,agm001102511_ABC3_0_spg221,Ag1C1Pa3,Ag C Pa,10,carbide,4d-only,ABC3_aP10_1_2a_2a_6a:Ag-C-Pa,1
+39530,agm004600267_AB2C3D6_175_spg12_3_0_rattled-1000-subsampled_vhq7wu,agm004600267_AB2C3D6_175_spg12,Pm3Pu2Se6Y1,Pm Pu Se Y,12,chalcogenide,4d-only,A3B2C6D_aP12_1_3a_2a_6a_a:Pm-Pu-Se-Y,2
+39543,agm001623981_ABCD2_2_spg123_0_0_rattled-1000-subsampled_tlq38c,agm001623981_ABCD2_2_spg123,Co1Hg1La2Li1,Co Hg La Li,10,intermetallic,3d-only,ABC2D_aP10_1_2a_2a_4a_2a:Co-Hg-La-Li,1
+39558,agm001104384_ABC3_0_spg221_4_0_rattled-1000-subsampled_xkalgz,agm001104384_ABC3_0_spg221,Ac1Ca3F1,Ac Ca F,10,halide,neither,AB3C_aP10_1_2a_6a_2a:Ac-Ca-F,1
+39618,agm004559327_AB2C2D4_134_spg12_4_0_rattled-1000-subsampled_dlxqhr,agm004559327_AB2C2D4_134_spg12,N2Se1Sm4Te2,N Se Sm Te,18,mixed-anion,neither,A2BC4D2_aP18_1_4a_2a_8a_4a:N-Se-Sm-Te,1
+39748,agm005857987_AB2C9_10_spg123_2_0_rattled-1000-subsampled_mxxnhv,agm005857987_AB2C9_10_spg123,Ca1Nd2Sn9,Ca Nd Sn,12,intermetallic,neither,AB2C9_aP12_1_a_2a_9a:Ca-Nd-Sn,1
+39757,agm003358367_A2B3C8_141_spg166_4_0_rattled-1000-subsampled_885tg2,agm003358367_A2B3C8_141_spg166,Pa3Pd8Zn2,Pa Pd Zn,13,intermetallic,3d+4d,A3B8C2_aP13_1_3a_8a_2a:Pa-Pd-Zn,1
