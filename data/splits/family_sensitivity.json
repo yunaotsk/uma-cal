@@ -1,0 +1,82 @@
+{
+  "compositions_total": 31630,
+  "compositions_changed_label": 4357,
+  "changed_due_to_metalloid_bucket (alt='metalloid-containing')": 2781,
+  "changed_due_to_anion_set_differences": 1576,
+  "changed_to_alt_mixed-anion": 1401,
+  "top_label_pairs_used_to_alt": {
+    "intermetallic -> metalloid-containing": 1575,
+    "silicide -> metalloid-containing": 902,
+    "halide -> mixed-anion": 485,
+    "chalcogenide -> mixed-anion": 473,
+    "boride -> metalloid-containing": 290,
+    "oxide -> mixed-anion": 230,
+    "nitride -> mixed-anion": 114,
+    "mixed-light-element -> mixed-anion": 99,
+    "mixed-light-element -> pnictide": 91,
+    "mixed-light-element -> carbide": 41,
+    "mixed-light-element -> hydride": 39,
+    "mixed-light-element -> metalloid-containing": 14
+  },
+  "eligible_compositions_changed": 4212,
+  "strong_shift_C": {
+    "definition": "contains >=1 f-block element; independent of family rules",
+    "membership_depends_on_family_rule": false,
+    "pool_compositions_f_block": 11273,
+    "C_family_mix_used_rules": {
+      "intermetallic": 620,
+      "chalcogenide": 115,
+      "halide": 54,
+      "pnictide": 46,
+      "oxide": 42,
+      "nitride": 35,
+      "mixed-anion": 26,
+      "silicide": 24,
+      "carbide": 18,
+      "hydride": 11,
+      "boride": 7,
+      "mixed-light-element": 2
+    },
+    "C_family_mix_alt_rules": {
+      "intermetallic": 565,
+      "chalcogenide": 107,
+      "metalloid-containing": 86,
+      "halide": 49,
+      "pnictide": 47,
+      "mixed-anion": 44,
+      "oxide": 38,
+      "nitride": 34,
+      "carbide": 18,
+      "hydride": 12
+    },
+    "C_structures_whose_label_changes": 106
+  },
+  "hypothetical_family_held_out_tier_sizes_eligible_non_f_block": {
+    "used_rules": {
+      "intermetallic": 9200,
+      "halide": 2516,
+      "chalcogenide": 2210,
+      "mixed-anion": 1322,
+      "pnictide": 1053,
+      "oxide": 581,
+      "silicide": 579,
+      "hydride": 541,
+      "nitride": 435,
+      "carbide": 241,
+      "mixed-light-element": 229,
+      "boride": 208
+    },
+    "alt_rules": {
+      "intermetallic": 8233,
+      "mixed-anion": 2377,
+      "halide": 2105,
+      "chalcogenide": 1846,
+      "metalloid-containing": 1764,
+      "pnictide": 1135,
+      "hydride": 574,
+      "oxide": 447,
+      "nitride": 364,
+      "carbide": 270
+    }
+  }
+}

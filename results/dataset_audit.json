@@ -1,0 +1,521 @@
+{
+  "provenance": {
+    "date": "2026-11-02",
+    "source_url": "https://dl.fbaipublicfiles.com/opencatalystproject/data/omat/241220/omat/val/rattled-1000-subsampled.tar.gz",
+    "archive_file": "rattled-1000-subsampled.tar.gz",
+    "archive_bytes": 79870946,
+    "archive_mb": 79.87,
+    "archive_sha256": "a5a06b296acb0cfd4f6d436f7022db4a4319915f003f47ee69dac4189c6d9fc1",
+    "fairchem_core_version": "2.25.0",
+    "ase_version": "3.29.0",
+    "loader": "fairchem.core.datasets.AseDBDataset (files located recursively)",
+    "expected_structures_official": 39785,
+    "expected_archive_mb_official": 77.0,
+    "observed_structures": 39785,
+    "count_matches_official": true
+  },
+  "counts": {
+    "structures": 39785,
+    "unique_reduced_compositions": 31630,
+    "unique_systems_element_sets": 26414,
+    "unique_parent_ids": 32977,
+    "unique_source_ids": 39785,
+    "unique_elements": 87,
+    "elements": [
+      "Ac",
+      "Ag",
+      "Al",
+      "As",
+      "Au",
+      "B",
+      "Ba",
+      "Be",
+      "Bi",
+      "Br",
+      "C",
+      "Ca",
+      "Cd",
+      "Ce",
+      "Cl",
+      "Co",
+      "Cr",
+      "Cs",
+      "Cu",
+      "Dy",
+      "Er",
+      "Eu",
+      "F",
+      "Fe",
+      "Ga",
+      "Gd",
+      "Ge",
+      "H",
+      "He",
+      "Hf",
+      "Hg",
+      "Ho",
+      "I",
+      "In",
+      "Ir",
+      "K",
+      "Kr",
+      "La",
+      "Li",
+      "Lu",
+      "Mg",
+      "Mn",
+      "Mo",
+      "N",
+      "Na",
+      "Nb",
+      "Nd",
+      "Ni",
+      "Np",
+      "O",
+      "Os",
+      "P",
+      "Pa",
+      "Pb",
+      "Pd",
+      "Pm",
+      "Pr",
+      "Pt",
+      "Pu",
+      "Rb",
+      "Re",
+      "Rh",
+      "Ru",
+      "S",
+      "Sb",
+      "Sc",
+      "Se",
+      "Si",
+      "Sm",
+      "Sn",
+      "Sr",
+      "Ta",
+      "Tb",
+      "Tc",
+      "Te",
+      "Th",
+      "Ti",
+      "Tl",
+      "Tm",
+      "U",
+      "V",
+      "W",
+      "Xe",
+      "Y",
+      "Yb",
+      "Zn",
+      "Zr"
+    ],
+    "structures_per_composition": {
+      "1": 24822,
+      "2": 5758,
+      "3": 841,
+      "4": 153,
+      "5": 33,
+      "6": 16,
+      "7": 5,
+      "8": 2
+    },
+    "natoms": {
+      "count": 39785.0,
+      "mean": 14.37,
+      "std": 5.92,
+      "min": 10.0,
+      "25%": 10.0,
+      "50%": 14.0,
+      "75%": 16.0,
+      "max": 136.0
+    },
+    "natoms_percentiles": {
+      "5": 10.0,
+      "25": 10.0,
+      "50": 14.0,
+      "75": 16.0,
+      "90": 18.0,
+      "95": 20.0,
+      "99": 31.159999999996217
+    },
+    "natoms_histogram": {
+      "10": 9989,
+      "11": 1253,
+      "12": 6628,
+      "13": 293,
+      "14": 1837,
+      "15": 212,
+      "16": 14883,
+      "17": 68,
+      "18": 2270,
+      "19": 315,
+      "20": 973,
+      "21": 30,
+      "22": 106,
+      "23": 3,
+      "24": 184,
+      "25": 6,
+      "26": 68,
+      "27": 2,
+      "28": 166,
+      "29": 41,
+      "30": 59,
+      "31": 1,
+      "32": 112,
+      "33": 2,
+      "34": 6,
+      "36": 21,
+      "37": 1,
+      "38": 6,
+      "40": 11,
+      "41": 2,
+      "42": 6,
+      "44": 9,
+      "46": 1,
+      "48": 3,
+      "50": 5,
+      "52": 7,
+      "54": 2,
+      "56": 5,
+      "58": 3,
+      "61": 2,
+      "62": 3,
+      "63": 1,
+      "64": 5,
+      "65": 1,
+      "68": 6,
+      "70": 1,
+      "72": 5,
+      "76": 2,
+      "80": 157,
+      "82": 2,
+      "84": 1,
+      "88": 2,
+      "92": 2,
+      "96": 1,
+      "104": 1,
+      "106": 1,
+      "112": 2,
+      "136": 1
+    }
+  },
+  "label_checks": {
+    "label_used": "raw DFT total energy from calculator results (eV per cell); eV/atom = total / natoms",
+    "docs_statement": "OMat24 dataset card: 'labeled with total energy (eV), forces (eV/A) and stress (eV/A^3)'",
+    "energy_per_atom_eV": {
+      "count": 39785.0,
+      "mean": -4.1792,
+      "std": 1.704,
+      "min": -12.1153,
+      "25%": -5.1904,
+      "50%": -4.016,
+      "75%": -2.9868,
+      "max": 0.5776
+    },
+    "n_energy_per_atom_positive": 10,
+    "n_max_force_gt_50_eV_per_A": 274,
+    "max_force_eV_per_A": 751.1533898,
+    "n_missing_mp2020_corrected_energy": 1234,
+    "mp2020_minus_raw_total_eV": {
+      "count": 38551.0,
+      "mean": -1.2788,
+      "std": 2.6833,
+      "min": -63.936,
+      "25%": -1.888,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 3.266
+    },
+    "n_unary_structures": 20,
+    "unary_energy_per_atom_eV": {
+      "C1": -6.363,
+      "Co1": -5.593,
+      "Cs1": -0.723,
+      "Ge1": -3.838,
+      "He1": 0.122,
+      "Hg1": 0.02,
+      "Li1": -1.435,
+      "Mg1": -0.694,
+      "Pb1": -3.118,
+      "Rb1": -0.749,
+      "Re1": -9.735,
+      "S1": -3.352,
+      "Th1": -6.376,
+      "Xe1": -0.011,
+      "Y1": -5.319
+    },
+    "n_stored_composition_reduced_mismatch": 4,
+    "n_duplicate_comp_natoms_energy": 0,
+    "n_compositions_with_multiple_prototypes": 32
+  },
+  "diversity_all": {
+    "by_family": {
+      "intermetallic": {
+        "structures": 21188,
+        "compositions": 16898
+      },
+      "chalcogenide": {
+        "structures": 4429,
+        "compositions": 3488
+      },
+      "halide": {
+        "structures": 4113,
+        "compositions": 3247
+      },
+      "mixed-anion": {
+        "structures": 2125,
+        "compositions": 1718
+      },
+      "pnictide": {
+        "structures": 1847,
+        "compositions": 1432
+      },
+      "oxide": {
+        "structures": 1787,
+        "compositions": 1451
+      },
+      "silicide": {
+        "structures": 1174,
+        "compositions": 902
+      },
+      "nitride": {
+        "structures": 989,
+        "compositions": 791
+      },
+      "hydride": {
+        "structures": 894,
+        "compositions": 713
+      },
+      "carbide": {
+        "structures": 490,
+        "compositions": 401
+      },
+      "mixed-light-element": {
+        "structures": 374,
+        "compositions": 284
+      },
+      "boride": {
+        "structures": 355,
+        "compositions": 290
+      },
+      "elemental": {
+        "structures": 20,
+        "compositions": 15
+      }
+    },
+    "by_tm_class": {
+      "neither": {
+        "structures": 15224,
+        "compositions": 12162
+      },
+      "4d-only": {
+        "structures": 10969,
+        "compositions": 8680
+      },
+      "3d-only": {
+        "structures": 9220,
+        "compositions": 7342
+      },
+      "3d+4d": {
+        "structures": 4372,
+        "compositions": 3446
+      }
+    },
+    "by_order": {
+      "ternary": {
+        "structures": 27158,
+        "compositions": 21378
+      },
+      "quaternary+": {
+        "structures": 10481,
+        "compositions": 8610
+      },
+      "binary": {
+        "structures": 2126,
+        "compositions": 1627
+      },
+      "unary": {
+        "structures": 20,
+        "compositions": 15
+      }
+    },
+    "has_3d": {
+      "structures": 13592,
+      "compositions": 10788
+    },
+    "has_4d": {
+      "structures": 15341,
+      "compositions": 12126
+    },
+    "has_both_3d_and_4d": {
+      "structures": 4372,
+      "compositions": 3446
+    },
+    "hubbard_u_applies": {
+      "structures": 831,
+      "compositions": 674
+    },
+    "f_block": {
+      "structures": 14014,
+      "compositions": 11601
+    },
+    "atom_limit_candidates": {
+      "16": {
+        "structures": 35095,
+        "compositions": 27729
+      },
+      "20": {
+        "structures": 38721,
+        "compositions": 30750
+      },
+      "24": {
+        "structures": 39044,
+        "compositions": 31021
+      },
+      "32": {
+        "structures": 39499,
+        "compositions": 31400
+      },
+      "64": {
+        "structures": 39600,
+        "compositions": 31480
+      }
+    }
+  },
+  "eligibility_funnel": {
+    "all": 39785,
+    "natoms<=24": 39044,
+    "and no Hubbard-U treatment": 38288,
+    "and >=2 elements, no noble gas (= eligible)": 38267,
+    "eligible compositions": 30388,
+    "eligible systems (element sets)": 25417
+  },
+  "diversity_eligible": {
+    "by_family": {
+      "intermetallic": {
+        "structures": 20943,
+        "compositions": 16686
+      },
+      "chalcogenide": {
+        "structures": 4350,
+        "compositions": 3426
+      },
+      "halide": {
+        "structures": 3841,
+        "compositions": 3016
+      },
+      "mixed-anion": {
+        "structures": 1922,
+        "compositions": 1554
+      },
+      "pnictide": {
+        "structures": 1828,
+        "compositions": 1418
+      },
+      "oxide": {
+        "structures": 1189,
+        "compositions": 971
+      },
+      "silicide": {
+        "structures": 1153,
+        "compositions": 885
+      },
+      "nitride": {
+        "structures": 972,
+        "compositions": 778
+      },
+      "hydride": {
+        "structures": 866,
+        "compositions": 693
+      },
+      "carbide": {
+        "structures": 486,
+        "compositions": 397
+      },
+      "mixed-light-element": {
+        "structures": 366,
+        "compositions": 278
+      },
+      "boride": {
+        "structures": 351,
+        "compositions": 286
+      }
+    },
+    "by_tm_class": {
+      "neither": {
+        "structures": 14778,
+        "compositions": 11804
+      },
+      "4d-only": {
+        "structures": 10745,
+        "compositions": 8493
+      },
+      "3d-only": {
+        "structures": 8510,
+        "compositions": 6755
+      },
+      "3d+4d": {
+        "structures": 4234,
+        "compositions": 3336
+      }
+    },
+    "by_order": {
+      "ternary": {
+        "structures": 26330,
+        "compositions": 20696
+      },
+      "quaternary+": {
+        "structures": 9876,
+        "compositions": 8117
+      },
+      "binary": {
+        "structures": 2061,
+        "compositions": 1575
+      }
+    },
+    "has_3d": {
+      "structures": 12744,
+      "compositions": 10091
+    },
+    "has_4d": {
+      "structures": 14979,
+      "compositions": 11829
+    },
+    "has_both_3d_and_4d": {
+      "structures": 4234,
+      "compositions": 3336
+    },
+    "hubbard_u_applies": {
+      "structures": 0,
+      "compositions": 0
+    },
+    "f_block": {
+      "structures": 13619,
+      "compositions": 11273
+    },
+    "atom_limit_candidates": {
+      "16": {
+        "structures": 34493,
+        "compositions": 27247
+      },
+      "20": {
+        "structures": 37963,
+        "compositions": 30135
+      },
+      "24": {
+        "structures": 38267,
+        "compositions": 30388
+      },
+      "32": {
+        "structures": 38267,
+        "compositions": 30388
+      },
+      "64": {
+        "structures": 38267,
+        "compositions": 30388
+      }
+    }
+  },
+  "coverage_se_headline_note": "SEs for proposed splits are produced by scripts/propose_splits.py (composition level first)."
+}

@@ -26,9 +26,9 @@ data/processed/
 *.extxyz
 
 # Generated outputs
-results/
-figures/
-reports/
+results/*
+!results/dataset_audit.json
+!results/composition_counts.csv
 
 # Python / tooling
 __pycache__/
