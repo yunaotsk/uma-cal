@@ -6,13 +6,13 @@ across chemical compositions, particularly under out-of-distribution (OOD) chemi
 calibration fails under distribution shift is a valid result.
 
 ## Constraints
-- Apple Silicon Mac, CPU only; always pass `device="cpu"` explicitly.
+- CPU only; always pass `device="cpu"` explicitly. (Stage 1-2 ran on an Apple Silicon Mac; see Handoff status.)
 - Use the existing `.venv` (Python 3.11), never global Python.
 - No model retraining, no GPU dependencies.
 - Do not reinstall/upgrade dependencies unless necessary; explain compatibility issues before changing the environment.
 - Never read, print, expose, store, or commit the Hugging Face token or any credential.
 - No UI, no unnecessary infrastructure.
-- Scope is staged: do not start a stage (e.g. OMat24 download, calibration experiments) until the user says so.
+- Scope is staged: do not start a stage (e.g. UMA inference on splits, calibration experiments) until the user says so.
 
 ## Research standards
 - Scientific correctness and reproducibility outrank impressive metrics.
@@ -31,7 +31,14 @@ calibration fails under distribution shift is a valid result.
 | Inference settings | `"batch"` |
 | Stack | torch 2.13.0, fairchem-core 2.25.0, ase 3.29.0 |
 
-Defaults live in `src/inference.py` (`UMAPredictor`). Stage 1 (CPU inference verified) is complete; see README.
+Defaults live in `src/inference.py` (`UMAPredictor`).
+
+## Stage status
+- **Stage 1 (CPU inference verified): complete.**
+- **Stage 2 (OMat24 audit and shift-split design): complete.** The validation `rattled-1000-subsampled` archive is in `data/raw/`
+  (git-ignored); the audit is in `results/`; the proposed splits (`cal`, `A`, `B`, `C`) are in `data/splits/` **awaiting design review**.
+  No UMA inference has been run on Cal or test structures.
+- **Stage 3 (inference on splits, calibration): not started.** Do not begin until the user approves the split design.
 
 ### Justification for `inference_settings="batch"`
 Sources are the installed fairchem-core 2.25.0 files, under
@@ -69,3 +76,21 @@ The exact shift definitions must be selected only after inspecting chemical dive
 A shift relative to the calibration set does not automatically establish that a structure is out of distribution relative to UMA's original training data.
 Do not perform expensive model inference until the dataset audit and experimental splits have been reviewed.
 Scientific correctness, reproducibility, and transparent failure reporting take priority over positive results.
+
+## Handoff status (moving to Claude Code on the web)
+- **Different machine.** Different OS/CPU: `requirements.txt` is a macOS arm64 `pip freeze` and may not install as is. Diagnose and explain any
+  incompatibility before changing the environment; do not silently loosen pins.
+- **No cached weights.** The `uma-s-1p2p1` checkpoint (~GBs) must be re-downloaded on first use; the first model load will be slow.
+- **Credentials.** `HF_TOKEN` comes from an environment secret. Never print, log, echo, write or commit it (including in tracebacks and `env` dumps).
+- **First action: re-run `python scripts/smoke_test.py` and check the FCC Al4 energy is -14.964057 eV** (value from the Stage 1 macOS arm64 run,
+  `batch` preset). Report any difference rather than adjusting code or tolerances to match.
+- **Timings do not transfer.** Stage 1 numbers (load 127 s incl. download, 0.645 s first call, 0.225 s second, 4-atom cell) came from the Mac. Re-measure on the new machine.
+- Run `python -m pytest -q` first; the tests are offline and need no weights.
+
+## Decisions (Stage 2 design; open items are still tracked in `reports/split_proposal.md` §5)
+- **C = f-block held out** (lanthanides + actinides). Report Ln/An and order-matched stratifications alongside the pooled result.
+- **Add control A0**: a random composition-disjoint holdout drawn jointly with Cal, alongside the system-matched A. A0 is not yet generated (current files: `cal`, `A`, `B`, `C`).
+- **No default label filtering.** Pre-specify sensitivity analyses that exclude max force > 50 eV/Å and energy/atom > 0 (274 and 10 structures respectively in the full set).
+- **Check the `omat` energy label on Cal structures only, never on test structures** (raw DFT energy vs MP2020-corrected), so test data never guide the choice.
+- **Shift is relative to Cal only.** UMA may have seen these structures (OMat24 validation was a random split of the training pool; model card says trained on the "entirety" of OMat24).
+- **Label noise on f-block compounds (plain PBE, no +U) is a confounder.** Report it; lower coverage on C is not by itself evidence of model-driven shift.
