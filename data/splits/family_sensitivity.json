@@ -24,32 +24,32 @@
     "membership_depends_on_family_rule": false,
     "pool_compositions_f_block": 11273,
     "C_family_mix_used_rules": {
-      "intermetallic": 620,
-      "chalcogenide": 115,
-      "halide": 54,
-      "pnictide": 46,
-      "oxide": 42,
-      "nitride": 35,
-      "mixed-anion": 26,
-      "silicide": 24,
-      "carbide": 18,
-      "hydride": 11,
-      "boride": 7,
-      "mixed-light-element": 2
+      "intermetallic": 627,
+      "chalcogenide": 116,
+      "halide": 48,
+      "oxide": 46,
+      "silicide": 32,
+      "nitride": 30,
+      "pnictide": 29,
+      "mixed-anion": 24,
+      "hydride": 19,
+      "carbide": 12,
+      "boride": 11,
+      "mixed-light-element": 6
     },
     "C_family_mix_alt_rules": {
-      "intermetallic": 565,
+      "intermetallic": 568,
       "chalcogenide": 107,
-      "metalloid-containing": 86,
-      "halide": 49,
-      "pnictide": 47,
-      "mixed-anion": 44,
-      "oxide": 38,
-      "nitride": 34,
-      "carbide": 18,
-      "hydride": 12
+      "metalloid-containing": 104,
+      "mixed-anion": 51,
+      "halide": 41,
+      "oxide": 40,
+      "pnictide": 30,
+      "nitride": 26,
+      "hydride": 20,
+      "carbide": 13
     },
-    "C_structures_whose_label_changes": 106
+    "C_structures_whose_label_changes": 134
   },
   "hypothetical_family_held_out_tier_sizes_eligible_non_f_block": {
     "used_rules": {

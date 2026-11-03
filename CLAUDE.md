@@ -87,10 +87,14 @@ Scientific correctness, reproducibility, and transparent failure reporting take 
 - **Timings do not transfer.** Stage 1 numbers (load 127 s incl. download, 0.645 s first call, 0.225 s second, 4-atom cell) came from the Mac. Re-measure on the new machine.
 - Run `python -m pytest -q` first; the tests are offline and need no weights.
 
-## Decisions (Stage 2 design; open items are still tracked in `reports/split_proposal.md` §5)
-- **C = f-block held out** (lanthanides + actinides). Report Ln/An and order-matched stratifications alongside the pooled result.
-- **Add control A0**: a random composition-disjoint holdout drawn jointly with Cal, alongside the system-matched A. A0 is not yet generated (current files: `cal`, `A`, `B`, `C`).
-- **No default label filtering.** Pre-specify sensitivity analyses that exclude max force > 50 eV/Å and energy/atom > 0 (274 and 10 structures respectively in the full set).
+## Decisions (settled; sizes still pending, see last item)
+- **A: keep the system-matched A and add an exchangeable control A0.** A0 is a random composition-disjoint holdout drawn *jointly* with Cal from one random split of the familiar pool
+  (same filters), so Cal and A0 are exchangeable. Cal, A0, A, B, C stay pairwise disjoint on reduced composition, `parent_id` and `sid`.
+- **C = f-block held out** (lanthanides + actinides). Report Ln-vs-An and order-matched stratifications alongside the pooled result.
+- **Label filters: none by default.** Pre-specified sensitivity analyses exclude max force > 50 eV/Å and, separately, energy/atom > 0 (274 and 10 structures in the full set).
 - **Check the `omat` energy label on Cal structures only, never on test structures** (raw DFT energy vs MP2020-corrected), so test data never guide the choice.
 - **Shift is relative to Cal only.** UMA may have seen these structures (OMat24 validation was a random split of the training pool; model card says trained on the "entirety" of OMat24).
 - **Label noise on f-block compounds (plain PBE, no +U) is a confounder.** Report it; lower coverage on C is not by itself evidence of model-driven shift.
+- **Analysis is pre-specified** in `reports/analysis_plan.md`, committed before any test-split prediction exists. Primary metric: marginal 90% coverage (split conformal, absolute error in eV/atom); headline SE at composition level.
+- **`max_atoms`, `n_cal` and `n` per split are NOT decided.** Decide only after the Cal-only timing benchmark: propose values with a labelled cost extrapolation and wait for user approval.
+- **Hard rule until approval:** no UMA inference on any test split (A, A0, B, C). Permitted: Cal structures only (timing benchmark and label check).
