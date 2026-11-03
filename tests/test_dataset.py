@@ -100,7 +100,10 @@ def _synthetic(seed=0, n=6000):
         for _ in range(int(rng.choice([1, 2], p=[0.8, 0.2]))):  # rattled siblings share composition + parent
             i = len(rows)
             rows.append(dict(index=i, sid=f"s{i}", parent_id=f"p{parent}", comp_key=key, elements=" ".join(els),
-                             n_elements=k, natoms=int(rng.integers(10, 30)), hubbard_u=bool(rng.random() < 0.02)))
+                             n_elements=k, natoms=int(rng.integers(10, 30)), hubbard_u=bool(rng.random() < 0.02),
+                             family=D.chemical_family(els), tm_class=D.tm_class(els),
+                             prototype_label=f"P{i % 7}:{'-'.join(els)}", parent_prototype_label=f"P{parent % 7}:{'-'.join(els)}",
+                             energy_per_atom_eV=-4.0 + float(rng.normal()), max_abs_force_eV_A=float(abs(rng.normal()) * 5)))
     return pd.DataFrame(rows).drop_duplicates(["comp_key", "sid"])
 
 
@@ -147,3 +150,108 @@ def test_invariant_checker_catches_leak(synth):
     leaked["B"] = pd.concat([s["B"], s["cal"].iloc[:1]])
     with pytest.raises(AssertionError):
         D.check_split_invariants(leaked)
+
+
+# ---------------------------------------------------------------- ported code ---
+
+
+def test_find_aselmdb_files_recursive_file_and_missing(tmp_path):
+    nested = tmp_path / "extract" / "name"
+    nested.mkdir(parents=True)
+    (nested / "data.aselmdb").write_bytes(b"")
+    (nested / "data.aselmdb-lock").write_bytes(b"")  # must not be picked up
+    (nested / "metadata.npz").write_bytes(b"")
+    assert D.find_aselmdb_files(tmp_path / "extract") == [str(nested / "data.aselmdb")]
+    assert D.find_aselmdb_files(nested / "data.aselmdb") == [str(nested / "data.aselmdb")]
+    with pytest.raises(FileNotFoundError):
+        D.find_aselmdb_files(tmp_path / "extract" / "empty_dir_does_not_exist")
+
+
+def test_load_metadata_from_nested_aselmdb(tmp_path):
+    """Regression test: the tarball extracts to <dir>/<name>/data.aselmdb, which AseDBDataset cannot find on its own."""
+    import ase.db
+    from ase.calculators.singlepoint import SinglePointCalculator
+
+    nested = tmp_path / "extract" / "rattled-1000-subsampled"
+    nested.mkdir(parents=True)
+    db = ase.db.connect(str(nested / "data.aselmdb"))
+    for i, (sym, a0) in enumerate([("Cu", 3.6), ("Al", 4.05)]):
+        at = bulk(sym, "fcc", a=a0, cubic=True)
+        at.calc = SinglePointCalculator(at, energy=-4.0 * len(at), forces=[[0.0, 0.0, 0.0]] * len(at), stress=[0.0] * 6)
+        db.write(at, data={"sid": f"sid{i}", "parent_id": f"par{i}", "calc_id": "c", "task_type": "Static",
+                           "prototype_label": "A_cF4_225_a:" + sym, "parent_prototype_label": "A_cF4_225_a:" + sym,
+                           "composition_reduced": sym + "1"})
+    df = D.load_metadata(tmp_path / "extract")
+    assert len(df) == 2
+    assert df.sid.tolist() == ["sid0", "sid1"] and df.parent_id.tolist() == ["par0", "par1"]
+    assert df.comp_key.tolist() == ["Cu1", "Al1"]
+    assert df.energy_per_atom_eV.tolist() == pytest.approx([-4.0, -4.0])
+    assert df.hubbard_u.sum() == 0
+
+
+def test_coverage_se_levels():
+    lv = D.coverage_se_levels(n_structures=1250, n_compositions=1000)
+    assert lv["se_composition_level"] == pytest.approx(0.0094868, rel=1e-4)
+    assert lv["se_structure_level"] < lv["se_composition_level"]  # structure level is the optimistic one
+    assert D.coverage_se_levels(1000, 1000)["se_structure_level"] == pytest.approx(lv["se_composition_level"])
+    with pytest.raises(ValueError):
+        D.coverage_se_levels(0, 10)
+
+
+def test_resolve_element_spec():
+    assert D.resolve_element_spec(["Ru", "Rh"]) == {"Ru", "Rh"}
+    assert D.resolve_element_spec(["f-block"]) == D.F_BLOCK
+    assert D.resolve_element_spec(["lanthanides", "U"]) == D.LANTHANIDES | {"U"}
+    for bad in (["Xx"], ["ru"], []):
+        with pytest.raises(ValueError):
+            D.resolve_element_spec(bad)
+
+
+def test_family_rules_vs_alternative():
+    phosphate, carbonate = ["Ca", "P", "O"], ["Ca", "C", "O"]
+    assert D.chemical_family(phosphate) == "oxide" and D.chemical_family(carbonate) == "oxide"
+    assert D.family_alternative(phosphate) == "mixed-anion" and D.family_alternative(carbonate) == "mixed-anion"
+    assert D.chemical_family(["Fe", "Si"]) == "silicide"
+    assert D.family_alternative(["Fe", "Si"]) == "metalloid-containing"
+    assert D.family_alternative(["Fe", "Co"]) == "intermetallic"
+    assert D.family_alternative(["He", "Na"]) == "other"
+
+
+def test_min_comps_per_element_enforced_for_b(synth):
+    kw = dict(seed=3, n_cal=300, n_a=50, n_b=200, n_c=50)
+    loose = D.build_splits(synth, min_comps_per_element=1, **kw)
+    strict = D.build_splits(synth, min_comps_per_element=40, **kw)
+    cal_counts = pd.Series([e for s in strict["cal"].elements for e in s.split()]).value_counts()
+    for s in strict["B"].elements:
+        assert all(cal_counts.get(e, 0) >= 40 for e in s.split())
+    assert len(strict["B"]) <= len(loose["B"])
+    assert len(D.build_splits(synth, min_comps_per_element=10**6, **kw)["B"]) == 0
+
+
+def test_propose_splits_cli_end_to_end(tmp_path, synth):
+    import json
+    import subprocess
+    import sys
+
+    meta = tmp_path / "meta.pkl"
+    synth.to_pickle(meta)
+    out = tmp_path / "splits"
+    cmd = [sys.executable, "scripts/propose_splits.py", "--heldout-elements", "f-block", "Th",
+           "--max-atoms", "24", "--seed", "5", "--n-cal", "200", "--n-a", "40", "--n-b", "40", "--n-c", "40",
+           "--b-holdout-frac", "0.3", "--metadata", str(meta), "--out-dir", str(out)]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr[-800:]
+    summary = json.loads((out / "split_summary.json").read_text())
+    assert summary["config"]["b_holdout_frac"] == 0.3 and summary["config"]["max_atoms"] == 24
+    for name in "ABC":
+        se = summary[name]["coverage_se"]
+        assert se["composition_level"]["n"] == summary[name]["compositions"]
+        assert se["structure_level_secondary"]["se_if_all_used_assuming_independence"] <= se["composition_level"]["se"] + 1e-9
+    sets = {n: pd.read_csv(out / f"{n}.csv") for n in ("cal", "A", "B", "C")}
+    assert {"sid", "parent_id", "comp_key"} <= set(sets["A"].columns)  # source ids preserved
+    for x in sets:
+        for y in sets:
+            if x < y:
+                assert not set(sets[x].comp_key) & set(sets[y].comp_key)
+    r2 = subprocess.run([sys.executable, "scripts/propose_splits.py"], capture_output=True, text=True)
+    assert r2.returncode == 2  # held-out elements and atom cap are required, no defaults

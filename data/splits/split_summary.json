@@ -1,0 +1,305 @@
+{
+  "config": {
+    "seed": 20241220,
+    "n_cal": 2000,
+    "n_a": 1000,
+    "n_b": 1000,
+    "n_c": 1000,
+    "max_atoms": 24,
+    "b_holdout_frac": 0.25,
+    "min_comps_per_element": 5,
+    "held_out_elements": [
+      "Ac",
+      "Am",
+      "Bk",
+      "Ce",
+      "Cf",
+      "Cm",
+      "Dy",
+      "Er",
+      "Es",
+      "Eu",
+      "Fm",
+      "Gd",
+      "Ho",
+      "La",
+      "Lr",
+      "Lu",
+      "Md",
+      "Nd",
+      "No",
+      "Np",
+      "Pa",
+      "Pm",
+      "Pr",
+      "Pu",
+      "Sm",
+      "Tb",
+      "Th",
+      "Tm",
+      "U",
+      "Yb"
+    ],
+    "alpha": 0.1
+  },
+  "cal": {
+    "compositions": 2000,
+    "natoms": {
+      "count": 2000.0,
+      "mean": 13.77,
+      "std": 2.97,
+      "min": 10.0,
+      "25%": 10.0,
+      "50%": 14.0,
+      "75%": 16.0,
+      "max": 24.0
+    },
+    "family": {
+      "intermetallic": 1139,
+      "halide": 242,
+      "chalcogenide": 222,
+      "pnictide": 106,
+      "mixed-anion": 89,
+      "silicide": 55,
+      "hydride": 35,
+      "oxide": 34,
+      "nitride": 27,
+      "mixed-light-element": 24,
+      "carbide": 16,
+      "boride": 11
+    }
+  },
+  "A": {
+    "structures": 1000,
+    "compositions": 1000,
+    "systems": 1000,
+    "natoms": {
+      "count": 1000.0,
+      "mean": 13.96,
+      "std": 2.79,
+      "min": 10.0,
+      "25%": 12.0,
+      "50%": 16.0,
+      "75%": 16.0,
+      "max": 24.0
+    },
+    "family": {
+      "intermetallic": 609,
+      "chalcogenide": 114,
+      "halide": 110,
+      "pnictide": 54,
+      "silicide": 29,
+      "mixed-anion": 29,
+      "hydride": 15,
+      "oxide": 14,
+      "mixed-light-element": 10,
+      "nitride": 10,
+      "carbide": 5,
+      "boride": 1
+    },
+    "tm_class": {
+      "neither": 316,
+      "4d-only": 301,
+      "3d-only": 227,
+      "3d+4d": 156
+    },
+    "n_elements": {
+      "2": 134,
+      "3": 845,
+      "4": 20,
+      "5": 1
+    },
+    "hubbard_u_structures": 0,
+    "frac_structural_prototype_seen_in_cal": 0.718,
+    "max_jaccard_to_cal_systems": {
+      "mean": 1.0,
+      "frac_ge_0.5": 1.0,
+      "frac_eq_1": 1.0
+    },
+    "descriptive_energy_per_atom_eV": {
+      "count": 1000.0,
+      "mean": -3.811,
+      "std": 1.911,
+      "min": -10.786,
+      "25%": -5.001,
+      "50%": -3.464,
+      "75%": -2.299,
+      "max": -0.441
+    },
+    "n_max_force_gt_50": 2,
+    "coverage_se": {
+      "composition_level": {
+        "n": 1000,
+        "se": 0.00949,
+        "ci95_half_width": 0.01859,
+        "approx_sd_from_finite_cal": 0.0067,
+        "combined_se": 0.01162
+      },
+      "structure_level_secondary": {
+        "n_structures_in_split_file": 1000,
+        "n_all_eligible_structures_of_these_compositions": 1342,
+        "se_if_all_used_assuming_independence": 0.00819,
+        "note": "optimistic: structures sharing a composition are correlated"
+      }
+    }
+  },
+  "B": {
+    "structures": 1000,
+    "compositions": 1000,
+    "systems": 1000,
+    "natoms": {
+      "count": 1000.0,
+      "mean": 13.51,
+      "std": 3.0,
+      "min": 10.0,
+      "25%": 10.0,
+      "50%": 14.0,
+      "75%": 16.0,
+      "max": 24.0
+    },
+    "family": {
+      "intermetallic": 500,
+      "halide": 143,
+      "chalcogenide": 107,
+      "pnictide": 60,
+      "mixed-anion": 56,
+      "silicide": 35,
+      "oxide": 28,
+      "hydride": 28,
+      "nitride": 20,
+      "carbide": 11,
+      "boride": 6,
+      "mixed-light-element": 6
+    },
+    "tm_class": {
+      "4d-only": 314,
+      "neither": 290,
+      "3d-only": 247,
+      "3d+4d": 149
+    },
+    "n_elements": {
+      "2": 66,
+      "3": 725,
+      "4": 207,
+      "5": 2
+    },
+    "hubbard_u_structures": 0,
+    "frac_structural_prototype_seen_in_cal": 0.777,
+    "max_jaccard_to_cal_systems": {
+      "mean": 0.5633,
+      "frac_ge_0.5": 0.929,
+      "frac_eq_1": 0.0
+    },
+    "descriptive_energy_per_atom_eV": {
+      "count": 1000.0,
+      "mean": -3.833,
+      "std": 1.758,
+      "min": -9.678,
+      "25%": -4.919,
+      "50%": -3.556,
+      "75%": -2.536,
+      "max": -0.215
+    },
+    "n_max_force_gt_50": 2,
+    "coverage_se": {
+      "composition_level": {
+        "n": 1000,
+        "se": 0.00949,
+        "ci95_half_width": 0.01859,
+        "approx_sd_from_finite_cal": 0.0067,
+        "combined_se": 0.01162
+      },
+      "structure_level_secondary": {
+        "n_structures_in_split_file": 1000,
+        "n_all_eligible_structures_of_these_compositions": 1285,
+        "se_if_all_used_assuming_independence": 0.00837,
+        "note": "optimistic: structures sharing a composition are correlated"
+      }
+    }
+  },
+  "C": {
+    "structures": 1000,
+    "compositions": 1000,
+    "systems": 1000,
+    "natoms": {
+      "count": 1000.0,
+      "mean": 14.35,
+      "std": 2.99,
+      "min": 10.0,
+      "25%": 12.0,
+      "50%": 16.0,
+      "75%": 16.0,
+      "max": 24.0
+    },
+    "family": {
+      "intermetallic": 620,
+      "chalcogenide": 115,
+      "halide": 54,
+      "pnictide": 46,
+      "oxide": 42,
+      "nitride": 35,
+      "mixed-anion": 26,
+      "silicide": 24,
+      "carbide": 18,
+      "hydride": 11,
+      "boride": 7,
+      "mixed-light-element": 2
+    },
+    "tm_class": {
+      "neither": 508,
+      "4d-only": 256,
+      "3d-only": 184,
+      "3d+4d": 52
+    },
+    "n_elements": {
+      "2": 22,
+      "3": 607,
+      "4": 370,
+      "5": 1
+    },
+    "hubbard_u_structures": 0,
+    "frac_structural_prototype_seen_in_cal": 0.465,
+    "max_jaccard_to_cal_systems": {
+      "mean": 0.3967,
+      "frac_ge_0.5": 0.438,
+      "frac_eq_1": 0.0
+    },
+    "descriptive_energy_per_atom_eV": {
+      "count": 1000.0,
+      "mean": -4.564,
+      "std": 1.564,
+      "min": -11.223,
+      "25%": -5.381,
+      "50%": -4.394,
+      "75%": -3.554,
+      "max": -0.579
+    },
+    "n_max_force_gt_50": 2,
+    "coverage_se": {
+      "composition_level": {
+        "n": 1000,
+        "se": 0.00949,
+        "ci95_half_width": 0.01859,
+        "approx_sd_from_finite_cal": 0.0067,
+        "combined_se": 0.01162
+      },
+      "structure_level_secondary": {
+        "n_structures_in_split_file": 1000,
+        "n_all_eligible_structures_of_these_compositions": 1203,
+        "se_if_all_used_assuming_independence": 0.00865,
+        "note": "optimistic: structures sharing a composition are correlated"
+      }
+    }
+  },
+  "capacity_with_same_cal": {
+    "A": 1898,
+    "B": 2440,
+    "C": 9454
+  },
+  "random_split_system_overlap": {
+    "pool_compositions": 19115,
+    "n_cal": 2000,
+    "n_test": 1000,
+    "frac_test_systems_seen_in_cal": 0.053
+  }
+}

@@ -10,13 +10,15 @@ from __future__ import annotations
 import itertools
 import math
 from collections import Counter
+from collections.abc import Iterator
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from ase.data import atomic_numbers, chemical_symbols
 
-DEFAULT_LMDB_DIR = Path("data/raw/omat24_val_rattled-1000-subsampled/rattled-1000-subsampled")
+# Extraction directory of the archive; the .aselmdb files are discovered recursively beneath it.
+DEFAULT_LMDB_DIR = Path("data/raw/omat24_val_rattled-1000-subsampled")
 
 # --------------------------------------------------------------------------- #
 # Element groups (explicit rules; atomic-number ranges)
@@ -119,17 +121,38 @@ def order_name(n_elements: int) -> str:
 # --------------------------------------------------------------------------- #
 # Loading
 # --------------------------------------------------------------------------- #
-def load_metadata(lmdb_dir: str | Path = DEFAULT_LMDB_DIR) -> pd.DataFrame:
-    """Read every structure via the supported ``AseDBDataset`` API into a metadata table."""
+def find_aselmdb_files(path: str | Path) -> list[str]:
+    """Sorted ``*.aselmdb`` files under ``path`` (a file, or a directory searched recursively).
+
+    ``AseDBDataset`` only globs ``<dir>/*`` (non-recursive) and the OMat24 tarball extracts to
+    ``<dir>/<name>/data.aselmdb``, so the database files must be located explicitly.
+    """
+    path = Path(path)
+    if path.is_file():
+        return [str(path)]
+    files = sorted(str(f) for f in path.rglob("*.aselmdb"))
+    if not files:
+        raise FileNotFoundError(f"No .aselmdb files under {path}")
+    return files
+
+
+def open_dataset(path: str | Path = DEFAULT_LMDB_DIR):
+    """Open the OMat24 LMDB(s) with fairchem's supported ``AseDBDataset`` reader."""
     from fairchem.core.datasets import AseDBDataset
 
-    lmdb_dir = Path(lmdb_dir)
-    ds = AseDBDataset(config=dict(src=str(lmdb_dir / "data.aselmdb")))
-    rows = []
+    return AseDBDataset(config={"src": find_aselmdb_files(path)})
+
+
+def iter_omat24_atoms(path: str | Path = DEFAULT_LMDB_DIR) -> Iterator[tuple[int, object]]:
+    """Yield ``(index, Atoms)``; the index is stable for a fixed archive."""
+    ds = open_dataset(path)
     for i in range(len(ds)):
-        atoms = ds.get_atoms(i)
-        rows.append(atoms_to_row(atoms, index=i))
-    return pd.DataFrame(rows)
+        yield i, ds.get_atoms(i)
+
+
+def load_metadata(lmdb_dir: str | Path = DEFAULT_LMDB_DIR) -> pd.DataFrame:
+    """Read every structure into a metadata table (source ids, parent ids, labels, chemistry flags)."""
+    return pd.DataFrame([atoms_to_row(atoms, index=i) for i, atoms in iter_omat24_atoms(lmdb_dir)])
 
 
 def atoms_to_row(atoms, index: int) -> dict:
@@ -173,10 +196,7 @@ def structural_prototype(label: str) -> str:
 
 
 def get_atoms_by_index(index: int, lmdb_dir: str | Path = DEFAULT_LMDB_DIR):
-    from fairchem.core.datasets import AseDBDataset
-
-    ds = AseDBDataset(config=dict(src=str(Path(lmdb_dir) / "data.aselmdb")))
-    return ds.get_atoms(index)
+    return open_dataset(lmdb_dir).get_atoms(index)
 
 
 # --------------------------------------------------------------------------- #
@@ -191,6 +211,23 @@ def assert_disjoint(df_a: pd.DataFrame, df_b: pd.DataFrame, col: str = "comp_key
 def binomial_se(p: float, n: int) -> float:
     """Standard error of an empirical coverage estimate, treating test points as independent."""
     return math.sqrt(p * (1 - p) / n)
+
+
+def coverage_se_levels(n_structures: int, n_compositions: int, p: float = 0.9) -> dict:
+    """Binomial SE of a coverage estimate at the two levels.
+
+    ``composition_level`` is the headline: structures sharing a reduced composition (rattled copies,
+    polymorphs) are correlated, so the number of distinct compositions bounds the effective sample size.
+    ``structure_level`` is secondary and optimistic whenever n_structures > n_compositions.
+    """
+    if n_structures <= 0 or n_compositions <= 0:
+        raise ValueError("counts must be positive")
+    return {
+        "n_compositions": n_compositions,
+        "se_composition_level": binomial_se(p, n_compositions),
+        "n_structures": n_structures,
+        "se_structure_level": binomial_se(p, n_structures),
+    }
 
 
 def sample_by_group(df: pd.DataFrame, group_col: str, max_per_group: int, seed: int) -> pd.DataFrame:
@@ -210,6 +247,30 @@ def sample_by_group(df: pd.DataFrame, group_col: str, max_per_group: int, seed: 
 F_BLOCK = LANTHANIDES | ACTINIDES
 NOBLE_GASES = _z("He Ne Ar Kr Xe Rn")
 DEFAULT_SEED = 20241220
+
+ELEMENT_GROUPS = {
+    "f-block": F_BLOCK,
+    "lanthanides": LANTHANIDES,
+    "actinides": ACTINIDES,
+    "3d": TM_3D,
+    "4d": TM_4D,
+    "5d": TM_5D,
+}
+
+
+def resolve_element_spec(tokens) -> set[str]:
+    """Turn CLI tokens (element symbols and/or group names such as 'f-block') into a symbol set."""
+    out: set[str] = set()
+    for t in tokens:
+        if t.lower() in ELEMENT_GROUPS:
+            out |= ELEMENT_GROUPS[t.lower()]
+        elif t in atomic_numbers and t != "X":
+            out.add(t)
+        else:
+            raise ValueError(f"Unknown element or group: {t!r}")
+    if not out:
+        raise ValueError("empty element specification")
+    return out
 
 
 def eligible_structures(df: pd.DataFrame, max_atoms: int = 24) -> pd.DataFrame:
@@ -263,6 +324,7 @@ def build_splits(
     max_atoms: int = 24,
     b_holdout_frac: float = 0.25,
     held_out_elements: set[str] = F_BLOCK,
+    min_comps_per_element: int = 5,
 ) -> dict[str, pd.DataFrame]:
     """Return {'cal','A','B','C'} DataFrames (one structure per reduced composition).
 
@@ -272,8 +334,9 @@ def build_splits(
     * A: one composition from each of up to n_a multi-composition systems; the system's other
       compositions go to Cal, so A's chemical system is seen in Cal but its composition is not.
     * Cal: forced A-system mates plus a random fill of the remaining Cal-eligible compositions up to n_cal.
-    * B: systems reserved for B whose every element pair co-occurs in some Cal composition
-      (so the system is new but its pairwise chemistry is familiar); one composition per system.
+    * B: systems reserved for B whose every element pair co-occurs in some Cal composition and whose
+      every element appears in >= ``min_comps_per_element`` Cal compositions (so the system is new but
+      the elements and their pairwise chemistry are familiar); one composition per system.
     * C: one composition per system among compositions with >= 1 held-out element.
     """
     rng = np.random.default_rng(seed)
@@ -305,8 +368,16 @@ def build_splits(
     cal = pd.concat([forced_df, fill]).sort_values("index").reset_index(drop=True)
 
     cal_pairs = set().union(*[_pairs(s) for s in cal["elements"].unique()])
+    cal_el_counts = Counter(e for s in cal["elements"] for e in s.split())
+    cal_sys_set = set(cal["elements"])
     b_cand = pool[pool["elements"].isin(b_systems)]
-    b_cand = b_cand[b_cand["elements"].map(lambda s: _pairs(s) <= cal_pairs and s not in set(cal["elements"]))]
+    b_cand = b_cand[
+        b_cand["elements"].map(
+            lambda s: _pairs(s) <= cal_pairs
+            and s not in cal_sys_set
+            and all(cal_el_counts[e] >= min_comps_per_element for e in s.split())
+        )
+    ]
     b = _take(_pick_one_per_system(b_cand, rng), n_b, rng)
     c = _take(_pick_one_per_system(c_pool, rng), n_c, rng)
 
@@ -349,3 +420,37 @@ def max_jaccard_to_cal(test: pd.DataFrame, cal: pd.DataFrame) -> np.ndarray:
         t = frozenset(s.split())
         out[i] = max(len(t & c) / len(t | c) for c in cal_sets)
     return out
+
+
+# --------------------------------------------------------------------------- #
+# Alternative family rules (sensitivity check only; NOT used for splitting)
+# --------------------------------------------------------------------------- #
+_ALT_ANION_GROUPS = {
+    "hydride": _z("H"),
+    "carbide": _z("C"),
+    "nitride": _z("N"),
+    "oxide": _z("O"),
+    "halide": _z("F Cl Br I"),
+    "chalcogenide": _z("S Se Te"),
+    "pnictide": _z("P As"),
+}
+_ALT_METALLOIDS = _z("B Si Ge Sb")
+
+
+def family_alternative(elements) -> str:
+    """The rules from the ``claude/vibrant-rubin-1v8122`` branch: every H/C/N/O/halogen/chalcogen/P/As
+    counts as an anion (so phosphates and carbonates become 'mixed-anion'); B/Si/Ge/Sb form one
+    'metalloid-containing' bucket; noble-gas compounds are 'other'."""
+    els = set(elements)
+    if els & NOBLE_GASES:
+        return "other"
+    if len(els) == 1:
+        return "elemental"
+    present = [name for name, g in _ALT_ANION_GROUPS.items() if els & g]
+    if len(present) == 1:
+        return present[0]
+    if len(present) > 1:
+        return "mixed-anion"
+    if els & _ALT_METALLOIDS:
+        return "metalloid-containing"
+    return "intermetallic"

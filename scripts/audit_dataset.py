@@ -1,12 +1,16 @@
-"""Audit the OMat24 validation rattled-1000-subsampled archive and write proposed splits.
+"""Audit an OMat24 archive: counts, labels, chemical diversity, provenance.
 
-Metadata operations only. This script never imports UMA / FAIRChemCalculator inference.
+    python scripts/audit_dataset.py --archive data/raw/<name>.tar.gz --source-url <exact URL>
+
+Writes results/dataset_audit.json and results/composition_counts.csv. Splits are generated separately by
+scripts/propose_splits.py, after the audit has been reviewed. Metadata operations only: no UMA inference.
 """
 
 import argparse
 import hashlib
 import json
 import sys
+import tarfile
 from datetime import date
 from pathlib import Path
 
@@ -18,10 +22,7 @@ import pandas as pd
 
 from src import dataset as D
 
-ARCHIVE_URL = "https://dl.fbaipublicfiles.com/opencatalystproject/data/omat/241220/omat/val/rattled-1000-subsampled.tar.gz"
 EXPECTED_N = 39785  # official dataset card, validation / rattled-1000-subsampled
-ALPHA = 0.10
-SPLIT_COLS = ["index", "sid", "parent_id", "comp_key", "elements", "natoms", "family", "tm_class", "prototype_label"]
 
 
 def sha256(path: Path) -> str:
@@ -94,78 +95,35 @@ def diversity(df: pd.DataFrame, limits=(16, 20, 24, 32, 64)) -> dict:
     }
 
 
-def se_block(n_test: int, n_cal: int) -> dict:
-    se_test = D.binomial_se(1 - ALPHA, n_test)
-    # sd of the true coverage given a calibration set of size n_cal (standard split-conformal result)
-    sd_cal = D.binomial_se(1 - ALPHA, n_cal + 2)
-    return {
-        "n_test": n_test,
-        "binomial_se_test_only": round(se_test, 5),
-        "ci95_half_width_test_only": round(1.96 * se_test, 5),
-        "approx_sd_of_coverage_given_cal(n_cal)": round(sd_cal, 5),
-        "combined_se": round(float(np.hypot(se_test, sd_cal)), 5),
-    }
-
-
-def split_report(name: str, s: pd.DataFrame, cal: pd.DataFrame) -> dict:
-    cal_protos = set(cal.parent_prototype_label.map(D.structural_prototype))
-    protos = s.parent_prototype_label.map(D.structural_prototype)
-    j = D.max_jaccard_to_cal(s, cal)
-    return {
-        "structures": len(s),
-        "compositions": int(s.comp_key.nunique()),
-        "systems": int(s.elements.nunique()),
-        "natoms": s.natoms.describe().round(2).to_dict(),
-        "family": s.family.value_counts().to_dict(),
-        "tm_class": s.tm_class.value_counts().to_dict(),
-        "n_elements": s.n_elements.value_counts().sort_index().to_dict(),
-        "hubbard_u_structures": int(s.hubbard_u.sum()),
-        "frac_structural_prototype_seen_in_cal": round(float(protos.isin(cal_protos).mean()), 4),
-        "max_jaccard_to_cal_systems": {
-            "mean": round(float(j.mean()), 4),
-            "median": round(float(np.median(j)), 4),
-            "frac_ge_0.5": round(float((j >= 0.5).mean()), 4),
-            "frac_eq_1": round(float((j == 1).mean()), 4),
-        },
-        "descriptive_energy_per_atom_eV": s.energy_per_atom_eV.describe().round(3).to_dict(),
-        "n_max_force_gt_50": int((s.max_abs_force_eV_A > 50).sum()),
-        "coverage_se": se_block(len(s), len(cal)),
-    }
-
-
-def random_split_overlap(df: pd.DataFrame, seed: int, n_cal: int, n_test: int) -> dict:
-    """How often does a plain composition-disjoint random split give test systems seen in Cal?"""
-    rng = np.random.default_rng(seed)
-    u = D.one_per_composition(D.eligible_structures(df), rng)
-    u = u[~u.elements.map(lambda s: bool(set(s.split()) & D.F_BLOCK))]
-    perm = rng.permutation(len(u))
-    test, cal = u.iloc[perm[:n_test]], u.iloc[perm[n_test : n_test + n_cal]]
-    seen = test.elements.isin(set(cal.elements))
-    return {
-        "pool_compositions": len(u),
-        "n_cal": len(cal),
-        "n_test": len(test),
-        "frac_test_systems_seen_in_cal": round(float(seen.mean()), 4),
-        "note": "A purely random composition split makes most test systems new, i.e. it is already 'mild shift'.",
-    }
+def extract(archive: Path, dest: Path) -> None:
+    """Extract into its own directory (tar 'data' filter rejects absolute/escaping paths)."""
+    if dest.exists() and any(dest.iterdir()):
+        print(f"[skip extract] {dest} is not empty; reusing it")
+        return
+    dest.mkdir(parents=True, exist_ok=True)
+    with tarfile.open(archive) as tf:
+        tf.extractall(dest, filter="data")
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--archive", default=str(ROOT / "data/raw/rattled-1000-subsampled.tar.gz"))
-    ap.add_argument("--lmdb-dir", default=str(ROOT / D.DEFAULT_LMDB_DIR))
-    ap.add_argument("--seed", type=int, default=D.DEFAULT_SEED)
-    ap.add_argument("--n-cal", type=int, default=2000)
-    ap.add_argument("--n-test", type=int, default=1000)
-    ap.add_argument("--max-atoms", type=int, default=24)
+    ap.add_argument("--archive", required=True, type=Path)
+    ap.add_argument("--source-url", required=True, help="URL the archive was downloaded from (recorded, not fetched)")
+    ap.add_argument("--extract-dir", type=Path, default=ROOT / D.DEFAULT_LMDB_DIR)
+    ap.add_argument("--out-dir", type=Path, default=ROOT / "results")
+    ap.add_argument("--max-atoms", type=int, default=24, help="atom cap used for the eligibility funnel")
+    ap.add_argument("--expected-structures", type=int, default=EXPECTED_N)
+    ap.add_argument("--expected-archive-mb", type=float, default=77.0)
     args = ap.parse_args()
 
     import ase
     import fairchem.core
 
-    archive = Path(args.archive)
-    df = D.load_metadata(args.lmdb_dir)
-    df.to_pickle(ROOT / "data/processed/meta.pkl")
+    archive = args.archive
+    extract(archive, args.extract_dir)
+    df = D.load_metadata(args.extract_dir)
+    (ROOT / "data/processed").mkdir(parents=True, exist_ok=True)
+    df.to_pickle(ROOT / "data/processed/meta.pkl")  # git-ignored cache used by propose_splits.py
 
     base = D.eligible_structures(df, args.max_atoms)
     funnel = {
@@ -176,38 +134,29 @@ def main():
         "eligible compositions": int(base.comp_key.nunique()),
         "eligible systems (element sets)": int(base.elements.nunique()),
     }
-
-    splits = D.build_splits(
-        df, seed=args.seed, n_cal=args.n_cal, n_a=args.n_test, n_b=args.n_test, n_c=args.n_test, max_atoms=args.max_atoms
-    )
-    out_dir = ROOT / "data/splits"
-    for name, s in splits.items():
-        cols = SPLIT_COLS + (["n_held_out_elements"] if name == "C" else [])
-        s[cols].to_csv(out_dir / f"{name}.csv", index=False)
-
-    # capacity (how large each test set could be with the same Cal)
-    cap = D.build_splits(
-        df, seed=args.seed, n_cal=args.n_cal, n_a=10**6, n_b=10**6, n_c=10**6, max_atoms=args.max_atoms
-    )
+    size = archive.stat().st_size
     audit = {
         "provenance": {
             "date": date.today().isoformat(),
-            "source_url": ARCHIVE_URL,
+            "source_url": args.source_url,
             "archive_file": archive.name,
-            "archive_bytes": archive.stat().st_size,
+            "archive_bytes": size,
+            "archive_mb": round(size / 1e6, 2),
             "archive_sha256": sha256(archive),
             "fairchem_core_version": fairchem.core.__version__,
             "ase_version": ase.__version__,
-            "loader": "fairchem.core.datasets.AseDBDataset",
-            "expected_structures_official": EXPECTED_N,
+            "loader": "fairchem.core.datasets.AseDBDataset (files located recursively)",
+            "expected_structures_official": args.expected_structures,
+            "expected_archive_mb_official": args.expected_archive_mb,
             "observed_structures": len(df),
-            "count_matches_official": len(df) == EXPECTED_N,
+            "count_matches_official": len(df) == args.expected_structures,
         },
         "counts": {
             "structures": len(df),
             "unique_reduced_compositions": int(df.comp_key.nunique()),
             "unique_systems_element_sets": int(df.elements.nunique()),
             "unique_parent_ids": int(df.parent_id.nunique()),
+            "unique_source_ids": int(df.sid.nunique()),
             "unique_elements": int(len({e for s in df.elements for e in s.split()})),
             "elements": sorted({e for s in df.elements for e in s.split()}),
             "structures_per_composition": {int(k): int(v) for k, v in df.groupby("comp_key").size().value_counts().sort_index().items()},
@@ -219,23 +168,10 @@ def main():
         "diversity_all": diversity(df),
         "eligibility_funnel": funnel,
         "diversity_eligible": diversity(base),
-        "splits": {
-            "config": {
-                "seed": args.seed,
-                "n_cal": args.n_cal,
-                "n_test_each": args.n_test,
-                "max_atoms": args.max_atoms,
-                "held_out_elements": sorted(D.F_BLOCK),
-                "alpha": ALPHA,
-            },
-            **{name: split_report(name, s, splits["cal"]) for name, s in splits.items() if name != "cal"},
-            "cal": {"structures": len(splits["cal"]), "natoms": splits["cal"].natoms.describe().round(2).to_dict(),
-                    "family": splits["cal"].family.value_counts().to_dict()},
-            "capacity_with_same_cal": {k: len(v) for k, v in cap.items() if k != "cal"},
-            "random_split_system_overlap": random_split_overlap(df, args.seed, args.n_cal, args.n_test),
-        },
+        "coverage_se_headline_note": "SEs for proposed splits are produced by scripts/propose_splits.py (composition level first).",
     }
-    (ROOT / "results/dataset_audit.json").write_text(json.dumps(audit, indent=2, default=str))
+    args.out_dir.mkdir(exist_ok=True)
+    (args.out_dir / "dataset_audit.json").write_text(json.dumps(audit, indent=2, default=str))
 
     comp = (
         df.groupby("comp_key")
@@ -253,8 +189,10 @@ def main():
         .reset_index()
     )
     comp["eligible"] = comp.comp_key.isin(set(base.comp_key))
-    comp.to_csv(ROOT / "results/composition_counts.csv", index=False)
-    print(json.dumps({"provenance": audit["provenance"], "funnel": funnel, "capacity": audit["splits"]["capacity_with_same_cal"]}, indent=2, default=str))
+    comp.to_csv(args.out_dir / "composition_counts.csv", index=False)
+    print(json.dumps({"provenance": audit["provenance"], "funnel": funnel}, indent=2, default=str))
+    if len(df) != args.expected_structures:
+        print(f"WARNING: expected {args.expected_structures} structures per docs, got {len(df)}", file=sys.stderr)
 
 
 if __name__ == "__main__":
