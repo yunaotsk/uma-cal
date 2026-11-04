@@ -65,3 +65,20 @@ No filter is applied in the primary analysis.
 
 ## Deviations
 (none recorded)
+
+## Amendment 1 (2026-11-03): final sizes, secondary levels, execution order, A0 gate
+Made **before any prediction on A0, A, B or C**. Sections 1 to 8 above are unchanged; where they quote planning sizes (n = 1,000, n_cal = 2,000, an 8.5% gate false-alarm rate), this amendment supersedes those numbers.
+
+**1. Final sizes (frozen).** Splits are frozen in `reports/split_freeze.md` (commit `4de8962`, SHA256 per file): **Cal 4,000; A0 2,000; A 713 (all available); B 2,000; C 2,000** compositions (one structure each), `max_atoms = 24`, seed 20241220.
+Composition-level SE at nominal 90% coverage: A0, B, C 0.0067 (95% half-width ±1.3 points); A 0.0112 (±2.2 points). Finite-Cal spread √(0.09/4002) = 0.0047; combined SE 0.0082 for A0, B, C and 0.0122 for A.
+A pairwise difference between two n = 2,000 splits has SE ≈ 0.0095 (±1.9 points). With a combined SE of 0.0082 the ±2-point A0 gate has a false-alarm rate of about 1.5% for a correct pipeline (it was 8.5% at the earlier planning sizes).
+These resolve differences of about 2 points; they cannot resolve differences of about 1 point.
+
+**2. Secondary coverage levels.** In addition to the primary 90% level (α = 0.10), report marginal coverage at **80%** (α = 0.20) and **95%** (α = 0.05), each from its own split-conformal quantile on the Cal absolute errors, with `k = ⌈(n+1)(1−α)⌉` for n = 4,000: k = 3,201 (80%), 3,601 (90%), 3,801 (95%).
+Same procedure, same composition-level SEs and Wilson intervals (planning SE at n = 2,000: 0.0089 at 80%, 0.0067 at 90%, 0.0049 at 95%). The 80% and 95% levels are reported for A0, A, B and C overall and, descriptively, in the §4 strata and the §5 order-matched comparison.
+They are secondary: the primary metric, the A0 gate and the §7 interpretation rules stay on 90%. No multiplicity correction; a deviation is interpreted only when it is consistent across the three levels or clearly stated otherwise.
+
+**3. Execution order and the A0 gate.** Predictions run in this order: **Cal, then A0 (gate check), then A, B, C.**
+The A0 gate decision (|coverage₉₀(A0) − 0.90| ≤ 0.02, with `q` from Cal) is computed from Cal and A0 predictions only and **is made, and recorded with `record_a0_gate` in `src/pred_cache.py`, before any A, B or C prediction exists or is looked at.**
+This is enforced in code: `predict_cached` refuses any structure outside Cal and A0 until the gate record says `passed`. The 80% and 95% coverage on A0 may be inspected as diagnostics but cannot change the gate decision.
+If the gate fails, A, B and C are not predicted. The §3 diagnostics run first, and a second A0 draw (`A0b`) requires its own amendment and freeze before it is used. Editing the gate record by hand to unlock A, B or C would be a protocol violation and would have to be reported as one.

@@ -36,11 +36,12 @@ Defaults live in `src/inference.py` (`UMAPredictor`).
 ## Stage status
 - **Stage 1 (CPU inference verified): complete.**
 - **Stage 2 (OMat24 audit and shift-split design): complete.** The validation `rattled-1000-subsampled` archive is in `data/raw/`
-  (git-ignored); the audit is in `results/`; the proposed splits (`cal`, `A`, `B`, `C`) are in `data/splits/` **awaiting design review**.
-  No UMA inference has been run on Cal or test structures.
+  (git-ignored); the audit is in `results/`; the frozen splits (`cal`, `A0`, `A`, `B`, `C`) are in `data/splits/` (see Stage 3b below).
 - **Stage 3 prep: done on branch `stage3-prep`** (A0 control, similarity scores, `reports/analysis_plan.md`, resumable cache `src/pred_cache.py`, Cal-only benchmark `reports/cal_benchmark.md`).
-  Raw DFT energy confirmed as the label on 20 Cal structures. **Sizes are pending the user's approval; no test-split prediction exists.**
-- **Stage 3 (inference on splits, calibration): not started.** Do not begin until the user approves sizes. Order: Cal, then the A0 gate, then A, B, C.
+  Raw DFT energy confirmed as the label on 20 Cal structures.
+- **Stage 3b: splits frozen** (`reports/split_freeze.md`, SHA256 per file; Cal 4,000, A0 2,000, A 713, B 2,000, C 2,000; `max_atoms` 24). `reports/analysis_plan.md` Amendment 1 records final sizes, 80%/95% secondary levels and the gate.
+  **No prediction exists on A0, A, B or C.** The prediction cache holds only the 20 Cal benchmark structures.
+- **Stage 3 (full inference, calibration): not started.** Do not begin until the user says so. Order: Cal, then A0, then the A0 gate decision, then A, B, C. `predict_cached` locks A, B, C until `record_a0_gate` records a pass.
 
 ### Justification for `inference_settings="batch"`
 Sources are the installed fairchem-core 2.25.0 files, under
@@ -89,7 +90,7 @@ Scientific correctness, reproducibility, and transparent failure reporting take 
 - **Timings do not transfer.** Stage 1 numbers (load 127 s incl. download, 0.645 s first call, 0.225 s second, 4-atom cell) came from the Mac. Re-measure on the new machine.
 - Run `python -m pytest -q` first; the tests are offline and need no weights.
 
-## Decisions (settled; sizes still pending, see last item)
+## Decisions (settled and frozen)
 - **A: keep the system-matched A and add an exchangeable control A0.** A0 is a random composition-disjoint holdout drawn *jointly* with Cal from one random split of the familiar pool
   (same filters), so Cal and A0 are exchangeable. Cal, A0, A, B, C stay pairwise disjoint on reduced composition, `parent_id` and `sid`.
 - **C = f-block held out** (lanthanides + actinides). Report Ln-vs-An and order-matched stratifications alongside the pooled result.
@@ -98,5 +99,6 @@ Scientific correctness, reproducibility, and transparent failure reporting take 
 - **Shift is relative to Cal only.** UMA may have seen these structures (OMat24 validation was a random split of the training pool; model card says trained on the "entirety" of OMat24).
 - **Label noise on f-block compounds (plain PBE, no +U) is a confounder.** Report it; lower coverage on C is not by itself evidence of model-driven shift.
 - **Analysis is pre-specified** in `reports/analysis_plan.md`, committed before any test-split prediction exists. Primary metric: marginal 90% coverage (split conformal, absolute error in eV/atom); headline SE at composition level.
-- **`max_atoms`, `n_cal` and `n` per split are NOT decided.** Decide only after the Cal-only timing benchmark: propose values with a labelled cost extrapolation and wait for user approval.
-- **Hard rule until approval:** no UMA inference on any test split (A, A0, B, C). Permitted: Cal structures only (timing benchmark and label check).
+- **Sizes are decided and frozen:** `max_atoms` 24, Cal 4,000, A0 2,000, A all available (713), B 2,000, C 2,000, seed 20241220 (`reports/split_freeze.md`). Do not change split files after the freeze; any change is a recorded protocol deviation.
+- **A0 gate:** pass iff |coverage at 90% on A0 − 0.90| ≤ 0.02, decided on Cal and A0 predictions only, before any A, B or C prediction exists or is looked at (enforced by `SplitGuard`). Also report 80% and 95% coverage as secondary levels.
+- **Hard rule until the user starts Stage 3:** no UMA inference on any split except Cal structures already benchmarked. After the user starts Stage 3: Cal and A0 first; A, B, C only after the gate is recorded as passed.
