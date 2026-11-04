@@ -57,8 +57,8 @@ Genuinely multi-anion compounds (oxyhalides, oxynitrides, oxysulfides) are kept 
 - 2,781 are metalloid-bucket relabels (1,575 of them intermetallic under my rules, 902 silicide, 290 boride, 14 mixed-light-element). These are mostly renames, though my "intermetallic" loses its Ge/Sb members.
 - 1,576 come from the different anion set. 1,401 become mixed-anion under the alternative (485 halide, 473 chalcogenide, 230 oxide, 114 nitride, 99 mixed-light-element), i.e. compounds with an extra H/C/N/P/As.
   Total mixed-anion: 1,718 compositions under my rules, 3,119 under the alternative.
-- **Strong-shift tier C does not change.** C is defined by element identity (≥1 f-block element), so its membership is independent of the family rules (0 compositions change; same 1,000 structures).
-  Only its *family breakdown* shifts: 106 of the 1,000 structures get a different label (e.g. intermetallic 620 → 565, "metalloid-containing" 86 appears, mixed-anion 26 → 44).
+- **Strong-shift tier C does not change.** C is defined by element identity (≥1 f-block element), so its membership is independent of the family rules (0 compositions change; same 2,000 structures).
+  Only its *family breakdown* shifts: 250 of the 2,000 structures get a different label (e.g. intermetallic 1,232 → 1,120, "metalloid-containing" 198 appears, mixed-anion 54 → 99).
 - **A family-defined strong-shift tier would change materially.** For a hold-out of one family on the eligible non-f-block pool: mixed-anion is 1,322 compositions under my rules and 2,377 under the alternative;
   oxide 581 vs 447; chalcogenide 2,210 vs 1,846; halide 2,516 vs 2,105. A family hold-out is therefore rule-dependent, which is one more reason the proposed tier is element-based.
   Family-stratified coverage results should be reported under both rule sets, or described as rule-dependent.
@@ -145,89 +145,88 @@ the U boundary (e.g. 3d oxides vs 3d sulfides) would mix PBE and PBE+U; I exclud
 
 (An earlier web-summary of the UMA card misattributed that r²SCAN row to the `omat` task generally; I rechecked against the primary text.)
 
-## 4. Proposed splits
+## 4. Splits (frozen sizes; see `reports/split_freeze.md`)
 
 **Common design.** Eligible pool: ≤24 atoms, no Hubbard-U rule, ≥2 elements, no noble gas (38,267 structures / 30,388 compositions). **One randomly chosen
 structure per reduced composition** (siblings and polymorphs of a composition are dropped). A, B and C also keep **at most one composition per chemical system**.
 Seed 20241220 drives all randomness (`src/dataset.py: build_splits`). Held-out set H = f-block (lanthanides + actinides, 21 elements present). No selection uses energies or forces.
 Files `data/splits/{cal,A0,A,B,C}.csv` list `sid`, `parent_id`, `comp_key` (reduced composition), elements, metadata and `max_jaccard_to_cal` (max Jaccard similarity of the
 structure's element set to any Cal element set; leave-one-composition-out for Cal itself). All five splits are pairwise disjoint on reduced composition, `parent_id` and `sid`
-(asserted in `check_split_invariants`, unit-tested). `data/splits/split_comparison.json` and [reports/split_comparison.md](split_comparison.md) compare their family, order, atom-count and similarity distributions.
+(asserted in `check_split_invariants` and re-checked on the frozen files by `tests/test_split_files.py`). [split_comparison.md](split_comparison.md) compares family, order, atom-count and similarity distributions.
 
-**Changed in Stage 3 prep:** Cal and A0 are now drawn *jointly* (one random permutation of the non-B-reserved familiar pool: first n_cal → Cal, next n_a0 → A0, the rest is leftover). Cal is therefore a uniform random sample
-and exchangeable with A0. The previous construction forced the same-system mates of A into Cal, which made Cal over-represent multi-composition systems and would have broken that exchangeability.
-Consequences: Cal, A, B and C rows were regenerated (same seed, new row identities) and **A shrank from 1,000 to 473** because A can only use leftover compositions whose system also occurs in a random Cal.
+**Construction.** Cal and A0 are drawn *jointly*: one random permutation of the non-B-reserved familiar pool, first n_cal → Cal, next n_a0 → A0, rest → leftover. Cal is therefore a uniform random sample and exchangeable with A0.
+(Forcing A's same-system mates into Cal would have broken that exchangeability.) The 20-structure Cal benchmark set (`reports/cal_benchmark.md`) is still inside the frozen Cal, because the 4,000-composition Cal extends the earlier 2,000-composition Cal drawn from the same permutation.
 
-| Split | Definition | Compositions (= structures) | Max available with this Cal |
-|---|---|---:|---:|
-| Cal | uniform random draw from the non-B-reserved familiar pool (no f-block) | 2,000 | n/a |
-| **A0** exchangeable control | drawn jointly with Cal from the same pool; composition-disjoint | 1,000 | 1,000 (set by request) |
-| **A** system-matched control | leftover composition whose chemical system is **present** in Cal | 473 | 473 |
-| **B** mild shift | system **absent** from Cal; all elements familiar; every element pair co-occurs in Cal | 1,000 | 3,548 |
-| **C** strong shift | ≥1 held-out f-block element, absent from Cal, A0, A, B | 1,000 | 9,454 (11,273 compositions) |
+**Targets and actual capacity (frozen run).** Every requested size was reached; nothing was lowered.
 
-A's capacity grows slowly with Cal size (n_cal = 1,000 / 2,000 / 3,000 / 4,000 → A capacity 259 / 473 / 632 / 784), so A stays smaller than the other test sets unless Cal is made much larger.
+| Split | Definition | Target | Realized | Capacity with this Cal and A0 |
+|---|---|---:|---:|---:|
+| Cal | uniform random draw from the non-B-reserved familiar pool (no f-block) | 4,000 | 4,000 | n/a |
+| **A0** exchangeable control | drawn jointly with Cal from the same pool; composition-disjoint | 2,000 | 2,000 | n/a (fixed draw) |
+| **A** system-matched control | leftover composition whose chemical system is **present** in Cal | all available | 713 | 713 |
+| **B** mild shift | system **absent** from Cal; all elements familiar; every element pair co-occurs in Cal | 2,000 | 2,000 | 3,941 |
+| **C** strong shift | ≥1 held-out f-block element, absent from Cal, A0, A, B | 2,000 | 2,000 | 9,454 (11,273 compositions) |
+
+A is the only split limited by capacity (713 compositions). Its capacity grows slowly with Cal size and shrinks as A0 grows, since both draw from the same pool; with this Cal and A0 it is exactly 713.
 
 ### A0. Exchangeable control (pipeline check)
-Random composition-disjoint holdout from the same familiar pool as Cal. By construction Cal and A0 are exchangeable, so split-conformal coverage on A0 should be ≈90% (pre-specified criterion in `reports/analysis_plan.md`).
-It looks like Cal (`split_comparison.md`): family chi-square p = 0.63, order p = 0.39, atom-count KS p ≈ 1.0, largest family-share difference 1.4 points.
-**Interpretation caveat:** A0 is *not* system-matched. Only 5.4% of A0 systems occur in Cal, so by system overlap A0 is almost as "novel" as B (0%): mean similarity to Cal 0.575 for A0 vs 0.55 for B, and 91.1% vs 90.5% of structures share ≥50% of their elements with some Cal system.
-So if A0 and B have similar coverage, that is expected. B's shift is confined to "unseen exact element set with familiar elements and pairs", which a random split already largely delivers. B is a clean *definition* of mild shift rather than a large *amount* of it.
+Random composition-disjoint holdout from the same familiar pool as Cal, exchangeable with Cal by construction, so split-conformal coverage on A0 should be ≈90% (pre-specified gate in `reports/analysis_plan.md`).
+It looks like Cal on the frozen files: family chi-square p = 0.56 (alternative rules p = 0.43), order p = 0.17, atom-count KS p = 0.58, similarity KS p ≈ 1.0; the largest family-share difference is 1.3 points and the largest order-share difference 2.2 points.
+**Interpretation caveat:** A0 is *not* system-matched. Only 10.5% of A0 systems occur in Cal, so by system overlap A0 is nearly as "novel" as B (0%): mean similarity to Cal 0.632 for A0 vs 0.587 for B, and 96.5% vs 94.9% of structures share ≥50% of their elements with some Cal system.
+If A0 and B have similar coverage, that is expected: B's shift is confined to "unseen exact element set with familiar elements and pairs", which a random split already largely delivers. B is a clean *definition* of mild shift rather than a large *amount* of it.
 
 ### A. System-matched control
-A random composition-disjoint split gives only ≈5% system overlap with Cal, so A0 alone cannot separate "new stoichiometry of a seen system" from "new system". A restricts to leftover compositions whose system is in Cal (same element set, different stoichiometry).
-Cost: selection bias. A comes from multi-composition systems, so its mix differs from Cal (intermetallic 60.5% vs 47.8% for Cal; ternary 83.3% vs 69.0%; quaternary+ 2.1% vs 23.6%) and it has only 473 compositions.
-- *Leakage risks:* same-system, different-stoichiometry compositions are by design related (e.g. Li1O1 vs Li2O1). `parent_id` is disjoint (checked). 65.5% of A's structural prototypes appear in Cal.
+A random composition-disjoint split gives only about 10% system overlap with Cal, so A0 alone cannot separate "new stoichiometry of a seen system" from "new system". A restricts to leftover compositions whose system is in Cal (same element set, different stoichiometry).
+Cost: selection bias. A comes from multi-composition systems, so its mix differs from Cal (intermetallic 63.4% vs 47.5% for Cal; ternary 83.9% vs 68.4%; quaternary+ 2.4% vs 24.4%) and it has only 713 compositions.
+- *Leakage risks:* same-system, different-stoichiometry compositions are by design related (e.g. Li1O1 vs Li2O1). `parent_id` is disjoint (checked). 71.7% of A's structural prototypes appear in Cal.
 - *DFT confounders:* none beyond the baseline; no Hubbard-U structures.
 
 ### B. Mild shift (unseen element combinations)
-25% of familiar systems are reserved for B before Cal and A0 are drawn. B keeps those whose every element pair appears in some Cal composition and whose every element appears in ≥5 Cal compositions (`--min-comps-per-element`; not binding here: capacity is 3,548 with or without it).
-A "familiar pair" can come from any Cal composition containing both elements, so B includes 50 binaries whose two elements co-occur only inside Cal ternaries (B: 50 binary, 684 ternary, 263 quaternary, 3 quinary).
-- *Leakage risks:* B systems are new, but **related**: mean max Jaccard similarity to any Cal system is 0.55 and 90.5% of B structures share ≥50% of their elements with some Cal system (A: 100% by construction; C: 45.9%).
-  "Unseen combination" does not mean "unrelated chemistry". 76.8% of B structural prototypes appear in Cal. A stricter variant (e.g. a Jaccard cap) would shrink B and remains an open decision.
+25% of familiar systems are reserved for B before Cal and A0 are drawn. B keeps those whose every element pair appears in some Cal composition and whose every element appears in ≥5 Cal compositions (`--min-comps-per-element`; not binding here: capacity is 3,941 with or without it).
+A "familiar pair" can come from any Cal composition containing both elements, so B includes 101 binaries whose two elements co-occur only inside Cal ternaries (B: 101 binary, 1,326 ternary, 567 quaternary, 6 quinary).
+- *Leakage risks:* B systems are new, but **related**: mean max Jaccard similarity to any Cal system is 0.587 and 94.9% of B structures share ≥50% of their elements with some Cal system (A: 100% by construction; C: 54.7%).
+  "Unseen combination" does not mean "unrelated chemistry". 79.7% of B structural prototypes appear in Cal. A stricter variant (e.g. a Jaccard cap) would shrink B and remains an open decision.
 - *DFT confounders:* none beyond baseline.
 
 ### C. Strong shift (held-out f-block elements)
-Cal, A0, A and B contain no lanthanide or actinide. C has 665 compositions with exactly one f-element, 252 with two, 64 with three and 19 with four; 703 are lanthanide-only, 189 actinide-only and 108 contain both.
+Cal, A0, A and B contain no lanthanide or actinide. C has 1,319 compositions with exactly one f-element, 496 with two, 146 with three and 39 with four; 1,353 are lanthanide-only, 404 actinide-only and 243 contain both.
 Eligible pool: 11,273 compositions in 9,454 systems. Alternatives considered (exploratory counts on the eligible pool): 5d metals (~9,700 compositions, overlaps heavily with Ln chemistry), actinides alone (~3,300; few compositions per element), element-by-element holdouts.
-- *Leakage risks:* none at composition/element level. Mean max Jaccard to Cal is 0.40 (45.9% ≥ 0.5, because f-block compounds share their non-f elements with Cal). 45.7% of structural prototypes appear in Cal, so C tests **element substitution into known structure types** as much as new chemistry. f-block elements are also not 'chemically novel' for UMA, which trained on OMat24 (possibly including these very structures; §3).
-- *DFT confounders:* `Yb_3` pseudopotential (1 structure in C); plain-PBE treatment of f electrons implies noisier labels, which would lower coverage for reasons unrelated to model shift.
-  **Composition confounders (observed):** C has more quaternaries (37.5% vs 25.1% in A0, 26.6% in B), larger cells (84.1% ≤16 atoms vs 92–93% elsewhere), fewer 3d+4d compounds (54 vs 134 in A0, 147 in B), a different energy range (mean −4.52 vs −4.01 eV/atom in A0), and 62.7% intermetallic (A0 46.5%).
+- *Leakage risks:* none at composition/element level. Mean max Jaccard to Cal is 0.419 (54.7% ≥ 0.5, because f-block compounds share their non-f elements with Cal). 53.8% of structural prototypes appear in Cal, so C tests **element substitution into known structure types** as much as new chemistry. f-block elements are also not 'chemically novel' for UMA, which trained on OMat24 (possibly including these very structures; §3).
+- *DFT confounders:* `Yb_3` pseudopotential (2 structures in C); plain-PBE treatment of f electrons implies noisier labels, which would lower coverage for reasons unrelated to model shift.
+  **Composition confounders (observed):** C has more quaternaries (36.4% vs 22.2% in A0, 28.6% in B), larger cells (85.1% ≤16 atoms vs 92–94% elsewhere), fewer 3d+4d compounds (114 of 2,000 vs 304 in A0, 296 in B), a different energy range (mean −4.69 vs −4.02 eV/atom in A0), and 61.6% intermetallic (A0 48.8%).
   Any coverage gap between B and C partly reflects these, hence the order-matched comparison and stratifications pre-specified in `reports/analysis_plan.md`.
 
-### Sample size and the 90% coverage estimate
+### Sample size and the 90% coverage estimate (actual n)
 **Headline: composition-level SE.** Structures that share a reduced composition (rattled copies, polymorphs) are not independent, so the number of distinct compositions is the effective sample size.
 The split files hold one structure per composition, so the structure count equals the composition count. SE = √(0.9·0.1/n) from `data/splits/split_summary.json`:
 
-| Split | Compositions n | **SE (composition level)** | 95% half-width | + finite-Cal spread (n_cal=2000) → combined SE |
+| Split | Compositions n | **SE (composition level)** | 95% half-width | + finite-Cal spread (n_cal=4,000: 0.0047) → combined SE |
 |---|---:|---:|---:|---:|
-| A0 | 1,000 | **0.0095** | ±0.0186 | 0.0116 |
-| A | 473 | **0.0138** | ±0.0270 | 0.0153 |
-| B | 1,000 | **0.0095** | ±0.0186 | 0.0116 |
-| C | 1,000 | **0.0095** | ±0.0186 | 0.0116 |
+| A0 | 2,000 | **0.0067** | ±0.0132 | 0.0082 |
+| A | 713 | **0.0112** | ±0.0220 | 0.0122 |
+| B | 2,000 | **0.0067** | ±0.0132 | 0.0082 |
+| C | 2,000 | **0.0067** | ±0.0132 | 0.0082 |
 
-Other sizes (composition level): n=100 → 0.0300; 200 → 0.0212; 500 → 0.0134; 3,548 (max B) → 0.0050.
+**Secondary: structure level.** If *every* eligible structure of each split's compositions were used (rattled copies included) the pools would be 2,595 (A0), 956 (A), 2,555 (B) and 2,438 (C) structures, giving a naive
+structure-level SE of 0.0059, 0.0097, 0.0059 and 0.0061. These are **optimistic**: the extra structures are copies of the same compositions and add almost no independent information. I keep one structure per composition and do not use the structure-level figure to judge adequacy.
 
-**Secondary: structure level.** If *every* eligible structure of each split's compositions were used (rattled copies included) the pools would be 1,313 (A0), 637 (A), 1,307 (B), 1,209 (C) structures, giving a naive
-structure-level SE of 0.0083, 0.0119, 0.0083 and 0.0086. These are **optimistic**: the extra structures are copies of the same compositions and add almost no independent information. I keep one structure per composition and do not use the structure-level figure to judge adequacy.
-
-At n=1,000 one split's coverage is resolved to about ±1.9 points (95%), a pairwise difference between two n=1,000 splits (SE ≈ 0.0134) to about ±2.6 points, and A (n=473) to ±2.7 points on its own. This will resolve coverage
-differences of ≳3 points but **cannot distinguish differences of ~1–2 points**. Even the composition-level count is an upper bound on the effective n: compositions that share elements or structure prototypes remain correlated, so the true SE is likely larger; I have not estimated that design effect.
-The finite-Cal spread, √(0.09/(2000+2)) = 0.0067, is a standard split-conformal result that I did not re-derive here. No SE analysis exists yet for interval *width* comparisons.
+At n = 2,000 one split's coverage is resolved to about ±1.3 points (95%), a pairwise difference between two n = 2,000 splits (SE ≈ 0.0095) to about ±1.9 points, and A (n = 713) to about ±2.2 points on its own. This will resolve coverage
+differences of about 2 points or more but **cannot distinguish differences of ~1 point**. Even the composition-level count is an upper bound on the effective n: compositions that share elements or structure prototypes remain correlated, so the true SE is likely larger; I have not estimated that design effect.
+The finite-Cal spread, √(0.09/(4000+2)) = 0.0047, is a standard split-conformal result that I did not re-derive here. With these sizes a correct pipeline falls outside the ±2-point A0 gate about 1.5% of the time (combined SE 0.0082). No SE analysis exists yet for interval *width* comparisons.
 
 ### CPU feasibility
 Measured on 20 **Cal** structures (`reports/cal_benchmark.md`; Apple M2, 8 GB RAM, `batch`, CPU): model load 13.3 s with cached weights, 1.08 s for the first call, then **0.35 s per structure** in steady state (0.22–0.58 s), with no significant dependence on atom count over 10–24 atoms.
-Extrapolation (not measured): the current files (5,473 structures) take about 0.5–0.9 h and 6,000 structures about 0.6–1.0 h. Sizes are not decided; the report gives a costed proposal awaiting approval. Memory is not a concern at ≤24 atoms.
+Frozen sizes total 10,713 structures (4,000 + 2,000 + 713 + 2,000 + 2,000). **Extrapolation (not measured):** about 1.0 h at the mean rate, 1.7 h if every call were as slow as the slowest observed. Memory is not a concern at ≤24 atoms.
 
 ## 5. Decisions
 
 **Settled**
-1. **A:** keep the system-matched A **and add an exchangeable control A0** (random composition-disjoint holdout drawn jointly with Cal; §4 and `reports/split_comparison.md`).
+1. **A:** system-matched A **plus an exchangeable control A0** (§4).
 2. **C:** f-block held out. Report Ln-vs-An and order-matched stratifications (`reports/analysis_plan.md`).
 3. **Label filters:** none by default. Pre-specified sensitivity analyses exclude (a) max force > 50 eV/Å and (b) energy/atom > 0.
-4. **Label check:** the `omat` energy label is checked on Cal structures only.
+4. **Label check:** done on 20 Cal structures only; raw DFT energy is the label (`reports/cal_benchmark.md`).
+5. **Sizes (approved, frozen):** `max_atoms = 24`, `n_cal = 4,000`, `n_a0 = 2,000`, `n_b = 2,000`, `n_c = 2,000`, A = all available (713). Hashes and command: `reports/split_freeze.md`.
 
-**Still open (decide after the timing benchmark; wait for approval)**
-5. `max_atoms`, `n_cal` and `n` per split. Proposal and cost extrapolation: `reports/cal_benchmark.md`.
+**Still open**
 6. Matching on family / atom count across B and C beyond the pre-specified order-matched comparison.
 7. A stricter B (Jaccard cap).
