@@ -114,18 +114,79 @@ class PredictionCache:
         self._db.close()
 
 
+GATE_PATH = Path("data/cache/a0_gate.json")
+SPLITS_DIR = Path("data/splits")
+GATE_BAND = 0.02  # A0 coverage must be within about 2 points of nominal (reports/analysis_plan.md)
+
+
+class SplitGuard:
+    """Decides which structures may be predicted.
+
+    Cal and A0 are always allowed. A, B and C stay **locked until the A0 gate is recorded as passed**
+    (``record_a0_gate``). The gate decision is made on Cal and A0 predictions only, before any A, B or C
+    prediction exists, which is what keeps the analysis pre-specified. This is a procedural guard against
+    accidents, not a security boundary: the gate file can be edited by hand, and doing so would be a protocol violation.
+    """
+
+    def __init__(self, splits_dir: str | Path = SPLITS_DIR, gate_path: str | Path = GATE_PATH):
+        self.splits_dir, self.gate_path = Path(splits_dir), Path(gate_path)
+
+    def _sids(self, name: str) -> set[str]:
+        import csv
+
+        with open(self.splits_dir / f"{name}.csv", newline="") as f:
+            return {row["sid"] for row in csv.DictReader(f)}
+
+    def gate_passed(self) -> bool:
+        import json
+
+        if not self.gate_path.exists():
+            return False
+        return json.loads(self.gate_path.read_text()).get("passed") is True
+
+    def allowed_sids(self) -> set[str]:
+        allowed = self._sids("cal") | self._sids("A0")
+        if self.gate_passed():
+            allowed |= self._sids("A") | self._sids("B") | self._sids("C")
+        return allowed
+
+
+def a0_gate_decision(coverage: float, nominal: float = 0.90, band: float = GATE_BAND) -> bool:
+    """True iff A0 coverage is within ``band`` of nominal (inclusive, rounded to avoid float edge noise)."""
+    return round(abs(coverage - nominal), 9) <= band
+
+
+def record_a0_gate(coverage: float, n_a0: int, n_cal: int, gate_path: str | Path = GATE_PATH,
+                   nominal: float = 0.90, band: float = GATE_BAND) -> bool:
+    """Record the A0 gate decision (to be called once, with Cal-calibrated coverage on A0 only). Returns ``passed``."""
+    import json
+
+    passed = a0_gate_decision(coverage, nominal, band)
+    gate_path = Path(gate_path)
+    gate_path.parent.mkdir(parents=True, exist_ok=True)
+    gate_path.write_text(json.dumps({
+        "passed": passed, "a0_coverage": coverage, "nominal": nominal, "band": band, "n_a0": n_a0, "n_cal": n_cal,
+        "decided_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "rule": "pass iff |coverage - nominal| <= band (reports/analysis_plan.md); decided before any A, B or C prediction",
+    }, indent=2))
+    return passed
+
+
 def predict_cached(predictor, items: Iterable[tuple[str, object]], cache: PredictionCache,
-                   allowed_sids: set[str] | None = None) -> dict[str, float]:
+                   allowed_sids: Iterable[str] | None = None) -> dict[str, float]:
     """Predict total energies (eV) for ``(sid, Atoms)`` pairs, skipping cache hits.
 
-    ``allowed_sids`` is a hard guard: if given, any sid outside it raises *before* any prediction is made.
+    Hard guard: any sid outside the allowed set raises ``PermissionError`` *before* any prediction is made.
+    ``allowed_sids=None`` means the default ``SplitGuard()``: Cal and A0 only, with A, B and C locked until the
+    A0 gate has been recorded as passed. Pass an explicit set to narrow it further (e.g. Cal only).
     Returns ``{sid: energy_total_eV}`` for every item (hits and new predictions).
     """
     items = list(items)
-    if allowed_sids is not None:
-        bad = [sid for sid, _ in items if sid not in allowed_sids]
-        if bad:
-            raise PermissionError(f"{len(bad)} structure(s) not in the allowed set, e.g. {bad[:3]}; refusing to predict")
+    allowed = SplitGuard().allowed_sids() if allowed_sids is None else set(allowed_sids)
+    bad = [sid for sid, _ in items if sid not in allowed]
+    if bad:
+        raise PermissionError(f"{len(bad)} structure(s) not allowed, e.g. {bad[:3]}; refusing to predict "
+                              "(A, B and C stay locked until the A0 gate is recorded as passed)")
     cfg = CacheConfig.from_predictor(predictor)
     out: dict[str, float] = {}
     for sid, atoms in items:

@@ -81,7 +81,7 @@ def main():
     ap.add_argument("--max-atoms", type=int, required=True)
     ap.add_argument("--seed", type=int, default=D.DEFAULT_SEED)
     ap.add_argument("--n-cal", type=int, default=2000)
-    ap.add_argument("--n-a", type=int, default=1000, help="upper bound; A is limited by system overlap with Cal")
+    ap.add_argument("--n-a", default="1000", help="integer target, or 'all' for every available A composition (A is limited by system overlap with Cal)")
     ap.add_argument("--n-a0", type=int, default=1000)
     ap.add_argument("--n-b", type=int, default=1000)
     ap.add_argument("--n-c", type=int, default=1000)
@@ -92,12 +92,25 @@ def main():
     args = ap.parse_args()
 
     held = D.resolve_element_spec(args.heldout_elements)
+    all_a = str(args.n_a).lower() == "all"
+    n_a = 10**6 if all_a else int(args.n_a)
     df = pd.read_pickle(args.metadata)
-    kw = dict(seed=args.seed, n_cal=args.n_cal, n_a=args.n_a, n_a0=args.n_a0, n_b=args.n_b, n_c=args.n_c, max_atoms=args.max_atoms,
+    kw = dict(seed=args.seed, n_cal=args.n_cal, n_a=n_a, n_a0=args.n_a0, n_b=args.n_b, n_c=args.n_c, max_atoms=args.max_atoms,
               b_holdout_frac=args.b_holdout_frac, held_out_elements=held, min_comps_per_element=args.min_comps_per_element)
     splits = D.build_splits(df, **kw)
     cap = D.build_splits(df, **{**kw, "n_a": 10**6, "n_a0": args.n_a0, "n_b": 10**6, "n_c": 10**6})
     base = D.eligible_structures(df, args.max_atoms)
+
+    # Strict targets: never lower a requested size silently. A is exempt only when 'all' was requested.
+    targets = {"cal": args.n_cal, "A0": args.n_a0, "B": args.n_b, "C": args.n_c, **({} if all_a else {"A": n_a})}
+    realized = {k: len(v) for k, v in splits.items()}
+    capacity = {k: len(v) for k, v in cap.items()}
+    short = {k: (targets[k], realized[k]) for k in targets if realized[k] < targets[k]}
+    print("targets:", {**targets, **({"A": "all available"} if all_a else {})})
+    print("realized:", realized)
+    print("capacity (B, C, A with this Cal and A0; A0 and Cal are fixed draws):", {k: capacity[k] for k in ("A", "B", "C")})
+    if short:
+        sys.exit(f"STOP: target not reachable (target, realized): {short}. Nothing written; no size was lowered.")
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
     for name, s in splits.items():
@@ -110,6 +123,7 @@ def main():
         "config": {**{k: v for k, v in kw.items() if k != "held_out_elements"}, "held_out_elements": sorted(held), "alpha": ALPHA},
         "cal": {"compositions": len(splits["cal"]), "natoms": splits["cal"].natoms.describe().round(2).to_dict(),
                 "family": splits["cal"].family.value_counts().to_dict()},
+        "targets": {k: ("all available" if k == "A" and all_a else v) for k, v in {"cal": args.n_cal, "A0": args.n_a0, "A": n_a, "B": args.n_b, "C": args.n_c}.items()},
         **{n: split_report(splits[n], splits["cal"], base, len(splits["cal"])) for n in ("A0", "A", "B", "C")},
         "capacity_with_same_cal": {k: len(v) for k, v in cap.items() if k != "cal"},
     }

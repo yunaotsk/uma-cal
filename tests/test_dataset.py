@@ -310,3 +310,31 @@ def test_max_jaccard_matches_bruteforce_and_exclude_self():
     loo = D.max_jaccard_to_cal(cal, cal, exclude_self=True)
     assert loo == pytest.approx([2 / 3, 2 / 3, 2 / 3])  # never 1.0 from comparing a composition with itself
     assert D.max_jaccard_to_cal(cal, cal)[0] == 1.0
+
+
+def _cli(tmp_path, synth, extra):
+    import subprocess
+    import sys
+
+    meta = tmp_path / "meta.pkl"
+    synth.to_pickle(meta)
+    out = tmp_path / "splits"
+    cmd = [sys.executable, "scripts/propose_splits.py", "--heldout-elements", "f-block", "--max-atoms", "24", "--seed", "5",
+           "--n-cal", "200", "--n-a0", "50", "--n-b", "40", "--n-c", "40", "--metadata", str(meta), "--out-dir", str(out), *extra]
+    return subprocess.run(cmd, capture_output=True, text=True), out
+
+
+def test_cli_n_a_all_takes_every_available_a(tmp_path, synth):
+    import json
+
+    r, out = _cli(tmp_path, synth, ["--n-a", "all"])
+    assert r.returncode == 0, r.stderr[-600:]
+    summary = json.loads((out / "split_summary.json").read_text())
+    assert summary["targets"]["A"] == "all available"
+    assert summary["A"]["compositions"] == summary["capacity_with_same_cal"]["A"] > 0
+
+
+def test_cli_stops_without_writing_when_a_target_is_unreachable(tmp_path, synth):
+    r, out = _cli(tmp_path, synth, ["--n-a", "all", "--n-b", "100000"])
+    assert r.returncode != 0 and "STOP" in r.stderr and "B" in r.stderr
+    assert not out.exists() or not any(out.iterdir())  # nothing written, no size lowered silently
