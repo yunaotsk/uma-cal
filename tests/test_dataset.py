@@ -249,9 +249,92 @@ def test_propose_splits_cli_end_to_end(tmp_path, synth):
         assert se["structure_level_secondary"]["se_if_all_used_assuming_independence"] <= se["composition_level"]["se"] + 1e-9
     sets = {n: pd.read_csv(out / f"{n}.csv") for n in ("cal", "A", "B", "C")}
     assert {"sid", "parent_id", "comp_key"} <= set(sets["A"].columns)  # source ids preserved
+    sets["A0"] = pd.read_csv(out / "A0.csv")
+    assert {"max_jaccard_to_cal"} <= set(sets["cal"].columns) and sets["B"].max_jaccard_to_cal.between(0, 1).all()
     for x in sets:
         for y in sets:
             if x < y:
-                assert not set(sets[x].comp_key) & set(sets[y].comp_key)
+                for col in ("comp_key", "parent_id", "sid"):
+                    assert not set(sets[x][col]) & set(sets[y][col])
     r2 = subprocess.run([sys.executable, "scripts/propose_splits.py"], capture_output=True, text=True)
     assert r2.returncode == 2  # held-out elements and atom cap are required, no defaults
+
+
+# ------------------------------------------------------------- A0 and similarity ---
+
+ALL_FIVE = ["cal", "A0", "A", "B", "C"]
+
+
+def test_five_splits_pairwise_disjoint_on_comp_parent_sid(synth):
+    s = D.build_splits(synth, seed=11, n_cal=300, n_a=60, n_a0=60, n_b=60, n_c=60)
+    assert set(s) == set(ALL_FIVE) and all(len(s[k]) > 0 for k in ALL_FIVE)
+    for i, x in enumerate(ALL_FIVE):
+        for y in ALL_FIVE[i + 1:]:
+            for col in ("comp_key", "parent_id", "sid"):
+                assert not (set(s[x][col]) & set(s[y][col])), (x, y, col)
+
+
+def test_a0_is_drawn_jointly_with_cal_not_from_leftovers(synth):
+    """Cal+A0 is one prefix of a single random permutation, so growing Cal by A0's size must reproduce Cal u A0."""
+    kw = dict(seed=4, n_a=10, n_b=10, n_c=10)
+    split = D.build_splits(synth, n_cal=150, n_a0=100, **kw)
+    merged = D.build_splits(synth, n_cal=250, n_a0=0, **kw)
+    assert set(split["cal"].sid) | set(split["A0"].sid) == set(merged["cal"].sid)
+    assert len(split["A0"]) == 100 and len(merged["A0"]) == 0
+
+
+def test_a0_properties_familiar_pool(synth):
+    s = D.build_splits(synth, seed=2, n_cal=300, n_a=40, n_a0=80, n_b=40, n_c=40)
+    assert not ({e for x in s["A0"].elements for e in x.split()} & D.F_BLOCK)
+    assert (s["A0"].natoms <= 24).all() and (~s["A0"].hubbard_u).all() and (s["A0"].n_elements >= 2).all()
+    assert s["A0"].comp_key.is_unique
+
+
+def test_invariants_catch_parent_and_sid_leaks_into_a0(synth):
+    s = D.build_splits(synth, seed=2, n_cal=200, n_a=20, n_a0=40, n_b=20, n_c=20)
+    bad_parent = dict(s)
+    bad_parent["A0"] = s["A0"].assign(parent_id=s["cal"].parent_id.iloc[0])
+    with pytest.raises(AssertionError):
+        D.check_split_invariants(bad_parent)
+    bad_sid = dict(s)
+    bad_sid["A0"] = s["A0"].assign(sid=s["cal"].sid.iloc[0])
+    with pytest.raises(AssertionError):
+        D.check_split_invariants(bad_sid)
+
+
+def test_max_jaccard_matches_bruteforce_and_exclude_self():
+    cal = pd.DataFrame({"elements": ["Al Cu", "Cu Zn", "Al Cu Zn"], "comp_key": ["a", "b", "c"]})
+    test = pd.DataFrame({"elements": ["Al Cu", "Fe Ni", "Cu"], "comp_key": ["x", "y", "z"]})
+    got = D.max_jaccard_to_cal(test, cal)
+    assert got == pytest.approx([1.0, 0.0, 0.5])  # {Cu} vs {Cu,Zn}=1/2, vs {Al,Cu}=1/2
+    loo = D.max_jaccard_to_cal(cal, cal, exclude_self=True)
+    assert loo == pytest.approx([2 / 3, 2 / 3, 2 / 3])  # never 1.0 from comparing a composition with itself
+    assert D.max_jaccard_to_cal(cal, cal)[0] == 1.0
+
+
+def _cli(tmp_path, synth, extra):
+    import subprocess
+    import sys
+
+    meta = tmp_path / "meta.pkl"
+    synth.to_pickle(meta)
+    out = tmp_path / "splits"
+    cmd = [sys.executable, "scripts/propose_splits.py", "--heldout-elements", "f-block", "--max-atoms", "24", "--seed", "5",
+           "--n-cal", "200", "--n-a0", "50", "--n-b", "40", "--n-c", "40", "--metadata", str(meta), "--out-dir", str(out), *extra]
+    return subprocess.run(cmd, capture_output=True, text=True), out
+
+
+def test_cli_n_a_all_takes_every_available_a(tmp_path, synth):
+    import json
+
+    r, out = _cli(tmp_path, synth, ["--n-a", "all"])
+    assert r.returncode == 0, r.stderr[-600:]
+    summary = json.loads((out / "split_summary.json").read_text())
+    assert summary["targets"]["A"] == "all available"
+    assert summary["A"]["compositions"] == summary["capacity_with_same_cal"]["A"] > 0
+
+
+def test_cli_stops_without_writing_when_a_target_is_unreachable(tmp_path, synth):
+    r, out = _cli(tmp_path, synth, ["--n-a", "all", "--n-b", "100000"])
+    assert r.returncode != 0 and "STOP" in r.stderr and "B" in r.stderr
+    assert not out.exists() or not any(out.iterdir())  # nothing written, no size lowered silently

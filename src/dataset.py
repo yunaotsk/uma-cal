@@ -319,6 +319,7 @@ def build_splits(
     seed: int = DEFAULT_SEED,
     n_cal: int = 2000,
     n_a: int = 1000,
+    n_a0: int = 1000,
     n_b: int = 1000,
     n_c: int = 1000,
     max_atoms: int = 24,
@@ -326,18 +327,19 @@ def build_splits(
     held_out_elements: set[str] = F_BLOCK,
     min_comps_per_element: int = 5,
 ) -> dict[str, pd.DataFrame]:
-    """Return {'cal','A','B','C'} DataFrames (one structure per reduced composition).
+    """Return {'cal','A0','A','B','C'} DataFrames (one structure per reduced composition).
 
     Familiar pool P = eligible compositions with no held-out element.
-    * Systems (exact element sets) of P are split: a random ``b_holdout_frac`` of systems is reserved
-      for B and can never appear in Cal or A.
-    * A: one composition from each of up to n_a multi-composition systems; the system's other
-      compositions go to Cal, so A's chemical system is seen in Cal but its composition is not.
-    * Cal: forced A-system mates plus a random fill of the remaining Cal-eligible compositions up to n_cal.
-    * B: systems reserved for B whose every element pair co-occurs in some Cal composition and whose
-      every element appears in >= ``min_comps_per_element`` Cal compositions (so the system is new but
-      the elements and their pairwise chemistry are familiar); one composition per system.
+    * B-reserved systems: a random ``b_holdout_frac`` of the systems (exact element sets) of P is
+      reserved for B and can never appear in Cal, A0 or A. The remaining compositions form Q.
+    * **Cal and A0 are drawn jointly**: one random permutation of Q, first ``n_cal`` -> Cal, next
+      ``n_a0`` -> A0, remainder -> leftover. Cal and A0 are therefore exchangeable draws from Q
+      (A0 is the pipeline control: coverage should be ~nominal).
+    * A (system-matched): leftover compositions whose chemical system is present in Cal; one per system.
+    * B: compositions of B-reserved systems whose every element pair co-occurs in some Cal composition
+      and whose every element appears in >= ``min_comps_per_element`` Cal compositions; one per system.
     * C: one composition per system among compositions with >= 1 held-out element.
+    A's size is limited by how many leftover systems also occur in Cal (see ``capacity``).
     """
     rng = np.random.default_rng(seed)
     base = eligible_structures(df, max_atoms)
@@ -349,27 +351,18 @@ def build_splits(
     perm = rng.permutation(len(systems))
     n_hold = int(round(b_holdout_frac * len(systems)))
     b_systems = {systems[i] for i in perm[:n_hold]}
-    cal_systems = [systems[i] for i in perm[n_hold:]]
+    q = pool[~pool["elements"].isin(b_systems)].sort_values("index").reset_index(drop=True)
 
-    cal_elig = pool[pool["elements"].isin(cal_systems)]
-    sys_sizes = cal_elig.groupby("elements").size()
-    multi = sorted(sys_sizes[sys_sizes >= 2].index)
-    a_sys = [multi[i] for i in rng.permutation(len(multi))[:n_a]]
-    a_rows, forced = [], []
-    for s in sorted(a_sys):
-        g = cal_elig[cal_elig["elements"] == s].sort_values("index")
-        k = int(rng.integers(len(g)))
-        a_rows.append(g.iloc[[k]])
-        forced.append(g.drop(g.index[k]))
-    a = pd.concat(a_rows) if a_rows else cal_elig.iloc[0:0]
-    forced_df = pd.concat(forced) if forced else cal_elig.iloc[0:0]
-    rest = cal_elig[~cal_elig["comp_key"].isin(set(a["comp_key"]) | set(forced_df["comp_key"]))]
-    fill = _take(rest, max(0, n_cal - len(forced_df)), rng)
-    cal = pd.concat([forced_df, fill]).sort_values("index").reset_index(drop=True)
+    order = rng.permutation(len(q))
+    cal = q.iloc[np.sort(order[:n_cal])].reset_index(drop=True)
+    a0 = q.iloc[np.sort(order[n_cal : n_cal + n_a0])].reset_index(drop=True)
+    leftover = q.iloc[order[n_cal + n_a0 :]]
 
-    cal_pairs = set().union(*[_pairs(s) for s in cal["elements"].unique()])
-    cal_el_counts = Counter(e for s in cal["elements"] for e in s.split())
     cal_sys_set = set(cal["elements"])
+    a = _take(_pick_one_per_system(leftover[leftover["elements"].isin(cal_sys_set)], rng), n_a, rng)
+
+    cal_pairs = set().union(*[_pairs(s) for s in cal_sys_set]) if cal_sys_set else set()
+    cal_el_counts = Counter(e for s in cal["elements"] for e in s.split())
     b_cand = pool[pool["elements"].isin(b_systems)]
     b_cand = b_cand[
         b_cand["elements"].map(
@@ -380,46 +373,70 @@ def build_splits(
     ]
     b = _take(_pick_one_per_system(b_cand, rng), n_b, rng)
     c = _take(_pick_one_per_system(c_pool, rng), n_c, rng)
+    c = c.assign(n_held_out_elements=c["elements"].map(lambda s: len(set(s.split()) & held_out_elements)))
 
-    out = {"cal": cal, "A": a.sort_values("index").reset_index(drop=True), "B": b, "C": c}
-    out["C"] = out["C"].assign(
-        n_held_out_elements=out["C"]["elements"].map(lambda s: len(set(s.split()) & held_out_elements))
-    )
+    out = {"cal": cal, "A0": a0, "A": a, "B": b, "C": c}
     check_split_invariants(out, held_out_elements)
     return out
 
 
 def check_split_invariants(splits: dict[str, pd.DataFrame], held_out_elements: set[str] = F_BLOCK) -> None:
-    """Raise AssertionError if any leakage invariant is violated."""
+    """Raise AssertionError if any leakage invariant is violated.
+
+    Pairwise disjointness on reduced composition, ``parent_id`` and ``sid`` across every pair of splits
+    present, plus the shift properties of A, B, C and the held-out-element rule.
+    """
     names = list(splits)
     for i, x in enumerate(names):
         for y in names[i + 1 :]:
-            assert_disjoint(splits[x], splits[y], "comp_key")
-            assert_disjoint(splits[x], splits[y], "sid")
-            assert_disjoint(splits[x], splits[y], "parent_id")
-    cal, a, b, c = (splits[k] for k in ("cal", "A", "B", "C"))
+            for col in ("comp_key", "sid", "parent_id"):
+                assert_disjoint(splits[x], splits[y], col)
+    cal = splits["cal"]
     cal_sys = set(cal["elements"])
-    assert set(a["elements"]) <= cal_sys, "A systems must be present in Cal"
-    assert not (set(b["elements"]) & cal_sys), "B systems must be absent from Cal"
     cal_els = {e for s in cal["elements"] for e in s.split()}
     assert not (cal_els & held_out_elements), "Cal contains held-out elements"
-    for name in ("A", "B"):
-        els = {e for s in splits[name]["elements"] for e in s.split()}
-        assert not (els & held_out_elements), f"{name} contains held-out elements"
-        assert els <= cal_els, f"{name} contains an element unseen in Cal"
-    assert c["elements"].map(lambda s: bool(set(s.split()) & held_out_elements)).all(), "C lacks held-out element"
+    if "A" in splits:
+        assert set(splits["A"]["elements"]) <= cal_sys, "A systems must be present in Cal"
+    if "B" in splits:
+        assert not (set(splits["B"]["elements"]) & cal_sys), "B systems must be absent from Cal"
+        b_els = {e for s in splits["B"]["elements"] for e in s.split()}
+        assert b_els <= cal_els, "B contains an element unseen in Cal"
+    for name in ("A0", "A", "B"):
+        if name in splits:
+            els = {e for s in splits[name]["elements"] for e in s.split()}
+            assert not (els & held_out_elements), f"{name} contains held-out elements"
+    if "C" in splits:
+        assert splits["C"]["elements"].map(lambda s: bool(set(s.split()) & held_out_elements)).all(), "C lacks held-out element"
+    for name, sp in splits.items():
+        assert sp["comp_key"].is_unique, f"{name} has repeated compositions"
     for name in ("A", "B", "C"):
-        assert splits[name]["comp_key"].is_unique
+        if name in splits:
+            assert splits[name]["elements"].is_unique, f"{name} has repeated systems"
 
 
-def max_jaccard_to_cal(test: pd.DataFrame, cal: pd.DataFrame) -> np.ndarray:
-    """Per test structure: max Jaccard similarity between its element set and any Cal element set."""
-    cal_sets = [frozenset(s.split()) for s in cal["elements"].unique()]
-    out = np.zeros(len(test))
-    for i, s in enumerate(test["elements"]):
-        t = frozenset(s.split())
-        out[i] = max(len(t & c) / len(t | c) for c in cal_sets)
-    return out
+def _element_matrix(element_strings, vocab: dict[str, int]) -> np.ndarray:
+    m = np.zeros((len(element_strings), len(vocab)), dtype=np.float32)
+    for i, s in enumerate(element_strings):
+        for e in s.split():
+            m[i, vocab[e]] = 1.0
+    return m
+
+
+def max_jaccard_to_cal(test: pd.DataFrame, cal: pd.DataFrame, exclude_self: bool = False) -> np.ndarray:
+    """Per test structure: max Jaccard similarity between its element set and any Cal element set.
+
+    ``exclude_self=True`` (for scoring Cal itself) ignores the structure's own composition, so a Cal
+    structure is compared with the *other* Cal compositions (system-mates still count).
+    """
+    vocab = {e: i for i, e in enumerate(sorted({e for s in list(test["elements"]) + list(cal["elements"]) for e in s.split()}))}
+    t, c = _element_matrix(test["elements"], vocab), _element_matrix(cal["elements"], vocab)
+    inter = t @ c.T
+    union = t.sum(1)[:, None] + c.sum(1)[None, :] - inter
+    jac = inter / union
+    if exclude_self:
+        same = test["comp_key"].to_numpy()[:, None] == cal["comp_key"].to_numpy()[None, :]
+        jac = np.where(same, -1.0, jac)
+    return jac.max(axis=1)
 
 
 # --------------------------------------------------------------------------- #
