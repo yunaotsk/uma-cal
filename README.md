@@ -5,9 +5,13 @@ Question: do post-hoc conformal prediction intervals around UMA energy predictio
 chemical compositions, especially under out-of-distribution (OOD) chemical shifts? A finding that calibration
 fails under shift is a valid result.
 
-**Status:** Stage 2 complete: OMat24 validation subset audited and chemical-shift splits proposed (awaiting design
-review). UMA inference has been run only for the Stage 1 smoke test (FCC Al). **No UMA inference has been run on
-the Cal or test splits yet, and no calibration experiments exist.** See `reports/split_proposal.md`.
+**Status:** Stage 3 (prep and split freeze) is complete. The splits are frozen (hashes, seed and command in
+`reports/split_freeze.md`): Cal 4,000, A0 2,000, A 713, B 2,000, C 2,000 compositions. The pre-specified analysis plan,
+with Amendment 1 (final sizes, 80%/95% secondary levels, execution order), is in `reports/analysis_plan.md`.
+**A0** is an exchangeable control drawn jointly with Cal; its coverage must come out near 90% (the **A0 gate**, see the
+plan) before A, B and C may be predicted. UMA inference so far: the Stage 1 smoke test (FCC Al) and a 20-structure
+Cal-only timing benchmark. **No UMA inference has been run on A0, A, B or C, and no calibration results exist.**
+Next: Stage 4a (predict Cal and A0, record the gate), then Stage 4b (A, B, C).
 
 ## Setup
 
@@ -58,12 +62,16 @@ Reproduce the audit and the proposed splits (metadata only; no UMA inference):
 ```bash
 python scripts/audit_dataset.py --archive data/raw/rattled-1000-subsampled.tar.gz \
   --source-url https://dl.fbaipublicfiles.com/opencatalystproject/data/omat/241220/omat/val/rattled-1000-subsampled.tar.gz
-python scripts/propose_splits.py --heldout-elements f-block --max-atoms 24 --seed 20241220
+python scripts/propose_splits.py --heldout-elements f-block --max-atoms 24 --seed 20241220 \
+  --n-cal 4000 --n-a0 2000 --n-b 2000 --n-c 2000 --n-a all     # the frozen configuration
+python scripts/compare_splits.py
 python scripts/family_sensitivity.py
+python scripts/freeze_splits.py                                   # writes reports/split_freeze.md
 ```
 
-Outputs: `results/dataset_audit.json`, `results/composition_counts.csv`, `data/splits/{cal,A,B,C}.csv`,
-`data/splits/split_summary.json`, `data/splits/family_sensitivity.json`.
+Outputs: `results/dataset_audit.json`, `results/composition_counts.csv`, `data/splits/{cal,A0,A,B,C}.csv`,
+`data/splits/split_summary.json`, `data/splits/split_comparison.json`, `data/splits/family_sensitivity.json`,
+`reports/split_freeze.md`. Do not regenerate the frozen split files; `tests/test_split_files.py` checks their hashes.
 
 ## Acknowledgment and citation
 
