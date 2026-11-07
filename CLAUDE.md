@@ -36,12 +36,14 @@ Defaults live in `src/inference.py` (`UMAPredictor`).
 ## Stage status
 - **Stage 1 (CPU inference verified): complete.**
 - **Stage 2 (OMat24 audit and shift-split design): complete.** The validation `rattled-1000-subsampled` archive is in `data/raw/`
-  (git-ignored); the audit is in `results/`; the frozen splits (`cal`, `A0`, `A`, `B`, `C`) are in `data/splits/` (see Stage 3b below).
-- **Stage 3 prep: done on branch `stage3-prep`** (A0 control, similarity scores, `reports/analysis_plan.md`, resumable cache `src/pred_cache.py`, Cal-only benchmark `reports/cal_benchmark.md`).
-  Raw DFT energy confirmed as the label on 20 Cal structures.
-- **Stage 3b: splits frozen** (`reports/split_freeze.md`, SHA256 per file; Cal 4,000, A0 2,000, A 713, B 2,000, C 2,000; `max_atoms` 24). `reports/analysis_plan.md` Amendment 1 records final sizes, 80%/95% secondary levels and the gate.
+  (git-ignored); the audit is in `results/`.
+- **Stage 3 (prep and freeze): complete.** A0 control, similarity scores, resumable cache `src/pred_cache.py`, Cal-only benchmark (`reports/cal_benchmark.md`;
+  raw DFT energy confirmed as the label on 20 Cal structures), and the **frozen splits** (`reports/split_freeze.md`, SHA256 per file; Cal 4,000, A0 2,000, A 713, B 2,000, C 2,000; `max_atoms` 24)
+  in `data/splits/`. `reports/analysis_plan.md` Amendment 1 records final sizes, 80%/95% secondary levels, the execution order and the gate.
   **No prediction exists on A0, A, B or C.** The prediction cache holds only the 20 Cal benchmark structures.
-- **Stage 3 (full inference, calibration): not started.** Do not begin until the user says so. Order: Cal, then A0, then the A0 gate decision, then A, B, C. `predict_cached` locks A, B, C until `record_a0_gate` records a pass.
+- **Stage 4a (Cal, A0 and the A0 gate): not started.** Do not begin until the user says so. Predict Cal, then A0, then record the gate with `record_a0_gate`,
+  which also writes `reports/a0_gate_result.md` (written whether the gate passes or fails). Commit and push that report before any Stage 4b prediction.
+- **Stage 4b (A, B, C and the analysis in `reports/analysis_plan.md`): not started.** `predict_cached` locks A, B, C until the gate is recorded as passed.
 
 ### Justification for `inference_settings="batch"`
 Sources are the installed fairchem-core 2.25.0 files, under
@@ -101,4 +103,11 @@ Scientific correctness, reproducibility, and transparent failure reporting take 
 - **Analysis is pre-specified** in `reports/analysis_plan.md`, committed before any test-split prediction exists. Primary metric: marginal 90% coverage (split conformal, absolute error in eV/atom); headline SE at composition level.
 - **Sizes are decided and frozen:** `max_atoms` 24, Cal 4,000, A0 2,000, A all available (713), B 2,000, C 2,000, seed 20241220 (`reports/split_freeze.md`). Do not change split files after the freeze; any change is a recorded protocol deviation.
 - **A0 gate:** pass iff |coverage at 90% on A0 − 0.90| ≤ 0.02, decided on Cal and A0 predictions only, before any A, B or C prediction exists or is looked at (enforced by `SplitGuard`). Also report 80% and 95% coverage as secondary levels.
-- **Hard rule until the user starts Stage 3:** no UMA inference on any split except Cal structures already benchmarked. After the user starts Stage 3: Cal and A0 first; A, B, C only after the gate is recorded as passed.
+- **Hard rule until the user starts Stage 4a:** no UMA inference on any split except the 20 Cal structures already benchmarked. After the user starts Stage 4a: Cal and A0 only; A, B, C (Stage 4b) only after the gate is recorded as passed.
+
+## Workflow
+- `main` changes only through pull requests that the user merges. Do not push to `main`, merge, or push branches unless asked.
+- One short-lived branch per PR, cut from an up-to-date `main` (fetch and fast-forward first), and deleted after merge.
+- No branch for read-only checks.
+- Pull `main` before each new task.
+- Merge PRs with a **merge commit** (not squash or rebase) when the PR cites commit hashes (e.g. `reports/split_freeze.md`), so those hashes stay in history.
